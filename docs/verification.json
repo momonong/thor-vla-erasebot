@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "version": "0.1.0",
+  "verification_date": "2026-10-24",
+  "scope": "Fixture-only offline target selection and accepted proposal document integration.",
+  "environment": {
+    "os": "Ubuntu 24.04.5 LTS",
+    "architecture": "x86_64",
+    "python": "3.12.3",
+    "uv": "0.9.5",
+    "working_directory": "repository root",
+    "UV_CACHE_DIR": ".cache/uv",
+    "UV_PYTHON_DOWNLOADS": "never"
+  },
+  "reused_phase1_evidence": {
+    "source": "Existing phase-one verification.json receipt; read and checked again on 2026-10-24. Internal environment paths are omitted.",
+    "environment": "Same OS, Python and uv versions listed above; a separate fresh isolated environment.",
+    "checks": [
+      {
+        "command": "uv sync --locked --offline",
+        "exit_code": 0,
+        "result": "Fresh isolated environment created; one package resolved."
+      },
+      {
+        "command": "uv run --locked --offline python -m unittest discover -s tests -v",
+        "exit_code": 0,
+        "tests_run": 21,
+        "result": "Ran 21 tests in 0.503s; OK."
+      },
+      {
+        "command": "uv run --locked --offline python -m erasebot --command fixtures/command.json --scene fixtures/scene.json",
+        "exit_code": 0,
+        "result": {
+          "status": "selected",
+          "selected_target_id": "word-1",
+          "fixture": true,
+          "dry_run": true,
+          "coordinate_frame": "image",
+          "unit": "px"
+        }
+      }
+    ],
+    "reuse_reason": "Application, tests, fixtures, pyproject.toml and uv.lock were unchanged during document integration. The fresh environment was not rebuilt in this round."
+  },
+  "current_checks": [
+    {
+      "command": "UV_CACHE_DIR=\"$PWD/.cache/uv\" UV_PYTHON_DOWNLOADS=never uv lock --check --offline",
+      "exit_code": 0,
+      "result": "Resolved 1 package in 0.55ms"
+    },
+    {
+      "command": "UV_CACHE_DIR=\"$PWD/.cache/uv\" UV_PYTHON_DOWNLOADS=never uv run --locked --offline python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests_run": 21,
+      "result": "Ran 21 tests in 0.521s; OK."
+    },
+    {
+      "command": "UV_CACHE_DIR=\"$PWD/.cache/uv\" UV_PYTHON_DOWNLOADS=never uv run --locked --offline python -m erasebot --command fixtures/command.json --scene fixtures/scene.json",
+      "exit_code": 0,
+      "result": {
+        "schema_version": 1,
+        "fixture": true,
+        "dry_run": true,
+        "status": "selected",
+        "selected_target": {
+          "id": "word-1",
+          "text": "apple",
+          "color": "red",
+          "bbox": [
+            20,
+            30,
+            120,
+            70
+          ]
+        },
+        "candidate_ids": [
+          "word-1"
+        ],
+        "coordinates": {
+          "coordinate_frame": "image",
+          "unit": "px",
+          "image_size": {
+            "width": 640,
+            "height": 480
+          }
+        },
+        "diagnostics": {
+          "stage": "selection",
+          "target_count": 3,
+          "candidate_count": 1,
+          "errors": []
+        }
+      }
+    }
+  ],
+  "accepted_proposal_sha256": {
+    "docs/proposal-discussion.md": "b6c2a8d9f99c23421131aeaa2c41b53ec44ba4293213653113f6efb64b32e36f",
+    "docs/proposal-discussion.html": "1e98531e5c26735ff0916186538b056aa054c8a4c2c10baa7cd203de548dd724"
+  },
+  "photos_validation": "Not started; eight photos are a proposed diagnostic starting point, not an upper limit.",
+  "not_implemented_or_not_verified": [
+    "OCR and real-photo perception",
+    "Natural-language or speech recognition",
+    "Camera integration and coordinate calibration",
+    "Physical simulation and motion planning",
+    "Robot control, erasing, residual-text or accidental-erasure checks",
+    "Thor, ARM64 and JetPack compatibility"
+  ],
+  "limits": "The 21 tests and fixture CLI prove fixture validation and exact target selection only. They do not prove photo recognition, robot accuracy, competition acceptance or team agreement on optional exploration."
+}
