@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "fixture": true,
+  "coordinate_frame": "image",
+  "unit": "px",
+  "image_size": {"width": 640, "height": 480},
+  "targets": [
+    {"id": "word-1", "text": "apple", "color": "red", "bbox": [20, 30, 120, 70]},
+    {"id": "word-2", "text": "apple", "color": "green", "bbox": [150, 30, 250, 70]},
+    {"id": "word-3", "text": "pear", "color": "red", "bbox": [20, 100, 120, 140]}
+  ]
+}
