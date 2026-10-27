@@ -1,0 +1,742 @@
+{
+  "template_kind": "first_photo_capture",
+  "template_version": 1,
+  "prepared_date": "2026-10-27",
+  "timezone": "Asia/Taipei",
+  "state": "unfilled_template",
+  "is_erasebot_api": false,
+  "notes": [
+    "僅為研究填寫模板，不是 erasebot API、fixture 或已完成照片資料。",
+    "英文與四色為工作假設，並非官方規則；所有觀測值尚未填寫。",
+    "planned 是佈置意圖，不能當人工答案；筆色意圖不是照片中可見顏色的答案。",
+    "observed.words=[] 表示尚未標註，不表示已確認空白；空白與殘跡也需兩人覆核。",
+    "word_record_template 與其餘 *_template 為複製範本，不算實際觀測。",
+    "唯一／不存在須覆核完整搜尋範圍；未讀清處若可能藏符合或第二目標，不可判 unique_target／no_target。",
+    "P01／P07／P08 規劃共用 L01／G01，須維持同一未重寫板面；實際不符時記偏差。",
+    "本輪全為 diagnostic_only，不拆 train／test；所有原圖與重拍嘗試均保留。"
+  ],
+  "coordinate_convention": {
+    "coordinate_frame": "image",
+    "unit": "px",
+    "origin": "左上角",
+    "x_direction": "向右",
+    "y_direction": "向下",
+    "bbox_order": [
+      "x_min",
+      "y_min",
+      "x_max",
+      "y_max"
+    ],
+    "bounds": "0 <= x_min < x_max <= width; 0 <= y_min < y_max <= height",
+    "value_rule": "有限數值，不能是 bool；未量測填 null",
+    "excluded_coordinates": [
+      "whiteboard_mm",
+      "robot_base",
+      "arm"
+    ]
+  },
+  "readability_options": [
+    "readable",
+    "unreadable",
+    "uncertain"
+  ],
+  "region_kind_options": [
+    "word",
+    "residue",
+    "uncertain"
+  ],
+  "image_size_record_template": {
+    "width": null,
+    "height": null
+  },
+  "word_record_template": {
+    "word_id": null,
+    "text": null,
+    "color": null,
+    "bbox": null,
+    "text_readability": null,
+    "color_readability": null,
+    "region_kind": null,
+    "notes": null,
+    "review": {
+      "first_judgment": null,
+      "second_judgment": null,
+      "adjudication": null,
+      "reviewers": null,
+      "annotation_version": null
+    }
+  },
+  "word_judgment_record_template": {
+    "reviewer_id": null,
+    "text": null,
+    "color": null,
+    "bbox": null,
+    "text_readability": null,
+    "color_readability": null,
+    "region_kind": null,
+    "reason": null
+  },
+  "photos": [
+    {
+      "photo_id": "P01",
+      "capture_status": "not_captured",
+      "annotation_status": "not_started",
+      "planned": {
+        "title": "清楚正面基準",
+        "layout_id": "L01",
+        "group_id": "G01",
+        "same_board_as": null,
+        "split": "diagnostic_only",
+        "search_scope": "本次完整板面，實拍須全部入鏡",
+        "single_factor": "基準，不刻意加反光、陰影或傾斜",
+        "writer_relation": "基準書寫者，實際代號待填",
+        "words": [
+          {
+            "planned_word_id": "P01-W01",
+            "text": "apple",
+            "color": "red",
+            "region": "左上"
+          },
+          {
+            "planned_word_id": "P01-W02",
+            "text": "pear",
+            "color": "blue",
+            "region": "右上"
+          },
+          {
+            "planned_word_id": "P01-W03",
+            "text": "kiwi",
+            "color": "green",
+            "region": "左下"
+          },
+          {
+            "planned_word_id": "P01-W04",
+            "text": "plum",
+            "color": "black",
+            "region": "右下"
+          }
+        ],
+        "case_ids": [
+          "P01-C01",
+          "P01-C02"
+        ],
+        "capture_requirements": [
+          "清楚正面，完整板面與四區均入鏡",
+          "保留原始影像與此版面，供 P07／P08 同板重拍"
+        ],
+        "if_condition_unmet": "模糊、缺角、漏詞或顏色不清時保留原圖，記條件未達；不要用計畫代替判讀"
+      },
+      "observed": {
+        "photo_file": null,
+        "photo_sha256": null,
+        "photo_revision": null,
+        "image_size": null,
+        "capture_time": null,
+        "device": null,
+        "annotators": null,
+        "writer_id": null,
+        "layout_id": null,
+        "group_id": null,
+        "same_board_as": null,
+        "lighting": null,
+        "camera_position_description": null,
+        "view_angle_degrees": null,
+        "view_angle_measurement_method": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "single_factor_met": null,
+        "unmet_conditions": null,
+        "readability_notes": null,
+        "deviations_from_plan": null,
+        "attempt_id": null,
+        "words": [],
+        "review": {
+          "primary_annotator": null,
+          "second_reviewer": null,
+          "first_judgment": null,
+          "second_judgment": null,
+          "disagreements": null,
+          "adjudication": null,
+          "annotation_version": null,
+          "reviewed_at": null,
+          "status": "not_started"
+        }
+      }
+    },
+    {
+      "photo_id": "P02",
+      "capture_status": "not_captured",
+      "annotation_status": "not_started",
+      "planned": {
+        "title": "只換書寫者",
+        "layout_id": "L02",
+        "group_id": "G02",
+        "same_board_as": null,
+        "split": "diagnostic_only",
+        "search_scope": "本次完整板面，實拍須全部入鏡",
+        "single_factor": "只換書寫者，維持 P01 版面、詞、顏色與大致大小",
+        "writer_relation": "須不同於 P01；無第二人則標未達成",
+        "words": [
+          {
+            "planned_word_id": "P02-W01",
+            "text": "apple",
+            "color": "red",
+            "region": "左上"
+          },
+          {
+            "planned_word_id": "P02-W02",
+            "text": "pear",
+            "color": "blue",
+            "region": "右上"
+          },
+          {
+            "planned_word_id": "P02-W03",
+            "text": "kiwi",
+            "color": "green",
+            "region": "左下"
+          },
+          {
+            "planned_word_id": "P02-W04",
+            "text": "plum",
+            "color": "black",
+            "region": "右下"
+          }
+        ],
+        "case_ids": [
+          "P02-C01",
+          "P02-C02"
+        ],
+        "capture_requirements": [
+          "清楚正面，完整板面入鏡",
+          "維持 P01 拍攝與光線條件，記實際書寫者與差異"
+        ],
+        "if_condition_unmet": "沒有第二位書寫者就記未達成；不能以同人換筆跡代替"
+      },
+      "observed": {
+        "photo_file": null,
+        "photo_sha256": null,
+        "photo_revision": null,
+        "image_size": null,
+        "capture_time": null,
+        "device": null,
+        "annotators": null,
+        "writer_id": null,
+        "layout_id": null,
+        "group_id": null,
+        "same_board_as": null,
+        "lighting": null,
+        "camera_position_description": null,
+        "view_angle_degrees": null,
+        "view_angle_measurement_method": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "single_factor_met": null,
+        "unmet_conditions": null,
+        "readability_notes": null,
+        "deviations_from_plan": null,
+        "attempt_id": null,
+        "words": [],
+        "review": {
+          "primary_annotator": null,
+          "second_reviewer": null,
+          "first_judgment": null,
+          "second_judgment": null,
+          "disagreements": null,
+          "adjudication": null,
+          "annotation_version": null,
+          "reviewed_at": null,
+          "status": "not_started"
+        }
+      }
+    },
+    {
+      "photo_id": "P03",
+      "capture_status": "not_captured",
+      "annotation_status": "not_started",
+      "planned": {
+        "title": "只換相對位置",
+        "layout_id": "L03",
+        "group_id": "G03",
+        "same_board_as": null,
+        "split": "diagnostic_only",
+        "search_scope": "本次完整板面，實拍須全部入鏡",
+        "single_factor": "只改四詞相對位置，字體／大小盡量維持 P01",
+        "writer_relation": "與 P01 同一書寫者，待實際核對",
+        "words": [
+          {
+            "planned_word_id": "P03-W01",
+            "text": "apple",
+            "color": "red",
+            "region": "右下"
+          },
+          {
+            "planned_word_id": "P03-W02",
+            "text": "pear",
+            "color": "blue",
+            "region": "左下"
+          },
+          {
+            "planned_word_id": "P03-W03",
+            "text": "kiwi",
+            "color": "green",
+            "region": "右上"
+          },
+          {
+            "planned_word_id": "P03-W04",
+            "text": "plum",
+            "color": "black",
+            "region": "左上"
+          }
+        ],
+        "case_ids": [
+          "P03-C01",
+          "P03-C02"
+        ],
+        "capture_requirements": [
+          "清楚正面，完整板面入鏡",
+          "維持 P01 詞、顏色、書寫者與其他拍攝條件"
+        ],
+        "if_condition_unmet": "其他條件同時改動時記多變因，不宣稱只量到位置影響"
+      },
+      "observed": {
+        "photo_file": null,
+        "photo_sha256": null,
+        "photo_revision": null,
+        "image_size": null,
+        "capture_time": null,
+        "device": null,
+        "annotators": null,
+        "writer_id": null,
+        "layout_id": null,
+        "group_id": null,
+        "same_board_as": null,
+        "lighting": null,
+        "camera_position_description": null,
+        "view_angle_degrees": null,
+        "view_angle_measurement_method": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "single_factor_met": null,
+        "unmet_conditions": null,
+        "readability_notes": null,
+        "deviations_from_plan": null,
+        "attempt_id": null,
+        "words": [],
+        "review": {
+          "primary_annotator": null,
+          "second_reviewer": null,
+          "first_judgment": null,
+          "second_judgment": null,
+          "disagreements": null,
+          "adjudication": null,
+          "annotation_version": null,
+          "reviewed_at": null,
+          "status": "not_started"
+        }
+      }
+    },
+    {
+      "photo_id": "P04",
+      "capture_status": "not_captured",
+      "annotation_status": "not_started",
+      "planned": {
+        "title": "同字異色",
+        "layout_id": "L04",
+        "group_id": "G04",
+        "same_board_as": null,
+        "split": "diagnostic_only",
+        "search_scope": "本次完整板面，實拍須全部入鏡",
+        "single_factor": "同字異色，不混低畫質因素",
+        "writer_relation": "待填",
+        "words": [
+          {
+            "planned_word_id": "P04-W01",
+            "text": "apple",
+            "color": "red",
+            "region": "左上"
+          },
+          {
+            "planned_word_id": "P04-W02",
+            "text": "apple",
+            "color": "blue",
+            "region": "右上"
+          },
+          {
+            "planned_word_id": "P04-W03",
+            "text": "pear",
+            "color": "green",
+            "region": "左下"
+          },
+          {
+            "planned_word_id": "P04-W04",
+            "text": "kiwi",
+            "color": "black",
+            "region": "右下"
+          }
+        ],
+        "case_ids": [
+          "P04-C01",
+          "P04-C02",
+          "P04-C03"
+        ],
+        "capture_requirements": [
+          "清楚正面，完整板面入鏡",
+          "兩個 apple 均清楚，保留照片可辨色的證據"
+        ],
+        "if_condition_unmet": "若照片顏色讀不清就記不確定，不能用筆色意圖代替答案"
+      },
+      "observed": {
+        "photo_file": null,
+        "photo_sha256": null,
+        "photo_revision": null,
+        "image_size": null,
+        "capture_time": null,
+        "device": null,
+        "annotators": null,
+        "writer_id": null,
+        "layout_id": null,
+        "group_id": null,
+        "same_board_as": null,
+        "lighting": null,
+        "camera_position_description": null,
+        "view_angle_degrees": null,
+        "view_angle_measurement_method": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "single_factor_met": null,
+        "unmet_conditions": null,
+        "readability_notes": null,
+        "deviations_from_plan": null,
+        "attempt_id": null,
+        "words": [],
+        "review": {
+          "primary_annotator": null,
+          "second_reviewer": null,
+          "first_judgment": null,
+          "second_judgment": null,
+          "disagreements": null,
+          "adjudication": null,
+          "annotation_version": null,
+          "reviewed_at": null,
+          "status": "not_started"
+        }
+      }
+    },
+    {
+      "photo_id": "P05",
+      "capture_status": "not_captured",
+      "annotation_status": "not_started",
+      "planned": {
+        "title": "同字同色重複",
+        "layout_id": "L05",
+        "group_id": "G05",
+        "same_board_as": null,
+        "split": "diagnostic_only",
+        "search_scope": "本次完整板面，實拍須全部入鏡",
+        "single_factor": "兩處同字同色，保持清楚正面",
+        "writer_relation": "待填",
+        "words": [
+          {
+            "planned_word_id": "P05-W01",
+            "text": "apple",
+            "color": "red",
+            "region": "左上，左側目標"
+          },
+          {
+            "planned_word_id": "P05-W02",
+            "text": "apple",
+            "color": "red",
+            "region": "右上，右側目標"
+          },
+          {
+            "planned_word_id": "P05-W03",
+            "text": "pear",
+            "color": "blue",
+            "region": "左下"
+          },
+          {
+            "planned_word_id": "P05-W04",
+            "text": "kiwi",
+            "color": "black",
+            "region": "右下"
+          }
+        ],
+        "case_ids": [
+          "P05-C01",
+          "P05-C02"
+        ],
+        "capture_requirements": [
+          "完整板面與兩個 red apple 均入鏡",
+          "兩處 red apple 使用不同目標 ID"
+        ],
+        "if_condition_unmet": "若任一詞／顏色讀不清，不直接把計畫歧義當參考，也不能只憑可見一個判唯一"
+      },
+      "observed": {
+        "photo_file": null,
+        "photo_sha256": null,
+        "photo_revision": null,
+        "image_size": null,
+        "capture_time": null,
+        "device": null,
+        "annotators": null,
+        "writer_id": null,
+        "layout_id": null,
+        "group_id": null,
+        "same_board_as": null,
+        "lighting": null,
+        "camera_position_description": null,
+        "view_angle_degrees": null,
+        "view_angle_measurement_method": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "single_factor_met": null,
+        "unmet_conditions": null,
+        "readability_notes": null,
+        "deviations_from_plan": null,
+        "attempt_id": null,
+        "words": [],
+        "review": {
+          "primary_annotator": null,
+          "second_reviewer": null,
+          "first_judgment": null,
+          "second_judgment": null,
+          "disagreements": null,
+          "adjudication": null,
+          "annotation_version": null,
+          "reviewed_at": null,
+          "status": "not_started"
+        }
+      }
+    },
+    {
+      "photo_id": "P06",
+      "capture_status": "not_captured",
+      "annotation_status": "not_started",
+      "planned": {
+        "title": "空白帶淡殘跡",
+        "layout_id": "L06",
+        "group_id": "G06",
+        "same_board_as": null,
+        "split": "diagnostic_only",
+        "search_scope": "本次完整板面，實拍須全部入鏡",
+        "single_factor": "淡殘跡，不混反光、陰影或傾斜",
+        "writer_relation": "殘跡來源待填，不預填內容或顏色",
+        "words": [],
+        "case_ids": [
+          "P06-C01"
+        ],
+        "capture_requirements": [
+          "不新增清楚文字，完整板面與實際殘跡入鏡",
+          "先按影像標實際可讀字、顏色及不確定區域"
+        ],
+        "if_condition_unmet": "空白名稱不代表無目標；未讀清處可能藏目標時標 unreadable／unscorable，不能直接 no_target"
+      },
+      "observed": {
+        "photo_file": null,
+        "photo_sha256": null,
+        "photo_revision": null,
+        "image_size": null,
+        "capture_time": null,
+        "device": null,
+        "annotators": null,
+        "writer_id": null,
+        "layout_id": null,
+        "group_id": null,
+        "same_board_as": null,
+        "lighting": null,
+        "camera_position_description": null,
+        "view_angle_degrees": null,
+        "view_angle_measurement_method": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "single_factor_met": null,
+        "unmet_conditions": null,
+        "readability_notes": null,
+        "deviations_from_plan": null,
+        "attempt_id": null,
+        "words": [],
+        "review": {
+          "primary_annotator": null,
+          "second_reviewer": null,
+          "first_judgment": null,
+          "second_judgment": null,
+          "disagreements": null,
+          "adjudication": null,
+          "annotation_version": null,
+          "reviewed_at": null,
+          "status": "not_started"
+        }
+      }
+    },
+    {
+      "photo_id": "P07",
+      "capture_status": "not_captured",
+      "annotation_status": "not_started",
+      "planned": {
+        "title": "只加反光",
+        "layout_id": "L01",
+        "group_id": "G01",
+        "same_board_as": "P01",
+        "split": "diagnostic_only",
+        "search_scope": "本次完整板面，實拍須全部入鏡",
+        "single_factor": "只選反光，不混陰影；維持同板與視角",
+        "writer_relation": "沿用 P01 原字，不重寫",
+        "words": [
+          {
+            "planned_word_id": "P01-W01",
+            "text": "apple",
+            "color": "red",
+            "region": "左上"
+          },
+          {
+            "planned_word_id": "P01-W02",
+            "text": "pear",
+            "color": "blue",
+            "region": "右上"
+          },
+          {
+            "planned_word_id": "P01-W03",
+            "text": "kiwi",
+            "color": "green",
+            "region": "左下"
+          },
+          {
+            "planned_word_id": "P01-W04",
+            "text": "plum",
+            "color": "black",
+            "region": "右下"
+          }
+        ],
+        "case_ids": [
+          "P07-C01"
+        ],
+        "capture_requirements": [
+          "完整板面入鏡，保留 P01 同板字詞、顏色、位置",
+          "記反光位置與光線改動；若必須一併改視角則記多變因"
+        ],
+        "if_condition_unmet": "未形成反光記未達；仍可讀就如實記錄，不算已收集畫質不足；反光遮住可能目標時不可判唯一／不存在"
+      },
+      "observed": {
+        "photo_file": null,
+        "photo_sha256": null,
+        "photo_revision": null,
+        "image_size": null,
+        "capture_time": null,
+        "device": null,
+        "annotators": null,
+        "writer_id": null,
+        "layout_id": null,
+        "group_id": null,
+        "same_board_as": null,
+        "lighting": null,
+        "camera_position_description": null,
+        "view_angle_degrees": null,
+        "view_angle_measurement_method": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "single_factor_met": null,
+        "unmet_conditions": null,
+        "readability_notes": null,
+        "deviations_from_plan": null,
+        "attempt_id": null,
+        "words": [],
+        "review": {
+          "primary_annotator": null,
+          "second_reviewer": null,
+          "first_judgment": null,
+          "second_judgment": null,
+          "disagreements": null,
+          "adjudication": null,
+          "annotation_version": null,
+          "reviewed_at": null,
+          "status": "not_started"
+        }
+      }
+    },
+    {
+      "photo_id": "P08",
+      "capture_status": "not_captured",
+      "annotation_status": "not_started",
+      "planned": {
+        "title": "只改傾斜視角",
+        "layout_id": "L01",
+        "group_id": "G01",
+        "same_board_as": "P01",
+        "split": "diagnostic_only",
+        "search_scope": "本次完整板面，實拍須全部入鏡",
+        "single_factor": "只改傾斜視角，不混小字或刻意改光線",
+        "writer_relation": "沿用 P01 原字，不重寫",
+        "words": [
+          {
+            "planned_word_id": "P01-W01",
+            "text": "apple",
+            "color": "red",
+            "region": "左上"
+          },
+          {
+            "planned_word_id": "P01-W02",
+            "text": "pear",
+            "color": "blue",
+            "region": "右上"
+          },
+          {
+            "planned_word_id": "P01-W03",
+            "text": "kiwi",
+            "color": "green",
+            "region": "左下"
+          },
+          {
+            "planned_word_id": "P01-W04",
+            "text": "plum",
+            "color": "black",
+            "region": "右下"
+          }
+        ],
+        "case_ids": [
+          "P08-C01"
+        ],
+        "capture_requirements": [
+          "完整板面入鏡，保持 P01 同板詞、顏色、位置與大小",
+          "角度有實際量測才填數值；未知填 null"
+        ],
+        "if_condition_unmet": "未形成傾斜記未達；仍可讀如實記錄；缺板面或讀不清時不能從計畫推成唯一答案"
+      },
+      "observed": {
+        "photo_file": null,
+        "photo_sha256": null,
+        "photo_revision": null,
+        "image_size": null,
+        "capture_time": null,
+        "device": null,
+        "annotators": null,
+        "writer_id": null,
+        "layout_id": null,
+        "group_id": null,
+        "same_board_as": null,
+        "lighting": null,
+        "camera_position_description": null,
+        "view_angle_degrees": null,
+        "view_angle_measurement_method": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "single_factor_met": null,
+        "unmet_conditions": null,
+        "readability_notes": null,
+        "deviations_from_plan": null,
+        "attempt_id": null,
+        "words": [],
+        "review": {
+          "primary_annotator": null,
+          "second_reviewer": null,
+          "first_judgment": null,
+          "second_judgment": null,
+          "disagreements": null,
+          "adjudication": null,
+          "annotation_version": null,
+          "reviewed_at": null,
+          "status": "not_started"
+        }
+      }
+    }
+  ]
+}

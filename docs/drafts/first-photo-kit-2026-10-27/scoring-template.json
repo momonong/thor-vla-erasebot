@@ -1,0 +1,822 @@
+{
+  "template_kind": "first_photo_scoring",
+  "template_version": 1,
+  "prepared_date": "2026-10-27",
+  "timezone": "Asia/Taipei",
+  "state": "unfilled_template",
+  "is_erasebot_api": false,
+  "notes": [
+    "研究填寫模板，非現有 CLI 輸入／輸出契約，不表示已執行任何方法。",
+    "planned_expectation 不是人工答案；以照片＋本例指令建立 verified_reference。",
+    "先保存兩人的原始判讀與裁決版本，再在看系統輸出前凍結參考答案。",
+    "更換照片或 reference 版本時，既有分數須重新對應，不沿用舊分數宣稱新版本結果。",
+    "未知目標 ID 用 null；無目標經覆核後才填 []。",
+    "prediction／metrics 目前皆 null；開始記錄結果時複製對應 *_record_template。score_details 的 null 不是零錯誤。",
+    "可讀詞的漏檢與拒答仍在分母；唯一題要核對選中的目標 ID，不能只看 selected。",
+    "invalid_input 或執行 error 是執行問題，不當作正確拒答。",
+    "同一張圖有多道指令時，文字／顏色／框的感知成績不得因題數重複累計；以 photo_id + photo_revision + method/run_id 識別同次感知，共用該結果，指令決策仍逐題計。感知以獨立影像／感知執行為分母，另列實際執行與已評數；重複引用同一證據不算新增樣本。"
+  ],
+  "allowed_evidence_kinds": {
+    "manual": "人工答案或人工判讀",
+    "fixture_replay": "人工標記轉 fixture 的離線選取，不是真照片感知",
+    "photo_perception": "實際從該原圖產生的感知／決策結果",
+    "future_robot": "另獲授權且實際執行的機器人證據；本包未製作"
+  },
+  "reference_decision_definitions": {
+    "unique_target": "完整搜尋範圍足以排除隱藏或第二目標，只有一個可讀文字／顏色符合者",
+    "no_target": "完整搜尋範圍足以排除符合目標；target_word_ids=[]",
+    "ambiguous": "確認至少兩個不同 ID 符合，不能自行選一個",
+    "unreadable": "影像無法回答本指令，未讀清區域可能影響目標或唯一性",
+    "unscorable": "證據缺失、不完整或標註分歧未解，無法可靠計分"
+  },
+  "existing_cli_statuses": [
+    "selected",
+    "no_match",
+    "ambiguous",
+    "invalid_input"
+  ],
+  "reference_judgment_record_template": {
+    "reviewer_id": null,
+    "decision": null,
+    "target_word_ids": null,
+    "search_scope_complete": null,
+    "unreadable_region_could_hide_match_or_duplicate": null,
+    "reason": null,
+    "judged_at": null
+  },
+  "pairing_rule_to_freeze_before_predictions": {
+    "rule_description": null,
+    "one_to_one": null,
+    "threshold_value": null,
+    "threshold_unit": null,
+    "position_error_definition_px": null,
+    "locked_by": null,
+    "locked_at": null,
+    "version": null
+  },
+  "prediction_record_template": {
+    "run_id": null,
+    "output_file": null,
+    "method_name": null,
+    "method_version_or_settings": null,
+    "predicted_words": null,
+    "selected_prediction_ids": null,
+    "selected_reference_word_ids_via_frozen_pairing": null,
+    "cli_status": null,
+    "pipeline_diagnostic": null,
+    "error": null
+  },
+  "metrics_record_template": {
+    "readable_text_word_count": null,
+    "exact_text_correct_count": null,
+    "wrong_text_count": null,
+    "text_refusal_count": null,
+    "readable_color_word_count": null,
+    "correct_color_count": null,
+    "wrong_color_count": null,
+    "color_refusal_count": null,
+    "color_confusion": null,
+    "missed_word_count": null,
+    "extra_prediction_count": null,
+    "matched_pair_count": null,
+    "position_error_summary_px": null,
+    "reference_class": null,
+    "decision_correct": null,
+    "selected_target_id_matches_reference": null
+  },
+  "score_detail_record_templates": {
+    "word_text_error": {
+      "reference_word_id": null,
+      "prediction_id": null,
+      "reference_text": null,
+      "predicted_text": null,
+      "reason": null
+    },
+    "word_color_error": {
+      "reference_word_id": null,
+      "prediction_id": null,
+      "reference_color": null,
+      "predicted_color": null,
+      "reason": null
+    },
+    "position_error_px": {
+      "reference_word_id": null,
+      "prediction_id": null,
+      "error_px": null,
+      "definition_version": null
+    },
+    "decision_judgment": {
+      "reference_class": null,
+      "outcome": null,
+      "selected_reference_word_ids": null,
+      "target_id_matches": null,
+      "reason": null
+    },
+    "execution_issue": {
+      "kind": null,
+      "message": null,
+      "output_file": null
+    }
+  },
+  "ledger": {
+    "total_cases": 14,
+    "not_run_cases": 14,
+    "not_scored_cases": 14,
+    "reference_pending_cases": 14,
+    "scoreable_cases": null,
+    "unscorable_cases": null,
+    "execution_issue_cases": null,
+    "unique_reference_cases": null,
+    "correct_unique_cases": null,
+    "wrong_unique_cases": null,
+    "refusal_on_unique_cases": null,
+    "no_target_reference_cases": null,
+    "ambiguous_reference_cases": null,
+    "unreadable_reference_cases": null,
+    "note": "目前只知道模板含 14 例且全未跑／未評；可評、不可評及性能件數尚未建立，不以假零補齊。後續總帳保留全部 14 例，含未跑與執行問題。"
+  },
+  "cases": [
+    {
+      "case_id": "P01-C01",
+      "photo_id": "P01",
+      "command": {
+        "action": "erase",
+        "text": "apple",
+        "color": "red"
+      },
+      "planned_expectation": {
+        "decision": "unique_target",
+        "planned_word_ids": [
+          "P01-W01"
+        ],
+        "condition": "僅為計畫；須以實際照片＋指令覆核完整搜尋範圍，不能直接複製成 verified_reference"
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P01-C02",
+      "photo_id": "P01",
+      "command": {
+        "action": "erase",
+        "text": "banana",
+        "color": "black"
+      },
+      "planned_expectation": {
+        "decision": "no_target",
+        "planned_word_ids": [],
+        "condition": "僅為計畫；須以實際照片＋指令覆核完整搜尋範圍，不能直接複製成 verified_reference"
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P02-C01",
+      "photo_id": "P02",
+      "command": {
+        "action": "erase",
+        "text": "pear",
+        "color": "blue"
+      },
+      "planned_expectation": {
+        "decision": "unique_target",
+        "planned_word_ids": [
+          "P02-W02"
+        ],
+        "condition": "僅為計畫；須以實際照片＋指令覆核完整搜尋範圍，不能直接複製成 verified_reference"
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P02-C02",
+      "photo_id": "P02",
+      "command": {
+        "action": "erase",
+        "text": "apple",
+        "color": "green"
+      },
+      "planned_expectation": {
+        "decision": "no_target",
+        "planned_word_ids": [],
+        "condition": "僅為計畫；須以實際照片＋指令覆核完整搜尋範圍，不能直接複製成 verified_reference"
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P03-C01",
+      "photo_id": "P03",
+      "command": {
+        "action": "erase",
+        "text": "kiwi",
+        "color": "green"
+      },
+      "planned_expectation": {
+        "decision": "unique_target",
+        "planned_word_ids": [
+          "P03-W03"
+        ],
+        "condition": "僅為計畫；須以實際照片＋指令覆核完整搜尋範圍，不能直接複製成 verified_reference"
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P03-C02",
+      "photo_id": "P03",
+      "command": {
+        "action": "erase",
+        "text": "plum",
+        "color": "black"
+      },
+      "planned_expectation": {
+        "decision": "unique_target",
+        "planned_word_ids": [
+          "P03-W04"
+        ],
+        "condition": "僅為計畫；須以實際照片＋指令覆核完整搜尋範圍，不能直接複製成 verified_reference"
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P04-C01",
+      "photo_id": "P04",
+      "command": {
+        "action": "erase",
+        "text": "apple",
+        "color": "red"
+      },
+      "planned_expectation": {
+        "decision": "unique_target",
+        "planned_word_ids": [
+          "P04-W01"
+        ],
+        "condition": "僅為計畫；須以實際照片＋指令覆核完整搜尋範圍，不能直接複製成 verified_reference"
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P04-C02",
+      "photo_id": "P04",
+      "command": {
+        "action": "erase",
+        "text": "apple",
+        "color": "blue"
+      },
+      "planned_expectation": {
+        "decision": "unique_target",
+        "planned_word_ids": [
+          "P04-W02"
+        ],
+        "condition": "僅為計畫；須以實際照片＋指令覆核完整搜尋範圍，不能直接複製成 verified_reference"
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P04-C03",
+      "photo_id": "P04",
+      "command": {
+        "action": "erase",
+        "text": "apple",
+        "color": "green"
+      },
+      "planned_expectation": {
+        "decision": "no_target",
+        "planned_word_ids": [],
+        "condition": "僅為計畫；須以實際照片＋指令覆核完整搜尋範圍，不能直接複製成 verified_reference"
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P05-C01",
+      "photo_id": "P05",
+      "command": {
+        "action": "erase",
+        "text": "apple",
+        "color": "red"
+      },
+      "planned_expectation": {
+        "decision": "ambiguous",
+        "planned_word_ids": [
+          "P05-W01",
+          "P05-W02"
+        ],
+        "condition": "僅為計畫；須以實際照片＋指令覆核完整搜尋範圍，不能直接複製成 verified_reference"
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P05-C02",
+      "photo_id": "P05",
+      "command": {
+        "action": "erase",
+        "text": "pear",
+        "color": "blue"
+      },
+      "planned_expectation": {
+        "decision": "unique_target",
+        "planned_word_ids": [
+          "P05-W03"
+        ],
+        "condition": "僅為計畫；須以實際照片＋指令覆核完整搜尋範圍，不能直接複製成 verified_reference"
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P06-C01",
+      "photo_id": "P06",
+      "command": {
+        "action": "erase",
+        "text": "apple",
+        "color": "red"
+      },
+      "planned_expectation": {
+        "decision": null,
+        "planned_word_ids": null,
+        "condition": "不得因名稱空白而預判 no_target。實際可讀文字、顏色未知及殘跡須兩人覆核；未讀清處可能藏目標時不可判 no_target／unique_target。",
+        "possible_reference_decisions": [
+          "unique_target",
+          "no_target",
+          "ambiguous",
+          "unreadable",
+          "unscorable"
+        ]
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P07-C01",
+      "photo_id": "P07",
+      "command": {
+        "action": "erase",
+        "text": "apple",
+        "color": "red"
+      },
+      "planned_expectation": {
+        "decision": null,
+        "planned_word_ids": null,
+        "condition": "若原圖仍可讀且完整範圍可排除第二目標，才可參考 unique_target；反光不必然造成不可讀。若遮住可能目標，改 unreadable／unscorable。",
+        "possible_reference_decisions": [
+          "unique_target",
+          "no_target",
+          "ambiguous",
+          "unreadable",
+          "unscorable"
+        ]
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "P08-C01",
+      "photo_id": "P08",
+      "command": {
+        "action": "erase",
+        "text": "apple",
+        "color": "red"
+      },
+      "planned_expectation": {
+        "decision": null,
+        "planned_word_ids": null,
+        "condition": "若原圖仍可讀且完整範圍可排除第二目標，才可參考 unique_target；傾斜不必然造成不可讀。缺板面或讀不清時不可從計畫推為唯一。",
+        "possible_reference_decisions": [
+          "unique_target",
+          "no_target",
+          "ambiguous",
+          "unreadable",
+          "unscorable"
+        ]
+      },
+      "verified_reference": {
+        "decision": null,
+        "target_word_ids": null,
+        "reviewers": null,
+        "first_judgment": null,
+        "second_judgment": null,
+        "adjudication": null,
+        "search_scope_complete": null,
+        "unreadable_region_could_hide_match_or_duplicate": null,
+        "reference_version": null,
+        "photo_revision": null,
+        "frozen_at": null,
+        "frozen_before_prediction": null,
+        "notes": null
+      },
+      "evidence_kind": null,
+      "run_status": "not_run",
+      "score_status": "not_scored",
+      "photo_revision_used": null,
+      "reference_version_used": null,
+      "prediction": null,
+      "metrics": null,
+      "score_details": {
+        "word_text_errors": null,
+        "word_color_errors": null,
+        "missed_word_ids": null,
+        "extra_prediction_ids": null,
+        "position_errors_px": null,
+        "decision_judgment": null,
+        "execution_issue": null,
+        "notes": null
+      }
+    }
+  ]
+}
