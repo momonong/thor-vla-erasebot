@@ -1,5 +1,12 @@
 # 版本紀錄
 
+## 0.1.1 — 2026-10-27
+
+- 更新專案與 lockfile metadata 至 0.1.1；應用選取行為、fixture 契約與依賴沿用 0.1.0。
+- 納入[首輪照片採集包](docs/drafts/first-photo-kit-2026-10-27/README.md)：8 張拍攝卡、14 題指令與採集／評分空模板；實測欄位尚未填寫。
+- 納入[逐鏡證據表](docs/drafts/first-photo-kit-2026-10-27/shot-evidence-map.md)與[90 秒紙上走查](docs/drafts/first-photo-kit-2026-10-27/paper-walkthrough-90s.md)，整理 7 鏡預算、案例覆蓋與缺素材相依；尚未錄製或計時，不構成擦拭效能證據。
+- 保留既有研究稿、企劃 MD／HTML 與歷史驗證紀錄；未加入 OCR、實拍、模型或硬體操作。
+
 ## 2026-10-26 研究規劃更新（應用程式維持 0.1.0）
 
 - 新增[參賽研究與準備稿](docs/submission-plan.md)，整合選擇性擦拭主軸、三項可驗證主張、候選架構、完整／備案展示、90 秒素材腳本、測試與四人候選分工。
