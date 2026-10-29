@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "fixture": true,
+  "suite_id": "fixture-replay-demo",
+  "cases": [
+    {
+      "id": "replay-selected",
+      "command": "../command.json",
+      "scene": "../scene.json",
+      "expected": {"status": "selected", "selected_target_id": "word-1", "candidate_ids": ["word-1"], "diagnostic_stage": "selection", "error_paths": []}
+    },
+    {
+      "id": "replay-no-match",
+      "command": "blue-command.json",
+      "scene": "../scene.json",
+      "expected": {"status": "no_match", "selected_target_id": null, "candidate_ids": [], "diagnostic_stage": "selection", "error_paths": []}
+    },
+    {
+      "id": "replay-ambiguous",
+      "command": "../command.json",
+      "scene": "two-apples-scene.json",
+      "expected": {"status": "ambiguous", "selected_target_id": null, "candidate_ids": ["apple-a", "apple-b"], "diagnostic_stage": "selection", "error_paths": []}
+    },
+    {
+      "id": "replay-invalid-bbox",
+      "command": "../command.json",
+      "scene": "invalid-bbox-scene.json",
+      "expected": {"status": "invalid_input", "selected_target_id": null, "candidate_ids": [], "diagnostic_stage": "validation", "error_paths": ["scene.targets[1].bbox"]}
+    },
+    {
+      "id": "replay-invalid-command",
+      "command": "empty-command.json",
+      "scene": "../scene.json",
+      "expected": {"status": "invalid_input", "selected_target_id": null, "candidate_ids": [], "diagnostic_stage": "validation", "error_paths": ["command.text"]}
+    }
+  ]
+}

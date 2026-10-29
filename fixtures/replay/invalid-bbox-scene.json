@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "fixture": true,
+  "coordinate_frame": "image",
+  "unit": "px",
+  "image_size": {"width": 640, "height": 480},
+  "targets": [
+    {"id": "valid-apple", "text": "apple", "color": "red", "bbox": [20, 30, 120, 70]},
+    {"id": "out-of-bounds", "text": "pear", "color": "green", "bbox": [620, 30, 660, 70]}
+  ]
+}

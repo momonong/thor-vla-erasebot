@@ -1,16 +1,19 @@
 # thor-vla-erasebot
 
-目前提供**僅使用 fixture 的離線目標選擇 dry-run**：讀取人工準備的指令與場景 JSON，完整驗證後，以文字及顏色精確比對，輸出單一 JSON 診斷。範例會選出 `word-1`，沒有可執行動作或馬達指令。
+目前提供**僅使用 fixture 的離線目標選擇 dry-run**：讀取人工準備的指令與場景 JSON，完整驗證後，以文字及顏色精確比對，輸出單一 JSON 診斷。範例會選出 `word-1`，沒有可執行動作或馬達指令。0.2.0 新增批次 fixture 重播，逐案比較固定預期與實際結果，原單例 CLI 保持相容。
 
-研究推薦以「擦對指定字、保留其他字、留下前後證據」為主軸，器材就緒後追求完整展示；備案為照片到可重播選擇證據。兩者尚未實作，本輪只交付研究與準備文件；書面材料、資料設計及展示腳本可先完成，不必等設備回覆。
+競賽資訊與準備稿中的日期屬歷史查核／規劃紀錄，參賽前須重新向官方確認；本次未更新官方資訊。
 
-## 0.1.1／文件入口
+研究推薦以「擦對指定字、保留其他字、留下前後證據」為主軸，器材就緒後追求完整展示；備案為照片到可重播選擇證據。實機與照片流程皆尚未實作；既有研究、資料設計及展示腳本仍是準備文件。
 
+## 0.2.0／文件入口
+
+- [fixture 批次重播](#fixture-批次重播)：5 案固定預期、輸入 snapshot、完整逐案診斷與結果帳本；只屬人工 fixture 證據。
 - [首輪照片採集包（2026-10-27）](docs/drafts/first-photo-kit-2026-10-27/README.md)：8 張拍攝卡、14 題指令及採集／評分空模板，供團隊後續採用。
 - [逐鏡證據表](docs/drafts/first-photo-kit-2026-10-27/shot-evidence-map.md)與[90 秒紙上走查](docs/drafts/first-photo-kit-2026-10-27/paper-walkthrough-90s.md)：7 鏡預算、案例覆蓋、缺素材相依與預備問答，尚未錄製或計時。
 - [研究與準備稿（2026-10-26）](docs/submission-plan.md)：以「擦對指定字、保留其他字、前後證據」為主軸，整合推薦架構、完整／備案展示、素材、測試與四人候選分工。
 - [競賽資訊](docs/competition.md)：官方來源、日期與尚待確認的規則。
-- [版本紀錄](CHANGELOG.md)：0.1.1 文件交付與 metadata 更新，以及既有能力範圍。
+- [版本紀錄](CHANGELOG.md)：0.2.0 批次 CLI、一般檔案讀取修正與歷史版本能力範圍。
 - [10/24 企劃討論原稿](docs/proposal-discussion.md)與 [HTML 歷史草稿](docs/proposal-discussion.html)：保留當時四人 A～D 的探索提案；HTML 並未更新成本輪研究稿。
 - [2026-10-24 驗證紀錄](docs/verification.json)：第一階段及當日離線檢查的既有證據。
 
@@ -70,6 +73,43 @@ UV_PROJECT_ENVIRONMENT="$(mktemp -d /tmp/erasebot-rebuild.XXXXXX)/.venv" uv sync
 所有結果含 `schema_version: 1`、`fixture: true`、`dry_run: true`、`status`、`selected_target`、`candidate_ids`、`coordinates` 與 `diagnostics`。非唯一成功的 `selected_target` 一律為 `null`；候選 ID 沿用輸入順序。`coordinates` 包含 `coordinate_frame`、`unit`、`image_size`。
 
 `diagnostics` 包含 `stage`（`arguments`／`read`／`json`／`validation`／`selection`）、`target_count`、`candidate_count`、`errors`；錯誤項目有 `path` 與 `message`。例如 `scene.targets[2].bbox` 指出第三筆目標的框有誤。無效輸入不進行比對，候選為空、`coordinates` 與 `target_count` 為 `null`。重複 key／解析錯誤以 `command` 或 `scene` 標示文件，訊息補充原因。
+
+單例輸入、replay suite 與案例輸入皆只接受一般 UTF-8 檔案，可使用指向一般檔案的 symlink；目錄、FIFO 與其他非一般檔案回報 `read` 診斷。已在 POSIX 驗證 FIFO 不等待 writer，也檢查實際開啟的 fd；未驗證其他平台，不保證一般檔案所在的任意檔案系統皆不會延遲或阻塞。
+
+## fixture 批次重播
+
+沿用上方離線環境設定，在 repo 根目錄執行：
+
+```bash
+uv run --locked --offline python -m erasebot.replay --suite fixtures/replay/suite.json
+uv run --locked --offline python -m erasebot.replay --help
+```
+
+[`fixtures/replay/suite.json`](fixtures/replay/suite.json) 包含五個手寫人工案例：唯一紅色 apple、原場景中不存在的藍色 apple、兩個紅色 apple 的歧義、有效匹配旁有另一筆越界框，以及空白指令文字。預期值固定寫入 suite，沒有從 selector 輸出產生，也沒有匯入照片 Pxx 計畫或 reference。
+
+suite 僅接受 `schema_version: 1`、`fixture: true`、非空白 `suite_id` 與非空 `cases`；每案僅有唯一非空白 `id`、非空白相對路徑 `command`／`scene` 與 `expected`。案例路徑以 **suite 所在目錄**為基準，允許 `../command.json` 重用原始 fixture，拒絕絕對路徑及 NUL。所有欄位必填，不接受未知欄位、重複 JSON key 或非標準數字常數；整份 suite 驗證通過才開始執行。
+
+`expected` 僅有下列五欄，逐欄精確比較；陣列順序也要相同，錯誤只比路徑，不比依作業系統變化的訊息文字：
+
+| 欄位 | 契約 |
+| --- | --- |
+| `status` | `selected`／`no_match`／`ambiguous`／`invalid_input` |
+| `selected_target_id` | `selected` 時為唯一候選 ID，其他狀態為 `null` |
+| `candidate_ids` | 不重複的非空白 ID；`selected` 一筆、`ambiguous` 至少兩筆、其餘空陣列 |
+| `diagnostic_stage` | `selection`／`read`／`json`／`validation` |
+| `error_paths` | 非空白路徑字串陣列；`invalid_input` 必須非空且階段不能是 `selection`，其餘必須為空且階段為 `selection` |
+
+stdout 是一行 JSON，含 `schema_version: 1`、`fixture: true`、`dry_run: true`、`evidence_kind: "fixture_replay"`、`suite_id`、整體 `status`、逐案 `cases` 與 `summary`。每案保留原相對路徑、已載入的 `inputs` snapshot、固定 `expected`、含座標與診斷的完整 `actual`、`passed` 及結構化 `mismatches`（`field`／`expected`／`actual`）。讀檔或 JSON 失敗的未載入 snapshot 為 `null`；若數值溢位使已載入 snapshot 無法以標準 JSON 表示，或 snapshot 容器深度超過 64 層，該 snapshot 為 `null` 並在 `snapshot_diagnostics` 明列 `nonfinite_number` 或 `excessive_nesting`。原輸入仍由 selector 完整驗證，實際診斷與後續案例帳本均保留。
+
+`summary` 列出全部有效 suite 宣告案例的 `total`／`passed`／`failed`，以及實際選取狀態的 `by_selector_status`；預期不符、檔案遺失或輸入無效都不會中止後續案例或移出分母。輸出沒有時間戳、耗時或隨機 ID，相同輸入會得到相同 JSON；需要保存時可由呼叫端將 stdout 導向新檔案。
+
+| 整體 status | 退出碼 | 意義 |
+| --- | ---: | --- |
+| `passed` | 0 | 全部案例符合預期契約 |
+| `failed` | 1 | 至少一案有欄位不符，完整帳本仍輸出 |
+| `invalid_suite` | 2 | 參數、suite 讀檔／JSON／結構錯誤；`diagnostics` 說明原因，未執行案例 |
+
+範例應為 5 案契約通過，實際狀態分別為 1 `selected`、1 `no_match`、1 `ambiguous`、2 `invalid_input`。預期的歧義或無效輸入符合契約也算通過，**不表示選到了物件或擦拭成功**。這只是人工 fixture 重播證據，不是照片／OCR 成績、泛化能力、實機擦拭成效或競賽分數。
 
 ## 能力邊界與下一步
 
