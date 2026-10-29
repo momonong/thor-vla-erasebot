@@ -1,6 +1,7 @@
 """透過真實子程序核對 CLI 的 JSON、退出碼與檔案邊界。"""
 
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -13,9 +14,9 @@ SCENE = '{"schema_version":1,"fixture":true,"coordinate_frame":"image","unit":"p
 
 
 class CliTests(unittest.TestCase):
-    def run_cli(self, *args):
+    def run_cli(self, *args, timeout=10):
         return subprocess.run([sys.executable, "-m", "erasebot", *map(str, args)], cwd=ROOT,
-                              capture_output=True, text=True, timeout=10)
+                              capture_output=True, text=True, timeout=timeout)
 
     def check_json(self, completed, status, exit_code):
         self.assertEqual(completed.returncode, exit_code, completed.stderr)
@@ -64,6 +65,83 @@ class CliTests(unittest.TestCase):
             path.write_bytes(b"\xff")
             result = self.check_json(self.run_cli("--command", path, "--scene", "fixtures/scene.json"), "invalid_input", 3)
             self.assertEqual(result["diagnostics"]["stage"], "read")
+
+    @unittest.skipUnless(os.name == "posix" and hasattr(os, "mkfifo"), "需要 POSIX FIFO")
+    def test_fifo_and_symlink_inputs_return_read_without_waiting(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            fifo, link = base / "input.json", base / "link.json"
+            os.mkfifo(fifo)
+            link.symlink_to(fifo)
+            for document in ("command", "scene"):
+                for path in (fifo, link):
+                    with self.subTest(document=document, path=path.name):
+                        paths = {"command": ROOT / "fixtures/command.json", "scene": ROOT / "fixtures/scene.json"}
+                        paths[document] = path
+                        try:
+                            completed = self.run_cli("--command", paths["command"], "--scene", paths["scene"], timeout=1)
+                        except subprocess.TimeoutExpired:
+                            self.fail("FIFO read 阻塞超過 1 秒；subprocess.run 已終止並回收子程序")
+                        result = self.check_json(completed, "invalid_input", 3)
+                        self.assertEqual(result["diagnostics"]["stage"], "read")
+                        self.assertEqual([error["path"] for error in result["diagnostics"]["errors"]], [document])
+
+    @unittest.skipUnless(os.name == "posix", "本輪只驗證 POSIX symlink")
+    def test_regular_file_symlinks_keep_selection_behavior(self):
+        with tempfile.TemporaryDirectory() as directory:
+            command, scene = Path(directory) / "command.json", Path(directory) / "scene.json"
+            command.symlink_to(ROOT / "fixtures/command.json")
+            scene.symlink_to(ROOT / "fixtures/scene.json")
+            result = self.check_json(self.run_cli("--command", command, "--scene", scene), "selected", 0)
+            self.assertEqual(result["selected_target"]["id"], "word-1")
+
+    @unittest.skipUnless(os.name == "posix" and hasattr(os, "mkfifo"), "需要 POSIX FIFO")
+    def test_opened_file_is_checked_and_closed_even_when_path_changes(self):
+        # 只在 os.open 邊界換入真實暫存 FIFO；不偽造 stat/fstat 或讀取結果。
+        script = '''
+import errno
+import os
+import sys
+from erasebot.__main__ import main
+target, fifo, scene, replace = sys.argv[1:]
+original_open = os.open
+opened = []
+def tracked_open(path, flags, *args, **kwargs):
+    if os.fspath(path) == target and replace == "yes":
+        os.replace(fifo, target)
+    descriptor = original_open(path, flags, *args, **kwargs)
+    opened.append(descriptor)
+    return descriptor
+os.open = tracked_open
+exit_code = main(["--command", target, "--scene", scene])
+for descriptor in opened:
+    try:
+        os.fstat(descriptor)
+    except OSError as exc:
+        assert exc.errno == errno.EBADF, exc
+    else:
+        raise AssertionError("load_json leaked an opened descriptor")
+raise SystemExit(exit_code)
+'''
+        for mode, content, status, code, stage in [
+            ("regular", COMMAND.encode(), "selected", 0, "selection"),
+            ("invalid-utf8", b"\xff", "invalid_input", 3, "read"),
+            ("changed-path", COMMAND.encode(), "invalid_input", 3, "read"),
+        ]:
+            with self.subTest(mode=mode), tempfile.TemporaryDirectory() as directory:
+                target, fifo = Path(directory) / "command.json", Path(directory) / "swapped.json"
+                target.write_bytes(content)
+                os.mkfifo(fifo)
+                try:
+                    completed = subprocess.run([sys.executable, "-c", script, str(target), str(fifo),
+                        str(ROOT / "fixtures/scene.json"), "yes" if mode == "changed-path" else "no"],
+                        cwd=ROOT, capture_output=True, text=True, timeout=1)
+                except subprocess.TimeoutExpired:
+                    self.fail("regular 路徑換為 FIFO 後阻塞；子程序已終止並回收")
+                result = self.check_json(completed, status, code)
+                self.assertEqual(result["diagnostics"]["stage"], stage)
+                if code == 3:
+                    self.assertEqual([error["path"] for error in result["diagnostics"]["errors"]], ["command"])
 
     def test_malformed_json_duplicate_keys_and_nonfinite_constants_are_rejected(self):
         for document, cmd, observed in [

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "fixture": true,
+  "coordinate_frame": "image",
+  "unit": "px",
+  "image_size": {"width": 640, "height": 480},
+  "targets": [
+    {"id": "apple-a", "text": "apple", "color": "red", "bbox": [20, 30, 120, 70]},
+    {"id": "apple-b", "text": "apple", "color": "red", "bbox": [150, 30, 250, 70]}
+  ]
+}

@@ -1,5 +1,12 @@
 # 版本紀錄
 
+## 0.2.0 — 2026-10-29
+
+- 新增 `python -m erasebot.replay --suite fixtures/replay/suite.json` 批次 CLI，逐案比較固定預期與實際結果，保留輸入 snapshot、完整診斷、差異及全部案例分母；原單例 CLI 保持相容，零新依賴。
+- 納入 5 案人工 fixture：唯一目標、無符合、歧義、非目標越界框與空白指令；涵蓋四種 selector 狀態。契約通過不代表選到了物件或擦拭成功。
+- 修正單例、replay suite 與案例的讀取邊界：只接受一般 UTF-8 檔案及指向一般檔案的 symlink；FIFO 等非一般檔案回報 `read` 診斷。POSIX 以非阻塞開啟並檢查實際 fd，避免 FIFO 等待 writer；其他平台未驗證。
+- 未加入照片入口、OCR 或硬體控制，也沒有 Thor／ARM64／JetPack 或實機驗收證據；隔離暫存區的 spike 不納入本版。既有研究材料與歷史驗證紀錄保持原狀。
+
 ## 0.1.1 — 2026-10-27
 
 - 更新專案與 lockfile metadata 至 0.1.1；應用選取行為、fixture 契約與依賴沿用 0.1.0。

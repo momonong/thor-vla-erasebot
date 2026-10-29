@@ -2,7 +2,8 @@
 
 import json
 import math
-from pathlib import Path
+import os
+import stat
 
 EXIT_CODES = {"selected": 0, "no_match": 1, "ambiguous": 2, "invalid_input": 3}
 
@@ -43,9 +44,19 @@ def _reject_constant(value):
 
 
 def load_json(path, document):
-    """讀取 UTF-8 JSON，拒絕重複 key 與非標準數字常數。"""
+    """只讀一般檔案的 UTF-8 JSON，拒絕重複 key 與非標準數字常數。"""
     try:
-        content = Path(path).read_text(encoding="utf-8")
+        if not stat.S_ISREG(os.stat(path).st_mode):
+            raise OSError("只接受一般檔案（regular file）")
+        # POSIX 上 nonblocking open 避免檢查後被換入 FIFO 而等待 writer；再驗實際 fd。
+        descriptor = os.open(path, os.O_RDONLY | getattr(os, "O_NONBLOCK", 0))
+        try:
+            if not stat.S_ISREG(os.fstat(descriptor).st_mode):
+                raise OSError("實際開啟的輸入必須是一般檔案（regular file）")
+            with os.fdopen(descriptor, encoding="utf-8", closefd=False) as source:
+                content = source.read()
+        finally:
+            os.close(descriptor)
     except (OSError, UnicodeError) as exc:
         raise InputError("read", document, f"無法讀取 UTF-8 JSON：{exc}") from exc
     try:
