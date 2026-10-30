@@ -1,0 +1,62 @@
+[
+  {
+    "id": "colour",
+    "source_sha256": "aa270c9e4deaaacbfa6d2c778811d2d7755a4ec1c27b696ba6359b30604bc8fc",
+    "original_size": [
+      596,
+      447
+    ],
+    "exif_transposed_size": [
+      596,
+      447
+    ],
+    "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+    "prepared_size": [
+      596,
+      447
+    ],
+    "resize": "long edge <=1024, no upscaling, proportional, Lanczos, lossless PNG",
+    "prepared": "assets/prepared/colour.png",
+    "source_file": "01-colour-words-original.jpg"
+  },
+  {
+    "id": "fruits",
+    "source_sha256": "4674fe41f731f2165695d1ba57358689882016d8336e3057f0acb5a99c4c6725",
+    "original_size": [
+      4096,
+      3072
+    ],
+    "exif_transposed_size": [
+      4096,
+      3072
+    ],
+    "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+    "prepared_size": [
+      1024,
+      768
+    ],
+    "resize": "long edge <=1024, no upscaling, proportional, Lanczos, lossless PNG",
+    "prepared": "assets/prepared/fruits.png",
+    "source_file": "02-fruits-original.webp"
+  },
+  {
+    "id": "english",
+    "source_sha256": "2f7f328b029f75dc6ae8b96e15c0a39729caabd34b994641eb5f0c131590ff25",
+    "original_size": [
+      6213,
+      4142
+    ],
+    "exif_transposed_size": [
+      6213,
+      4142
+    ],
+    "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+    "prepared_size": [
+      1024,
+      683
+    ],
+    "resize": "long edge <=1024, no upscaling, proportional, Lanczos, lossless PNG",
+    "prepared": "assets/prepared/english.png",
+    "source_file": "03-english-lesson-original.jpg"
+  }
+]

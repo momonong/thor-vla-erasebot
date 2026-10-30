@@ -1,0 +1,77 @@
+```json
+{
+  "answers": [
+    {
+      "id": "F-Q1",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "Lemons",
+          "bbox": [558, 565, 658, 609]
+        }
+      ]
+    },
+    {
+      "id": "F-Q2",
+      "status": "no_match",
+      "targets": []
+    },
+    {
+      "id": "F-Q3",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "kiwis",
+          "bbox": [183, 488, 268, 545]
+        }
+      ]
+    },
+    {
+      "id": "F-Q4",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "FRUITS",
+          "bbox": [418, 418, 578, 475]
+        }
+      ]
+    },
+    {
+      "id": "F-Q5",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "FRUITS",
+          "bbox": [418, 418, 578, 475]
+        },
+        {
+          "text": "Apples",
+          "bbox": [615, 285, 745, 338]
+        },
+        {
+          "text": "Oranges",
+          "bbox": [665, 398, 795, 445]
+        },
+        {
+          "text": "Bananas",
+          "bbox": [680, 468, 825, 515]
+        },
+        {
+          "text": "Lemons",
+          "bbox": [558, 565, 658, 609]
+        }
+      ]
+    },
+    {
+      "id": "F-Q6",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "Few Shot Learning--",
+          "bbox": [47, 125, 458, 198]
+        }
+      ]
+    }
+  ]
+}
+```

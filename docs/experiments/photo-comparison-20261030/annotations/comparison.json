@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "baseline": "annotations/batch-adjudication.ai.json",
+  "single": "annotations/single-adjudication.ai.json",
+  "conclusion": "On these same 18 AI-referenced cases, separating questions changes answers but does not reliably eliminate instruction-selection errors. OCR+LLM remains4/18 with2improvements and2regressions; VLM changes10/18to11/18 with3improvements and2regressions. Do not infer universal model or architecture superiority or a single error mechanism.",
+  "routes": {
+    "ocr_llm": {
+      "baseline": {
+        "total": 18,
+        "content_correct": 4,
+        "by_category": {
+          "exact_color": {
+            "correct": 3,
+            "total": 6
+          },
+          "spatial": {
+            "correct": 0,
+            "total": 6
+          },
+          "semantic": {
+            "correct": 1,
+            "total": 6
+          }
+        },
+        "complete_batch_schema": {
+          "valid": 1,
+          "total": 3
+        },
+        "content_correct_and_entire_batch_schema_valid": 0
+      },
+      "single": {
+        "total": 18,
+        "content_correct": 4,
+        "by_category": {
+          "exact_color": {
+            "correct": 3,
+            "total": 6
+          },
+          "spatial": {
+            "correct": 0,
+            "total": 6
+          },
+          "semantic": {
+            "correct": 1,
+            "total": 6
+          }
+        },
+        "single_question_call_schema": {
+          "valid": 1,
+          "total": 18
+        },
+        "content_correct_and_call_schema_valid": 1,
+        "all_six_independent_calls_schema_valid_images": {
+          "valid": 0,
+          "total": 3
+        },
+        "transitions": {
+          "wrong_to_correct": [
+            "C-Q6",
+            "E-Q2"
+          ],
+          "correct_to_wrong": [
+            "C-Q1",
+            "C-Q5"
+          ],
+          "correct_to_correct": [
+            "C-Q2",
+            "F-Q2"
+          ],
+          "wrong_to_wrong": [
+            "C-Q3",
+            "C-Q4",
+            "F-Q1",
+            "F-Q3",
+            "F-Q4",
+            "F-Q5",
+            "F-Q6",
+            "E-Q1",
+            "E-Q3",
+            "E-Q4",
+            "E-Q5",
+            "E-Q6"
+          ]
+        },
+        "baseline_content_correct": 4,
+        "net_correct_change": 0
+      }
+    },
+    "vlm": {
+      "baseline": {
+        "total": 18,
+        "content_correct": 10,
+        "by_category": {
+          "exact_color": {
+            "correct": 6,
+            "total": 6
+          },
+          "spatial": {
+            "correct": 3,
+            "total": 6
+          },
+          "semantic": {
+            "correct": 1,
+            "total": 6
+          }
+        },
+        "complete_batch_schema": {
+          "valid": 3,
+          "total": 3
+        },
+        "content_correct_and_entire_batch_schema_valid": 10
+      },
+      "single": {
+        "total": 18,
+        "content_correct": 11,
+        "by_category": {
+          "exact_color": {
+            "correct": 5,
+            "total": 6
+          },
+          "spatial": {
+            "correct": 4,
+            "total": 6
+          },
+          "semantic": {
+            "correct": 2,
+            "total": 6
+          }
+        },
+        "single_question_call_schema": {
+          "valid": 18,
+          "total": 18
+        },
+        "content_correct_and_call_schema_valid": 11,
+        "all_six_independent_calls_schema_valid_images": {
+          "valid": 3,
+          "total": 3
+        },
+        "transitions": {
+          "wrong_to_correct": [
+            "F-Q3",
+            "F-Q4",
+            "E-Q5"
+          ],
+          "correct_to_wrong": [
+            "E-Q2",
+            "E-Q4"
+          ],
+          "correct_to_correct": [
+            "C-Q1",
+            "C-Q2",
+            "C-Q3",
+            "C-Q4",
+            "C-Q5",
+            "F-Q1",
+            "F-Q2",
+            "E-Q1"
+          ],
+          "wrong_to_wrong": [
+            "C-Q6",
+            "F-Q5",
+            "F-Q6",
+            "E-Q3",
+            "E-Q6"
+          ]
+        },
+        "baseline_content_correct": 10,
+        "net_correct_change": 1
+      }
+    }
+  },
+  "controls": {
+    "inference_calls": 36,
+    "completed": 36,
+    "fresh_conversations": 36,
+    "control_checks_pass": 36,
+    "eos": 36,
+    "max_generated_tokens": 461,
+    "training": false,
+    "robot_connection": false,
+    "device": "cpu",
+    "baseline_inputs_and_settings_unchanged": true,
+    "only_prompt_payload_change": "Final questions array length6to1; byte-identical prefix and original question objects."
+  },
+  "limitations": [
+    "Only three public photos of English handwriting and18TraditionalChinese instructions, no Chinese handwriting benchmark.",
+    "AI annotations with approximate boxes and independent AI review, not human-accepted ground truth or precise wipe masks.",
+    "Greedy single run per condition; no repeated-run stability estimate or population-level significance.",
+    "Per-call generation settings unchanged; splitting produces more calls and a larger aggregate allowed token/time budget. All36 ended withEOS, none reached the token cap.",
+    "Costs include repeated process and model loading on CPU, reuse OCR, and are not resident-model/device/robot latency.",
+    "Colour meaning and ink colour coincide in the colour-word image.",
+    "The net result does not establish cross-question confusion as the unique cause; reading, target selection, keep/erase semantics and output format remain separate issues."
+  ]
+}

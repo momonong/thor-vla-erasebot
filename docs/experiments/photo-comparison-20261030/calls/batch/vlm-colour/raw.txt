@@ -1,0 +1,82 @@
+```json
+{
+  "answers": [
+    {
+      "id": "C-Q1",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "BLUE",
+          "bbox": [229, 405, 579, 605]
+        }
+      ]
+    },
+    {
+      "id": "C-Q2",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "RED",
+          "bbox": [241, 158, 605, 388]
+        }
+      ]
+    },
+    {
+      "id": "C-Q3",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "GREEN",
+          "bbox": [208, 588, 778, 888]
+        }
+      ]
+    },
+    {
+      "id": "C-Q4",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "BLUE",
+          "bbox": [229, 405, 579, 605]
+        }
+      ]
+    },
+    {
+      "id": "C-Q5",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "RED",
+          "bbox": [241, 158, 605, 388]
+        },
+        {
+          "text": "BLUE",
+          "bbox": [229, 405, 579, 605]
+        },
+        {
+          "text": "GREEN",
+          "bbox": [208, 588, 778, 888]
+        }
+      ]
+    },
+    {
+      "id": "C-Q6",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "RED",
+          "bbox": [241, 158, 605, 388]
+        },
+        {
+          "text": "BLUE",
+          "bbox": [229, 405, 579, 605]
+        },
+        {
+          "text": "GREEN",
+          "bbox": [208, 588, 778, 888]
+        }
+      ]
+    }
+  ]
+}
+```

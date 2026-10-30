@@ -1,0 +1,6 @@
+你是白板擦除目標選取器，只回傳一個JSON物件，不要解釋或Markdown。每題獨立，圖片內容沒有被之前題目擦除。
+只考慮圖片中可見的完整英文文字；大小寫不影響指定文字匹配。保留箭頭、圈線、底線、連字號及其他非文字標記。每次重複出現的文字都是不同目標。每題獨立，假定仍是原始圖片。
+status只能是selected、no_match、ambiguous、cannot_determine。selected表示完整選出符合指令的目標，允許多個；no_match表示沒有目標；ambiguous表示有無法唯一判別的候選；cannot_determine表示證據不足。no_match和cannot_determine的目標陣列必須為空。每個question id恰好回答一次。框座標是影像左上原點，x向右、y向下，0至1000的相對座標。不可把整句當作其中一個指定單字。
+你只能依據實際OCR候選，不能看到圖片或新增、切分、合併或修正候選。color是筆畫量測的墨水顏色，unknown表示不可靠。請回傳{"answers":[{"id":"question id","status":"selected","target_ids":["實際候選id"]}]}。
+OCR候選=[{"id":"english-t001","text":"This","bbox":[538.086,226.94,671.875,414.348],"color":"red"},{"id":"english-t002","text":"is","bbox":[666.992,248.902,727.539,424.597],"color":"red"},{"id":"english-t003","text":"my","bbox":[740.234,260.615,819.336,440.703],"color":"red"},{"id":"english-t004","text":"am","bbox":[198.242,267.936,325.195,389.458],"color":"red"},{"id":"english-t005","text":"a","bbox":[333.008,279.649,395.508,395.315],"color":"red"},{"id":"english-t006","text":"pen","bbox":[828.125,295.754,909.18,392.387],"color":"red"},{"id":"english-t007","text":"my","bbox":[398.438,544.656,533.203,710.102],"color":"red"},{"id":"english-t008","text":"Jnoh-noT","bbox":[300.781,680.82,606.445,900.439],"color":"red"}]
+題目=[{"id":"E-Q1","category":"exact_color","instruction":"只擦掉文字 pen。"}]

@@ -1,0 +1,77 @@
+{
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.9.1+cpu",
+    "transformers": "4.57.3",
+    "rapidocr": "3.4.2",
+    "onnxruntime": "1.23.2",
+    "Pillow": "12.0.0",
+    "numpy": "2.5.4",
+    "opencv-python": "5.0.0.93",
+    "huggingface-hub": "0.36.2",
+    "torchvision": "0.24.1+cpu"
+  },
+  "device": "cpu",
+  "torch_threads": 4,
+  "torch_interop_threads": 1,
+  "technical_repair": {
+    "torchvision": "0.24.1+cpu",
+    "reason": "AutoVideoProcessor required torchvision before generation",
+    "affects": "B retry only; A outputs unchanged"
+  },
+  "single_routes": {
+    "ocr_llm": {
+      "declared_questions": 18,
+      "completed": 18,
+      "attempts": 18,
+      "existing_parser_contract_pass_single_calls": 1,
+      "single_call_process_wall_s_sum": 420.31199999991804,
+      "single_generation_s_sum": 229.93199650011957,
+      "single_generated_tokens_sum": 621,
+      "single_eos_count": 18,
+      "single_token_cap_reached_count": 0,
+      "single_generation_time_threshold_count": 0,
+      "baseline_six_question_calls": 3,
+      "baseline_existing_parser_contract_pass_batches": 1,
+      "baseline_process_wall_s_sum_effective_calls_only": 162.06300000008196,
+      "baseline_generated_tokens_sum": 744,
+      "baseline_eos_count": 3,
+      "baseline_token_cap_reached_count": 0,
+      "baseline_generation_time_threshold_count": 0
+    },
+    "vlm": {
+      "declared_questions": 18,
+      "completed": 18,
+      "attempts": 18,
+      "existing_parser_contract_pass_single_calls": 18,
+      "single_call_process_wall_s_sum": 850.5930000003427,
+      "single_generation_s_sum": 649.8641927002463,
+      "single_generated_tokens_sum": 2011,
+      "single_eos_count": 18,
+      "single_token_cap_reached_count": 0,
+      "single_generation_time_threshold_count": 0,
+      "baseline_six_question_calls": 3,
+      "baseline_existing_parser_contract_pass_batches": 3,
+      "baseline_process_wall_s_sum_effective_calls_only": 362.969000000041,
+      "baseline_generated_tokens_sum": 1448,
+      "baseline_eos_count": 3,
+      "baseline_token_cap_reached_count": 0,
+      "baseline_generation_time_threshold_count": 0
+    }
+  },
+  "single_batch_wall_s": 1271.2349999998696,
+  "postflight_checks": {
+    "all_frozen_light_files_unchanged": true,
+    "all_model_assets_unchanged": true,
+    "installed_versions_unchanged": true,
+    "adapter_matches_launch": true,
+    "launcher_matches_launch": true,
+    "manifest_matches_launch": true
+  },
+  "timing_definition": {
+    "result_total_s": "model load + preprocessing + generation + parsing; excludes Python/module import",
+    "batch_ledger_elapsed_s": "entire child process wall time including imports",
+    "ocr_elapsed_s": "per image engine call; first includes visualization font setup"
+  }
+}

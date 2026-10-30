@@ -1,0 +1,16 @@
+```json
+{
+  "answers": [
+    {
+      "id": "C-Q1",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "BLUE",
+          "bbox": [229, 405, 578, 607]
+        }
+      ]
+    }
+  ]
+}
+```

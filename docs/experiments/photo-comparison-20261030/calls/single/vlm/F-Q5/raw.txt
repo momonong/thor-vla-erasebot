@@ -1,0 +1,20 @@
+```json
+{
+  "answers": [
+    {
+      "id": "F-Q5",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "FRUITS",
+          "bbox": [400, 415, 580, 475]
+        },
+        {
+          "text": "Few Shot Learning--",
+          "bbox": [47, 125, 458, 195]
+        }
+      ]
+    }
+  ]
+}
+```

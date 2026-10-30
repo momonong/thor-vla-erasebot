@@ -1,0 +1,24 @@
+```json
+{
+  "answers": [
+    {
+      "id": "C-Q5",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "RED",
+          "bbox": [238, 156, 607, 395]
+        },
+        {
+          "text": "BLUE",
+          "bbox": [238, 400, 578, 614]
+        },
+        {
+          "text": "GREEN",
+          "bbox": [214, 598, 778, 888]
+        }
+      ]
+    }
+  ]
+}
+```

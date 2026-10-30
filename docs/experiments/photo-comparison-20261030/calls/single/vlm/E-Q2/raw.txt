@@ -1,0 +1,24 @@
+```json
+{
+  "answers": [
+    {
+      "id": "E-Q2",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "I am a girl. This is my pen",
+          "bbox": [120, 238, 905, 405]
+        },
+        {
+          "text": "I - my",
+          "bbox": [298, 512, 515, 700]
+        },
+        {
+          "text": "You - your",
+          "bbox": [308, 695, 588, 845]
+        }
+      ]
+    }
+  ]
+}
+```
