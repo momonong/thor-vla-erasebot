@@ -1,0 +1,298 @@
+{
+  "image_id": "colour",
+  "image_path": "assets/prepared/colour.png",
+  "image_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+  "image_size": [
+    596,
+    447
+  ],
+  "elapsed_s": 8.98269010009244,
+  "raw": {
+    "boxes": [
+      [
+        [
+          129.0,
+          75.0
+        ],
+        [
+          367.0,
+          52.0
+        ],
+        [
+          377.0,
+          164.0
+        ],
+        [
+          139.0,
+          187.0
+        ]
+      ],
+      [
+        [
+          126.0,
+          190.0
+        ],
+        [
+          349.0,
+          165.0
+        ],
+        [
+          359.0,
+          255.0
+        ],
+        [
+          136.0,
+          280.0
+        ]
+      ],
+      [
+        [
+          103.0,
+          278.0
+        ],
+        [
+          476.0,
+          236.0
+        ],
+        [
+          491.0,
+          375.0
+        ],
+        [
+          118.0,
+          417.0
+        ]
+      ]
+    ],
+    "texts": [
+      "RED",
+      "BLUE",
+      "GREEN"
+    ],
+    "scores": [
+      0.9981,
+      0.99865,
+      0.99609
+    ],
+    "word_results": [
+      [
+        [
+          "RED",
+          0.99707,
+          [
+            [
+              129,
+              75
+            ],
+            [
+              342,
+              54
+            ],
+            [
+              352,
+              166
+            ],
+            [
+              139,
+              187
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "BLUE",
+          0.99925,
+          [
+            [
+              126,
+              190
+            ],
+            [
+              322,
+              168
+            ],
+            [
+              332,
+              258
+            ],
+            [
+              136,
+              280
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "GREEN",
+          0.99434,
+          [
+            [
+              103,
+              278
+            ],
+            [
+              448,
+              239
+            ],
+            [
+              463,
+              378
+            ],
+            [
+              118,
+              417
+            ]
+          ]
+        ]
+      ]
+    ],
+    "stage_elapsed_s": [
+      0.20249310019426048,
+      0.003934799926355481,
+      0.0581749000120908
+    ]
+  },
+  "candidates": [
+    {
+      "id": "colour-t001",
+      "text": "RED",
+      "score": 0.99707,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          129,
+          75
+        ],
+        [
+          342,
+          54
+        ],
+        [
+          352,
+          166
+        ],
+        [
+          139,
+          187
+        ]
+      ],
+      "bbox": [
+        216.443,
+        120.805,
+        590.604,
+        418.345
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 0.997,
+        "stroke_pixel_count": 5081,
+        "class_pixel_counts": {
+          "red": 5066,
+          "orange": 9,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 6
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "colour-t002",
+      "text": "BLUE",
+      "score": 0.99925,
+      "line_index": 1,
+      "polygon_px": [
+        [
+          126,
+          190
+        ],
+        [
+          322,
+          168
+        ],
+        [
+          332,
+          258
+        ],
+        [
+          136,
+          280
+        ]
+      ],
+      "bbox": [
+        211.409,
+        375.839,
+        557.047,
+        626.398
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "blue",
+        "confidence_fraction": 0.8628,
+        "stroke_pixel_count": 2944,
+        "class_pixel_counts": {
+          "red": 0,
+          "orange": 5,
+          "yellow": 0,
+          "green": 0,
+          "blue": 2540,
+          "purple": 0,
+          "black": 399
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "colour-t003",
+      "text": "GREEN",
+      "score": 0.99434,
+      "line_index": 2,
+      "polygon_px": [
+        [
+          103,
+          278
+        ],
+        [
+          448,
+          239
+        ],
+        [
+          463,
+          378
+        ],
+        [
+          118,
+          417
+        ]
+      ],
+      "bbox": [
+        172.819,
+        534.676,
+        776.846,
+        932.886
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "unknown",
+        "confidence_fraction": 0.471,
+        "stroke_pixel_count": 10029,
+        "class_pixel_counts": {
+          "red": 305,
+          "orange": 4504,
+          "yellow": 0,
+          "green": 4724,
+          "blue": 192,
+          "purple": 0,
+          "black": 304
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    }
+  ],
+  "candidate_coordinate_frame": "image, top-left origin, x right, y down, normalised 0-1000"
+}

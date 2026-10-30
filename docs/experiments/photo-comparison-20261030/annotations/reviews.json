@@ -1,0 +1,212 @@
+{
+  "reference": {
+    "schema_version": 1,
+    "review_date": "2026-10-30",
+    "reviewer": "independent_ai_reviewer",
+    "review_scope": "Original three images, questions.json, reference.json only; no method outputs viewed.",
+    "reference_sha256": "a821da72f576a1bda141bf9ba3edeab0457b44eeaedbad5c908e02eacb2c1319",
+    "verdict": "No substantive correction to 18 expected sets, statuses or approximate positions identified.",
+    "adjudication_rules": [
+      "Keep all 18 questions in each method denominator, including runtime/format/missing-case failures.",
+      "Distinguish intended textual target understanding from selecting the corresponding occurrence and region.",
+      "Whole-line boxes containing the requested word plus protected words fail word-level selection even if the returned text is correct.",
+      "Repeated words require distinct one-to-one occurrence regions; duplicated boxes cannot count as separate occurrences.",
+      "Treat all reference boxes as approximate AI visual annotations, not human-verified precise ground truth.",
+      "Exact/color aggregate mixes lexical matching and color conditions; do not infer causal color perception from it.",
+      "Keep first valid model responses with frozen prompts; never repair wrong answers using reference labels."
+    ],
+    "scope_limits": [
+      "Three public images, six questions per image.",
+      "English board writing with Traditional Chinese instructions.",
+      "No training, physical calibration, robot operation or generalization claim."
+    ],
+    "private_source_questions_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85"
+  },
+  "batch": {
+    "review_date": "2026-10-30",
+    "reviewer": "independent_ai_reviewer",
+    "scope": "runner, batch launcher, tests, frozen references, all 36 case decisions and raw outputs; no model rerun",
+    "verdict": "PASS: no score disagreements or substantive implementation findings after separating content and batch-schema metrics.",
+    "verified_counts": {
+      "ocr_llm": {
+        "content_correct": 4,
+        "total": 18,
+        "exact_color": 3,
+        "spatial": 0,
+        "semantic": 1,
+        "valid_batches": 1
+      },
+      "vlm": {
+        "content_correct": 10,
+        "total": 18,
+        "exact_color": 6,
+        "spatial": 3,
+        "semantic": 1,
+        "valid_batches": 3
+      }
+    },
+    "notes": [
+      "Missing A F-Q6 remains in denominator.",
+      "B E-Q5 and E-Q6 fail because a repeated occurrence in the upper sentence is missing.",
+      "AI visual adjudication is not human acceptance or precise physical wipe validation."
+    ]
+  },
+  "single": {
+    "schema_version": 1,
+    "review_date": "2026-10-30",
+    "reviewer": "independent_ai_reviewer",
+    "verdict": "pass",
+    "review_kind": "independent_ai_review_not_human_acceptance",
+    "scope": [
+      "Independently read all 36 second-round raw answers and recorded parser outcomes across 18 questions per route.",
+      "Compared content with the unchanged reference, original images previously inspected, OCR candidates and first-round adjudication; repeated words were assessed as distinct occurrences with coarse locations.",
+      "Checked the frozen single-question adapter, launcher, baseline manifest and existing test receipt without executing models or rerunning tests.",
+      "Recomputed final case counts, category totals, schema counts and all transition lists in adjudication.json and comparison.json against the independently reviewed decisions."
+    ],
+    "agreement": {
+      "case_method_pairs_checked": 36,
+      "case_method_pairs_agreed": 36,
+      "disagreements": [],
+      "questions_per_route": 18,
+      "responses_present_per_route": 18,
+      "missing_responses_excluded_from_denominator": 0
+    },
+    "routes": {
+      "ocr_llm": {
+        "content_correct": 4,
+        "total": 18,
+        "by_category": {
+          "exact_color": {
+            "correct": 3,
+            "total": 6
+          },
+          "spatial": {
+            "correct": 0,
+            "total": 6
+          },
+          "semantic": {
+            "correct": 1,
+            "total": 6
+          }
+        },
+        "baseline_content_correct": 4,
+        "net_correct_change": 0,
+        "wrong_to_correct": [
+          "C-Q6",
+          "E-Q2"
+        ],
+        "correct_to_wrong": [
+          "C-Q1",
+          "C-Q5"
+        ],
+        "single_question_call_schema": {
+          "valid": 1,
+          "total": 18
+        },
+        "content_correct_and_call_schema_valid": 1,
+        "schema_valid_question_ids": [
+          "C-Q2"
+        ],
+        "malformed_trailing_quote_responses": 17
+      },
+      "vlm": {
+        "content_correct": 11,
+        "total": 18,
+        "by_category": {
+          "exact_color": {
+            "correct": 5,
+            "total": 6
+          },
+          "spatial": {
+            "correct": 4,
+            "total": 6
+          },
+          "semantic": {
+            "correct": 2,
+            "total": 6
+          }
+        },
+        "baseline_content_correct": 10,
+        "net_correct_change": 1,
+        "wrong_to_correct": [
+          "F-Q3",
+          "F-Q4",
+          "E-Q5"
+        ],
+        "correct_to_wrong": [
+          "E-Q2",
+          "E-Q4"
+        ],
+        "single_question_call_schema": {
+          "valid": 18,
+          "total": 18
+        },
+        "content_correct_and_call_schema_valid": 11
+      }
+    },
+    "schema_unit_boundary": {
+      "baseline_unit": "One six-question response per image; three calls per route.",
+      "baseline_complete_call_schema": {
+        "ocr_llm": {
+          "valid": 1,
+          "total": 3
+        },
+        "vlm": {
+          "valid": 3,
+          "total": 3
+        }
+      },
+      "second_round_unit": "One independent question per response; eighteen calls per route.",
+      "all_six_independent_calls_schema_valid_images": {
+        "ocr_llm": {
+          "valid": 0,
+          "total": 3
+        },
+        "vlm": {
+          "valid": 3,
+          "total": 3
+        }
+      },
+      "interpretation": "Do not present baseline call-schema rates and second-round call-schema rates as a directly comparable improvement percentage. Grouping six independent calls by image remains a different calling procedure."
+    },
+    "scoring_boundaries": [
+      "Readable malformed answers are content diagnostics only; raw outputs and parser validity were not repaired.",
+      "Complete enclosing code fences were permitted by the original parser in both rounds; trailing quotes were not removed.",
+      "Distinct repeated-word occurrences must all be selected. VLM E-Q5 now includes both I occurrences and You; E-Q6 still omits the upper-sentence my.",
+      "Whole-line regions do not establish successful selection of one requested word. VLM E-Q2 and E-Q3 remain failures despite containing relevant text.",
+      "Reference boxes are approximate AI annotations, not human-accepted precise ground truth or physical wiping masks.",
+      "Three photos and one greedy run per condition do not establish general superiority, stability or a unique error cause."
+    ],
+    "reviewer_executed_models": false,
+    "reviewer_modified_raw_outputs": false,
+    "results_md_reviewed": false,
+    "private_source_reviewed_artifacts": {
+      "adjudication.json": "74326941e89b15bd988db48bc3281e058d72080ce7eb1f244eba385442b127ab",
+      "comparison.json": "d2a7d9bfdf3ef9173757611a34a590162b0eed31616fd077f663a1315a2f3b2f"
+    }
+  },
+  "test_receipts": [
+    {
+      "scope": "baseline runner contracts",
+      "passed": 6,
+      "private_source_receipt_sha256": "5123d86e7fc31c5d4fb01318caccdc4d5c90aae966e5480cf8ed3b952a20efb9"
+    },
+    {
+      "scope": "single-question adapter controls",
+      "passed": 4,
+      "private_source_receipt_sha256": "3907a9148e825a1184c5d72bd32b47d1359a3cc26414fd62cc5e523ceeff822d"
+    }
+  ],
+  "existing_fixture_suite": {
+    "tests": 39,
+    "failures": 2,
+    "errors": 0,
+    "posix_skips": 6,
+    "rerun_for_release": false,
+    "failed_tests": [
+      "test_deep_snapshot_cannot_drop_validation_diagnostics_or_later_cases",
+      "test_structurally_invalid_suites_execute_no_cases"
+    ],
+    "private_source_receipt_sha256": "5088c05c2aa11bbca594cbbfdfd26058d8b62b4fd862c965a8670bdb0ab43cdf"
+  }
+}

@@ -1,0 +1,4440 @@
+{
+  "kind": "derived_portable_attempt_summaries_not_original_result_json",
+  "attempts": [
+    {
+      "id": "batch/ocr_llm-colour/attempt-1",
+      "phase": "batch",
+      "route": "ocr_llm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q1",
+        "C-Q2",
+        "C-Q3",
+        "C-Q4",
+        "C-Q5",
+        "C-Q6"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "37bcb8051b8d3a7bdc4787e854dd2cbb19e4ed38ff1e8d7b4a7a6fd3c400bf80",
+      "prompt_file": "calls/batch/ocr_llm-colour/prompt.txt",
+      "prompt_sha256": "ad55c82eaab1686de8fb25e8cd441ba7ab6b25d4d9efa98bc4e3bfe5e2016ce7",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 50.625,
+      "model_total_s_excludes_import": 40.42511220020242,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": [
+          {
+            "id": "C-Q1",
+            "status": "selected",
+            "target_ids": [
+              "colour-t002"
+            ]
+          },
+          {
+            "id": "C-Q2",
+            "status": "selected",
+            "target_ids": [
+              "colour-t001"
+            ]
+          },
+          {
+            "id": "C-Q3",
+            "status": "selected",
+            "target_ids": [
+              "colour-t001"
+            ]
+          },
+          {
+            "id": "C-Q4",
+            "status": "selected",
+            "target_ids": [
+              "colour-t001"
+            ]
+          },
+          {
+            "id": "C-Q5",
+            "status": "selected",
+            "target_ids": [
+              "colour-t001",
+              "colour-t002",
+              "colour-t003"
+            ]
+          },
+          {
+            "id": "C-Q6",
+            "status": "selected",
+            "target_ids": [
+              "colour-t001",
+              "colour-t002",
+              "colour-t003"
+            ]
+          }
+        ],
+        "errors": [
+          "answers_not_list"
+        ]
+      },
+      "raw_file": "calls/batch/ocr_llm-colour/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 37.103417000034824,
+      "generated_tokens": 227,
+      "input_tokens": 616,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 3.3207152001559734,
+      "actual_model_device": "cpu",
+      "raw_sha256": "b34bf10f5a22f816a093f0fde16a08eb1420045a077ec9a57b14fd4cc5ea0fbf",
+      "private_source_rendered_chat_sha256": "30fae24beaa88decf6a53ede65e7e1eef1f3b6f1c5c03136dd5dff50344906a1"
+    },
+    {
+      "id": "batch/ocr_llm-fruits/attempt-1",
+      "phase": "batch",
+      "route": "ocr_llm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q1",
+        "F-Q2",
+        "F-Q3",
+        "F-Q4",
+        "F-Q5",
+        "F-Q6"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "80f9f8880caec9d8c10eb98ed6bf7ed7a7d3fa4e2587008d614ef6fd7abd80c9",
+      "prompt_file": "calls/batch/ocr_llm-fruits/prompt.txt",
+      "prompt_sha256": "970c9b889dc58747ea836a797302e8047b165f7d6fa21ee5b739db090d26aac4",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 55.438000000081956,
+      "model_total_s_excludes_import": 47.50735879992135,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": {
+          "answers": [
+            {
+              "id": "F-Q1",
+              "status": "no_match",
+              "target_ids": []
+            },
+            {
+              "id": "F-Q2",
+              "status": "no_match",
+              "target_ids": []
+            },
+            {
+              "id": "F-Q3",
+              "status": "selected",
+              "target_ids": [
+                "fruits-t011"
+              ]
+            },
+            {
+              "id": "F-Q4",
+              "status": "selected",
+              "target_ids": [
+                "fruits-t001",
+                "fruits-t002",
+                "fruits-t003",
+                "fruits-t004",
+                "fruits-t005",
+                "fruits-t006",
+                "fruits-t007",
+                "fruits-t008",
+                "fruits-t009",
+                "fruits-t010",
+                "fruits-t012",
+                "fruits-t013"
+              ]
+            },
+            {
+              "id": "F-Q5",
+              "status": "selected",
+              "target_ids": [
+                "fruits-t001",
+                "fruits-t002",
+                "fruits-t003",
+                "fruits-t004",
+                "fruits-t005",
+                "fruits-t006",
+                "fruits-t007",
+                "fruits-t008",
+                "fruits-t009",
+                "fruits-t010",
+                "fruits-t012",
+                "fruits-t013"
+              ]
+            }
+          ]
+        },
+        "errors": [
+          "question_ids"
+        ]
+      },
+      "raw_file": "calls/batch/ocr_llm-fruits/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 45.87583349994384,
+      "generated_tokens": 253,
+      "input_tokens": 1180,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.6301227998919785,
+      "actual_model_device": "cpu",
+      "raw_sha256": "1bd869c5993e3db347d0dd902559b6e9445eb608a81e3fd4d88e1458f56b0fd8",
+      "private_source_rendered_chat_sha256": "466e1d2211476ccf989717d450de11d16f7599204e92d6fcd94e932529f70648"
+    },
+    {
+      "id": "batch/ocr_llm-english/attempt-1",
+      "phase": "batch",
+      "route": "ocr_llm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q1",
+        "E-Q2",
+        "E-Q3",
+        "E-Q4",
+        "E-Q5",
+        "E-Q6"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "7627e51f73ca7ddcc75bd403d52c1299840dd7ae219a1cea9d24c1ed17028e23",
+      "prompt_file": "calls/batch/ocr_llm-english/prompt.txt",
+      "prompt_sha256": "558e85ffbd5515e0c3f95cebde613bcb09bbaa5b39e703d1cdf94151febbf564",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 56.0,
+      "model_total_s_excludes_import": 48.1094121998176,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "E-Q1",
+              "status": "no_match",
+              "target_ids": []
+            },
+            {
+              "id": "E-Q2",
+              "status": "selected",
+              "target_ids": [
+                "english-t006"
+              ]
+            },
+            {
+              "id": "E-Q3",
+              "status": "selected",
+              "target_ids": [
+                "english-t001",
+                "english-t002",
+                "english-t003",
+                "english-t004",
+                "english-t005",
+                "english-t007",
+                "english-t008"
+              ]
+            },
+            {
+              "id": "E-Q4",
+              "status": "selected",
+              "target_ids": [
+                "english-t001",
+                "english-t002",
+                "english-t003",
+                "english-t004",
+                "english-t005",
+                "english-t007",
+                "english-t008"
+              ]
+            },
+            {
+              "id": "E-Q5",
+              "status": "selected",
+              "target_ids": [
+                "english-t001",
+                "english-t002",
+                "english-t003",
+                "english-t004",
+                "english-t005",
+                "english-t007",
+                "english-t008"
+              ]
+            },
+            {
+              "id": "E-Q6",
+              "status": "selected",
+              "target_ids": [
+                "english-t001",
+                "english-t002",
+                "english-t003",
+                "english-t004",
+                "english-t005",
+                "english-t007",
+                "english-t008"
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/batch/ocr_llm-english/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 46.53348589991219,
+      "generated_tokens": 264,
+      "input_tokens": 907,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.5748334999661893,
+      "actual_model_device": "cpu",
+      "raw_sha256": "c0811e5a5df2a70ab105498853b082538e411f7d6efd3de2d487c00cafad7a2a",
+      "private_source_rendered_chat_sha256": "a0360a730eb9cf21b3a5f2413a8c4e50a05ec1f8e5816edb7a53683b597960e5"
+    },
+    {
+      "id": "batch/vlm-colour/attempt-1",
+      "phase": "batch",
+      "route": "vlm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q1",
+        "C-Q2",
+        "C-Q3",
+        "C-Q4",
+        "C-Q5",
+        "C-Q6"
+      ],
+      "attempt": 1,
+      "status": "technical_error",
+      "private_source_result_sha256": "dd9b936d222e3f61fad7480e227efac5d58150ce557d04ca563ab4d32873d718",
+      "prompt_file": "calls/batch/vlm-colour/prompt.txt",
+      "prompt_sha256": "6bbc59bcbdf4d1ac7e5b484bbd86a20f98e2957b80d663103fc63244cbd521b8",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 7.280999999959022,
+      "model_total_s_excludes_import": 0.22968330001458526,
+      "recorded_parser_result": null,
+      "raw_file": null,
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "technical_error": {
+        "type": "ImportError",
+        "stage": "processor_initialization_before_generation",
+        "reason": "AutoVideoProcessor required missing torchvision; no answer generated.",
+        "raw_traceback_published": false
+      }
+    },
+    {
+      "id": "batch/vlm-fruits/attempt-1",
+      "phase": "batch",
+      "route": "vlm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q1",
+        "F-Q2",
+        "F-Q3",
+        "F-Q4",
+        "F-Q5",
+        "F-Q6"
+      ],
+      "attempt": 1,
+      "status": "technical_error",
+      "private_source_result_sha256": "1f269e3c09e6b5dc8a89ff1133b404337dc8194ba534480c07fa43f726ac8cd2",
+      "prompt_file": "calls/batch/vlm-fruits/prompt.txt",
+      "prompt_sha256": "95399547ced08d907ca2d8f91cfb34bfc7b98e1733c197f980755d5576b1aa0e",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 7.655999999959022,
+      "model_total_s_excludes_import": 0.3030163000803441,
+      "recorded_parser_result": null,
+      "raw_file": null,
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "technical_error": {
+        "type": "ImportError",
+        "stage": "processor_initialization_before_generation",
+        "reason": "AutoVideoProcessor required missing torchvision; no answer generated.",
+        "raw_traceback_published": false
+      }
+    },
+    {
+      "id": "batch/vlm-english/attempt-1",
+      "phase": "batch",
+      "route": "vlm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q1",
+        "E-Q2",
+        "E-Q3",
+        "E-Q4",
+        "E-Q5",
+        "E-Q6"
+      ],
+      "attempt": 1,
+      "status": "technical_error",
+      "private_source_result_sha256": "b15bdbff832905408370ef879f57b2f1ad6abd8dd47b13235a8d240e28c57e88",
+      "prompt_file": "calls/batch/vlm-english/prompt.txt",
+      "prompt_sha256": "488266ce9d4caecc11fc44045b4663c3289b85e2449f204fc8c7f87cc588a6f2",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 8.781000000191852,
+      "model_total_s_excludes_import": 0.2653530000243336,
+      "recorded_parser_result": null,
+      "raw_file": null,
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "technical_error": {
+        "type": "ImportError",
+        "stage": "processor_initialization_before_generation",
+        "reason": "AutoVideoProcessor required missing torchvision; no answer generated.",
+        "raw_traceback_published": false
+      }
+    },
+    {
+      "id": "batch/vlm-colour/attempt-2",
+      "phase": "batch",
+      "route": "vlm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q1",
+        "C-Q2",
+        "C-Q3",
+        "C-Q4",
+        "C-Q5",
+        "C-Q6"
+      ],
+      "attempt": 2,
+      "status": "completed",
+      "private_source_result_sha256": "fc6a7dcd37699258563e762af1e86a5d9dacbbdab75c3d8dc217f17206329a9b",
+      "prompt_file": "calls/batch/vlm-colour/prompt.txt",
+      "prompt_sha256": "6bbc59bcbdf4d1ac7e5b484bbd86a20f98e2957b80d663103fc63244cbd521b8",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 115.625,
+      "model_total_s_excludes_import": 107.01673989999108,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "C-Q1",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "BLUE",
+                  "bbox": [
+                    229,
+                    405,
+                    579,
+                    605
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "C-Q2",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "RED",
+                  "bbox": [
+                    241,
+                    158,
+                    605,
+                    388
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "C-Q3",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "GREEN",
+                  "bbox": [
+                    208,
+                    588,
+                    778,
+                    888
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "C-Q4",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "BLUE",
+                  "bbox": [
+                    229,
+                    405,
+                    579,
+                    605
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "C-Q5",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "RED",
+                  "bbox": [
+                    241,
+                    158,
+                    605,
+                    388
+                  ]
+                },
+                {
+                  "text": "BLUE",
+                  "bbox": [
+                    229,
+                    405,
+                    579,
+                    605
+                  ]
+                },
+                {
+                  "text": "GREEN",
+                  "bbox": [
+                    208,
+                    588,
+                    778,
+                    888
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "C-Q6",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "RED",
+                  "bbox": [
+                    241,
+                    158,
+                    605,
+                    388
+                  ]
+                },
+                {
+                  "text": "BLUE",
+                  "bbox": [
+                    229,
+                    405,
+                    579,
+                    605
+                  ]
+                },
+                {
+                  "text": "GREEN",
+                  "bbox": [
+                    208,
+                    588,
+                    778,
+                    888
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/batch/vlm-colour/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 104.01424419996329,
+      "generated_tokens": 526,
+      "input_tokens": 709,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 3.0016576999332756,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            1064,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              28,
+              38
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "781273ea732804f611cbe0a8912b410d847406f9d715580ce5af869ce9c7c308",
+      "private_source_rendered_chat_sha256": "efca50bce2e7b1c68ec09589e98dc9cd9f0e2507bb10f04cf5ae908fdc383df4"
+    },
+    {
+      "id": "batch/vlm-fruits/attempt-2",
+      "phase": "batch",
+      "route": "vlm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q1",
+        "F-Q2",
+        "F-Q3",
+        "F-Q4",
+        "F-Q5",
+        "F-Q6"
+      ],
+      "attempt": 2,
+      "status": "completed",
+      "private_source_result_sha256": "962c30d68e3325e1e83741c13e30d3996ae6daea36e845201949ac1109e19af7",
+      "prompt_file": "calls/batch/vlm-fruits/prompt.txt",
+      "prompt_sha256": "95399547ced08d907ca2d8f91cfb34bfc7b98e1733c197f980755d5576b1aa0e",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 138.75,
+      "model_total_s_excludes_import": 130.18496189988218,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "F-Q1",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "Lemons",
+                  "bbox": [
+                    558,
+                    565,
+                    658,
+                    609
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F-Q2",
+              "status": "no_match",
+              "targets": []
+            },
+            {
+              "id": "F-Q3",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "kiwis",
+                  "bbox": [
+                    183,
+                    488,
+                    268,
+                    545
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F-Q4",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "FRUITS",
+                  "bbox": [
+                    418,
+                    418,
+                    578,
+                    475
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F-Q5",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "FRUITS",
+                  "bbox": [
+                    418,
+                    418,
+                    578,
+                    475
+                  ]
+                },
+                {
+                  "text": "Apples",
+                  "bbox": [
+                    615,
+                    285,
+                    745,
+                    338
+                  ]
+                },
+                {
+                  "text": "Oranges",
+                  "bbox": [
+                    665,
+                    398,
+                    795,
+                    445
+                  ]
+                },
+                {
+                  "text": "Bananas",
+                  "bbox": [
+                    680,
+                    468,
+                    825,
+                    515
+                  ]
+                },
+                {
+                  "text": "Lemons",
+                  "bbox": [
+                    558,
+                    565,
+                    658,
+                    609
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F-Q6",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "Few Shot Learning--",
+                  "bbox": [
+                    47,
+                    125,
+                    458,
+                    198
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/batch/vlm-fruits/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 127.42439649999142,
+      "generated_tokens": 502,
+      "input_tokens": 1249,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.759608799824491,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            3072,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              48,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "1c84a26711fdfcd8b267c81148bab4e61757c378658afb1f95829bf48ef10cea",
+      "private_source_rendered_chat_sha256": "072efed6419ef7c1b07903e8ba5018331e9ed6851add6cab767ce2ddf1ec9f3b"
+    },
+    {
+      "id": "batch/vlm-english/attempt-2",
+      "phase": "batch",
+      "route": "vlm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q1",
+        "E-Q2",
+        "E-Q3",
+        "E-Q4",
+        "E-Q5",
+        "E-Q6"
+      ],
+      "attempt": 2,
+      "status": "completed",
+      "private_source_result_sha256": "1db85361d79f04a7fb07cf0021c4c79c85ae106e1b8ca41a177845a33afd4917",
+      "prompt_file": "calls/batch/vlm-english/prompt.txt",
+      "prompt_sha256": "488266ce9d4caecc11fc44045b4663c3289b85e2449f204fc8c7f87cc588a6f2",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 108.59400000004098,
+      "model_total_s_excludes_import": 99.82101229997352,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "E-Q1",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "pen",
+                  "bbox": [
+                    831,
+                    298,
+                    905,
+                    375
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "E-Q2",
+              "status": "no_match",
+              "targets": []
+            },
+            {
+              "id": "E-Q3",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "I",
+                  "bbox": [
+                    298,
+                    515,
+                    355,
+                    645
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "E-Q4",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "my",
+                  "bbox": [
+                    412,
+                    565,
+                    515,
+                    700
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "E-Q5",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "I",
+                  "bbox": [
+                    298,
+                    515,
+                    355,
+                    645
+                  ]
+                },
+                {
+                  "text": "You",
+                  "bbox": [
+                    308,
+                    698,
+                    400,
+                    815
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "E-Q6",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "my",
+                  "bbox": [
+                    412,
+                    565,
+                    515,
+                    700
+                  ]
+                },
+                {
+                  "text": "your",
+                  "bbox": [
+                    445,
+                    735,
+                    588,
+                    845
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/batch/vlm-english/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 97.11413550004363,
+      "generated_tokens": 420,
+      "input_tokens": 1155,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.7059871000237763,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            2688,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              42,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "0acbfd263eadfbd74d5827b63d7530338fce50a69612a5b43d50d4256e53e461",
+      "private_source_rendered_chat_sha256": "42b4b3fd21e4081ddae9fd6b1bc137bc075ba04962ed863693cd5687ec7eff1b"
+    },
+    {
+      "id": "single/ocr_llm/C-Q1/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q1"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "39c2f2724c177a8790ac708ca1eb55d67ac304357bc7bed93a1e78a108db5e88",
+      "prompt_file": "calls/single/ocr_llm/C-Q1/prompt.txt",
+      "prompt_sha256": "f3693b9d70c4e09026e5a20e53c846d5b2bd0f16987161f58a98419cd5985c5a",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 19.07799999997951,
+      "model_total_s_excludes_import": 9.607163700042292,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/C-Q1/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 7.907034099800512,
+      "generated_tokens": 21,
+      "input_tokens": 485,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.698731399839744,
+      "actual_model_device": "cpu",
+      "raw_sha256": "0ca65e3768807d149ae94be95487c0c00e441d0adb752cded8109cec244bddd8",
+      "private_source_rendered_chat_sha256": "fb3c2e4fd4947dcd5c2180b66a44fe9610cfa2c0938652ccaccf037f3d76875e",
+      "single_question_control": {
+        "question_id": "C-Q1",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "3f5f34e17dbfac82d92326012b33e3c3365df8aed3a04514c58a4062a4ea3526",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/C-Q2/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q2"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "b8e7a81a23c0de7cdc2fa14915fd92971fde18e55f9edfb4677e097173305633",
+      "prompt_file": "calls/single/ocr_llm/C-Q2/prompt.txt",
+      "prompt_sha256": "19d6889b179a82bbe48ba35fd2faa03c4c7d36fa62abee4515206b443d45b77c",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 19.358999999938533,
+      "model_total_s_excludes_import": 10.669776300201192,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "C-Q2",
+              "status": "selected",
+              "target_ids": [
+                "colour-t001"
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/ocr_llm/C-Q2/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 9.005073899868876,
+      "generated_tokens": 24,
+      "input_tokens": 494,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.6632945002056658,
+      "actual_model_device": "cpu",
+      "raw_sha256": "b22da6d27b5e0424dad2db430a452fe5d6196a652af2001b72635e119d4d10d5",
+      "private_source_rendered_chat_sha256": "fb16020dc087ec283ecd22c307389343a6f266e1a8d9742d63919fb62ffa613b",
+      "single_question_control": {
+        "question_id": "C-Q2",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "3f5f34e17dbfac82d92326012b33e3c3365df8aed3a04514c58a4062a4ea3526",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/C-Q3/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q3"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "dcb143334621950b841887f68f62ee27cbfffe95c1d83fe271b9f13c010ce311",
+      "prompt_file": "calls/single/ocr_llm/C-Q3/prompt.txt",
+      "prompt_sha256": "d9ea80228cdc6520692ca860590f6ad14d320dcd82d11c0081f46315781e50f7",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 18.625,
+      "model_total_s_excludes_import": 9.897999400040135,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/C-Q3/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 8.297650299966335,
+      "generated_tokens": 21,
+      "input_tokens": 489,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.5985663998872042,
+      "actual_model_device": "cpu",
+      "raw_sha256": "22ff6ca653d5ed0f5e376eb46388dc7cb938ea5153c661df03e267b931121a5f",
+      "private_source_rendered_chat_sha256": "49f99320a941dd352a7fb29bcef9d6dc748ff9b1c9240ebc20d92221f4e75cfa",
+      "single_question_control": {
+        "question_id": "C-Q3",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "3f5f34e17dbfac82d92326012b33e3c3365df8aed3a04514c58a4062a4ea3526",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/C-Q4/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q4"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "cd8b6e7613be91cd4bc81dde7bd7643e6cc8268782dd8c243a884ce2612ebc45",
+      "prompt_file": "calls/single/ocr_llm/C-Q4/prompt.txt",
+      "prompt_sha256": "61cfc43d712496970eb0dfdbdecc1fafb721204c50a625bef22b49c065d687ff",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 18.82799999997951,
+      "model_total_s_excludes_import": 9.99517220002599,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/C-Q4/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 8.386122100055218,
+      "generated_tokens": 21,
+      "input_tokens": 493,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.6074408001732081,
+      "actual_model_device": "cpu",
+      "raw_sha256": "ca7ff0fc4005a6453339b7a4e1bd09d8cb46ee013a0b562babaea7920f1d3f5e",
+      "private_source_rendered_chat_sha256": "227aaac04f20f3237ffa67dcd66f80e733f4d957ae8ee88290a2ee58e2f12a50",
+      "single_question_control": {
+        "question_id": "C-Q4",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "3f5f34e17dbfac82d92326012b33e3c3365df8aed3a04514c58a4062a4ea3526",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/C-Q5/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q5"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "bf4b81ae2926da729aa09494dccc6ac45fef069eeb892e6b8f24b54b612415de",
+      "prompt_file": "calls/single/ocr_llm/C-Q5/prompt.txt",
+      "prompt_sha256": "376410c41819f0b10ba5c1983bf50667cea9a040fc02f7c075e2e072d1c275bd",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 18.70300000021234,
+      "model_total_s_excludes_import": 9.717022099997848,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/C-Q5/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 8.075927099911496,
+      "generated_tokens": 21,
+      "input_tokens": 491,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.6391489000525326,
+      "actual_model_device": "cpu",
+      "raw_sha256": "50940068eb1503299eb783bc3a30b523728d92c30f71ef420ba4ff299df9c870",
+      "private_source_rendered_chat_sha256": "390eb86f151333077bc4654f2c63927865fa73b375e7f96fc8af259d57d69bf0",
+      "single_question_control": {
+        "question_id": "C-Q5",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "3f5f34e17dbfac82d92326012b33e3c3365df8aed3a04514c58a4062a4ea3526",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/C-Q6/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q6"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "8a3ebd15dde5ff34514ec03039b09c673f148f6da1fa5f0e194fc115794ae210",
+      "prompt_file": "calls/single/ocr_llm/C-Q6/prompt.txt",
+      "prompt_sha256": "166a12ad344226df5b964cc4e7466d55cc94b7141f5c37b14120c9c03ff884ea",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 19.437999999849126,
+      "model_total_s_excludes_import": 10.03405740018934,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/C-Q6/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 8.44535359996371,
+      "generated_tokens": 21,
+      "input_tokens": 489,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.5874889001715928,
+      "actual_model_device": "cpu",
+      "raw_sha256": "159371c9706c5948838e0ade72d1d8af4e62adb538c6b32ae7197a1dc70308d3",
+      "private_source_rendered_chat_sha256": "aedcee2c8ccb9e649ea1ceca3f21e231bf099e933aeeb4edeed79d22379666cd",
+      "single_question_control": {
+        "question_id": "C-Q6",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "3f5f34e17dbfac82d92326012b33e3c3365df8aed3a04514c58a4062a4ea3526",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/F-Q1/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q1"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "d1a9fc6e1156210252efe51ee7aa4aad69ca3bd4a9e88d75b611a4359889a42c",
+      "prompt_file": "calls/single/ocr_llm/F-Q1/prompt.txt",
+      "prompt_sha256": "186b9bc821ee4bde6718d123cfbccc28d402e3769ddbc069e672b297008e99e4",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 25.015000000130385,
+      "model_total_s_excludes_import": 15.602558099897578,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/F-Q1/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 14.01083409995772,
+      "generated_tokens": 21,
+      "input_tokens": 1012,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.5897609000094235,
+      "actual_model_device": "cpu",
+      "raw_sha256": "ba5681f8c793638fca1bbe45c8b3b9d8813f367dd50a552c75ae5e85d73a9852",
+      "private_source_rendered_chat_sha256": "f25d2d0315fc49b235ca3d849a6096595ea670969c5d3e1ff9e22ecf61aab553",
+      "single_question_control": {
+        "question_id": "F-Q1",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "441f085f6dae5369c51a17a712d0b0eb26de1c5e35dce7075ac8ffad652b08d4",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/F-Q2/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q2"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "3b0d209e4e280798e0fd10d0b9afbc6039c6827c39f9854aa1917f7d874c251e",
+      "prompt_file": "calls/single/ocr_llm/F-Q2/prompt.txt",
+      "prompt_sha256": "68e706872f3f7f77b15fb7fd51f48691b4ffd7e6f35fa8a9117c04a180067eca",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 24.359999999869615,
+      "model_total_s_excludes_import": 15.2940831000451,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/F-Q2/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 13.598929200088605,
+      "generated_tokens": 21,
+      "input_tokens": 1018,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.6932204999029636,
+      "actual_model_device": "cpu",
+      "raw_sha256": "501667748deaf09d8b059e1fa303f97a114f1c86159ba46cd8a621403e9d196f",
+      "private_source_rendered_chat_sha256": "b8c2b6be67f10e6ebe5a4bbad9fc26a44748f22b21840641ba7f06a794c42e48",
+      "single_question_control": {
+        "question_id": "F-Q2",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "441f085f6dae5369c51a17a712d0b0eb26de1c5e35dce7075ac8ffad652b08d4",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/F-Q3/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q3"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "4e381254533acb11899d50b3011ed290d5d11e8048de989fd05a6ad14ae94959",
+      "prompt_file": "calls/single/ocr_llm/F-Q3/prompt.txt",
+      "prompt_sha256": "793a20deb8502a8ee9cc8a69670f8ee95192e81b487913b7a07fae73ea4d8089",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 24.67200000002049,
+      "model_total_s_excludes_import": 14.946191600058228,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/F-Q3/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 13.260836399858817,
+      "generated_tokens": 21,
+      "input_tokens": 1018,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.6840002001263201,
+      "actual_model_device": "cpu",
+      "raw_sha256": "2099b5d9ef1a21b0fb83b3647f374cb7174df772296f6b2acf262bb40b52e875",
+      "private_source_rendered_chat_sha256": "9e02bf07bcbce6a6dde60ed71e4aef0ffbd79394781c1d6cc8e1a9df963729f1",
+      "single_question_control": {
+        "question_id": "F-Q3",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "441f085f6dae5369c51a17a712d0b0eb26de1c5e35dce7075ac8ffad652b08d4",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/F-Q4/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q4"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "06458ca21030924f6b7b5181529310ff9e70ea84f1d2eabedb8a99d450368da6",
+      "prompt_file": "calls/single/ocr_llm/F-Q4/prompt.txt",
+      "prompt_sha256": "431a919a7c6544577b4cc3d56205ddc92b7dcaeabcb5ddb9ed8c2f403eecb8ad",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 24.17200000002049,
+      "model_total_s_excludes_import": 15.12792870006524,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/F-Q4/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 13.503033900167793,
+      "generated_tokens": 21,
+      "input_tokens": 1032,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.6232680000830442,
+      "actual_model_device": "cpu",
+      "raw_sha256": "6074a4cd47288b34b24d829204fb52726d115ba997984ab4e1aa4e20e9a1c587",
+      "private_source_rendered_chat_sha256": "424f08696f537ebe9767ce75124a700bd8e1f800edad5742ad2e0728f3a9fda2",
+      "single_question_control": {
+        "question_id": "F-Q4",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "441f085f6dae5369c51a17a712d0b0eb26de1c5e35dce7075ac8ffad652b08d4",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/F-Q5/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q5"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "2103ac7890f26d07d7c328fabbc629a4779d4b4b5717729685669165b94237a6",
+      "prompt_file": "calls/single/ocr_llm/F-Q5/prompt.txt",
+      "prompt_sha256": "675924197348a67cfc457c36b2de205460082fb0b2e82c3eea29eb4a80968aa6",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 41.625,
+      "model_total_s_excludes_import": 32.26992330001667,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 245 (char 244)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/F-Q5/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 30.641057300148532,
+      "generated_tokens": 110,
+      "input_tokens": 1031,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.626959899906069,
+      "actual_model_device": "cpu",
+      "raw_sha256": "4269985846c955d6554604179b99d900ce4fbbf1f9adcb51a9a7108741f4c512",
+      "private_source_rendered_chat_sha256": "c74180eb71d10130c3b97eac0619a53224d440f44231afdbec863896ece57c4a",
+      "single_question_control": {
+        "question_id": "F-Q5",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "441f085f6dae5369c51a17a712d0b0eb26de1c5e35dce7075ac8ffad652b08d4",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/F-Q6/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q6"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "b7bb7bb491fece8c939261b74f15f9beac393f5909b4e506ac6969619aed6d09",
+      "prompt_file": "calls/single/ocr_llm/F-Q6/prompt.txt",
+      "prompt_sha256": "417901fdb79da1f752dfabffaca60609ff5c08bf0f35038c29e7fb09cde7e89a",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 41.53099999995902,
+      "model_total_s_excludes_import": 32.34167420002632,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 245 (char 244)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/F-Q6/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 30.784535099985078,
+      "generated_tokens": 110,
+      "input_tokens": 1024,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.555481699993834,
+      "actual_model_device": "cpu",
+      "raw_sha256": "841cb57c8116296eec6f8f47094d3b014d63547cbf35e997d873a3ada7ac92a4",
+      "private_source_rendered_chat_sha256": "c5fe9c89361c88d4f5e6240119cd2c34a8a6115d22099639ccca41550444fb10",
+      "single_question_control": {
+        "question_id": "F-Q6",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "441f085f6dae5369c51a17a712d0b0eb26de1c5e35dce7075ac8ffad652b08d4",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/E-Q1/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q1"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "bab281543930d36be89d8e8d0fa51d6ad3d4c296df34aaf8f52e2ca4c777b676",
+      "prompt_file": "calls/single/ocr_llm/E-Q1/prompt.txt",
+      "prompt_sha256": "167745078be49c1511f6751745040fc81ec6f47714cd6646312255bac3e4c6b7",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 21.969000000040978,
+      "model_total_s_excludes_import": 13.000400200020522,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/E-Q1/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 11.410398500040174,
+      "generated_tokens": 21,
+      "input_tokens": 736,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.5889060001354665,
+      "actual_model_device": "cpu",
+      "raw_sha256": "7bdaefba11cba8fd5ed4ccbd0a74202f0af02a637cefa467e733c4560fbf8225",
+      "private_source_rendered_chat_sha256": "33455f008ae588e0cf60216a15e0400b2ac036c7f9e6f73ba673bdee4fb7af21",
+      "single_question_control": {
+        "question_id": "E-Q1",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "b968a346ca01f6986fe6143211f8b6b74f133662a55de165d663d8c40ec6657a",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/E-Q2/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q2"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "fc977eed73fe2ee51a9f5d15c37df5e446b8df0f7604304dd01abda835d43998",
+      "prompt_file": "calls/single/ocr_llm/E-Q2/prompt.txt",
+      "prompt_sha256": "4a923b8f08a6d16f7a1f68a61f7243024f581222d8439e3f4bdb61325eb22b6c",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 21.70299999997951,
+      "model_total_s_excludes_import": 12.165562900016084,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/E-Q2/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 10.634033599868417,
+      "generated_tokens": 21,
+      "input_tokens": 743,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.5295051001012325,
+      "actual_model_device": "cpu",
+      "raw_sha256": "6d602b7ae44266543acf16ef86fde8bce0dceee31437cee26ad4e074f5ab62fa",
+      "private_source_rendered_chat_sha256": "e510b08be1338f7c073843aa993df9fecf777b3a0a278e3b6a729c6ac445966b",
+      "single_question_control": {
+        "question_id": "E-Q2",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "b968a346ca01f6986fe6143211f8b6b74f133662a55de165d663d8c40ec6657a",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/E-Q3/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q3"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "3ede657061afab9a24856fbc7bd7342cdc51737b47460740dbb3916bb5e0426b",
+      "prompt_file": "calls/single/ocr_llm/E-Q3/prompt.txt",
+      "prompt_sha256": "33d77ef40601ad8f57d518d189ef0a10b13f33846fc2442fb1e33c54fd6418d4",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 19.20299999997951,
+      "model_total_s_excludes_import": 10.555817800108343,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/E-Q3/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 9.061212100088596,
+      "generated_tokens": 21,
+      "input_tokens": 748,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.4929857000242919,
+      "actual_model_device": "cpu",
+      "raw_sha256": "aa9af9203ec7aa5bfdd9f99662e541b1add1eafe23f2b706ac5a2384b2f7d12f",
+      "private_source_rendered_chat_sha256": "f2baa6802776d390981318581ebcabf647fe7d0f2aae3bffcd47b0f1d8ed510f",
+      "single_question_control": {
+        "question_id": "E-Q3",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "b968a346ca01f6986fe6143211f8b6b74f133662a55de165d663d8c40ec6657a",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/E-Q4/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q4"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "2201845806a5820ccf7f3c4e364a97afab1bb147e8adffb2e86dbaf87e846a74",
+      "prompt_file": "calls/single/ocr_llm/E-Q4/prompt.txt",
+      "prompt_sha256": "5c34365b40e7f91c2e2d7e2a09451afc9ff5f0869c6ed9ddaf1e4b465c108b0b",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 20.140000000130385,
+      "model_total_s_excludes_import": 11.74905059998855,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/E-Q4/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 10.191272700205445,
+      "generated_tokens": 21,
+      "input_tokens": 752,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.5565176999662071,
+      "actual_model_device": "cpu",
+      "raw_sha256": "9ce6778c42c68d064d1d38929df3b9d483dfb50471341c2033ab84f2f739879b",
+      "private_source_rendered_chat_sha256": "a46721f35ca9382bfec1e8960112aa56dc05e9cc636e340d81bce9edd143e5c0",
+      "single_question_control": {
+        "question_id": "E-Q4",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "b968a346ca01f6986fe6143211f8b6b74f133662a55de165d663d8c40ec6657a",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/E-Q5/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q5"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "a417311fcfab0e61dbfbfc8c8094fb8df01b669fc31f14e60903f3e0cd7b659a",
+      "prompt_file": "calls/single/ocr_llm/E-Q5/prompt.txt",
+      "prompt_sha256": "d8e3c3546ba980fc7c9b957b0a0bd635445209751d226e20f1e2efb6c23f5982",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 19.656999999890104,
+      "model_total_s_excludes_import": 11.137128400150687,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 108 (char 107)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/E-Q5/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 9.666987700155005,
+      "generated_tokens": 37,
+      "input_tokens": 756,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.468971500173211,
+      "actual_model_device": "cpu",
+      "raw_sha256": "74aaa538545eccdc16315a913186ca10b9dfcddfb3f82bd43abfdd59587e2347",
+      "private_source_rendered_chat_sha256": "1dcde20cac319c2672d7a6272de15489f1877e20183ebd3484b448d45dfcec2b",
+      "single_question_control": {
+        "question_id": "E-Q5",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "b968a346ca01f6986fe6143211f8b6b74f133662a55de165d663d8c40ec6657a",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/ocr_llm/E-Q6/attempt-1",
+      "phase": "single",
+      "route": "ocr_llm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q6"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "ba1cd8bb30a6634e09aeadd116c5406ab4e97e7c77c6772e2c71be95eccdfe3d",
+      "prompt_file": "calls/single/ocr_llm/E-Q6/prompt.txt",
+      "prompt_sha256": "f060ecd81de7635e86f355949bcc5390b349a3f38428b834af75f259b8434f92",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 22.233999999938533,
+      "model_total_s_excludes_import": 14.540522400056943,
+      "recorded_parser_result": {
+        "valid": false,
+        "data": null,
+        "errors": [
+          "json:Extra data: line 1 column 183 (char 182)"
+        ]
+      },
+      "raw_file": "calls/single/ocr_llm/E-Q6/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 13.051704799989238,
+      "generated_tokens": 67,
+      "input_tokens": 752,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 1.4878394999541342,
+      "actual_model_device": "cpu",
+      "raw_sha256": "75e3972580dfa01a68f455091ab9bec6a4dc84a3f9c43edbb8cfe878b7cafe73",
+      "private_source_rendered_chat_sha256": "7a531fcbe818dbe0f4d8dad1cb456793a8adebaca19451cec7329389d108d7dc",
+      "single_question_control": {
+        "question_id": "E-Q6",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "b968a346ca01f6986fe6143211f8b6b74f133662a55de165d663d8c40ec6657a",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/C-Q1/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q1"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "02c5ddf75e346278e893c5c5aa3c1c93485259a39c87fb526dfcde1e51fe696b",
+      "prompt_file": "calls/single/vlm/C-Q1/prompt.txt",
+      "prompt_sha256": "2df292bd2b2cd605e3a817e19255f2f732997426992b9ed526c8574f42f30410",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 29.313000000081956,
+      "model_total_s_excludes_import": 21.26161570008844,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "C-Q1",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "BLUE",
+                  "bbox": [
+                    229,
+                    405,
+                    578,
+                    607
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/C-Q1/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 18.66197089990601,
+      "generated_tokens": 76,
+      "input_tokens": 578,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.598865000065416,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            1064,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              28,
+              38
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "6097cbe350daf64cd2e6fc8fe0327719398c519fdf5cfb5d7efa403a3ed5e14a",
+      "private_source_rendered_chat_sha256": "fc647e572ffeb4b47a7ae9825ccf8d3b35527e7ad2fef0fd2a202583cae7e255",
+      "single_question_control": {
+        "question_id": "C-Q1",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/C-Q2/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q2"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "64cc647b3e8310b1642b399741a67dde9fe9b8d8faf36d7f52d9447b2e533fe5",
+      "prompt_file": "calls/single/vlm/C-Q2/prompt.txt",
+      "prompt_sha256": "a5cee4df5b41aaab5ba678e9bf9b0c5ead43250e32470d4ac67fff51789b4968",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 35.875,
+      "model_total_s_excludes_import": 27.852691899985075,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "C-Q2",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "RED",
+                  "bbox": [
+                    238,
+                    156,
+                    607,
+                    395
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/C-Q2/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 25.323866800172254,
+      "generated_tokens": 76,
+      "input_tokens": 587,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.5280434999149293,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            1064,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              28,
+              38
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "53927ab37961e9ccafc98484e05898afec7d3d9c069aa0bbdc1f1f9fec0c4175",
+      "private_source_rendered_chat_sha256": "c048eed3e01d0a8184ed9c2c2160771d304ff242b75bca4d974eab9d5b3a8a81",
+      "single_question_control": {
+        "question_id": "C-Q2",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/C-Q3/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q3"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "021369dfea7b7edc671a4f79f582a176640aadf04bc36cf2ae57783b8eed237a",
+      "prompt_file": "calls/single/vlm/C-Q3/prompt.txt",
+      "prompt_sha256": "b735b744002400622caef8f5893376651dd53f3a53e4146bfbd62fb913dc8f06",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 38.75,
+      "model_total_s_excludes_import": 29.0186248999089,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "C-Q3",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "GREEN",
+                  "bbox": [
+                    203,
+                    588,
+                    783,
+                    888
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/C-Q3/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 26.286021600011736,
+      "generated_tokens": 76,
+      "input_tokens": 582,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.731770599959418,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            1064,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              28,
+              38
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "f7568727e9e5ce535ed106b48183cf56c47e184fcb522bcdbc0b5639ac7a8c5f",
+      "private_source_rendered_chat_sha256": "663702a5ce2695b5549f667a41fa8d073062a0c8564b5dcad469fd2e5def4db8",
+      "single_question_control": {
+        "question_id": "C-Q3",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/C-Q4/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q4"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "7cf758671762fa873371cc4b2a049d5fdbb3c749686c1e1b3636f1dff4f586f2",
+      "prompt_file": "calls/single/vlm/C-Q4/prompt.txt",
+      "prompt_sha256": "d9bdf3b40f1407a238b79c2159e9bedd387ca4e891ff997d1c823a9fc90d6d3a",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 30.905999999959022,
+      "model_total_s_excludes_import": 21.43715630006045,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "C-Q4",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "BLUE",
+                  "bbox": [
+                    229,
+                    405,
+                    579,
+                    607
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/C-Q4/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 18.723535400116816,
+      "generated_tokens": 76,
+      "input_tokens": 586,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.7122988998889923,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            1064,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              28,
+              38
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "dfa642657b4854285a2822ffedf873c51fe13217c4e5e1cc89d704899a38cc57",
+      "private_source_rendered_chat_sha256": "7224ff45b6b2b8923acc937fb132a9a75e3a22ef94d2b91073eced22d6853dba",
+      "single_question_control": {
+        "question_id": "C-Q4",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/C-Q5/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q5"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "767bc54e3d2ced94437115d5211aa3ca58bfc813431c06efb7ff70630a3cf6fb",
+      "prompt_file": "calls/single/vlm/C-Q5/prompt.txt",
+      "prompt_sha256": "bd92d0417520562d2cff7268fc00eb89b6403cbfdbc5600e8bc0fbef7b964b22",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 39.28099999995902,
+      "model_total_s_excludes_import": 31.352446099976078,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "C-Q5",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "RED",
+                  "bbox": [
+                    238,
+                    156,
+                    607,
+                    395
+                  ]
+                },
+                {
+                  "text": "BLUE",
+                  "bbox": [
+                    238,
+                    400,
+                    578,
+                    614
+                  ]
+                },
+                {
+                  "text": "GREEN",
+                  "bbox": [
+                    214,
+                    598,
+                    778,
+                    888
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/C-Q5/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 28.88038759981282,
+      "generated_tokens": 146,
+      "input_tokens": 584,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.4712824998423457,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            1064,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              28,
+              38
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "a4c6a93041af5d6e4e22139ad606446fdf3e5df3db6593dfe2b55d91695750db",
+      "private_source_rendered_chat_sha256": "f8cb9161766c77c47fb8accd3a64b777a733dff39e82f4d3b5d798e8b0e5a8c2",
+      "single_question_control": {
+        "question_id": "C-Q5",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/C-Q6/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "colour",
+      "question_ids": [
+        "C-Q6"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "bc51063ca40a51bd07e3b6983b95eeebe1404d3d069cfa788f880709a5d9e6ba",
+      "prompt_file": "calls/single/vlm/C-Q6/prompt.txt",
+      "prompt_sha256": "474e2284b5f097da0694cb6801ad051310da4a42ab930a1046dac41f05ef63b2",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/colour.png",
+      "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+      "process_wall_s": 39.17200000002049,
+      "model_total_s_excludes_import": 31.2076006999705,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "C-Q6",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "RED",
+                  "bbox": [
+                    238,
+                    156,
+                    607,
+                    395
+                  ]
+                },
+                {
+                  "text": "BLUE",
+                  "bbox": [
+                    238,
+                    400,
+                    578,
+                    614
+                  ]
+                },
+                {
+                  "text": "GREEN",
+                  "bbox": [
+                    214,
+                    598,
+                    778,
+                    888
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/C-Q6/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 28.58722640015185,
+      "generated_tokens": 146,
+      "input_tokens": 582,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.619470000034198,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            1064,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              28,
+              38
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "ac10cbaaaf5b4c70b7c071a7af5fc46fb2e2aaf9a9686c62ead86f99a3cc9b9f",
+      "private_source_rendered_chat_sha256": "52e67452114c41f3930ddec36b63009e40f0ce501c317ab8541a1d727050a26d",
+      "single_question_control": {
+        "question_id": "C-Q6",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+        "ocr_sha256": "d348b3025ac6050176e97582152d1482631b5d45752b76eb215588cd98b065b3",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/F-Q1/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q1"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "68f5552f678248f43519f8bc56cc0c8a6bf6879a2c7f64d0d512f4919207ffff",
+      "prompt_file": "calls/single/vlm/F-Q1/prompt.txt",
+      "prompt_sha256": "01c48308840166c5090ec9fa2f9531d3105dfbe6c81c29d80e96206c201dc4fd",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 34.89100000006147,
+      "model_total_s_excludes_import": 26.89794300007634,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "F-Q1",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "Lemons",
+                  "bbox": [
+                    558,
+                    567,
+                    658,
+                    609
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/F-Q1/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 24.409558600047603,
+      "generated_tokens": 46,
+      "input_tokens": 1081,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.4876003998797387,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            3072,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              48,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "349a64a7e3ba00d9dba3e133abb045ae168b463b3b1dbd604f4056b60d3185c2",
+      "private_source_rendered_chat_sha256": "e0e3c56f1a891ea093c5505c6205d9ec93a5567a92c13d5eb691b453c5814776",
+      "single_question_control": {
+        "question_id": "F-Q1",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/F-Q2/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q2"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "c680fe9c07ad71c9cb3eb7c96cf8a02dfb791964f5a1e54f1c87404e9e44e88b",
+      "prompt_file": "calls/single/vlm/F-Q2/prompt.txt",
+      "prompt_sha256": "2e4b8d266d5910188fc1e91fd0b09f9d31357268a2854c013d4509c17e9f6d04",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 30.875,
+      "model_total_s_excludes_import": 23.103904800023884,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "F-Q2",
+              "status": "no_match",
+              "targets": []
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/F-Q2/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 20.678470199927688,
+      "generated_tokens": 25,
+      "input_tokens": 1087,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.424703399883583,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            3072,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              48,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "f8427763a4834722c3c80e0cd601a98b45c0b0edbd12f55243495453f6c4dbe0",
+      "private_source_rendered_chat_sha256": "92a4fb72ee29ef835645fcc7f8c974a608da74950055415ef70936f18245c380",
+      "single_question_control": {
+        "question_id": "F-Q2",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/F-Q3/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q3"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "5130985f1c2df7c97f9a83cfd047f27f32d5f345a8a07be535636551edd5c9b0",
+      "prompt_file": "calls/single/vlm/F-Q3/prompt.txt",
+      "prompt_sha256": "64150b6085cbbdc53f9c786aa40bf58d1edaae667f23dc4c7f82436891514f4e",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 39.54600000008941,
+      "model_total_s_excludes_import": 31.710315499920398,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "F-Q3",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "melons",
+                  "bbox": [
+                    195,
+                    607,
+                    314,
+                    657
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/F-Q3/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 29.3104284000583,
+      "generated_tokens": 77,
+      "input_tokens": 1087,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.399176900042221,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            3072,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              48,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "21728fa712187d4629e4497b58d4e69a1107f5afaa2d47ea6397480020f433d4",
+      "private_source_rendered_chat_sha256": "1d0482b7f6415b8bcca485bbba991fccd2063f3223069983b5ad7628285cb695",
+      "single_question_control": {
+        "question_id": "F-Q3",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/F-Q4/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q4"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "ef5280fe5b721e0411e29972bc06f415734924f82e21746519fd585672777d64",
+      "prompt_file": "calls/single/vlm/F-Q4/prompt.txt",
+      "prompt_sha256": "c4c5553a0633d8bcb5f8ecea49f89f721ce9d9eabe926022d888f38fec6095dd",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 40.063000000081956,
+      "model_total_s_excludes_import": 32.075861799996346,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "F-Q4",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "ORANGES",
+                  "bbox": [
+                    666,
+                    398,
+                    794,
+                    445
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/F-Q4/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 29.632279299898073,
+      "generated_tokens": 77,
+      "input_tokens": 1101,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.442815399961546,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            3072,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              48,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "fc0661426a5f8da69da87a4e07aa8a47cc14859763484a93c0c617bf7682f2a4",
+      "private_source_rendered_chat_sha256": "5352e2021b98362b26794008113f7599c72627b1df98eca833416c643c1347eb",
+      "single_question_control": {
+        "question_id": "F-Q4",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/F-Q5/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q5"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "b54bf312264c4d1feba561b43415afa024c541cca92c95500cfc230bfc392313",
+      "prompt_file": "calls/single/vlm/F-Q5/prompt.txt",
+      "prompt_sha256": "d6f31544f5d8318259b221993c781cef0d7468d8f55fd1e86527556246c6f034",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 48.03099999995902,
+      "model_total_s_excludes_import": 39.641858000075445,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "F-Q5",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "FRUITS",
+                  "bbox": [
+                    400,
+                    415,
+                    580,
+                    475
+                  ]
+                },
+                {
+                  "text": "Few Shot Learning--",
+                  "bbox": [
+                    47,
+                    125,
+                    458,
+                    195
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/F-Q5/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 37.177494999952614,
+      "generated_tokens": 115,
+      "input_tokens": 1100,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.4631322000641376,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            3072,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              48,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "28ef68a9db65a4fd8e0807b76c28c534d590bfe72c4c5f854645250e6c374e45",
+      "private_source_rendered_chat_sha256": "ef586855848899b3df3f1e87bccd4a15388bdfebf6cad80b3a29bd251fc66e59",
+      "single_question_control": {
+        "question_id": "F-Q5",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/F-Q6/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "fruits",
+      "question_ids": [
+        "F-Q6"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "da9da9d28f3ebb7ece37392d57631ea8e3da3f6c0fdd56439f23ad0738dc0f47",
+      "prompt_file": "calls/single/vlm/F-Q6/prompt.txt",
+      "prompt_sha256": "b3a349ae5ddfd8596f2e69d469d40079a29667472f2a334759cd08eb926cb295",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/fruits.png",
+      "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+      "process_wall_s": 46.84400000004098,
+      "model_total_s_excludes_import": 38.079287200002,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "F-Q6",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "Few Shot Learning--",
+                  "bbox": [
+                    48,
+                    125,
+                    458,
+                    198
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/F-Q6/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 35.53726679994725,
+      "generated_tokens": 47,
+      "input_tokens": 1093,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.537294400157407,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            3072,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              48,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "f9a9ae049418d31bea5f2c611c681cdb3bc68010326cef1ee08255d5f178f392",
+      "private_source_rendered_chat_sha256": "ba35fdf586d42fde9e5c1f9958647676c82a276cd5c0c10c8d3e37fe616d4004",
+      "single_question_control": {
+        "question_id": "F-Q6",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+        "ocr_sha256": "897db2905f213d3d8283b5aae44df74973d605c80a6fec7137c7906ef321be9b",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/E-Q1/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q1"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "7ca13dacacbc647e6b96792b89baa1319347cfda278422a22fb88b8ab6387abb",
+      "prompt_file": "calls/single/vlm/E-Q1/prompt.txt",
+      "prompt_sha256": "7de76e39546da7a9e06f72836101b83f62bbcfabc8d62cec78b206a22796c09c",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 49.17100000008941,
+      "model_total_s_excludes_import": 39.960146399913356,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "E-Q1",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "pen",
+                  "bbox": [
+                    831,
+                    298,
+                    905,
+                    375
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/E-Q1/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 37.35413370002061,
+      "generated_tokens": 76,
+      "input_tokens": 984,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.6050813999027014,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            2688,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              42,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "2c3484e836e44e3353a1f2fa0830598cd6bc4f6ea4529a7773645e5d4bd9467e",
+      "private_source_rendered_chat_sha256": "5f43b32b3b8d1e616924371ca847f83c5e031e9ac21dfc2276a0e2a0974e6cad",
+      "single_question_control": {
+        "question_id": "E-Q1",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/E-Q2/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q2"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "3e6ff5dda868b93b94d1d3bb3171873d4675c7a231fd3399f836a62e2948d852",
+      "prompt_file": "calls/single/vlm/E-Q2/prompt.txt",
+      "prompt_sha256": "ba050d73126138c55f33ffb3f60537cd1f1a63f4bd199978f00cfb9d9dae9d42",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 53.375,
+      "model_total_s_excludes_import": 43.55196140008047,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "E-Q2",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "I am a girl. This is my pen",
+                  "bbox": [
+                    120,
+                    238,
+                    905,
+                    405
+                  ]
+                },
+                {
+                  "text": "I - my",
+                  "bbox": [
+                    298,
+                    512,
+                    515,
+                    700
+                  ]
+                },
+                {
+                  "text": "You - your",
+                  "bbox": [
+                    308,
+                    695,
+                    588,
+                    845
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/E-Q2/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 41.0675602001138,
+      "generated_tokens": 158,
+      "input_tokens": 991,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.4834179000463337,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            2688,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              42,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "27e004319c5a8b2dbef694c68523a8513ba3830b9f2455cff28de8fa88b182ab",
+      "private_source_rendered_chat_sha256": "961e1741590e43a7e661db9269e81385aefcd5b46111b3537f73b15ac084742c",
+      "single_question_control": {
+        "question_id": "E-Q2",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/E-Q3/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q3"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "82228a03f1b71e0b01c01c260b83e9a148fa07ce407962c57960157df54af3d4",
+      "prompt_file": "calls/single/vlm/E-Q3/prompt.txt",
+      "prompt_sha256": "7a3d5227ea6272ac563033bf9a286258982cb7141885aac223ebb690f1eb00ac",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 116.42200000002049,
+      "model_total_s_excludes_import": 108.63838739995845,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "E-Q3",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "I",
+                  "bbox": [
+                    200,
+                    244,
+                    240,
+                    365
+                  ]
+                },
+                {
+                  "text": "am",
+                  "bbox": [
+                    218,
+                    288,
+                    318,
+                    365
+                  ]
+                },
+                {
+                  "text": "a",
+                  "bbox": [
+                    345,
+                    288,
+                    378,
+                    365
+                  ]
+                },
+                {
+                  "text": "girl",
+                  "bbox": [
+                    408,
+                    244,
+                    508,
+                    395
+                  ]
+                },
+                {
+                  "text": "This",
+                  "bbox": [
+                    528,
+                    255,
+                    666,
+                    365
+                  ]
+                },
+                {
+                  "text": "is",
+                  "bbox": [
+                    685,
+                    288,
+                    728,
+                    365
+                  ]
+                },
+                {
+                  "text": "my",
+                  "bbox": [
+                    748,
+                    288,
+                    808,
+                    395
+                  ]
+                },
+                {
+                  "text": "pen",
+                  "bbox": [
+                    828,
+                    288,
+                    905,
+                    365
+                  ]
+                },
+                {
+                  "text": "I",
+                  "bbox": [
+                    298,
+                    515,
+                    355,
+                    645
+                  ]
+                },
+                {
+                  "text": "my",
+                  "bbox": [
+                    412,
+                    565,
+                    515,
+                    700
+                  ]
+                },
+                {
+                  "text": "You",
+                  "bbox": [
+                    308,
+                    695,
+                    398,
+                    815
+                  ]
+                },
+                {
+                  "text": "your",
+                  "bbox": [
+                    438,
+                    745,
+                    588,
+                    845
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/E-Q3/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 106.18303690012544,
+      "generated_tokens": 461,
+      "input_tokens": 996,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.454494300065562,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            2688,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              42,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "d67b09513b67284af4b98ef2241e2be4aeac8790d65c8d0b8d9467e356a6edef",
+      "private_source_rendered_chat_sha256": "38d2d014d0a36567e649326cd475f572853dfda3ff11505c1526c8d7e026cbbb",
+      "single_question_control": {
+        "question_id": "E-Q3",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/E-Q4/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q4"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "f51bf694468b8eb97c48d52963214c9b79bfda787043049e13995d7c4f9ec0e2",
+      "prompt_file": "calls/single/vlm/E-Q4/prompt.txt",
+      "prompt_sha256": "ccd53df981817f6cd923cf9d9aff22ff4cd93e9a8ba905b782f7bce35a575d7e",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 50.73399999993853,
+      "model_total_s_excludes_import": 41.60372120002285,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "E-Q4",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "pen",
+                  "bbox": [
+                    831,
+                    298,
+                    905,
+                    378
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/E-Q4/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 39.03718429990113,
+      "generated_tokens": 76,
+      "input_tokens": 1000,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.5656604999676347,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            2688,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              42,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "a8acba566136c5f4b9589e2efd7883134c6dbd9f98eaf66663df4e93da287404",
+      "private_source_rendered_chat_sha256": "707f0ae24e4e793f958583c20fabf4037be5468661f90ddb2bc6e3f56b77a9b3",
+      "single_question_control": {
+        "question_id": "E-Q4",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/E-Q5/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q5"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "59ebe33f3c029ba02e41bebb2d7b4c15a60edb020c4100628b4ced93f37094e5",
+      "prompt_file": "calls/single/vlm/E-Q5/prompt.txt",
+      "prompt_sha256": "e50ff942b75f8d12a3a12caac516e7816e390268767b51f1830dfde4900808e7",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 67.18700000015087,
+      "model_total_s_excludes_import": 57.51292590005323,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "E-Q5",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "I",
+                  "bbox": [
+                    124,
+                    242,
+                    180,
+                    375
+                  ]
+                },
+                {
+                  "text": "I",
+                  "bbox": [
+                    298,
+                    515,
+                    355,
+                    648
+                  ]
+                },
+                {
+                  "text": "You",
+                  "bbox": [
+                    308,
+                    695,
+                    398,
+                    815
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/E-Q5/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 54.89223390002735,
+      "generated_tokens": 146,
+      "input_tokens": 1004,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.619788800133392,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            2688,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              42,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "1665edb5058e36541bbcb170d75506f243fa072b1b8ff55a0cd8226a13df8da1",
+      "private_source_rendered_chat_sha256": "011f0132992fe0749cf1c323fa3bfbcb65ce2e54c8da08d2d6aa89c269b9582a",
+      "single_question_control": {
+        "question_id": "E-Q5",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    },
+    {
+      "id": "single/vlm/E-Q6/attempt-1",
+      "phase": "single",
+      "route": "vlm",
+      "image_id": "english",
+      "question_ids": [
+        "E-Q6"
+      ],
+      "attempt": 1,
+      "status": "completed",
+      "private_source_result_sha256": "94d52d8955a569d6cf493a8873cd818bd1fcfdc4c3e92ce7644947464857a424",
+      "prompt_file": "calls/single/vlm/E-Q6/prompt.txt",
+      "prompt_sha256": "d1f8a0387541eb0befbbf17f884f901b2b4cbbecf41bea47c98e917d346075e1",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "dtype": "float32",
+      "generation": {
+        "do_sample": false,
+        "max_new_tokens": 3072,
+        "max_time": 840,
+        "use_cache": true,
+        "repetition_penalty": 1.0
+      },
+      "seed": 0,
+      "torch_threads": 4,
+      "torch_interop_threads": 1,
+      "attention_implementation": "sdpa",
+      "prepared_file": "assets/prepared/english.png",
+      "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+      "process_wall_s": 60.156999999890104,
+      "model_total_s_excludes_import": 50.77225859998725,
+      "recorded_parser_result": {
+        "valid": true,
+        "data": {
+          "answers": [
+            {
+              "id": "E-Q6",
+              "status": "selected",
+              "targets": [
+                {
+                  "text": "my",
+                  "bbox": [
+                    412,
+                    558,
+                    515,
+                    700
+                  ]
+                },
+                {
+                  "text": "your",
+                  "bbox": [
+                    444,
+                    745,
+                    588,
+                    845
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "errors": []
+      },
+      "raw_file": "calls/single/vlm/E-Q6/raw.txt",
+      "source_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+      "generation_s": 48.121536700055,
+      "generated_tokens": 111,
+      "input_tokens": 1000,
+      "last_token_eos": true,
+      "model_load_and_preprocess_s": 2.6495938999578357,
+      "actual_model_device": "cpu",
+      "vision_tensors": {
+        "pixel_values": {
+          "shape": [
+            2688,
+            1536
+          ],
+          "value": null
+        },
+        "image_grid_thw": {
+          "shape": [
+            1,
+            3
+          ],
+          "value": [
+            [
+              1,
+              42,
+              64
+            ]
+          ]
+        }
+      },
+      "raw_sha256": "9a39b0ca87c47ceb2b1da0d9f5b892f1eefb54c68d539497be64af17bb1eab35",
+      "private_source_rendered_chat_sha256": "12fede5bbf29541f0e8fe379d5d0efc3d8a1e99ef9ec1accb2cf2f81884a3fc1",
+      "single_question_control": {
+        "question_id": "E-Q6",
+        "question_count": 1,
+        "baseline_prompt_prefix_sha256": "2e8ee5ead66c4eae4e4b6a11829eb67ce25b16c1d3ff54c31945a927ca4a169b",
+        "baseline_questions_file_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+        "prepared_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+        "ocr_sha256": "50137d9ad0290f8e6dc8cfe382b972298404dd66c55902d95f8384dd5004f6dd",
+        "post_infer_control_checks": {
+          "model": true,
+          "model_revision": true,
+          "dtype": true,
+          "generation": true,
+          "runner_sha256": true,
+          "prepared_sha256": true,
+          "questions_file_sha256": true,
+          "actual_prompt_bytes": true,
+          "device_cpu": true,
+          "threads_unchanged": true
+        },
+        "all_control_checks_pass": true
+      }
+    }
+  ],
+  "notes": [
+    "All three pre-generation failures remain; their prompt files are shared only after byte-identity checks.",
+    "Raw answers/prompt files are exact copies; metadata is a separately hashed derivative. Full local tracebacks/stdout/stderr are not published.",
+    "Rendered chats are retained locally; their original hashes are recorded, without claiming the omitted bytes are in this packet."
+  ]
+}

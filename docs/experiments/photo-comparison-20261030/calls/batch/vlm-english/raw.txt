@@ -1,0 +1,69 @@
+```json
+{
+  "answers": [
+    {
+      "id": "E-Q1",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "pen",
+          "bbox": [831, 298, 905, 375]
+        }
+      ]
+    },
+    {
+      "id": "E-Q2",
+      "status": "no_match",
+      "targets": []
+    },
+    {
+      "id": "E-Q3",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "I",
+          "bbox": [298, 515, 355, 645]
+        }
+      ]
+    },
+    {
+      "id": "E-Q4",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "my",
+          "bbox": [412, 565, 515, 700]
+        }
+      ]
+    },
+    {
+      "id": "E-Q5",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "I",
+          "bbox": [298, 515, 355, 645]
+        },
+        {
+          "text": "You",
+          "bbox": [308, 698, 400, 815]
+        }
+      ]
+    },
+    {
+      "id": "E-Q6",
+      "status": "selected",
+      "targets": [
+        {
+          "text": "my",
+          "bbox": [412, 565, 515, 700]
+        },
+        {
+          "text": "your",
+          "bbox": [445, 735, 588, 845]
+        }
+      ]
+    }
+  ]
+}
+```

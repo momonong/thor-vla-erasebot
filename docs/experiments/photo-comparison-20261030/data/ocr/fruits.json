@@ -1,0 +1,1066 @@
+{
+  "image_id": "fruits",
+  "image_path": "assets/prepared/fruits.png",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "image_size": [
+    1024,
+    768
+  ],
+  "elapsed_s": 0.4187334000598639,
+  "raw": {
+    "boxes": [
+      [
+        [
+          42.0,
+          89.0
+        ],
+        [
+          487.0,
+          91.0
+        ],
+        [
+          487.0,
+          158.0
+        ],
+        [
+          42.0,
+          156.0
+        ]
+      ],
+      [
+        [
+          557.0,
+          226.0
+        ],
+        [
+          766.0,
+          208.0
+        ],
+        [
+          771.0,
+          263.0
+        ],
+        [
+          562.0,
+          281.0
+        ]
+      ],
+      [
+        [
+          373.0,
+          316.0
+        ],
+        [
+          830.0,
+          278.0
+        ],
+        [
+          837.0,
+          369.0
+        ],
+        [
+          380.0,
+          407.0
+        ]
+      ],
+      [
+        [
+          684.0,
+          359.0
+        ],
+        [
+          852.0,
+          355.0
+        ],
+        [
+          853.0,
+          403.0
+        ],
+        [
+          685.0,
+          407.0
+        ]
+      ],
+      [
+        [
+          181.0,
+          383.0
+        ],
+        [
+          281.0,
+          366.0
+        ],
+        [
+          288.0,
+          409.0
+        ],
+        [
+          188.0,
+          426.0
+        ]
+      ],
+      [
+        [
+          504.0,
+          407.0
+        ],
+        [
+          686.0,
+          418.0
+        ],
+        [
+          682.0,
+          484.0
+        ],
+        [
+          500.0,
+          473.0
+        ]
+      ],
+      [
+        [
+          195.0,
+          469.0
+        ],
+        [
+          325.0,
+          460.0
+        ],
+        [
+          328.0,
+          503.0
+        ],
+        [
+          198.0,
+          512.0
+        ]
+      ]
+    ],
+    "texts": [
+      "Few Shot Le anaigy-!",
+      "A Kpples",
+      "FRE5)→ aaces",
+      "BA NANAS",
+      "Kiwis",
+      "lervas",
+      "relons"
+    ],
+    "scores": [
+      0.84061,
+      0.82204,
+      0.54953,
+      0.92502,
+      0.90449,
+      0.87296,
+      0.89637
+    ],
+    "word_results": [
+      [
+        [
+          "Few",
+          0.99875,
+          [
+            [
+              48,
+              89
+            ],
+            [
+              113,
+              89
+            ],
+            [
+              113,
+              156
+            ],
+            [
+              48,
+              156
+            ]
+          ]
+        ],
+        [
+          "Shot",
+          0.96885,
+          [
+            [
+              148,
+              89
+            ],
+            [
+              225,
+              89
+            ],
+            [
+              225,
+              156
+            ],
+            [
+              148,
+              156
+            ]
+          ]
+        ],
+        [
+          "Le",
+          0.98066,
+          [
+            [
+              249,
+              89
+            ],
+            [
+              292,
+              90
+            ],
+            [
+              292,
+              157
+            ],
+            [
+              249,
+              156
+            ]
+          ]
+        ],
+        [
+          "anaigy-!",
+          0.93195,
+          [
+            [
+              293,
+              90
+            ],
+            [
+              460,
+              90
+            ],
+            [
+              460,
+              157
+            ],
+            [
+              293,
+              157
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "A",
+          0.72581,
+          [
+            [
+              578,
+              224
+            ],
+            [
+              599,
+              222
+            ],
+            [
+              604,
+              277
+            ],
+            [
+              583,
+              279
+            ]
+          ]
+        ],
+        [
+          "Kpples",
+          0.73643,
+          [
+            [
+              634,
+              219
+            ],
+            [
+              755,
+              208
+            ],
+            [
+              760,
+              263
+            ],
+            [
+              639,
+              274
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "FRE5)→",
+          0.87657,
+          [
+            [
+              422,
+              311
+            ],
+            [
+              670,
+              291
+            ],
+            [
+              677,
+              382
+            ],
+            [
+              429,
+              402
+            ]
+          ]
+        ],
+        [
+          "aaces",
+          0.64563,
+          [
+            [
+              679,
+              290
+            ],
+            [
+              830,
+              278
+            ],
+            [
+              837,
+              369
+            ],
+            [
+              686,
+              381
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "BA",
+          0.99673,
+          [
+            [
+              703,
+              358
+            ],
+            [
+              737,
+              357
+            ],
+            [
+              738,
+              405
+            ],
+            [
+              704,
+              406
+            ]
+          ]
+        ],
+        [
+          "NANAS",
+          0.99343,
+          [
+            [
+              743,
+              357
+            ],
+            [
+              841,
+              355
+            ],
+            [
+              842,
+              403
+            ],
+            [
+              744,
+              405
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "Kiwis",
+          0.54055,
+          [
+            [
+              181,
+              382
+            ],
+            [
+              271,
+              367
+            ],
+            [
+              278,
+              410
+            ],
+            [
+              188,
+              425
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "lervas",
+          0.90567,
+          [
+            [
+              577,
+              411
+            ],
+            [
+              683,
+              417
+            ],
+            [
+              679,
+              483
+            ],
+            [
+              573,
+              477
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "relons",
+          0.85487,
+          [
+            [
+              202,
+              468
+            ],
+            [
+              323,
+              460
+            ],
+            [
+              326,
+              503
+            ],
+            [
+              205,
+              511
+            ]
+          ]
+        ]
+      ]
+    ],
+    "stage_elapsed_s": [
+      0.21116829989477992,
+      0.008406799985095859,
+      0.14239350007846951
+    ]
+  },
+  "candidates": [
+    {
+      "id": "fruits-t001",
+      "text": "Few",
+      "score": 0.99875,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          48,
+          89
+        ],
+        [
+          113,
+          89
+        ],
+        [
+          113,
+          156
+        ],
+        [
+          48,
+          156
+        ]
+      ],
+      "bbox": [
+        46.875,
+        115.885,
+        110.352,
+        203.125
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7225,
+        "stroke_pixel_count": 555,
+        "class_pixel_counts": {
+          "red": 54,
+          "orange": 401,
+          "yellow": 25,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 75
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t002",
+      "text": "Shot",
+      "score": 0.96885,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          148,
+          89
+        ],
+        [
+          225,
+          89
+        ],
+        [
+          225,
+          156
+        ],
+        [
+          148,
+          156
+        ]
+      ],
+      "bbox": [
+        144.531,
+        115.885,
+        219.727,
+        203.125
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.8593,
+        "stroke_pixel_count": 718,
+        "class_pixel_counts": {
+          "red": 9,
+          "orange": 617,
+          "yellow": 31,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 61
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t003",
+      "text": "Le",
+      "score": 0.98066,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          249,
+          89
+        ],
+        [
+          292,
+          90
+        ],
+        [
+          292,
+          157
+        ],
+        [
+          249,
+          156
+        ]
+      ],
+      "bbox": [
+        243.164,
+        115.885,
+        285.156,
+        204.427
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.8732,
+        "stroke_pixel_count": 418,
+        "class_pixel_counts": {
+          "red": 10,
+          "orange": 365,
+          "yellow": 20,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 23
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t004",
+      "text": "anaigy-!",
+      "score": 0.93195,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          293,
+          90
+        ],
+        [
+          460,
+          90
+        ],
+        [
+          460,
+          157
+        ],
+        [
+          293,
+          157
+        ]
+      ],
+      "bbox": [
+        286.133,
+        117.188,
+        449.219,
+        204.427
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.8649,
+        "stroke_pixel_count": 1591,
+        "class_pixel_counts": {
+          "red": 31,
+          "orange": 1376,
+          "yellow": 85,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 99
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t005",
+      "text": "A",
+      "score": 0.72581,
+      "line_index": 1,
+      "polygon_px": [
+        [
+          578,
+          224
+        ],
+        [
+          599,
+          222
+        ],
+        [
+          604,
+          277
+        ],
+        [
+          583,
+          279
+        ]
+      ],
+      "bbox": [
+        564.453,
+        289.062,
+        589.844,
+        363.281
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7744,
+        "stroke_pixel_count": 133,
+        "class_pixel_counts": {
+          "red": 17,
+          "orange": 103,
+          "yellow": 6,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 7
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t006",
+      "text": "Kpples",
+      "score": 0.73643,
+      "line_index": 1,
+      "polygon_px": [
+        [
+          634,
+          219
+        ],
+        [
+          755,
+          208
+        ],
+        [
+          760,
+          263
+        ],
+        [
+          639,
+          274
+        ]
+      ],
+      "bbox": [
+        619.141,
+        270.833,
+        742.188,
+        356.771
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7456,
+        "stroke_pixel_count": 1014,
+        "class_pixel_counts": {
+          "red": 57,
+          "orange": 756,
+          "yellow": 49,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 152
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t007",
+      "text": "FRE5)→",
+      "score": 0.87657,
+      "line_index": 2,
+      "polygon_px": [
+        [
+          422,
+          311
+        ],
+        [
+          670,
+          291
+        ],
+        [
+          677,
+          382
+        ],
+        [
+          429,
+          402
+        ]
+      ],
+      "bbox": [
+        412.109,
+        378.906,
+        661.133,
+        523.438
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7325,
+        "stroke_pixel_count": 2542,
+        "class_pixel_counts": {
+          "red": 275,
+          "orange": 1862,
+          "yellow": 67,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 338
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t008",
+      "text": "aaces",
+      "score": 0.64563,
+      "line_index": 2,
+      "polygon_px": [
+        [
+          679,
+          290
+        ],
+        [
+          830,
+          278
+        ],
+        [
+          837,
+          369
+        ],
+        [
+          686,
+          381
+        ]
+      ],
+      "bbox": [
+        663.086,
+        361.979,
+        817.383,
+        496.094
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7464,
+        "stroke_pixel_count": 982,
+        "class_pixel_counts": {
+          "red": 44,
+          "orange": 733,
+          "yellow": 77,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 128
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t009",
+      "text": "BA",
+      "score": 0.99673,
+      "line_index": 3,
+      "polygon_px": [
+        [
+          703,
+          358
+        ],
+        [
+          737,
+          357
+        ],
+        [
+          738,
+          405
+        ],
+        [
+          704,
+          406
+        ]
+      ],
+      "bbox": [
+        686.523,
+        464.844,
+        720.703,
+        528.646
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7664,
+        "stroke_pixel_count": 304,
+        "class_pixel_counts": {
+          "red": 16,
+          "orange": 233,
+          "yellow": 17,
+          "green": 1,
+          "blue": 0,
+          "purple": 0,
+          "black": 37
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t010",
+      "text": "NANAS",
+      "score": 0.99343,
+      "line_index": 3,
+      "polygon_px": [
+        [
+          743,
+          357
+        ],
+        [
+          841,
+          355
+        ],
+        [
+          842,
+          403
+        ],
+        [
+          744,
+          405
+        ]
+      ],
+      "bbox": [
+        725.586,
+        462.24,
+        822.266,
+        527.344
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7737,
+        "stroke_pixel_count": 654,
+        "class_pixel_counts": {
+          "red": 29,
+          "orange": 506,
+          "yellow": 40,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 79
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t011",
+      "text": "Kiwis",
+      "score": 0.54055,
+      "line_index": 4,
+      "polygon_px": [
+        [
+          181,
+          382
+        ],
+        [
+          271,
+          367
+        ],
+        [
+          278,
+          410
+        ],
+        [
+          188,
+          425
+        ]
+      ],
+      "bbox": [
+        176.758,
+        477.865,
+        271.484,
+        553.385
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.8278,
+        "stroke_pixel_count": 511,
+        "class_pixel_counts": {
+          "red": 28,
+          "orange": 423,
+          "yellow": 15,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 45
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t012",
+      "text": "lervas",
+      "score": 0.90567,
+      "line_index": 5,
+      "polygon_px": [
+        [
+          577,
+          411
+        ],
+        [
+          683,
+          417
+        ],
+        [
+          679,
+          483
+        ],
+        [
+          573,
+          477
+        ]
+      ],
+      "bbox": [
+        559.57,
+        535.156,
+        666.992,
+        628.906
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "unknown",
+        "confidence_fraction": 0.5656,
+        "stroke_pixel_count": 564,
+        "class_pixel_counts": {
+          "red": 119,
+          "orange": 319,
+          "yellow": 18,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 108
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-t013",
+      "text": "relons",
+      "score": 0.85487,
+      "line_index": 6,
+      "polygon_px": [
+        [
+          202,
+          468
+        ],
+        [
+          323,
+          460
+        ],
+        [
+          326,
+          503
+        ],
+        [
+          205,
+          511
+        ]
+      ],
+      "bbox": [
+        197.266,
+        598.958,
+        318.359,
+        665.365
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7599,
+        "stroke_pixel_count": 729,
+        "class_pixel_counts": {
+          "red": 60,
+          "orange": 554,
+          "yellow": 21,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 94
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    }
+  ],
+  "candidate_coordinate_frame": "image, top-left origin, x right, y down, normalised 0-1000"
+}

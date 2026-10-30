@@ -1,0 +1,773 @@
+{
+  "schema_version": 1,
+  "evaluation_date": "2026-10-30",
+  "evaluator": "AI visual adjudication with independent AI review; not human-accepted ground truth.",
+  "reference": "data/reference.ai.json",
+  "reference_sha256": "a821da72f576a1bda141bf9ba3edeab0457b44eeaedbad5c908e02eacb2c1319",
+  "questions": "data/questions.json",
+  "baseline_adjudication": "annotations/batch-adjudication.ai.json",
+  "method": "Read original answers case-by-case and compare exact intended occurrence sets/status plus coarse visual location. Content-only diagnostic interpretation never rewrites raw outputs or parsed validity. All18 cases per route remain in denominator. Approximate boxes do not support precise wipe-mask accuracy.",
+  "parser_note": "Same original parse_answer. Entire enclosing json/code fence may be stripped as before. No trailing quote removal or other repair. Readable malformed raw content can be diagnosed but not treated as machine-usable.",
+  "schema_units": "First round: one complete six-question call per image (3 calls/route). This round: one independent question per call (18 calls/route). These call pass rates have different units. Image-level six-independent-call grouping is explicitly labelled.",
+  "summary": {
+    "ocr_llm": {
+      "total": 18,
+      "content_correct": 4,
+      "by_category": {
+        "exact_color": {
+          "correct": 3,
+          "total": 6
+        },
+        "spatial": {
+          "correct": 0,
+          "total": 6
+        },
+        "semantic": {
+          "correct": 1,
+          "total": 6
+        }
+      },
+      "single_question_call_schema": {
+        "valid": 1,
+        "total": 18
+      },
+      "content_correct_and_call_schema_valid": 1,
+      "all_six_independent_calls_schema_valid_images": {
+        "valid": 0,
+        "total": 3
+      },
+      "transitions": {
+        "wrong_to_correct": [
+          "C-Q6",
+          "E-Q2"
+        ],
+        "correct_to_wrong": [
+          "C-Q1",
+          "C-Q5"
+        ],
+        "correct_to_correct": [
+          "C-Q2",
+          "F-Q2"
+        ],
+        "wrong_to_wrong": [
+          "C-Q3",
+          "C-Q4",
+          "F-Q1",
+          "F-Q3",
+          "F-Q4",
+          "F-Q5",
+          "F-Q6",
+          "E-Q1",
+          "E-Q3",
+          "E-Q4",
+          "E-Q5",
+          "E-Q6"
+        ]
+      },
+      "baseline_content_correct": 4,
+      "net_correct_change": 0
+    },
+    "vlm": {
+      "total": 18,
+      "content_correct": 11,
+      "by_category": {
+        "exact_color": {
+          "correct": 5,
+          "total": 6
+        },
+        "spatial": {
+          "correct": 4,
+          "total": 6
+        },
+        "semantic": {
+          "correct": 2,
+          "total": 6
+        }
+      },
+      "single_question_call_schema": {
+        "valid": 18,
+        "total": 18
+      },
+      "content_correct_and_call_schema_valid": 11,
+      "all_six_independent_calls_schema_valid_images": {
+        "valid": 3,
+        "total": 3
+      },
+      "transitions": {
+        "wrong_to_correct": [
+          "F-Q3",
+          "F-Q4",
+          "E-Q5"
+        ],
+        "correct_to_wrong": [
+          "E-Q2",
+          "E-Q4"
+        ],
+        "correct_to_correct": [
+          "C-Q1",
+          "C-Q2",
+          "C-Q3",
+          "C-Q4",
+          "C-Q5",
+          "F-Q1",
+          "F-Q2",
+          "E-Q1"
+        ],
+        "wrong_to_wrong": [
+          "C-Q6",
+          "F-Q5",
+          "F-Q6",
+          "E-Q3",
+          "E-Q6"
+        ]
+      },
+      "baseline_content_correct": 10,
+      "net_correct_change": 1
+    }
+  },
+  "cases": [
+    {
+      "id": "C-Q1",
+      "image_id": "colour",
+      "category": "exact_color",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "C2"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "回no_match，漏選已存在的BLUE；raw尾端多一個引號，格式不合規。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_wrong",
+        "raw_sha256": "0ca65e3768807d149ae94be95487c0c00e441d0adb752cded8109cec244bddd8",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/C-Q1/attempt-1",
+        "private_source_result_sha256": "39c2f2724c177a8790ac708ca1eb55d67ac304357bc7bed93a1e78a108db5e88"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "選BLUE，框對應中間單字，沒有其他目標。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_correct",
+        "raw_sha256": "6097cbe350daf64cd2e6fc8fe0327719398c519fdf5cfb5d7efa403a3ed5e14a",
+        "parser_errors": [],
+        "call_id": "single/vlm/C-Q1/attempt-1",
+        "private_source_result_sha256": "02c5ddf75e346278e893c5c5aa3c1c93485259a39c87fb526dfcde1e51fe696b"
+      }
+    },
+    {
+      "id": "C-Q2",
+      "image_id": "colour",
+      "category": "exact_color",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "C1"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "選colour-t001，對應上方紅字RED；schema合規。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_correct",
+        "raw_sha256": "b22da6d27b5e0424dad2db430a452fe5d6196a652af2001b72635e119d4d10d5",
+        "parser_errors": [],
+        "call_id": "single/ocr_llm/C-Q2/attempt-1",
+        "private_source_result_sha256": "b8e7a81a23c0de7cdc2fa14915fd92971fde18e55f9edfb4677e097173305633"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "選紅色RED，框對應上方單字。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_correct",
+        "raw_sha256": "53927ab37961e9ccafc98484e05898afec7d3d9c069aa0bbdc1f1f9fec0c4175",
+        "parser_errors": [],
+        "call_id": "single/vlm/C-Q2/attempt-1",
+        "private_source_result_sha256": "64cc647b3e8310b1642b399741a67dde9fe9b8d8faf36d7f52d9447b2e533fe5"
+      }
+    },
+    {
+      "id": "C-Q3",
+      "image_id": "colour",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "C3"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "回no_match，漏選最下方GREEN；raw尾端多一個引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "22ff6ca653d5ed0f5e376eb46388dc7cb938ea5153c661df03e267b931121a5f",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/C-Q3/attempt-1",
+        "private_source_result_sha256": "dcb143334621950b841887f68f62ee27cbfffe95c1d83fe271b9f13c010ce311"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "選最下方GREEN，框對應該單字。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_correct",
+        "raw_sha256": "f7568727e9e5ce535ed106b48183cf56c47e184fcb522bcdbc0b5639ac7a8c5f",
+        "parser_errors": [],
+        "call_id": "single/vlm/C-Q3/attempt-1",
+        "private_source_result_sha256": "021369dfea7b7edc671a4f79f582a176640aadf04bc36cf2ae57783b8eed237a"
+      }
+    },
+    {
+      "id": "C-Q4",
+      "image_id": "colour",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "C2"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "回no_match，漏選RED與GREEN之間的BLUE；raw尾端多一個引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "ca7ff0fc4005a6453339b7a4e1bd09d8cb46ee013a0b562babaea7920f1d3f5e",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/C-Q4/attempt-1",
+        "private_source_result_sha256": "cd8b6e7613be91cd4bc81dde7bd7643e6cc8268782dd8c243a884ce2612ebc45"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "選RED與GREEN之間的BLUE，框對應中間單字。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_correct",
+        "raw_sha256": "dfa642657b4854285a2822ffedf873c51fe13217c4e5e1cc89d704899a38cc57",
+        "parser_errors": [],
+        "call_id": "single/vlm/C-Q4/attempt-1",
+        "private_source_result_sha256": "7cf758671762fa873371cc4b2a049d5fdbb3c749686c1e1b3636f1dff4f586f2"
+      }
+    },
+    {
+      "id": "C-Q5",
+      "image_id": "colour",
+      "category": "semantic",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "回no_match，漏選三個顏色詞；raw尾端多一個引號。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_wrong",
+        "raw_sha256": "50940068eb1503299eb783bc3a30b523728d92c30f71ef420ba4ff299df9c870",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/C-Q5/attempt-1",
+        "private_source_result_sha256": "bf4b81ae2926da729aa09494dccc6ac45fef069eeb892e6b8f24b54b612415de"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "選RED、BLUE、GREEN三個顏色詞，集合與各框位置相符。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_correct",
+        "raw_sha256": "a4c6a93041af5d6e4e22139ad606446fdf3e5df3db6593dfe2b55d91695750db",
+        "parser_errors": [],
+        "call_id": "single/vlm/C-Q5/attempt-1",
+        "private_source_result_sha256": "767bc54e3d2ced94437115d5211aa3ca58bfc813431c06efb7ff70630a3cf6fb"
+      }
+    },
+    {
+      "id": "C-Q6",
+      "image_id": "colour",
+      "category": "semantic",
+      "expected_status": "no_match",
+      "expected_target_ids": [],
+      "ocr_llm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "內容診斷為no_match，符合圖中無水果名稱；raw尾端多一個引號，schema仍不合規。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_correct",
+        "raw_sha256": "159371c9706c5948838e0ade72d1d8af4e62adb538c6b32ae7197a1dc70308d3",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/C-Q6/attempt-1",
+        "private_source_result_sha256": "8a3ebd15dde5ff34514ec03039b09c673f148f6da1fa5f0e194fc115794ae210"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "指令要求水果名稱，但仍選RED、BLUE、GREEN三個顏色詞；應回no_match。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "ac10cbaaaf5b4c70b7c071a7af5fc46fb2e2aaf9a9686c62ead86f99a3cc9b9f",
+        "parser_errors": [],
+        "call_id": "single/vlm/C-Q6/attempt-1",
+        "private_source_result_sha256": "bc51063ca40a51bd07e3b6983b95eeebe1404d3d069cfa788f880709a5d9e6ba"
+      }
+    },
+    {
+      "id": "F-Q1",
+      "image_id": "fruits",
+      "category": "exact_color",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "F6"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "回no_match，未選Lemons；沿用OCR中Lemons被讀成lervas的感知缺口。raw尾端多引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "ba5681f8c793638fca1bbe45c8b3b9d8813f367dd50a552c75ae5e85d73a9852",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/F-Q1/attempt-1",
+        "private_source_result_sha256": "d1a9fc6e1156210252efe51ee7aa4aad69ca3bd4a9e88d75b611a4359889a42c"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "選Lemons，框對應中央偏右下該單字。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_correct",
+        "raw_sha256": "349a64a7e3ba00d9dba3e133abb045ae168b463b3b1dbd604f4056b60d3185c2",
+        "parser_errors": [],
+        "call_id": "single/vlm/F-Q1/attempt-1",
+        "private_source_result_sha256": "68f5552f678248f43519f8bc56cc0c8a6bf6879a2c7f64d0d512f4919207ffff"
+      }
+    },
+    {
+      "id": "F-Q2",
+      "image_id": "fruits",
+      "category": "exact_color",
+      "expected_status": "no_match",
+      "expected_target_ids": [],
+      "ocr_llm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "內容診斷no_match符合沒有藍字；raw尾端多引號，schema不合規。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_correct",
+        "raw_sha256": "501667748deaf09d8b059e1fa303f97a114f1c86159ba46cd8a621403e9d196f",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/F-Q2/attempt-1",
+        "private_source_result_sha256": "3b0d209e4e280798e0fd10d0b9afbc6039c6827c39f9854aa1917f7d874c251e"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "回no_match，符合沒有藍色墨水文字。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_correct",
+        "raw_sha256": "f8427763a4834722c3c80e0cd601a98b45c0b0edbd12f55243495453f6c4dbe0",
+        "parser_errors": [],
+        "call_id": "single/vlm/F-Q2/attempt-1",
+        "private_source_result_sha256": "c680fe9c07ad71c9cb3eb7c96cf8a02dfb791964f5a1e54f1c87404e9e44e88b"
+      }
+    },
+    {
+      "id": "F-Q3",
+      "image_id": "fruits",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "F8"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "回no_match，未選kiwis下方melons（OCR候選relons）；raw尾端多引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "2099b5d9ef1a21b0fb83b3647f374cb7174df772296f6b2acf262bb40b52e875",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/F-Q3/attempt-1",
+        "private_source_result_sha256": "4e381254533acb11899d50b3011ed290d5d11e8048de989fd05a6ad14ae94959"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "選kiwis下方的melons，框對應左下單字；由首輪錯選kiwis自身改正。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_correct",
+        "raw_sha256": "21728fa712187d4629e4497b58d4e69a1107f5afaa2d47ea6397480020f433d4",
+        "parser_errors": [],
+        "call_id": "single/vlm/F-Q3/attempt-1",
+        "private_source_result_sha256": "5130985f1c2df7c97f9a83cfd047f27f32d5f345a8a07be535636551edd5c9b0"
+      }
+    },
+    {
+      "id": "F-Q4",
+      "image_id": "fruits",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "F4"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "回no_match，未選指定相對位置的oranges；raw尾端多引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "6074a4cd47288b34b24d829204fb52726d115ba997984ab4e1aa4e20e9a1c587",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/F-Q4/attempt-1",
+        "private_source_result_sha256": "06458ca21030924f6b7b5181529310ff9e70ea84f1d2eabedb8a99d450368da6"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "選ORANGES，框對應FRUITS右側且Apples與BANANAS之間；由首輪錯選FRUITS改正。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_correct",
+        "raw_sha256": "fc0661426a5f8da69da87a4e07aa8a47cc14859763484a93c0c617bf7682f2a4",
+        "parser_errors": [],
+        "call_id": "single/vlm/F-Q4/attempt-1",
+        "private_source_result_sha256": "ef5280fe5b721e0411e29972bc06f415734924f82e21746519fd585672777d64"
+      }
+    },
+    {
+      "id": "F-Q5",
+      "image_id": "fruits",
+      "category": "semantic",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "選全部13個OCR候選，含應保留的標題、FRUITS與箭頭誤檢，未滿足水果種類條件；raw尾端多引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "4269985846c955d6554604179b99d900ce4fbbf1f9adcb51a9a7108741f4c512",
+        "parser_errors": [
+          "json:Extra data: line 1 column 245 (char 244)"
+        ],
+        "call_id": "single/ocr_llm/F-Q5/attempt-1",
+        "private_source_result_sha256": "2103ac7890f26d07d7c328fabbc629a4779d4b4b5717729685669165b94237a6"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "只選FRUITS與課程標題，恰為題目要求保留的內容；漏選六個具體水果種類。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "28ef68a9db65a4fd8e0807b76c28c534d590bfe72c4c5f854645250e6c374e45",
+        "parser_errors": [],
+        "call_id": "single/vlm/F-Q5/attempt-1",
+        "private_source_result_sha256": "b54bf312264c4d1feba561b43415afa024c541cca92c95500cfc230bfc392313"
+      }
+    },
+    {
+      "id": "F-Q6",
+      "image_id": "fruits",
+      "category": "semantic",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "這次有回答，但選全部13個OCR候選，連應保留的標題與非文字誤檢都選入；raw尾端多引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "841cb57c8116296eec6f8f47094d3b014d63547cbf35e997d873a3ada7ac92a4",
+        "parser_errors": [
+          "json:Extra data: line 1 column 245 (char 244)"
+        ],
+        "call_id": "single/ocr_llm/F-Q6/attempt-1",
+        "private_source_result_sha256": "b7bb7bb491fece8c939261b74f15f9beac393f5909b4e506ac6969619aed6d09"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "仍只選課程標題，而該標題是唯一要求保留者；未選其餘FRUITS與六種水果名稱。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "f9a9ae049418d31bea5f2c611c681cdb3bc68010326cef1ee08255d5f178f392",
+        "parser_errors": [],
+        "call_id": "single/vlm/F-Q6/attempt-1",
+        "private_source_result_sha256": "da9da9d28f3ebb7ece37392d57631ea8e3da3f6c0fdd56439f23ad0738dc0f47"
+      }
+    },
+    {
+      "id": "E-Q1",
+      "image_id": "english",
+      "category": "exact_color",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "E8"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "回no_match，漏選已有OCR候選english-t006的pen；raw尾端多引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "7bdaefba11cba8fd5ed4ccbd0a74202f0af02a637cefa467e733c4560fbf8225",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/E-Q1/attempt-1",
+        "private_source_result_sha256": "bab281543930d36be89d8e8d0fa51d6ad3d4c296df34aaf8f52e2ca4c777b676"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "選pen，框對應上方例句最右單字。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_correct",
+        "raw_sha256": "2c3484e836e44e3353a1f2fa0830598cd6bc4f6ea4529a7773645e5d4bd9467e",
+        "parser_errors": [],
+        "call_id": "single/vlm/E-Q1/attempt-1",
+        "private_source_result_sha256": "7ca13dacacbc647e6b96792b89baa1319347cfda278422a22fb88b8ab6387abb"
+      }
+    },
+    {
+      "id": "E-Q2",
+      "image_id": "english",
+      "category": "exact_color",
+      "expected_status": "no_match",
+      "expected_target_ids": [],
+      "ocr_llm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "內容診斷no_match符合沒有藍字；raw尾端多引號，schema不合規。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_correct",
+        "raw_sha256": "6d602b7ae44266543acf16ef86fde8bce0dceee31437cee26ad4e074f5ab62fa",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/E-Q2/attempt-1",
+        "private_source_result_sha256": "fc977eed73fe2ee51a9f5d15c37df5e446b8df0f7604304dd01abda835d43998"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "題目要藍字但照片沒有藍字；這次選了全圖三整列文字（含連字號），應為no_match。由首輪正確變錯。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_wrong",
+        "raw_sha256": "27e004319c5a8b2dbef694c68523a8513ba3830b9f2455cff28de8fa88b182ab",
+        "parser_errors": [],
+        "call_id": "single/vlm/E-Q2/attempt-1",
+        "private_source_result_sha256": "3e6ff5dda868b93b94d1d3bb3171873d4675c7a231fd3399f836a62e2948d852"
+      }
+    },
+    {
+      "id": "E-Q3",
+      "image_id": "english",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "E11"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "回no_match，未選最下方連字號左側You；既有OCR底列亦無獨立You候選。raw尾端多引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "aa9af9203ec7aa5bfdd9f99662e541b1add1eafe23f2b706ac5a2384b2f7d12f",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/E-Q3/attempt-1",
+        "private_source_result_sha256": "3ede657061afab9a24856fbc7bd7342cdc51737b47460740dbb3916bb5e0426b"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "要求最下方連字號左側You，但輸出全圖12個文字目標，含大量不該擦的內容；首輪錯選中間I，兩輪均錯。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "d67b09513b67284af4b98ef2241e2be4aeac8790d65c8d0b8d9467e356a6edef",
+        "parser_errors": [],
+        "call_id": "single/vlm/E-Q3/attempt-1",
+        "private_source_result_sha256": "82228a03f1b71e0b01c01c260b83e9a148fa07ce407962c57960157df54af3d4"
+      }
+    },
+    {
+      "id": "E-Q4",
+      "image_id": "english",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "E10"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "回no_match，漏選已有OCR候選english-t007的中間列my；raw尾端多引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "9ce6778c42c68d064d1d38929df3b9d483dfb50471341c2033ab84f2f739879b",
+        "parser_errors": [
+          "json:Extra data: line 1 column 64 (char 63)"
+        ],
+        "call_id": "single/ocr_llm/E-Q4/attempt-1",
+        "private_source_result_sha256": "2201845806a5820ccf7f3c4e364a97afab1bb147e8adffb2e86dbaf87e846a74"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "應選第一組對照列右側my，卻選上方例句的pen；首輪正確變錯。",
+        "baseline_content_correct": true,
+        "transition": "correct_to_wrong",
+        "raw_sha256": "a8acba566136c5f4b9589e2efd7883134c6dbd9f98eaf66663df4e93da287404",
+        "parser_errors": [],
+        "call_id": "single/vlm/E-Q4/attempt-1",
+        "private_source_result_sha256": "f51bf694468b8eb97c48d52963214c9b79bfda787043049e13995d7c4f9ec0e2"
+      }
+    },
+    {
+      "id": "E-Q5",
+      "image_id": "english",
+      "category": "semantic",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "E1",
+        "E9",
+        "E11"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "選This與兩個my，均非指定的主格I/You，未選兩個I與You；raw尾端多引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "74aaa538545eccdc16315a913186ca10b9dfcddfb3f82bd43abfdd59587e2347",
+        "parser_errors": [
+          "json:Extra data: line 1 column 108 (char 107)"
+        ],
+        "call_id": "single/ocr_llm/E-Q5/attempt-1",
+        "private_source_result_sha256": "a417311fcfab0e61dbfbfc8c8094fb8df01b669fc31f14e60903f3e0cd7b659a"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "選上方I、中間I與下方You，三次出現皆列出且粗略位置相符；首輪漏選上方I，本輪改正。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_correct",
+        "raw_sha256": "1665edb5058e36541bbcb170d75506f243fa072b1b8ff55a0cd8226a13df8da1",
+        "parser_errors": [],
+        "call_id": "single/vlm/E-Q5/attempt-1",
+        "private_source_result_sha256": "59ebe33f3c029ba02e41bebb2d7b4c15a60edb020c4100628b4ced93f37094e5"
+      }
+    },
+    {
+      "id": "E-Q6",
+      "image_id": "english",
+      "category": "semantic",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "E7",
+        "E10",
+        "E12"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": false,
+        "notes": "選全部8個OCR候選，含This/is/am/a/pen與底列合併文字，並非精確的兩個my加your；raw尾端多引號。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "75e3972580dfa01a68f455091ab9bec6a4dc84a3f9c43edbb8cfe878b7cafe73",
+        "parser_errors": [
+          "json:Extra data: line 1 column 183 (char 182)"
+        ],
+        "call_id": "single/ocr_llm/E-Q6/attempt-1",
+        "private_source_result_sha256": "ba1cd8bb30a6634e09aeadd116c5406ab4e97e7c77c6772e2c71be95eccdfe3d"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "call_schema_valid": true,
+        "notes": "只選中間列my與下方your，仍漏掉上方例句的my；未滿足每次出現都選取。",
+        "baseline_content_correct": false,
+        "transition": "wrong_to_wrong",
+        "raw_sha256": "9a39b0ca87c47ceb2b1da0d9f5b892f1eefb54c68d539497be64af17bb1eab35",
+        "parser_errors": [],
+        "call_id": "single/vlm/E-Q6/attempt-1",
+        "private_source_result_sha256": "94d52d8955a569d6cf493a8873cd818bd1fcfdc4c3e92ce7644947464857a424"
+      }
+    }
+  ],
+  "reference_review": "annotations/reviews.json",
+  "private_source_questions_sha256": "32e67e5ffe28bbea61c68c3182a4aee5a94ee170b8348b514ca1506d6f75df85",
+  "private_source_baseline_adjudication_sha256": "8e8b06027eecf59e319520111a626e32ce9c3d99de4d176cfffd9ea56efda9ce",
+  "questions_sha256": "f12bb09b060d68fc34c6b0df606c1346d7f4d91b37495a39e7dcbffc4edc1143"
+}

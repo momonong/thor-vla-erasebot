@@ -1,0 +1,3 @@
+```json
+{"answers":[{"id":"F-Q1","status":"selected","targets":[{"text":"Lemons","bbox":[558,567,658,609]}]}]}
+```

@@ -1,0 +1,456 @@
+{
+  "schema_version": 1,
+  "evaluation_date": "2026-10-30",
+  "evaluator": "AI visual adjudication with independent AI review; not human-accepted ground truth.",
+  "reference": "data/reference.ai.json",
+  "reference_review": "annotations/reviews.json",
+  "method": "Read original answers case-by-case and compare exact intended occurrence sets/status plus coarse visual location. Content-only diagnostic interpretation never rewrites raw outputs or parsed validity. All18 cases per route remain in denominator. Approximate boxes do not support precise wipe-mask accuracy.",
+  "schema_note": "A colour returned a top-level array instead of an answers object. A fruits omitted F-Q6. Their readable case contents can be diagnosed but are not claimed machine-usable. B's first attempt failed before generation due to missing torchvision; only the single dependency-repair retry produced answers.",
+  "summary": {
+    "ocr_llm": {
+      "total": 18,
+      "content_correct": 4,
+      "by_category": {
+        "exact_color": {
+          "correct": 3,
+          "total": 6
+        },
+        "spatial": {
+          "correct": 0,
+          "total": 6
+        },
+        "semantic": {
+          "correct": 1,
+          "total": 6
+        }
+      },
+      "complete_batch_schema": {
+        "valid": 1,
+        "total": 3
+      },
+      "content_correct_and_entire_batch_schema_valid": 0
+    },
+    "vlm": {
+      "total": 18,
+      "content_correct": 10,
+      "by_category": {
+        "exact_color": {
+          "correct": 6,
+          "total": 6
+        },
+        "spatial": {
+          "correct": 3,
+          "total": 6
+        },
+        "semantic": {
+          "correct": 1,
+          "total": 6
+        }
+      },
+      "complete_batch_schema": {
+        "valid": 3,
+        "total": 3
+      },
+      "content_correct_and_entire_batch_schema_valid": 10
+    }
+  },
+  "cases": [
+    {
+      "id": "C-Q1",
+      "image_id": "colour",
+      "category": "exact_color",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "C2"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": false,
+        "notes": "選BLUE，中間位置相符；整圖回傳頂層array，schema仍不合規。"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選BLUE且單字框對應中間位置。"
+      }
+    },
+    {
+      "id": "C-Q2",
+      "image_id": "colour",
+      "category": "exact_color",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "C1"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": false,
+        "notes": "選RED，上方位置相符；整圖schema不合規。"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選RED且框對應上方位置；字義與墨色重合，不證明因果使用顏色。"
+      }
+    },
+    {
+      "id": "C-Q3",
+      "image_id": "colour",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "C3"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": false,
+        "notes": "應選最下方GREEN，卻選RED。"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選最下方GREEN，粗略位置相符。"
+      }
+    },
+    {
+      "id": "C-Q4",
+      "image_id": "colour",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "C2"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": false,
+        "notes": "應選RED與GREEN之間的BLUE，卻選RED。"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選中間BLUE，粗略位置相符。"
+      }
+    },
+    {
+      "id": "C-Q5",
+      "image_id": "colour",
+      "category": "semantic",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": false,
+        "notes": "選齊三個顏色詞；整圖schema不合規。"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選齊RED、BLUE、GREEN各一次。"
+      }
+    },
+    {
+      "id": "C-Q6",
+      "image_id": "colour",
+      "category": "semantic",
+      "expected_status": "no_match",
+      "expected_target_ids": [],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": false,
+        "notes": "沒有水果名稱，卻選三個顏色詞。"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "沒有水果名稱，卻選RED、BLUE、GREEN。"
+      }
+    },
+    {
+      "id": "F-Q1",
+      "image_id": "fruits",
+      "category": "exact_color",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "F6"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": false,
+        "notes": "回no_match；OCR將Lemons辨成lervas，漏掉目標。"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選Lemons，單字框對應右下。"
+      }
+    },
+    {
+      "id": "F-Q2",
+      "image_id": "fruits",
+      "category": "exact_color",
+      "expected_status": "no_match",
+      "expected_target_ids": [],
+      "ocr_llm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": false,
+        "notes": "回no_match，符合可見照片沒有藍色字；整圖缺F-Q6，batch schema不合規。"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "回no_match，符合照片。"
+      }
+    },
+    {
+      "id": "F-Q3",
+      "image_id": "fruits",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "F8"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": false,
+        "notes": "選Kiwis自身，沒有選其下方的melons。"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選kiwis自身，沒有選其正下方melons。"
+      }
+    },
+    {
+      "id": "F-Q4",
+      "image_id": "fruits",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "F4"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": false,
+        "notes": "選多個非目標候選，包括標題片段與箭頭誤檢。"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選FRUITS自身，應選oranges。"
+      }
+    },
+    {
+      "id": "F-Q5",
+      "image_id": "fruits",
+      "category": "semantic",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": false,
+        "notes": "選多個非目標候選，包括要保留的標題，且漏掉Kiwis。"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "多選須保留的FRUITS，漏選kiwis與melons。"
+      }
+    },
+    {
+      "id": "F-Q6",
+      "image_id": "fruits",
+      "category": "semantic",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": false,
+        "batch_schema_valid": false,
+        "notes": "整題沒有回答，計失敗，保留在18題分母。"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選了唯一要保留的課程標題，未選其餘七處，保留與擦除顛倒。"
+      }
+    },
+    {
+      "id": "E-Q1",
+      "image_id": "english",
+      "category": "exact_color",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "E8"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "回no_match，儘管OCR候選已含pen。"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選pen，單字框對應上方右側。"
+      }
+    },
+    {
+      "id": "E-Q2",
+      "image_id": "english",
+      "category": "exact_color",
+      "expected_status": "no_match",
+      "expected_target_ids": [],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選紅色pen，應為no_match。"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "回no_match，符合照片。"
+      }
+    },
+    {
+      "id": "E-Q3",
+      "image_id": "english",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "E11"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選7個候選；並非最下方對照列左側You，該行OCR本身也辨成Jnoh-noT。"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選中間對照列I，應選最下方對照列You。"
+      }
+    },
+    {
+      "id": "E-Q4",
+      "image_id": "english",
+      "category": "spatial",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "E10"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選7個候選，未限定中間對照列右側my。"
+      },
+      "vlm": {
+        "content_target_set_correct": true,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選中間對照列右側my，位置相符。"
+      }
+    },
+    {
+      "id": "E-Q5",
+      "image_id": "english",
+      "category": "semantic",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "E1",
+        "E9",
+        "E11"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選7個候選，包括非主格代名詞；OCR未找到兩處I。"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "只選中間I與下方You，漏掉上方例句I。"
+      }
+    },
+    {
+      "id": "E-Q6",
+      "image_id": "english",
+      "category": "semantic",
+      "expected_status": "selected",
+      "expected_target_ids": [
+        "E7",
+        "E10",
+        "E12"
+      ],
+      "ocr_llm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "選7個候選，包括非所有格限定詞；OCR未將your獨立辨出。"
+      },
+      "vlm": {
+        "content_target_set_correct": false,
+        "response_present": true,
+        "batch_schema_valid": true,
+        "notes": "只選對照列my、your，漏掉上方例句my。"
+      }
+    }
+  ],
+  "limitations": [
+    "Only three public English-writing photos, not a representative held-out benchmark.",
+    "Colour words have matching ink and lexical meaning, so colour reliance is confounded.",
+    "Fruits photo uses one physical black marker according to source, with brownish photo cast.",
+    "English photo ink red/pink distinction is not tested.",
+    "References are AI annotated, not human-accepted labels.",
+    "No inferential statistics, training, or robot operation."
+  ]
+}

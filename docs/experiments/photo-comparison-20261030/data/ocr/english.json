@@ -1,0 +1,682 @@
+{
+  "image_id": "english",
+  "image_path": "assets/prepared/english.png",
+  "image_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+  "image_size": [
+    1024,
+    683
+  ],
+  "elapsed_s": 0.4222947999369353,
+  "raw": {
+    "boxes": [
+      [
+        [
+          533.0,
+          152.0
+        ],
+        [
+          856.0,
+          188.0
+        ],
+        [
+          843.0,
+          302.0
+        ],
+        [
+          520.0,
+          265.0
+        ]
+      ],
+      [
+        [
+          207.0,
+          183.0
+        ],
+        [
+          405.0,
+          195.0
+        ],
+        [
+          400.0,
+          270.0
+        ],
+        [
+          203.0,
+          259.0
+        ]
+      ],
+      [
+        [
+          846.0,
+          202.0
+        ],
+        [
+          937.0,
+          202.0
+        ],
+        [
+          937.0,
+          268.0
+        ],
+        [
+          846.0,
+          268.0
+        ]
+      ],
+      [
+        [
+          397.0,
+          370.0
+        ],
+        [
+          546.0,
+          388.0
+        ],
+        [
+          534.0,
+          484.0
+        ],
+        [
+          385.0,
+          465.0
+        ]
+      ],
+      [
+        [
+          315.0,
+          464.0
+        ],
+        [
+          624.0,
+          505.0
+        ],
+        [
+          609.0,
+          616.0
+        ],
+        [
+          300.0,
+          575.0
+        ]
+      ]
+    ],
+    "texts": [
+      "This is my",
+      "ama",
+      "pen",
+      "my",
+      "Jnoh-noT"
+    ],
+    "scores": [
+      0.95331,
+      0.89383,
+      0.98591,
+      0.97766,
+      0.66669
+    ],
+    "word_results": [
+      [
+        [
+          "This",
+          0.99967,
+          [
+            [
+              564,
+              155
+            ],
+            [
+              688,
+              169
+            ],
+            [
+              675,
+              283
+            ],
+            [
+              551,
+              269
+            ]
+          ]
+        ],
+        [
+          "is",
+          0.99989,
+          [
+            [
+              696,
+              170
+            ],
+            [
+              745,
+              175
+            ],
+            [
+              731,
+              290
+            ],
+            [
+              683,
+              284
+            ]
+          ]
+        ],
+        [
+          "my",
+          0.99915,
+          [
+            [
+              771,
+              178
+            ],
+            [
+              839,
+              186
+            ],
+            [
+              826,
+              301
+            ],
+            [
+              758,
+              293
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "am",
+          0.94551,
+          [
+            [
+              207,
+              183
+            ],
+            [
+              333,
+              190
+            ],
+            [
+              328,
+              266
+            ],
+            [
+              203,
+              259
+            ]
+          ]
+        ],
+        [
+          "a",
+          0.99876,
+          [
+            [
+              346,
+              191
+            ],
+            [
+              405,
+              195
+            ],
+            [
+              400,
+              270
+            ],
+            [
+              341,
+              266
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "pen",
+          0.98224,
+          [
+            [
+              848,
+              202
+            ],
+            [
+              931,
+              202
+            ],
+            [
+              931,
+              268
+            ],
+            [
+              848,
+              268
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "my",
+          0.98619,
+          [
+            [
+              420,
+              372
+            ],
+            [
+              546,
+              388
+            ],
+            [
+              533,
+              485
+            ],
+            [
+              408,
+              469
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          "Jnoh-noT",
+          0.51943,
+          [
+            [
+              323,
+              465
+            ],
+            [
+              621,
+              504
+            ],
+            [
+              606,
+              615
+            ],
+            [
+              308,
+              576
+            ]
+          ]
+        ]
+      ]
+    ],
+    "stage_elapsed_s": [
+      0.2567396000958979,
+      0.005889399908483028,
+      0.08531440002843738
+    ]
+  },
+  "candidates": [
+    {
+      "id": "english-t001",
+      "text": "This",
+      "score": 0.99967,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          564,
+          155
+        ],
+        [
+          688,
+          169
+        ],
+        [
+          675,
+          283
+        ],
+        [
+          551,
+          269
+        ]
+      ],
+      "bbox": [
+        538.086,
+        226.94,
+        671.875,
+        414.348
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 381,
+        "class_pixel_counts": {
+          "red": 381,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-t002",
+      "text": "is",
+      "score": 0.99989,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          696,
+          170
+        ],
+        [
+          745,
+          175
+        ],
+        [
+          731,
+          290
+        ],
+        [
+          683,
+          284
+        ]
+      ],
+      "bbox": [
+        666.992,
+        248.902,
+        727.539,
+        424.597
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 94,
+        "class_pixel_counts": {
+          "red": 94,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-t003",
+      "text": "my",
+      "score": 0.99915,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          771,
+          178
+        ],
+        [
+          839,
+          186
+        ],
+        [
+          826,
+          301
+        ],
+        [
+          758,
+          293
+        ]
+      ],
+      "bbox": [
+        740.234,
+        260.615,
+        819.336,
+        440.703
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 317,
+        "class_pixel_counts": {
+          "red": 317,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-t004",
+      "text": "am",
+      "score": 0.94551,
+      "line_index": 1,
+      "polygon_px": [
+        [
+          207,
+          183
+        ],
+        [
+          333,
+          190
+        ],
+        [
+          328,
+          266
+        ],
+        [
+          203,
+          259
+        ]
+      ],
+      "bbox": [
+        198.242,
+        267.936,
+        325.195,
+        389.458
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 167,
+        "class_pixel_counts": {
+          "red": 167,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-t005",
+      "text": "a",
+      "score": 0.99876,
+      "line_index": 1,
+      "polygon_px": [
+        [
+          346,
+          191
+        ],
+        [
+          405,
+          195
+        ],
+        [
+          400,
+          270
+        ],
+        [
+          341,
+          266
+        ]
+      ],
+      "bbox": [
+        333.008,
+        279.649,
+        395.508,
+        395.315
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 89,
+        "class_pixel_counts": {
+          "red": 89,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-t006",
+      "text": "pen",
+      "score": 0.98224,
+      "line_index": 2,
+      "polygon_px": [
+        [
+          848,
+          202
+        ],
+        [
+          931,
+          202
+        ],
+        [
+          931,
+          268
+        ],
+        [
+          848,
+          268
+        ]
+      ],
+      "bbox": [
+        828.125,
+        295.754,
+        909.18,
+        392.387
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 462,
+        "class_pixel_counts": {
+          "red": 462,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-t007",
+      "text": "my",
+      "score": 0.98619,
+      "line_index": 3,
+      "polygon_px": [
+        [
+          420,
+          372
+        ],
+        [
+          546,
+          388
+        ],
+        [
+          533,
+          485
+        ],
+        [
+          408,
+          469
+        ]
+      ],
+      "bbox": [
+        398.438,
+        544.656,
+        533.203,
+        710.102
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 356,
+        "class_pixel_counts": {
+          "red": 356,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-t008",
+      "text": "Jnoh-noT",
+      "score": 0.51943,
+      "line_index": 4,
+      "polygon_px": [
+        [
+          323,
+          465
+        ],
+        [
+          621,
+          504
+        ],
+        [
+          606,
+          615
+        ],
+        [
+          308,
+          576
+        ]
+      ],
+      "bbox": [
+        300.781,
+        680.82,
+        606.445,
+        900.439
+      ],
+      "box_source": "native_CTC_word",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 590,
+        "class_pixel_counts": {
+          "red": 590,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    }
+  ],
+  "candidate_coordinate_frame": "image, top-left origin, x right, y down, normalised 0-1000"
+}

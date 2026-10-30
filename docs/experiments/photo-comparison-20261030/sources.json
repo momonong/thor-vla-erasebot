@@ -1,0 +1,43 @@
+{
+  "retrieved_date": "2026-10-29",
+  "purpose": "Public reference photographs for a proposed offline whiteboard OCR and target-selection prototype.",
+  "status": "Downloaded and visually inspected. No OCR, bounding-box annotation, project integration, training, or hardware execution has been performed.",
+  "images_modified": false,
+  "samples": [
+    {
+      "file": "01-colour-words-original.jpg",
+      "author": "nwales",
+      "source_page": "https://stackoverflow.com/questions/28223727/how-to-achieve-adaptive-threshold-filter-with-color",
+      "image_url": "https://i.sstatic.net/2JNub.jpg",
+      "license": "CC BY-SA 3.0, according to Stack Overflow's licensing policy for contributions from 2015. Retain attribution and the source link; observe the applicable license when redistributing or modifying.",
+      "license_source": "https://stackoverflow.com/help/licensing",
+      "observed_content": "RED in red, BLUE in blue, GREEN in green; uneven illumination and faint residual marks.",
+      "candidate_use": "Basic handwritten word localization, color extraction, and selecting a requested word in this image.",
+      "limitations": "Only three distinct words. Word meaning and ink color coincide. Does not test the same word in different colors or duplicate matching targets. This is the question's original image, not its processed result."
+    },
+    {
+      "file": "02-fruits-original.webp",
+      "author": "Daniel Rosehill",
+      "source_page": "https://huggingface.co/datasets/danielrosehill/Whiteboards",
+      "image_url": "https://huggingface.co/datasets/danielrosehill/Whiteboards/resolve/4b31e86e15743ffea20204a8f6992b0173ecbdf9/data/06.webp",
+      "source_revision": "4b31e86e15743ffea20204a8f6992b0173ecbdf9",
+      "source_sample_id": "06",
+      "license": "CC BY 4.0",
+      "license_source": "https://huggingface.co/datasets/danielrosehill/Whiteboards#license",
+      "observed_content": "A fruit mind map with Apples, Oranges, Bananas, Lemons, Kiwis, Melons, arrows, and a central FRUITS label.",
+      "candidate_use": "Handwriting recognition and word localization among arrows and diagram strokes.",
+      "limitations": "The dataset author describes all samples as black marker. Photographic color casts are not different ink classes. This single-author dataset is not representative of all whiteboards. Author transcription is available upstream; no reference bounding boxes have been created locally."
+    },
+    {
+      "file": "03-english-lesson-original.jpg",
+      "author": "Thirdman",
+      "source_page": "https://www.pexels.com/photo/text-written-on-whiteboard-6503132/",
+      "image_url": "https://images.pexels.com/photos/6503132/pexels-photo-6503132.jpeg?cs=srgb&dl=pexels-thirdman-6503132.jpg&fm=jpg",
+      "license": "Pexels License; free use and modification subject to its conditions. It is not public domain.",
+      "license_source": "https://www.pexels.com/license/",
+      "observed_content": "Light reddish handwriting: I am a girl. This is my pen; below, I - my and You - your.",
+      "candidate_use": "Sentence word segmentation, faint strokes, and ambiguous selection of repeated words such as my.",
+      "limitations": "One apparent ink color, no author-provided OCR labels, and a cropped board view. Candidate tests apply to this image's visible search area, not an unseen whole board."
+    }
+  ]
+}

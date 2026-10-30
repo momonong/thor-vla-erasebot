@@ -1,0 +1,298 @@
+{
+  "initial": {
+    "image_sha256": "c7a2c6e1315b303acccf76de669efe445c734bb0d7a471e5e27c8cb978edaee0",
+    "evidence": [
+      {
+        "question_id": "C-Q3",
+        "route": "ocr_llm",
+        "strict_schema_valid": false,
+        "diagnostic_answer": {
+          "id": "C-Q3",
+          "status": "selected",
+          "target_ids": [
+            "colour-t001"
+          ]
+        },
+        "drawn_targets": [
+          {
+            "id": "colour-t001",
+            "text": "RED",
+            "score": 0.99707,
+            "line_index": 0,
+            "polygon_px": [
+              [
+                129,
+                75
+              ],
+              [
+                342,
+                54
+              ],
+              [
+                352,
+                166
+              ],
+              [
+                139,
+                187
+              ]
+            ],
+            "bbox": [
+              216.443,
+              120.805,
+              590.604,
+              418.345
+            ],
+            "box_source": "native_CTC_word",
+            "color": {
+              "label": "red",
+              "confidence_fraction": 0.997,
+              "stroke_pixel_count": 5081,
+              "class_pixel_counts": {
+                "red": 5066,
+                "orange": 9,
+                "yellow": 0,
+                "green": 0,
+                "blue": 0,
+                "purple": 0,
+                "black": 6
+              },
+              "method": "polygon HSV stroke heuristic v1"
+            }
+          }
+        ],
+        "call_id": "batch/ocr_llm-colour/attempt-1",
+        "private_source_result_sha256": "37bcb8051b8d3a7bdc4787e854dd2cbb19e4ed38ff1e8d7b4a7a6fd3c400bf80"
+      },
+      {
+        "question_id": "C-Q3",
+        "route": "vlm",
+        "strict_schema_valid": true,
+        "diagnostic_answer": {
+          "id": "C-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "GREEN",
+              "bbox": [
+                208,
+                588,
+                778,
+                888
+              ]
+            }
+          ]
+        },
+        "drawn_targets": [
+          {
+            "text": "GREEN",
+            "bbox": [
+              208,
+              588,
+              778,
+              888
+            ]
+          }
+        ],
+        "call_id": "batch/vlm-colour/attempt-2",
+        "private_source_result_sha256": "fc6a7dcd37699258563e762af1e86a5d9dacbbdab75c3d8dc217f17206329a9b"
+      },
+      {
+        "question_id": "F-Q6",
+        "route": "ocr_llm",
+        "strict_schema_valid": false,
+        "diagnostic_answer": null,
+        "drawn_targets": [],
+        "call_id": "batch/ocr_llm-fruits/attempt-1",
+        "private_source_result_sha256": "80f9f8880caec9d8c10eb98ed6bf7ed7a7d3fa4e2587008d614ef6fd7abd80c9"
+      },
+      {
+        "question_id": "F-Q6",
+        "route": "vlm",
+        "strict_schema_valid": true,
+        "diagnostic_answer": {
+          "id": "F-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "Few Shot Learning--",
+              "bbox": [
+                47,
+                125,
+                458,
+                198
+              ]
+            }
+          ]
+        },
+        "drawn_targets": [
+          {
+            "text": "Few Shot Learning--",
+            "bbox": [
+              47,
+              125,
+              458,
+              198
+            ]
+          }
+        ],
+        "call_id": "batch/vlm-fruits/attempt-2",
+        "private_source_result_sha256": "962c30d68e3325e1e83741c13e30d3996ae6daea36e845201949ac1109e19af7"
+      }
+    ]
+  },
+  "paired": {
+    "image_sha256": "2549f016a34de00330d0a94647107cd66c7220cbb1bf1f4245dad7f43a779f68",
+    "source": {
+      "file": "02-fruits-original.webp",
+      "author": "Daniel Rosehill",
+      "source_page": "https://huggingface.co/datasets/danielrosehill/Whiteboards",
+      "image_url": "https://huggingface.co/datasets/danielrosehill/Whiteboards/resolve/4b31e86e15743ffea20204a8f6992b0173ecbdf9/data/06.webp",
+      "source_revision": "4b31e86e15743ffea20204a8f6992b0173ecbdf9",
+      "source_sample_id": "06",
+      "license": "CC BY 4.0",
+      "license_source": "https://huggingface.co/datasets/danielrosehill/Whiteboards#license",
+      "observed_content": "A fruit mind map with Apples, Oranges, Bananas, Lemons, Kiwis, Melons, arrows, and a central FRUITS label.",
+      "candidate_use": "Handwriting recognition and word localization among arrows and diagram strokes.",
+      "limitations": "The dataset author describes all samples as black marker. Photographic color casts are not different ink classes. This single-author dataset is not representative of all whiteboards. Author transcription is available upstream; no reference bounding boxes have been created locally."
+    },
+    "prepared_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+    "modifications": "Resizing, actual model target box overlays, labels, composite layout. No corrections to target boxes.",
+    "license": "CC BY 4.0",
+    "panels": [
+      {
+        "mode": "batch",
+        "question_id": "F-Q3",
+        "raw_sha256": "1c84a26711fdfcd8b267c81148bab4e61757c378658afb1f95829bf48ef10cea",
+        "actual_answer": {
+          "id": "F-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "kiwis",
+              "bbox": [
+                183,
+                488,
+                268,
+                545
+              ]
+            }
+          ]
+        },
+        "call_id": "batch/vlm-fruits/attempt-2",
+        "private_source_result_sha256": "962c30d68e3325e1e83741c13e30d3996ae6daea36e845201949ac1109e19af7"
+      },
+      {
+        "mode": "single",
+        "question_id": "F-Q3",
+        "raw_sha256": "21728fa712187d4629e4497b58d4e69a1107f5afaa2d47ea6397480020f433d4",
+        "actual_answer": {
+          "id": "F-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "melons",
+              "bbox": [
+                195,
+                607,
+                314,
+                657
+              ]
+            }
+          ]
+        },
+        "call_id": "single/vlm/F-Q3/attempt-1",
+        "private_source_result_sha256": "5130985f1c2df7c97f9a83cfd047f27f32d5f345a8a07be535636551edd5c9b0"
+      },
+      {
+        "mode": "batch",
+        "question_id": "F-Q5",
+        "raw_sha256": "1c84a26711fdfcd8b267c81148bab4e61757c378658afb1f95829bf48ef10cea",
+        "actual_answer": {
+          "id": "F-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "FRUITS",
+              "bbox": [
+                418,
+                418,
+                578,
+                475
+              ]
+            },
+            {
+              "text": "Apples",
+              "bbox": [
+                615,
+                285,
+                745,
+                338
+              ]
+            },
+            {
+              "text": "Oranges",
+              "bbox": [
+                665,
+                398,
+                795,
+                445
+              ]
+            },
+            {
+              "text": "Bananas",
+              "bbox": [
+                680,
+                468,
+                825,
+                515
+              ]
+            },
+            {
+              "text": "Lemons",
+              "bbox": [
+                558,
+                565,
+                658,
+                609
+              ]
+            }
+          ]
+        },
+        "call_id": "batch/vlm-fruits/attempt-2",
+        "private_source_result_sha256": "962c30d68e3325e1e83741c13e30d3996ae6daea36e845201949ac1109e19af7"
+      },
+      {
+        "mode": "single",
+        "question_id": "F-Q5",
+        "raw_sha256": "28ef68a9db65a4fd8e0807b76c28c534d590bfe72c4c5f854645250e6c374e45",
+        "actual_answer": {
+          "id": "F-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "FRUITS",
+              "bbox": [
+                400,
+                415,
+                580,
+                475
+              ]
+            },
+            {
+              "text": "Few Shot Learning--",
+              "bbox": [
+                47,
+                125,
+                458,
+                195
+              ]
+            }
+          ]
+        },
+        "call_id": "single/vlm/F-Q5/attempt-1",
+        "private_source_result_sha256": "b54bf312264c4d1feba561b43415afa024c541cca92c95500cfc230bfc392313"
+      }
+    ]
+  }
+}

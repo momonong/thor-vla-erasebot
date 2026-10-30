@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Private full-fidelity local evidence; publish only the portable docs packet.
+/experiments/photo-comparison-20261030/
+/.codex-remote-attachments/

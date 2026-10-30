@@ -1,0 +1,34 @@
+```json
+[
+    {
+        "id": "C-Q1",
+        "status": "selected",
+        "target_ids": ["colour-t002"]
+    },
+    {
+        "id": "C-Q2",
+        "status": "selected",
+        "target_ids": ["colour-t001"]
+    },
+    {
+        "id": "C-Q3",
+        "status": "selected",
+        "target_ids": ["colour-t001"]
+    },
+    {
+        "id": "C-Q4",
+        "status": "selected",
+        "target_ids": ["colour-t001"]
+    },
+    {
+        "id": "C-Q5",
+        "status": "selected",
+        "target_ids": ["colour-t001", "colour-t002", "colour-t003"]
+    },
+    {
+        "id": "C-Q6",
+        "status": "selected",
+        "target_ids": ["colour-t001", "colour-t002", "colour-t003"]
+    }
+]
+```
