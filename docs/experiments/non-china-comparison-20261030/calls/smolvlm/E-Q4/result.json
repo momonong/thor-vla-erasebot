@@ -1,0 +1,80 @@
+{
+  "route": "smolvlm",
+  "question_id": "E-Q4",
+  "image_id": "english",
+  "question": {
+    "id": "E-Q4",
+    "category": "spatial",
+    "instruction": "擦掉上方例句下方第一組對照文字中，連字號右邊的單字。"
+  },
+  "started_utc": "2026-10-30T08:25:07.841925+00:00",
+  "status": "completed",
+  "prompt_sha256": "ccd53df981817f6cd923cf9d9aff22ff4cd93e9a8ba905b782f7bce35a575d7e",
+  "model_input_prompt_lf_sha256": "62be72ff9ffab8e5faa8843b9e54a5370dee0f6d57a6de739e38bccb6669367e",
+  "image_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1767,
+  "input_tensors": {
+    "pixel_values": {
+      "shape": [
+        1,
+        13,
+        3,
+        384,
+        384
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "pixel_attention_mask": {
+      "shape": [
+        1,
+        13,
+        384,
+        384
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "input_ids": {
+      "shape": [
+        1,
+        1767
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1767
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.2017008000984788,
+  "generation_s": 0.6410560000222176,
+  "generated_tokens": 13,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "47b010e57ea6886eadc32fed2b4af4295cb02906cc081c75b94c21b78ea60ee3",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Expecting value: line 1 column 1 (char 0)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 5002822656,
+  "peak_gpu_reserved_bytes": 5075107840,
+  "question_wall_s": 0.8517356000375003
+}

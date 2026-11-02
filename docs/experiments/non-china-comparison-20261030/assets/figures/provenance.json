@@ -1,0 +1,27 @@
+{
+  "figure": "assets/figures/gemma-grounding.png",
+  "source_plot_script_sha256": "3996103317ecc4a123f7d5dd5a16c654f603262aecbaab01f071bb87271415a6",
+  "reference_sha256": "a821da72f576a1bda141bf9ba3edeab0457b44eeaedbad5c908e02eacb2c1319",
+  "panels": [
+    {
+      "image": "assets/prepared/colour.png",
+      "question_id": "C-Q1",
+      "result": "calls/gemma/C-Q1/result.json",
+      "result_sha256": "588c8b79c75406b2fb0726949bbb9e10cc9b8fc0a2dccbf8d197448a5430ed54"
+    },
+    {
+      "image": "assets/prepared/fruits.png",
+      "question_id": "F-Q4",
+      "result": "calls/gemma/F-Q4/result.json",
+      "result_sha256": "7f6d70728b23f226e102bf9df82529f6995390692d74d7cdac9c2bd0f5f6ec96"
+    },
+    {
+      "image": "assets/prepared/english.png",
+      "question_id": "E-Q1",
+      "result": "calls/gemma/E-Q1/result.json",
+      "result_sha256": "1da5c88fd36c2217d6d64117d3d12bb36fbacc90a2bb7bb7ee184ec98c1c9f86"
+    }
+  ],
+  "generated_by_archive_build": false,
+  "model_boxes_or_images_changed": false
+}

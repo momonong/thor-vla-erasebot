@@ -1,0 +1,111 @@
+{
+  "route": "phi",
+  "question_id": "E-Q1",
+  "image_id": "english",
+  "question": {
+    "id": "E-Q1",
+    "category": "exact_color",
+    "instruction": "只擦掉文字 pen。"
+  },
+  "started_utc": "2026-10-30T08:14:05.687461+00:00",
+  "status": "completed",
+  "prompt_sha256": "7de76e39546da7a9e06f72836101b83f62bbcfabc8d62cec78b206a22796c09c",
+  "model_input_prompt_lf_sha256": "ada8e422fb94156bd6a71bf9cc9af66581163c40fc0718c01a60daa322adf63d",
+  "image_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 2192,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        2192
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "input_image_embeds": {
+      "shape": [
+        1,
+        7,
+        3,
+        448,
+        448
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "image_sizes": {
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "image_attention_mask": {
+      "shape": [
+        1,
+        7,
+        32,
+        32
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "input_audio_embeds": {
+      "shape": [
+        0
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "audio_embed_sizes": {
+      "shape": [
+        0
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        2192
+      ],
+      "dtype": "torch.bool",
+      "value": null
+    },
+    "input_mode": {
+      "shape": [
+        1
+      ],
+      "dtype": "torch.int64",
+      "value": [
+        1
+      ]
+    }
+  },
+  "preprocess_s": 0.05517719988711178,
+  "generation_s": 5.022213000105694,
+  "generated_tokens": 46,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "14ec787a5087e95f12f0f3a9de589de12b3700c06035bf97564b8715060ee2fb",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Expecting ',' delimiter: line 1 column 116 (char 115)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 14075766784,
+  "peak_gpu_reserved_bytes": 19537068032,
+  "question_wall_s": 5.08808230003342
+}

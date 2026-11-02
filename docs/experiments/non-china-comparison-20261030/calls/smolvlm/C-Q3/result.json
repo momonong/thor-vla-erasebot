@@ -1,0 +1,89 @@
+{
+  "route": "smolvlm",
+  "question_id": "C-Q3",
+  "image_id": "colour",
+  "question": {
+    "id": "C-Q3",
+    "category": "spatial",
+    "instruction": "擦掉最下方的完整英文單字。"
+  },
+  "started_utc": "2026-10-30T08:24:44.417498+00:00",
+  "status": "completed",
+  "prompt_sha256": "b735b744002400622caef8f5893376651dd53f3a53e4146bfbd62fb913dc8f06",
+  "model_input_prompt_lf_sha256": "1752560eb0f667912361fd5df437a0769d148d7f1c3cccb4a1053ed0235dd949",
+  "image_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1745,
+  "input_tensors": {
+    "pixel_values": {
+      "shape": [
+        1,
+        13,
+        3,
+        384,
+        384
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "pixel_attention_mask": {
+      "shape": [
+        1,
+        13,
+        384,
+        384
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "input_ids": {
+      "shape": [
+        1,
+        1745
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1745
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.29300429997965693,
+  "generation_s": 1.5621575999539346,
+  "generated_tokens": 43,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "b619494c8e2808210536370ed9e7c8df92f399f90426703e2da9b3edbd2441e8",
+  "parsed": {
+    "valid": false,
+    "data": {
+      "answers": [
+        {
+          "id": "C-Q3",
+          "category": "spatial",
+          "instruction": "擦掉最下方的完整英文單字。"
+        }
+      ]
+    },
+    "errors": [
+      "C-Q3:status",
+      "C-Q3:targets_not_list"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 4998410752,
+  "peak_gpu_reserved_bytes": 5075107840,
+  "question_wall_s": 1.8628709998447448
+}

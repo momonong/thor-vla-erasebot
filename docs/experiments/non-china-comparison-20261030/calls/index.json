@@ -1,0 +1,656 @@
+{
+  "calls": [
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q1",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/C-Q1"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q2",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/C-Q2"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q3",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/C-Q3"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q4",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/C-Q4"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q5",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/C-Q5"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q6",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/C-Q6"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q1",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/E-Q1"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q2",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/E-Q2"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q3",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/E-Q3"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q4",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/E-Q4"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q5",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/E-Q5"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q6",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/E-Q6"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q1",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/F-Q1"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q2",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/F-Q2"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q3",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/F-Q3"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q4",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/F-Q4"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q5",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/F-Q5"
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q6",
+      "attempt": 1,
+      "directory": "calls/qwen_llm/F-Q6"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q1",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/C-Q1"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q2",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/C-Q2"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q3",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/C-Q3"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q4",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/C-Q4"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q5",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/C-Q5"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q6",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/C-Q6"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q1",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/E-Q1"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q2",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/E-Q2"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q3",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/E-Q3"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q4",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/E-Q4"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q5",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/E-Q5"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q6",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/E-Q6"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q1",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/F-Q1"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q2",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/F-Q2"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q3",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/F-Q3"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q4",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/F-Q4"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q5",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/F-Q5"
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q6",
+      "attempt": 1,
+      "directory": "calls/qwen_vlm/F-Q6"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q1",
+      "attempt": 2,
+      "directory": "calls/smolvlm/C-Q1"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q2",
+      "attempt": 2,
+      "directory": "calls/smolvlm/C-Q2"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q3",
+      "attempt": 2,
+      "directory": "calls/smolvlm/C-Q3"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q4",
+      "attempt": 2,
+      "directory": "calls/smolvlm/C-Q4"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q5",
+      "attempt": 2,
+      "directory": "calls/smolvlm/C-Q5"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q6",
+      "attempt": 2,
+      "directory": "calls/smolvlm/C-Q6"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q1",
+      "attempt": 2,
+      "directory": "calls/smolvlm/E-Q1"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q2",
+      "attempt": 2,
+      "directory": "calls/smolvlm/E-Q2"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q3",
+      "attempt": 2,
+      "directory": "calls/smolvlm/E-Q3"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q4",
+      "attempt": 2,
+      "directory": "calls/smolvlm/E-Q4"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q5",
+      "attempt": 2,
+      "directory": "calls/smolvlm/E-Q5"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q6",
+      "attempt": 2,
+      "directory": "calls/smolvlm/E-Q6"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q1",
+      "attempt": 2,
+      "directory": "calls/smolvlm/F-Q1"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q2",
+      "attempt": 2,
+      "directory": "calls/smolvlm/F-Q2"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q3",
+      "attempt": 2,
+      "directory": "calls/smolvlm/F-Q3"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q4",
+      "attempt": 2,
+      "directory": "calls/smolvlm/F-Q4"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q5",
+      "attempt": 2,
+      "directory": "calls/smolvlm/F-Q5"
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q6",
+      "attempt": 2,
+      "directory": "calls/smolvlm/F-Q6"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q1",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/C-Q1"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q2",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/C-Q2"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q3",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/C-Q3"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q4",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/C-Q4"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q5",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/C-Q5"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q6",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/C-Q6"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q1",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/E-Q1"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q2",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/E-Q2"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q3",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/E-Q3"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q4",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/E-Q4"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q5",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/E-Q5"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q6",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/E-Q6"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q1",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/F-Q1"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q2",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/F-Q2"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q3",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/F-Q3"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q4",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/F-Q4"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q5",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/F-Q5"
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q6",
+      "attempt": 1,
+      "directory": "calls/doctr_smollm/F-Q6"
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q1",
+      "attempt": 1,
+      "directory": "calls/gemma/C-Q1"
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q2",
+      "attempt": 1,
+      "directory": "calls/gemma/C-Q2"
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q3",
+      "attempt": 1,
+      "directory": "calls/gemma/C-Q3"
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q4",
+      "attempt": 1,
+      "directory": "calls/gemma/C-Q4"
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q5",
+      "attempt": 1,
+      "directory": "calls/gemma/C-Q5"
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q6",
+      "attempt": 1,
+      "directory": "calls/gemma/C-Q6"
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q1",
+      "attempt": 1,
+      "directory": "calls/gemma/E-Q1"
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q2",
+      "attempt": 1,
+      "directory": "calls/gemma/E-Q2"
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q3",
+      "attempt": 1,
+      "directory": "calls/gemma/E-Q3"
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q4",
+      "attempt": 1,
+      "directory": "calls/gemma/E-Q4"
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q5",
+      "attempt": 1,
+      "directory": "calls/gemma/E-Q5"
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q6",
+      "attempt": 1,
+      "directory": "calls/gemma/E-Q6"
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q1",
+      "attempt": 1,
+      "directory": "calls/gemma/F-Q1"
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q2",
+      "attempt": 1,
+      "directory": "calls/gemma/F-Q2"
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q3",
+      "attempt": 1,
+      "directory": "calls/gemma/F-Q3"
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q4",
+      "attempt": 1,
+      "directory": "calls/gemma/F-Q4"
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q5",
+      "attempt": 1,
+      "directory": "calls/gemma/F-Q5"
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q6",
+      "attempt": 1,
+      "directory": "calls/gemma/F-Q6"
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q1",
+      "attempt": 1,
+      "directory": "calls/phi/C-Q1"
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q2",
+      "attempt": 1,
+      "directory": "calls/phi/C-Q2"
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q3",
+      "attempt": 1,
+      "directory": "calls/phi/C-Q3"
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q4",
+      "attempt": 1,
+      "directory": "calls/phi/C-Q4"
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q5",
+      "attempt": 1,
+      "directory": "calls/phi/C-Q5"
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q6",
+      "attempt": 1,
+      "directory": "calls/phi/C-Q6"
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q1",
+      "attempt": 1,
+      "directory": "calls/phi/E-Q1"
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q2",
+      "attempt": 1,
+      "directory": "calls/phi/E-Q2"
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q3",
+      "attempt": 1,
+      "directory": "calls/phi/E-Q3"
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q4",
+      "attempt": 1,
+      "directory": "calls/phi/E-Q4"
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q5",
+      "attempt": 1,
+      "directory": "calls/phi/E-Q5"
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q6",
+      "attempt": 1,
+      "directory": "calls/phi/E-Q6"
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q1",
+      "attempt": 1,
+      "directory": "calls/phi/F-Q1"
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q2",
+      "attempt": 1,
+      "directory": "calls/phi/F-Q2"
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q3",
+      "attempt": 1,
+      "directory": "calls/phi/F-Q3"
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q4",
+      "attempt": 1,
+      "directory": "calls/phi/F-Q4"
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q5",
+      "attempt": 1,
+      "directory": "calls/phi/F-Q5"
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q6",
+      "attempt": 1,
+      "directory": "calls/phi/F-Q6"
+    }
+  ],
+  "generated_answers": 108,
+  "pre_generation_failed_model_attempts": 1,
+  "technical_retries": 1,
+  "answer_based_retries": 0
+}

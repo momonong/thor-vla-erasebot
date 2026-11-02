@@ -1,0 +1,7622 @@
+[
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B01-occ01"
+    ],
+    "family_id": "B01",
+    "id": "B01_clean-Q1",
+    "image_id": "B01_clean",
+    "instruction": "只擦掉文字 BLUE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                316.406,
+                246.341,
+                426.562,
+                304.878
+              ],
+              "text": "BLUE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ02",
+      "B01-occ03",
+      "B01-occ04",
+      "B01-occ05",
+      "B01-occ06",
+      "B01-occ07",
+      "B01-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "BLUE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B01-occ07"
+    ],
+    "family_id": "B01",
+    "id": "B01_clean-Q2",
+    "image_id": "B01_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                590.625,
+                646.341,
+                652.344,
+                703.659
+              ],
+              "text": "bus"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ01",
+      "B01-occ02",
+      "B01-occ03",
+      "B01-occ04",
+      "B01-occ05",
+      "B01-occ06",
+      "B01-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B01-occ03"
+    ],
+    "family_id": "B01",
+    "id": "B01_clean-Q3",
+    "image_id": "B01_clean",
+    "instruction": "只擦掉最左邊的 apple。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                77.344,
+                646.341,
+                189.844,
+                724.39
+              ],
+              "text": "apple"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ01",
+      "B01-occ02",
+      "B01-occ04",
+      "B01-occ05",
+      "B01-occ06",
+      "B01-occ07",
+      "B01-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "apple"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B01",
+    "id": "B01_clean-Q4",
+    "image_id": "B01_clean",
+    "instruction": "擦掉完全位於 dog 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_clean-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ01",
+      "B01-occ02",
+      "B01-occ03",
+      "B01-occ04",
+      "B01-occ05",
+      "B01-occ06",
+      "B01-occ07",
+      "B01-occ08"
+    ],
+    "rule": {
+      "anchor_text": "dog",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B01-occ02",
+      "B01-occ03",
+      "B01-occ04"
+    ],
+    "family_id": "B01",
+    "id": "B01_clean-Q5",
+    "image_id": "B01_clean",
+    "instruction": "擦掉所有水果名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_clean-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                807.031,
+                245.122,
+                910.156,
+                317.073
+              ],
+              "text": "apple"
+            },
+            {
+              "bbox": [
+                77.344,
+                646.341,
+                189.844,
+                724.39
+              ],
+              "text": "apple"
+            },
+            {
+              "bbox": [
+                95.312,
+                237.805,
+                194.531,
+                304.878
+              ],
+              "text": "pear"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ01",
+      "B01-occ05",
+      "B01-occ06",
+      "B01-occ07",
+      "B01-occ08"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B01-occ01",
+      "B01-occ02",
+      "B01-occ03",
+      "B01-occ04",
+      "B01-occ06",
+      "B01-occ07",
+      "B01-occ08"
+    ],
+    "family_id": "B01",
+    "id": "B01_clean-Q6",
+    "image_id": "B01_clean",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                316.406,
+                246.341,
+                426.562,
+                304.878
+              ],
+              "text": "BLUE"
+            },
+            {
+              "bbox": [
+                807.031,
+                245.122,
+                910.156,
+                317.073
+              ],
+              "text": "apple"
+            },
+            {
+              "bbox": [
+                77.344,
+                646.341,
+                189.844,
+                724.39
+              ],
+              "text": "apple"
+            },
+            {
+              "bbox": [
+                95.312,
+                237.805,
+                194.531,
+                304.878
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                296.875,
+                634.146,
+                467.188,
+                706.098
+              ],
+              "text": "hammer"
+            },
+            {
+              "bbox": [
+                590.625,
+                646.341,
+                652.344,
+                703.659
+              ],
+              "text": "bus"
+            },
+            {
+              "bbox": [
+                807.031,
+                645.122,
+                892.188,
+                697.561
+              ],
+              "text": "note"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ05"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B01-occ01"
+    ],
+    "family_id": "B01",
+    "id": "B01_color_swap-Q1",
+    "image_id": "B01_color_swap",
+    "instruction": "只擦掉文字 BLUE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                316.406,
+                246.341,
+                426.562,
+                304.878
+              ],
+              "text": "BLUE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ02",
+      "B01-occ03",
+      "B01-occ04",
+      "B01-occ05",
+      "B01-occ06",
+      "B01-occ07",
+      "B01-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "BLUE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B01-occ06"
+    ],
+    "family_id": "B01",
+    "id": "B01_color_swap-Q2",
+    "image_id": "B01_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                296.875,
+                634.146,
+                467.188,
+                706.098
+              ],
+              "text": "hammer"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ01",
+      "B01-occ02",
+      "B01-occ03",
+      "B01-occ04",
+      "B01-occ05",
+      "B01-occ07",
+      "B01-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B01-occ03"
+    ],
+    "family_id": "B01",
+    "id": "B01_color_swap-Q3",
+    "image_id": "B01_color_swap",
+    "instruction": "只擦掉最左邊的 apple。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                77.344,
+                646.341,
+                189.844,
+                724.39
+              ],
+              "text": "apple"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ01",
+      "B01-occ02",
+      "B01-occ04",
+      "B01-occ05",
+      "B01-occ06",
+      "B01-occ07",
+      "B01-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "apple"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B01",
+    "id": "B01_color_swap-Q4",
+    "image_id": "B01_color_swap",
+    "instruction": "擦掉完全位於 dog 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_color_swap-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ01",
+      "B01-occ02",
+      "B01-occ03",
+      "B01-occ04",
+      "B01-occ05",
+      "B01-occ06",
+      "B01-occ07",
+      "B01-occ08"
+    ],
+    "rule": {
+      "anchor_text": "dog",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B01-occ02",
+      "B01-occ03",
+      "B01-occ04"
+    ],
+    "family_id": "B01",
+    "id": "B01_color_swap-Q5",
+    "image_id": "B01_color_swap",
+    "instruction": "擦掉所有水果名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_color_swap-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                807.031,
+                245.122,
+                910.156,
+                317.073
+              ],
+              "text": "apple"
+            },
+            {
+              "bbox": [
+                77.344,
+                646.341,
+                189.844,
+                724.39
+              ],
+              "text": "apple"
+            },
+            {
+              "bbox": [
+                95.312,
+                237.805,
+                194.531,
+                304.878
+              ],
+              "text": "pear"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ01",
+      "B01-occ05",
+      "B01-occ06",
+      "B01-occ07",
+      "B01-occ08"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B01-occ01",
+      "B01-occ02",
+      "B01-occ03",
+      "B01-occ04",
+      "B01-occ06",
+      "B01-occ07",
+      "B01-occ08"
+    ],
+    "family_id": "B01",
+    "id": "B01_color_swap-Q6",
+    "image_id": "B01_color_swap",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B01_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                316.406,
+                246.341,
+                426.562,
+                304.878
+              ],
+              "text": "BLUE"
+            },
+            {
+              "bbox": [
+                807.031,
+                245.122,
+                910.156,
+                317.073
+              ],
+              "text": "apple"
+            },
+            {
+              "bbox": [
+                77.344,
+                646.341,
+                189.844,
+                724.39
+              ],
+              "text": "apple"
+            },
+            {
+              "bbox": [
+                95.312,
+                237.805,
+                194.531,
+                304.878
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                296.875,
+                634.146,
+                467.188,
+                706.098
+              ],
+              "text": "hammer"
+            },
+            {
+              "bbox": [
+                590.625,
+                646.341,
+                652.344,
+                703.659
+              ],
+              "text": "bus"
+            },
+            {
+              "bbox": [
+                807.031,
+                645.122,
+                892.188,
+                697.561
+              ],
+              "text": "note"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B01-occ05"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B02-occ01"
+    ],
+    "family_id": "B02",
+    "id": "B02_clean-Q1",
+    "image_id": "B02_clean",
+    "instruction": "只擦掉文字 RED。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                573.438,
+                240.244,
+                648.438,
+                295.122
+              ],
+              "text": "RED"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ02",
+      "B02-occ03",
+      "B02-occ04",
+      "B02-occ05",
+      "B02-occ06",
+      "B02-occ07",
+      "B02-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "RED"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B02-occ06"
+    ],
+    "family_id": "B02",
+    "id": "B02_clean-Q2",
+    "image_id": "B02_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                82.031,
+                245.122,
+                200.781,
+                295.122
+              ],
+              "text": "wrench"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ01",
+      "B02-occ02",
+      "B02-occ03",
+      "B02-occ04",
+      "B02-occ05",
+      "B02-occ07",
+      "B02-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B02-occ02"
+    ],
+    "family_id": "B02",
+    "id": "B02_clean-Q3",
+    "image_id": "B02_clean",
+    "instruction": "只擦掉最左邊的 lemon。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                314.062,
+                640.244,
+                432.031,
+                702.439
+              ],
+              "text": "lemon"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ01",
+      "B02-occ03",
+      "B02-occ04",
+      "B02-occ05",
+      "B02-occ06",
+      "B02-occ07",
+      "B02-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "lemon"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B02",
+    "id": "B02_clean-Q4",
+    "image_id": "B02_clean",
+    "instruction": "擦掉完全位於 cat 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_clean-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ01",
+      "B02-occ02",
+      "B02-occ03",
+      "B02-occ04",
+      "B02-occ05",
+      "B02-occ06",
+      "B02-occ07",
+      "B02-occ08"
+    ],
+    "rule": {
+      "anchor_text": "cat",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B02-occ07"
+    ],
+    "family_id": "B02",
+    "id": "B02_clean-Q5",
+    "image_id": "B02_clean",
+    "instruction": "擦掉所有交通工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_clean-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                297.656,
+                243.902,
+                474.219,
+                312.195
+              ],
+              "text": "locomotive"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ01",
+      "B02-occ02",
+      "B02-occ03",
+      "B02-occ04",
+      "B02-occ05",
+      "B02-occ06",
+      "B02-occ08"
+    ],
+    "rule": {
+      "category": "vehicle",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B02-occ01",
+      "B02-occ05",
+      "B02-occ06",
+      "B02-occ07",
+      "B02-occ08"
+    ],
+    "family_id": "B02",
+    "id": "B02_clean-Q6",
+    "image_id": "B02_clean",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                573.438,
+                240.244,
+                648.438,
+                295.122
+              ],
+              "text": "RED"
+            },
+            {
+              "bbox": [
+                822.656,
+                245.122,
+                885.156,
+                300.0
+              ],
+              "text": "cat"
+            },
+            {
+              "bbox": [
+                82.031,
+                245.122,
+                200.781,
+                295.122
+              ],
+              "text": "wrench"
+            },
+            {
+              "bbox": [
+                297.656,
+                243.902,
+                474.219,
+                312.195
+              ],
+              "text": "locomotive"
+            },
+            {
+              "bbox": [
+                804.688,
+                647.561,
+                896.875,
+                710.976
+              ],
+              "text": "task"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ02",
+      "B02-occ03",
+      "B02-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B02-occ01"
+    ],
+    "family_id": "B02",
+    "id": "B02_color_swap-Q1",
+    "image_id": "B02_color_swap",
+    "instruction": "只擦掉文字 RED。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                573.438,
+                240.244,
+                648.438,
+                295.122
+              ],
+              "text": "RED"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ02",
+      "B02-occ03",
+      "B02-occ04",
+      "B02-occ05",
+      "B02-occ06",
+      "B02-occ07",
+      "B02-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "RED"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B02-occ05"
+    ],
+    "family_id": "B02",
+    "id": "B02_color_swap-Q2",
+    "image_id": "B02_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                822.656,
+                245.122,
+                885.156,
+                300.0
+              ],
+              "text": "cat"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ01",
+      "B02-occ02",
+      "B02-occ03",
+      "B02-occ04",
+      "B02-occ06",
+      "B02-occ07",
+      "B02-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B02-occ02"
+    ],
+    "family_id": "B02",
+    "id": "B02_color_swap-Q3",
+    "image_id": "B02_color_swap",
+    "instruction": "只擦掉最左邊的 lemon。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                314.062,
+                640.244,
+                432.031,
+                702.439
+              ],
+              "text": "lemon"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ01",
+      "B02-occ03",
+      "B02-occ04",
+      "B02-occ05",
+      "B02-occ06",
+      "B02-occ07",
+      "B02-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "lemon"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B02",
+    "id": "B02_color_swap-Q4",
+    "image_id": "B02_color_swap",
+    "instruction": "擦掉完全位於 cat 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_color_swap-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ01",
+      "B02-occ02",
+      "B02-occ03",
+      "B02-occ04",
+      "B02-occ05",
+      "B02-occ06",
+      "B02-occ07",
+      "B02-occ08"
+    ],
+    "rule": {
+      "anchor_text": "cat",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B02-occ07"
+    ],
+    "family_id": "B02",
+    "id": "B02_color_swap-Q5",
+    "image_id": "B02_color_swap",
+    "instruction": "擦掉所有交通工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_color_swap-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                297.656,
+                243.902,
+                474.219,
+                312.195
+              ],
+              "text": "locomotive"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ01",
+      "B02-occ02",
+      "B02-occ03",
+      "B02-occ04",
+      "B02-occ05",
+      "B02-occ06",
+      "B02-occ08"
+    ],
+    "rule": {
+      "category": "vehicle",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B02-occ01",
+      "B02-occ05",
+      "B02-occ06",
+      "B02-occ07",
+      "B02-occ08"
+    ],
+    "family_id": "B02",
+    "id": "B02_color_swap-Q6",
+    "image_id": "B02_color_swap",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B02_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                573.438,
+                240.244,
+                648.438,
+                295.122
+              ],
+              "text": "RED"
+            },
+            {
+              "bbox": [
+                822.656,
+                245.122,
+                885.156,
+                300.0
+              ],
+              "text": "cat"
+            },
+            {
+              "bbox": [
+                82.031,
+                245.122,
+                200.781,
+                295.122
+              ],
+              "text": "wrench"
+            },
+            {
+              "bbox": [
+                297.656,
+                243.902,
+                474.219,
+                312.195
+              ],
+              "text": "locomotive"
+            },
+            {
+              "bbox": [
+                804.688,
+                647.561,
+                896.875,
+                710.976
+              ],
+              "text": "task"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B02-occ02",
+      "B02-occ03",
+      "B02-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B03-occ01"
+    ],
+    "family_id": "B03",
+    "id": "B03_clean-Q1",
+    "image_id": "B03_clean",
+    "instruction": "只擦掉文字 GREEN。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                783.594,
+                248.78,
+                915.625,
+                302.439
+              ],
+              "text": "GREEN"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ02",
+      "B03-occ03",
+      "B03-occ04",
+      "B03-occ05",
+      "B03-occ06",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "GREEN"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B03-occ05"
+    ],
+    "family_id": "B03",
+    "id": "B03_clean-Q2",
+    "image_id": "B03_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                89.062,
+                236.585,
+                192.188,
+                296.341
+              ],
+              "text": "horse"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ01",
+      "B03-occ02",
+      "B03-occ03",
+      "B03-occ04",
+      "B03-occ06",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B03-occ03"
+    ],
+    "family_id": "B03",
+    "id": "B03_clean-Q3",
+    "image_id": "B03_clean",
+    "instruction": "只擦掉最左邊的 grape。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                76.562,
+                654.878,
+                200.0,
+                717.073
+              ],
+              "text": "grape"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ01",
+      "B03-occ02",
+      "B03-occ04",
+      "B03-occ05",
+      "B03-occ06",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "grape"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B03",
+    "id": "B03_clean-Q4",
+    "image_id": "B03_clean",
+    "instruction": "擦掉完全位於 horse 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_clean-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ01",
+      "B03-occ02",
+      "B03-occ03",
+      "B03-occ04",
+      "B03-occ05",
+      "B03-occ06",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "rule": {
+      "anchor_text": "horse",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [],
+    "family_id": "B03",
+    "id": "B03_clean-Q5",
+    "image_id": "B03_clean",
+    "instruction": "擦掉所有工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_clean-Q5",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ01",
+      "B03-occ02",
+      "B03-occ03",
+      "B03-occ04",
+      "B03-occ05",
+      "B03-occ06",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "rule": {
+      "category": "tool",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B03-occ01",
+      "B03-occ02",
+      "B03-occ03",
+      "B03-occ04",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "family_id": "B03",
+    "id": "B03_clean-Q6",
+    "image_id": "B03_clean",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                783.594,
+                248.78,
+                915.625,
+                302.439
+              ],
+              "text": "GREEN"
+            },
+            {
+              "bbox": [
+                561.719,
+                640.244,
+                685.156,
+                706.098
+              ],
+              "text": "grape"
+            },
+            {
+              "bbox": [
+                76.562,
+                654.878,
+                200.0,
+                717.073
+              ],
+              "text": "grape"
+            },
+            {
+              "bbox": [
+                545.312,
+                239.024,
+                686.719,
+                297.561
+              ],
+              "text": "mango"
+            },
+            {
+              "bbox": [
+                321.875,
+                650.0,
+                426.562,
+                704.878
+              ],
+              "text": "truck"
+            },
+            {
+              "bbox": [
+                328.125,
+                245.122,
+                415.625,
+                314.634
+              ],
+              "text": "plan"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ05",
+      "B03-occ06"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B03-occ01"
+    ],
+    "family_id": "B03",
+    "id": "B03_color_swap-Q1",
+    "image_id": "B03_color_swap",
+    "instruction": "只擦掉文字 GREEN。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                783.594,
+                248.78,
+                915.625,
+                302.439
+              ],
+              "text": "GREEN"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ02",
+      "B03-occ03",
+      "B03-occ04",
+      "B03-occ05",
+      "B03-occ06",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "GREEN"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B03-occ04"
+    ],
+    "family_id": "B03",
+    "id": "B03_color_swap-Q2",
+    "image_id": "B03_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                545.312,
+                239.024,
+                686.719,
+                297.561
+              ],
+              "text": "mango"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ01",
+      "B03-occ02",
+      "B03-occ03",
+      "B03-occ05",
+      "B03-occ06",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B03-occ03"
+    ],
+    "family_id": "B03",
+    "id": "B03_color_swap-Q3",
+    "image_id": "B03_color_swap",
+    "instruction": "只擦掉最左邊的 grape。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                76.562,
+                654.878,
+                200.0,
+                717.073
+              ],
+              "text": "grape"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ01",
+      "B03-occ02",
+      "B03-occ04",
+      "B03-occ05",
+      "B03-occ06",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "grape"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B03",
+    "id": "B03_color_swap-Q4",
+    "image_id": "B03_color_swap",
+    "instruction": "擦掉完全位於 horse 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_color_swap-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ01",
+      "B03-occ02",
+      "B03-occ03",
+      "B03-occ04",
+      "B03-occ05",
+      "B03-occ06",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "rule": {
+      "anchor_text": "horse",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [],
+    "family_id": "B03",
+    "id": "B03_color_swap-Q5",
+    "image_id": "B03_color_swap",
+    "instruction": "擦掉所有工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_color_swap-Q5",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ01",
+      "B03-occ02",
+      "B03-occ03",
+      "B03-occ04",
+      "B03-occ05",
+      "B03-occ06",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "rule": {
+      "category": "tool",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B03-occ01",
+      "B03-occ02",
+      "B03-occ03",
+      "B03-occ04",
+      "B03-occ07",
+      "B03-occ08"
+    ],
+    "family_id": "B03",
+    "id": "B03_color_swap-Q6",
+    "image_id": "B03_color_swap",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B03_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                783.594,
+                248.78,
+                915.625,
+                302.439
+              ],
+              "text": "GREEN"
+            },
+            {
+              "bbox": [
+                561.719,
+                640.244,
+                685.156,
+                706.098
+              ],
+              "text": "grape"
+            },
+            {
+              "bbox": [
+                76.562,
+                654.878,
+                200.0,
+                717.073
+              ],
+              "text": "grape"
+            },
+            {
+              "bbox": [
+                545.312,
+                239.024,
+                686.719,
+                297.561
+              ],
+              "text": "mango"
+            },
+            {
+              "bbox": [
+                321.875,
+                650.0,
+                426.562,
+                704.878
+              ],
+              "text": "truck"
+            },
+            {
+              "bbox": [
+                328.125,
+                245.122,
+                415.625,
+                314.634
+              ],
+              "text": "plan"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B03-occ05",
+      "B03-occ06"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B04-occ01"
+    ],
+    "family_id": "B04",
+    "id": "B04_clean-Q1",
+    "image_id": "B04_clean",
+    "instruction": "只擦掉文字 BLACK。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                312.5,
+                237.805,
+                435.156,
+                297.561
+              ],
+              "text": "BLACK"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ02",
+      "B04-occ03",
+      "B04-occ04",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "BLACK"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B04-occ04"
+    ],
+    "family_id": "B04",
+    "id": "B04_clean-Q2",
+    "image_id": "B04_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                305.469,
+                645.122,
+                446.875,
+                704.878
+              ],
+              "text": "banana"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ01",
+      "B04-occ02",
+      "B04-occ03",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B04-occ03"
+    ],
+    "family_id": "B04",
+    "id": "B04_clean-Q3",
+    "image_id": "B04_clean",
+    "instruction": "只擦掉最左邊的 plum。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                567.969,
+                640.244,
+                662.5,
+                723.171
+              ],
+              "text": "plum"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ01",
+      "B04-occ02",
+      "B04-occ04",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "plum"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B04",
+    "id": "B04_clean-Q4",
+    "image_id": "B04_clean",
+    "instruction": "擦掉完全位於 sheep 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_clean-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ01",
+      "B04-occ02",
+      "B04-occ03",
+      "B04-occ04",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "rule": {
+      "anchor_text": "sheep",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [],
+    "family_id": "B04",
+    "id": "B04_clean-Q5",
+    "image_id": "B04_clean",
+    "instruction": "擦掉所有昆蟲名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_clean-Q5",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ01",
+      "B04-occ02",
+      "B04-occ03",
+      "B04-occ04",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "rule": {
+      "category": "insect",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B04-occ01",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "family_id": "B04",
+    "id": "B04_clean-Q6",
+    "image_id": "B04_clean",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                312.5,
+                237.805,
+                435.156,
+                297.561
+              ],
+              "text": "BLACK"
+            },
+            {
+              "bbox": [
+                552.344,
+                224.39,
+                667.188,
+                307.317
+              ],
+              "text": "sheep"
+            },
+            {
+              "bbox": [
+                62.5,
+                642.683,
+                210.156,
+                697.561
+              ],
+              "text": "scissors"
+            },
+            {
+              "bbox": [
+                821.875,
+                664.634,
+                888.281,
+                708.537
+              ],
+              "text": "taxi"
+            },
+            {
+              "bbox": [
+                102.344,
+                240.244,
+                175.0,
+                292.683
+              ],
+              "text": "idea"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ02",
+      "B04-occ03",
+      "B04-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B04-occ01"
+    ],
+    "family_id": "B04",
+    "id": "B04_color_swap-Q1",
+    "image_id": "B04_color_swap",
+    "instruction": "只擦掉文字 BLACK。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                312.5,
+                237.805,
+                435.156,
+                297.561
+              ],
+              "text": "BLACK"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ02",
+      "B04-occ03",
+      "B04-occ04",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "BLACK"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B04-occ03"
+    ],
+    "family_id": "B04",
+    "id": "B04_color_swap-Q2",
+    "image_id": "B04_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                567.969,
+                640.244,
+                662.5,
+                723.171
+              ],
+              "text": "plum"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ01",
+      "B04-occ02",
+      "B04-occ04",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B04-occ03"
+    ],
+    "family_id": "B04",
+    "id": "B04_color_swap-Q3",
+    "image_id": "B04_color_swap",
+    "instruction": "只擦掉最左邊的 plum。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                567.969,
+                640.244,
+                662.5,
+                723.171
+              ],
+              "text": "plum"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ01",
+      "B04-occ02",
+      "B04-occ04",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "plum"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B04",
+    "id": "B04_color_swap-Q4",
+    "image_id": "B04_color_swap",
+    "instruction": "擦掉完全位於 sheep 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_color_swap-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ01",
+      "B04-occ02",
+      "B04-occ03",
+      "B04-occ04",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "rule": {
+      "anchor_text": "sheep",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [],
+    "family_id": "B04",
+    "id": "B04_color_swap-Q5",
+    "image_id": "B04_color_swap",
+    "instruction": "擦掉所有昆蟲名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_color_swap-Q5",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ01",
+      "B04-occ02",
+      "B04-occ03",
+      "B04-occ04",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "rule": {
+      "category": "insect",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B04-occ01",
+      "B04-occ05",
+      "B04-occ06",
+      "B04-occ07",
+      "B04-occ08"
+    ],
+    "family_id": "B04",
+    "id": "B04_color_swap-Q6",
+    "image_id": "B04_color_swap",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B04_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                312.5,
+                237.805,
+                435.156,
+                297.561
+              ],
+              "text": "BLACK"
+            },
+            {
+              "bbox": [
+                552.344,
+                224.39,
+                667.188,
+                307.317
+              ],
+              "text": "sheep"
+            },
+            {
+              "bbox": [
+                62.5,
+                642.683,
+                210.156,
+                697.561
+              ],
+              "text": "scissors"
+            },
+            {
+              "bbox": [
+                821.875,
+                664.634,
+                888.281,
+                708.537
+              ],
+              "text": "taxi"
+            },
+            {
+              "bbox": [
+                102.344,
+                240.244,
+                175.0,
+                292.683
+              ],
+              "text": "idea"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B04-occ02",
+      "B04-occ03",
+      "B04-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B05-occ01"
+    ],
+    "family_id": "B05",
+    "id": "B05_clean-Q1",
+    "image_id": "B05_clean",
+    "instruction": "只擦掉文字 PURPLE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                543.75,
+                650.0,
+                705.469,
+                708.537
+              ],
+              "text": "PURPLE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ02",
+      "B05-occ03",
+      "B05-occ04",
+      "B05-occ05",
+      "B05-occ06",
+      "B05-occ07",
+      "B05-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "PURPLE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B05-occ03"
+    ],
+    "family_id": "B05",
+    "id": "B05_clean-Q2",
+    "image_id": "B05_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                316.406,
+                226.829,
+                432.812,
+                302.439
+              ],
+              "text": "cherry"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ01",
+      "B05-occ02",
+      "B05-occ04",
+      "B05-occ05",
+      "B05-occ06",
+      "B05-occ07",
+      "B05-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B05-occ02"
+    ],
+    "family_id": "B05",
+    "id": "B05_clean-Q3",
+    "image_id": "B05_clean",
+    "instruction": "只擦掉最左邊的 cherry。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                82.812,
+                245.122,
+                207.031,
+                312.195
+              ],
+              "text": "cherry"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ01",
+      "B05-occ03",
+      "B05-occ04",
+      "B05-occ05",
+      "B05-occ06",
+      "B05-occ07",
+      "B05-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "cherry"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B05-occ02",
+      "B05-occ03",
+      "B05-occ04",
+      "B05-occ06"
+    ],
+    "family_id": "B05",
+    "id": "B05_clean-Q4",
+    "image_id": "B05_clean",
+    "instruction": "擦掉完全位於 rabbit 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_clean-Q4",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                82.812,
+                245.122,
+                207.031,
+                312.195
+              ],
+              "text": "cherry"
+            },
+            {
+              "bbox": [
+                316.406,
+                226.829,
+                432.812,
+                302.439
+              ],
+              "text": "cherry"
+            },
+            {
+              "bbox": [
+                556.25,
+                236.585,
+                675.0,
+                295.122
+              ],
+              "text": "melon"
+            },
+            {
+              "bbox": [
+                813.281,
+                234.146,
+                899.219,
+                297.561
+              ],
+              "text": "drill"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ01",
+      "B05-occ05",
+      "B05-occ07",
+      "B05-occ08"
+    ],
+    "rule": {
+      "anchor_text": "rabbit",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B05-occ07"
+    ],
+    "family_id": "B05",
+    "id": "B05_clean-Q5",
+    "image_id": "B05_clean",
+    "instruction": "擦掉所有交通工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_clean-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                91.406,
+                662.195,
+                192.188,
+                708.537
+              ],
+              "text": "tram"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ01",
+      "B05-occ02",
+      "B05-occ03",
+      "B05-occ04",
+      "B05-occ05",
+      "B05-occ06",
+      "B05-occ08"
+    ],
+    "rule": {
+      "category": "vehicle",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B05-occ01",
+      "B05-occ02",
+      "B05-occ03",
+      "B05-occ04",
+      "B05-occ06",
+      "B05-occ07",
+      "B05-occ08"
+    ],
+    "family_id": "B05",
+    "id": "B05_clean-Q6",
+    "image_id": "B05_clean",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                543.75,
+                650.0,
+                705.469,
+                708.537
+              ],
+              "text": "PURPLE"
+            },
+            {
+              "bbox": [
+                82.812,
+                245.122,
+                207.031,
+                312.195
+              ],
+              "text": "cherry"
+            },
+            {
+              "bbox": [
+                316.406,
+                226.829,
+                432.812,
+                302.439
+              ],
+              "text": "cherry"
+            },
+            {
+              "bbox": [
+                556.25,
+                236.585,
+                675.0,
+                295.122
+              ],
+              "text": "melon"
+            },
+            {
+              "bbox": [
+                813.281,
+                234.146,
+                899.219,
+                297.561
+              ],
+              "text": "drill"
+            },
+            {
+              "bbox": [
+                91.406,
+                662.195,
+                192.188,
+                708.537
+              ],
+              "text": "tram"
+            },
+            {
+              "bbox": [
+                800.0,
+                653.659,
+                914.844,
+                718.293
+              ],
+              "text": "work"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ05"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B05-occ01"
+    ],
+    "family_id": "B05",
+    "id": "B05_color_swap-Q1",
+    "image_id": "B05_color_swap",
+    "instruction": "只擦掉文字 PURPLE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                543.75,
+                650.0,
+                705.469,
+                708.537
+              ],
+              "text": "PURPLE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ02",
+      "B05-occ03",
+      "B05-occ04",
+      "B05-occ05",
+      "B05-occ06",
+      "B05-occ07",
+      "B05-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "PURPLE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B05-occ01",
+      "B05-occ02",
+      "B05-occ08"
+    ],
+    "family_id": "B05",
+    "id": "B05_color_swap-Q2",
+    "image_id": "B05_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                543.75,
+                650.0,
+                705.469,
+                708.537
+              ],
+              "text": "PURPLE"
+            },
+            {
+              "bbox": [
+                82.812,
+                245.122,
+                207.031,
+                312.195
+              ],
+              "text": "cherry"
+            },
+            {
+              "bbox": [
+                800.0,
+                653.659,
+                914.844,
+                718.293
+              ],
+              "text": "work"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ03",
+      "B05-occ04",
+      "B05-occ05",
+      "B05-occ06",
+      "B05-occ07"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B05-occ02"
+    ],
+    "family_id": "B05",
+    "id": "B05_color_swap-Q3",
+    "image_id": "B05_color_swap",
+    "instruction": "只擦掉最左邊的 cherry。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                82.812,
+                245.122,
+                207.031,
+                312.195
+              ],
+              "text": "cherry"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ01",
+      "B05-occ03",
+      "B05-occ04",
+      "B05-occ05",
+      "B05-occ06",
+      "B05-occ07",
+      "B05-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "cherry"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B05-occ02",
+      "B05-occ03",
+      "B05-occ04",
+      "B05-occ06"
+    ],
+    "family_id": "B05",
+    "id": "B05_color_swap-Q4",
+    "image_id": "B05_color_swap",
+    "instruction": "擦掉完全位於 rabbit 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_color_swap-Q4",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                82.812,
+                245.122,
+                207.031,
+                312.195
+              ],
+              "text": "cherry"
+            },
+            {
+              "bbox": [
+                316.406,
+                226.829,
+                432.812,
+                302.439
+              ],
+              "text": "cherry"
+            },
+            {
+              "bbox": [
+                556.25,
+                236.585,
+                675.0,
+                295.122
+              ],
+              "text": "melon"
+            },
+            {
+              "bbox": [
+                813.281,
+                234.146,
+                899.219,
+                297.561
+              ],
+              "text": "drill"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ01",
+      "B05-occ05",
+      "B05-occ07",
+      "B05-occ08"
+    ],
+    "rule": {
+      "anchor_text": "rabbit",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B05-occ07"
+    ],
+    "family_id": "B05",
+    "id": "B05_color_swap-Q5",
+    "image_id": "B05_color_swap",
+    "instruction": "擦掉所有交通工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_color_swap-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                91.406,
+                662.195,
+                192.188,
+                708.537
+              ],
+              "text": "tram"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ01",
+      "B05-occ02",
+      "B05-occ03",
+      "B05-occ04",
+      "B05-occ05",
+      "B05-occ06",
+      "B05-occ08"
+    ],
+    "rule": {
+      "category": "vehicle",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B05-occ01",
+      "B05-occ02",
+      "B05-occ03",
+      "B05-occ04",
+      "B05-occ06",
+      "B05-occ07",
+      "B05-occ08"
+    ],
+    "family_id": "B05",
+    "id": "B05_color_swap-Q6",
+    "image_id": "B05_color_swap",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B05_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                543.75,
+                650.0,
+                705.469,
+                708.537
+              ],
+              "text": "PURPLE"
+            },
+            {
+              "bbox": [
+                82.812,
+                245.122,
+                207.031,
+                312.195
+              ],
+              "text": "cherry"
+            },
+            {
+              "bbox": [
+                316.406,
+                226.829,
+                432.812,
+                302.439
+              ],
+              "text": "cherry"
+            },
+            {
+              "bbox": [
+                556.25,
+                236.585,
+                675.0,
+                295.122
+              ],
+              "text": "melon"
+            },
+            {
+              "bbox": [
+                813.281,
+                234.146,
+                899.219,
+                297.561
+              ],
+              "text": "drill"
+            },
+            {
+              "bbox": [
+                91.406,
+                662.195,
+                192.188,
+                708.537
+              ],
+              "text": "tram"
+            },
+            {
+              "bbox": [
+                800.0,
+                653.659,
+                914.844,
+                718.293
+              ],
+              "text": "work"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B05-occ05"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B06-occ01"
+    ],
+    "family_id": "B06",
+    "id": "B06_clean-Q1",
+    "image_id": "B06_clean",
+    "instruction": "只擦掉文字 WHITE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                795.312,
+                243.902,
+                925.781,
+                298.78
+              ],
+              "text": "WHITE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ02",
+      "B06-occ03",
+      "B06-occ04",
+      "B06-occ05",
+      "B06-occ06",
+      "B06-occ07",
+      "B06-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "WHITE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B06-occ02",
+      "B06-occ08"
+    ],
+    "family_id": "B06",
+    "id": "B06_clean-Q2",
+    "image_id": "B06_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                544.531,
+                239.024,
+                696.875,
+                318.293
+              ],
+              "text": "apricot"
+            },
+            {
+              "bbox": [
+                578.125,
+                643.902,
+                652.344,
+                707.317
+              ],
+              "text": "goal"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ01",
+      "B06-occ03",
+      "B06-occ04",
+      "B06-occ05",
+      "B06-occ06",
+      "B06-occ07"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B06-occ03"
+    ],
+    "family_id": "B06",
+    "id": "B06_clean-Q3",
+    "image_id": "B06_clean",
+    "instruction": "只擦掉最左邊的 apricot。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                85.156,
+                654.878,
+                207.031,
+                712.195
+              ],
+              "text": "apricot"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ01",
+      "B06-occ02",
+      "B06-occ04",
+      "B06-occ05",
+      "B06-occ06",
+      "B06-occ07",
+      "B06-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "apricot"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B06",
+    "id": "B06_clean-Q4",
+    "image_id": "B06_clean",
+    "instruction": "擦掉完全位於 bear 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_clean-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ01",
+      "B06-occ02",
+      "B06-occ03",
+      "B06-occ04",
+      "B06-occ05",
+      "B06-occ06",
+      "B06-occ07",
+      "B06-occ08"
+    ],
+    "rule": {
+      "anchor_text": "bear",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B06-occ06"
+    ],
+    "family_id": "B06",
+    "id": "B06_clean-Q5",
+    "image_id": "B06_clean",
+    "instruction": "擦掉所有工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_clean-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                339.844,
+                643.902,
+                434.375,
+                697.561
+              ],
+              "text": "chisel"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ01",
+      "B06-occ02",
+      "B06-occ03",
+      "B06-occ04",
+      "B06-occ05",
+      "B06-occ07",
+      "B06-occ08"
+    ],
+    "rule": {
+      "category": "tool",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B06-occ01",
+      "B06-occ05",
+      "B06-occ06",
+      "B06-occ07",
+      "B06-occ08"
+    ],
+    "family_id": "B06",
+    "id": "B06_clean-Q6",
+    "image_id": "B06_clean",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                795.312,
+                243.902,
+                925.781,
+                298.78
+              ],
+              "text": "WHITE"
+            },
+            {
+              "bbox": [
+                326.562,
+                237.805,
+                415.625,
+                295.122
+              ],
+              "text": "bear"
+            },
+            {
+              "bbox": [
+                339.844,
+                643.902,
+                434.375,
+                697.561
+              ],
+              "text": "chisel"
+            },
+            {
+              "bbox": [
+                92.188,
+                245.122,
+                187.5,
+                314.634
+              ],
+              "text": "boat"
+            },
+            {
+              "bbox": [
+                578.125,
+                643.902,
+                652.344,
+                707.317
+              ],
+              "text": "goal"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ02",
+      "B06-occ03",
+      "B06-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B06-occ01"
+    ],
+    "family_id": "B06",
+    "id": "B06_color_swap-Q1",
+    "image_id": "B06_color_swap",
+    "instruction": "只擦掉文字 WHITE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                795.312,
+                243.902,
+                925.781,
+                298.78
+              ],
+              "text": "WHITE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ02",
+      "B06-occ03",
+      "B06-occ04",
+      "B06-occ05",
+      "B06-occ06",
+      "B06-occ07",
+      "B06-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "WHITE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B06-occ01",
+      "B06-occ07"
+    ],
+    "family_id": "B06",
+    "id": "B06_color_swap-Q2",
+    "image_id": "B06_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                795.312,
+                243.902,
+                925.781,
+                298.78
+              ],
+              "text": "WHITE"
+            },
+            {
+              "bbox": [
+                92.188,
+                245.122,
+                187.5,
+                314.634
+              ],
+              "text": "boat"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ02",
+      "B06-occ03",
+      "B06-occ04",
+      "B06-occ05",
+      "B06-occ06",
+      "B06-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B06-occ03"
+    ],
+    "family_id": "B06",
+    "id": "B06_color_swap-Q3",
+    "image_id": "B06_color_swap",
+    "instruction": "只擦掉最左邊的 apricot。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                85.156,
+                654.878,
+                207.031,
+                712.195
+              ],
+              "text": "apricot"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ01",
+      "B06-occ02",
+      "B06-occ04",
+      "B06-occ05",
+      "B06-occ06",
+      "B06-occ07",
+      "B06-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "apricot"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B06",
+    "id": "B06_color_swap-Q4",
+    "image_id": "B06_color_swap",
+    "instruction": "擦掉完全位於 bear 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_color_swap-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ01",
+      "B06-occ02",
+      "B06-occ03",
+      "B06-occ04",
+      "B06-occ05",
+      "B06-occ06",
+      "B06-occ07",
+      "B06-occ08"
+    ],
+    "rule": {
+      "anchor_text": "bear",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B06-occ06"
+    ],
+    "family_id": "B06",
+    "id": "B06_color_swap-Q5",
+    "image_id": "B06_color_swap",
+    "instruction": "擦掉所有工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_color_swap-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                339.844,
+                643.902,
+                434.375,
+                697.561
+              ],
+              "text": "chisel"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ01",
+      "B06-occ02",
+      "B06-occ03",
+      "B06-occ04",
+      "B06-occ05",
+      "B06-occ07",
+      "B06-occ08"
+    ],
+    "rule": {
+      "category": "tool",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B06-occ01",
+      "B06-occ05",
+      "B06-occ06",
+      "B06-occ07",
+      "B06-occ08"
+    ],
+    "family_id": "B06",
+    "id": "B06_color_swap-Q6",
+    "image_id": "B06_color_swap",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B06_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                795.312,
+                243.902,
+                925.781,
+                298.78
+              ],
+              "text": "WHITE"
+            },
+            {
+              "bbox": [
+                326.562,
+                237.805,
+                415.625,
+                295.122
+              ],
+              "text": "bear"
+            },
+            {
+              "bbox": [
+                339.844,
+                643.902,
+                434.375,
+                697.561
+              ],
+              "text": "chisel"
+            },
+            {
+              "bbox": [
+                92.188,
+                245.122,
+                187.5,
+                314.634
+              ],
+              "text": "boat"
+            },
+            {
+              "bbox": [
+                578.125,
+                643.902,
+                652.344,
+                707.317
+              ],
+              "text": "goal"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B06-occ02",
+      "B06-occ03",
+      "B06-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B07-occ01"
+    ],
+    "family_id": "B07",
+    "id": "B07_clean-Q1",
+    "image_id": "B07_clean",
+    "instruction": "只擦掉文字 BLUE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                805.469,
+                653.659,
+                913.281,
+                715.854
+              ],
+              "text": "BLUE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ02",
+      "B07-occ03",
+      "B07-occ04",
+      "B07-occ05",
+      "B07-occ06",
+      "B07-occ07",
+      "B07-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "BLUE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B07-occ07"
+    ],
+    "family_id": "B07",
+    "id": "B07_clean-Q2",
+    "image_id": "B07_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                98.438,
+                648.78,
+                167.969,
+                692.683
+              ],
+              "text": "car"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ01",
+      "B07-occ02",
+      "B07-occ03",
+      "B07-occ04",
+      "B07-occ05",
+      "B07-occ06",
+      "B07-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B07-occ02"
+    ],
+    "family_id": "B07",
+    "id": "B07_clean-Q3",
+    "image_id": "B07_clean",
+    "instruction": "只擦掉最左邊的 pear。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                101.562,
+                257.317,
+                186.719,
+                309.756
+              ],
+              "text": "pear"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ01",
+      "B07-occ03",
+      "B07-occ04",
+      "B07-occ05",
+      "B07-occ06",
+      "B07-occ07",
+      "B07-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "pear"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B07-occ02",
+      "B07-occ04",
+      "B07-occ06",
+      "B07-occ08"
+    ],
+    "family_id": "B07",
+    "id": "B07_clean-Q4",
+    "image_id": "B07_clean",
+    "instruction": "擦掉完全位於 fox 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_clean-Q4",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                101.562,
+                257.317,
+                186.719,
+                309.756
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                321.875,
+                237.805,
+                439.844,
+                296.341
+              ],
+              "text": "lemon"
+            },
+            {
+              "bbox": [
+                557.031,
+                231.707,
+                684.375,
+                312.195
+              ],
+              "text": "clamp"
+            },
+            {
+              "bbox": [
+                795.312,
+                240.244,
+                901.562,
+                306.098
+              ],
+              "text": "time"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ01",
+      "B07-occ03",
+      "B07-occ05",
+      "B07-occ07"
+    ],
+    "rule": {
+      "anchor_text": "fox",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B07-occ02",
+      "B07-occ03",
+      "B07-occ04"
+    ],
+    "family_id": "B07",
+    "id": "B07_clean-Q5",
+    "image_id": "B07_clean",
+    "instruction": "擦掉所有水果名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_clean-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                101.562,
+                257.317,
+                186.719,
+                309.756
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                558.594,
+                642.683,
+                667.969,
+                709.756
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                321.875,
+                237.805,
+                439.844,
+                296.341
+              ],
+              "text": "lemon"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ01",
+      "B07-occ05",
+      "B07-occ06",
+      "B07-occ07",
+      "B07-occ08"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B07-occ01",
+      "B07-occ02",
+      "B07-occ03",
+      "B07-occ04",
+      "B07-occ06",
+      "B07-occ07",
+      "B07-occ08"
+    ],
+    "family_id": "B07",
+    "id": "B07_clean-Q6",
+    "image_id": "B07_clean",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                805.469,
+                653.659,
+                913.281,
+                715.854
+              ],
+              "text": "BLUE"
+            },
+            {
+              "bbox": [
+                101.562,
+                257.317,
+                186.719,
+                309.756
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                558.594,
+                642.683,
+                667.969,
+                709.756
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                321.875,
+                237.805,
+                439.844,
+                296.341
+              ],
+              "text": "lemon"
+            },
+            {
+              "bbox": [
+                557.031,
+                231.707,
+                684.375,
+                312.195
+              ],
+              "text": "clamp"
+            },
+            {
+              "bbox": [
+                98.438,
+                648.78,
+                167.969,
+                692.683
+              ],
+              "text": "car"
+            },
+            {
+              "bbox": [
+                795.312,
+                240.244,
+                901.562,
+                306.098
+              ],
+              "text": "time"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ05"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B07-occ01"
+    ],
+    "family_id": "B07",
+    "id": "B07_color_swap-Q1",
+    "image_id": "B07_color_swap",
+    "instruction": "只擦掉文字 BLUE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                805.469,
+                653.659,
+                913.281,
+                715.854
+              ],
+              "text": "BLUE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ02",
+      "B07-occ03",
+      "B07-occ04",
+      "B07-occ05",
+      "B07-occ06",
+      "B07-occ07",
+      "B07-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "BLUE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B07-occ06"
+    ],
+    "family_id": "B07",
+    "id": "B07_color_swap-Q2",
+    "image_id": "B07_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                557.031,
+                231.707,
+                684.375,
+                312.195
+              ],
+              "text": "clamp"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ01",
+      "B07-occ02",
+      "B07-occ03",
+      "B07-occ04",
+      "B07-occ05",
+      "B07-occ07",
+      "B07-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B07-occ02"
+    ],
+    "family_id": "B07",
+    "id": "B07_color_swap-Q3",
+    "image_id": "B07_color_swap",
+    "instruction": "只擦掉最左邊的 pear。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                101.562,
+                257.317,
+                186.719,
+                309.756
+              ],
+              "text": "pear"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ01",
+      "B07-occ03",
+      "B07-occ04",
+      "B07-occ05",
+      "B07-occ06",
+      "B07-occ07",
+      "B07-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "pear"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B07-occ02",
+      "B07-occ04",
+      "B07-occ06",
+      "B07-occ08"
+    ],
+    "family_id": "B07",
+    "id": "B07_color_swap-Q4",
+    "image_id": "B07_color_swap",
+    "instruction": "擦掉完全位於 fox 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_color_swap-Q4",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                101.562,
+                257.317,
+                186.719,
+                309.756
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                321.875,
+                237.805,
+                439.844,
+                296.341
+              ],
+              "text": "lemon"
+            },
+            {
+              "bbox": [
+                557.031,
+                231.707,
+                684.375,
+                312.195
+              ],
+              "text": "clamp"
+            },
+            {
+              "bbox": [
+                795.312,
+                240.244,
+                901.562,
+                306.098
+              ],
+              "text": "time"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ01",
+      "B07-occ03",
+      "B07-occ05",
+      "B07-occ07"
+    ],
+    "rule": {
+      "anchor_text": "fox",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B07-occ02",
+      "B07-occ03",
+      "B07-occ04"
+    ],
+    "family_id": "B07",
+    "id": "B07_color_swap-Q5",
+    "image_id": "B07_color_swap",
+    "instruction": "擦掉所有水果名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_color_swap-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                101.562,
+                257.317,
+                186.719,
+                309.756
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                558.594,
+                642.683,
+                667.969,
+                709.756
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                321.875,
+                237.805,
+                439.844,
+                296.341
+              ],
+              "text": "lemon"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ01",
+      "B07-occ05",
+      "B07-occ06",
+      "B07-occ07",
+      "B07-occ08"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B07-occ01",
+      "B07-occ02",
+      "B07-occ03",
+      "B07-occ04",
+      "B07-occ06",
+      "B07-occ07",
+      "B07-occ08"
+    ],
+    "family_id": "B07",
+    "id": "B07_color_swap-Q6",
+    "image_id": "B07_color_swap",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B07_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                805.469,
+                653.659,
+                913.281,
+                715.854
+              ],
+              "text": "BLUE"
+            },
+            {
+              "bbox": [
+                101.562,
+                257.317,
+                186.719,
+                309.756
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                558.594,
+                642.683,
+                667.969,
+                709.756
+              ],
+              "text": "pear"
+            },
+            {
+              "bbox": [
+                321.875,
+                237.805,
+                439.844,
+                296.341
+              ],
+              "text": "lemon"
+            },
+            {
+              "bbox": [
+                557.031,
+                231.707,
+                684.375,
+                312.195
+              ],
+              "text": "clamp"
+            },
+            {
+              "bbox": [
+                98.438,
+                648.78,
+                167.969,
+                692.683
+              ],
+              "text": "car"
+            },
+            {
+              "bbox": [
+                795.312,
+                240.244,
+                901.562,
+                306.098
+              ],
+              "text": "time"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B07-occ05"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B08-occ01"
+    ],
+    "family_id": "B08",
+    "id": "B08_clean-Q1",
+    "image_id": "B08_clean",
+    "instruction": "只擦掉文字 RED。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                819.531,
+                241.463,
+                900.781,
+                297.561
+              ],
+              "text": "RED"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ02",
+      "B08-occ03",
+      "B08-occ04",
+      "B08-occ05",
+      "B08-occ06",
+      "B08-occ07",
+      "B08-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "RED"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B08-occ06"
+    ],
+    "family_id": "B08",
+    "id": "B08_clean-Q2",
+    "image_id": "B08_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                549.219,
+                642.683,
+                696.875,
+                703.659
+              ],
+              "text": "crowbar"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ01",
+      "B08-occ02",
+      "B08-occ03",
+      "B08-occ04",
+      "B08-occ05",
+      "B08-occ07",
+      "B08-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B08-occ03"
+    ],
+    "family_id": "B08",
+    "id": "B08_clean-Q3",
+    "image_id": "B08_clean",
+    "instruction": "只擦掉最左邊的 peach。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                89.844,
+                252.439,
+                185.938,
+                315.854
+              ],
+              "text": "peach"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ01",
+      "B08-occ02",
+      "B08-occ04",
+      "B08-occ05",
+      "B08-occ06",
+      "B08-occ07",
+      "B08-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "peach"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B08-occ01",
+      "B08-occ02",
+      "B08-occ03",
+      "B08-occ07"
+    ],
+    "family_id": "B08",
+    "id": "B08_clean-Q4",
+    "image_id": "B08_clean",
+    "instruction": "擦掉完全位於 lion 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_clean-Q4",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                819.531,
+                241.463,
+                900.781,
+                297.561
+              ],
+              "text": "RED"
+            },
+            {
+              "bbox": [
+                550.0,
+                243.902,
+                669.531,
+                321.951
+              ],
+              "text": "peach"
+            },
+            {
+              "bbox": [
+                89.844,
+                252.439,
+                185.938,
+                315.854
+              ],
+              "text": "peach"
+            },
+            {
+              "bbox": [
+                343.75,
+                248.78,
+                400.0,
+                286.585
+              ],
+              "text": "van"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ04",
+      "B08-occ05",
+      "B08-occ06",
+      "B08-occ08"
+    ],
+    "rule": {
+      "anchor_text": "lion",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B08-occ08"
+    ],
+    "family_id": "B08",
+    "id": "B08_clean-Q5",
+    "image_id": "B08_clean",
+    "instruction": "擦掉所有昆蟲名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_clean-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                825.781,
+                642.683,
+                896.094,
+                706.098
+              ],
+              "text": "bee"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ01",
+      "B08-occ02",
+      "B08-occ03",
+      "B08-occ04",
+      "B08-occ05",
+      "B08-occ06",
+      "B08-occ07"
+    ],
+    "rule": {
+      "category": "insect",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B08-occ01",
+      "B08-occ05",
+      "B08-occ06",
+      "B08-occ07",
+      "B08-occ08"
+    ],
+    "family_id": "B08",
+    "id": "B08_clean-Q6",
+    "image_id": "B08_clean",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                819.531,
+                241.463,
+                900.781,
+                297.561
+              ],
+              "text": "RED"
+            },
+            {
+              "bbox": [
+                108.594,
+                657.317,
+                164.844,
+                706.098
+              ],
+              "text": "lion"
+            },
+            {
+              "bbox": [
+                549.219,
+                642.683,
+                696.875,
+                703.659
+              ],
+              "text": "crowbar"
+            },
+            {
+              "bbox": [
+                343.75,
+                248.78,
+                400.0,
+                286.585
+              ],
+              "text": "van"
+            },
+            {
+              "bbox": [
+                825.781,
+                642.683,
+                896.094,
+                706.098
+              ],
+              "text": "bee"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ02",
+      "B08-occ03",
+      "B08-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B08-occ01"
+    ],
+    "family_id": "B08",
+    "id": "B08_color_swap-Q1",
+    "image_id": "B08_color_swap",
+    "instruction": "只擦掉文字 RED。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                819.531,
+                241.463,
+                900.781,
+                297.561
+              ],
+              "text": "RED"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ02",
+      "B08-occ03",
+      "B08-occ04",
+      "B08-occ05",
+      "B08-occ06",
+      "B08-occ07",
+      "B08-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "RED"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B08-occ05"
+    ],
+    "family_id": "B08",
+    "id": "B08_color_swap-Q2",
+    "image_id": "B08_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                108.594,
+                657.317,
+                164.844,
+                706.098
+              ],
+              "text": "lion"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ01",
+      "B08-occ02",
+      "B08-occ03",
+      "B08-occ04",
+      "B08-occ06",
+      "B08-occ07",
+      "B08-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B08-occ03"
+    ],
+    "family_id": "B08",
+    "id": "B08_color_swap-Q3",
+    "image_id": "B08_color_swap",
+    "instruction": "只擦掉最左邊的 peach。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                89.844,
+                252.439,
+                185.938,
+                315.854
+              ],
+              "text": "peach"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ01",
+      "B08-occ02",
+      "B08-occ04",
+      "B08-occ05",
+      "B08-occ06",
+      "B08-occ07",
+      "B08-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "peach"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B08-occ01",
+      "B08-occ02",
+      "B08-occ03",
+      "B08-occ07"
+    ],
+    "family_id": "B08",
+    "id": "B08_color_swap-Q4",
+    "image_id": "B08_color_swap",
+    "instruction": "擦掉完全位於 lion 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_color_swap-Q4",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                819.531,
+                241.463,
+                900.781,
+                297.561
+              ],
+              "text": "RED"
+            },
+            {
+              "bbox": [
+                550.0,
+                243.902,
+                669.531,
+                321.951
+              ],
+              "text": "peach"
+            },
+            {
+              "bbox": [
+                89.844,
+                252.439,
+                185.938,
+                315.854
+              ],
+              "text": "peach"
+            },
+            {
+              "bbox": [
+                343.75,
+                248.78,
+                400.0,
+                286.585
+              ],
+              "text": "van"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ04",
+      "B08-occ05",
+      "B08-occ06",
+      "B08-occ08"
+    ],
+    "rule": {
+      "anchor_text": "lion",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B08-occ08"
+    ],
+    "family_id": "B08",
+    "id": "B08_color_swap-Q5",
+    "image_id": "B08_color_swap",
+    "instruction": "擦掉所有昆蟲名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_color_swap-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                825.781,
+                642.683,
+                896.094,
+                706.098
+              ],
+              "text": "bee"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ01",
+      "B08-occ02",
+      "B08-occ03",
+      "B08-occ04",
+      "B08-occ05",
+      "B08-occ06",
+      "B08-occ07"
+    ],
+    "rule": {
+      "category": "insect",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B08-occ01",
+      "B08-occ05",
+      "B08-occ06",
+      "B08-occ07",
+      "B08-occ08"
+    ],
+    "family_id": "B08",
+    "id": "B08_color_swap-Q6",
+    "image_id": "B08_color_swap",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B08_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                819.531,
+                241.463,
+                900.781,
+                297.561
+              ],
+              "text": "RED"
+            },
+            {
+              "bbox": [
+                108.594,
+                657.317,
+                164.844,
+                706.098
+              ],
+              "text": "lion"
+            },
+            {
+              "bbox": [
+                549.219,
+                642.683,
+                696.875,
+                703.659
+              ],
+              "text": "crowbar"
+            },
+            {
+              "bbox": [
+                343.75,
+                248.78,
+                400.0,
+                286.585
+              ],
+              "text": "van"
+            },
+            {
+              "bbox": [
+                825.781,
+                642.683,
+                896.094,
+                706.098
+              ],
+              "text": "bee"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B08-occ02",
+      "B08-occ03",
+      "B08-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B09-occ01"
+    ],
+    "family_id": "B09",
+    "id": "B09_clean-Q1",
+    "image_id": "B09_clean",
+    "instruction": "只擦掉文字 GREEN。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                785.156,
+                641.463,
+                939.844,
+                704.878
+              ],
+              "text": "GREEN"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ02",
+      "B09-occ03",
+      "B09-occ04",
+      "B09-occ05",
+      "B09-occ06",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "GREEN"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B09-occ05"
+    ],
+    "family_id": "B09",
+    "id": "B09_clean-Q2",
+    "image_id": "B09_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                561.719,
+                246.341,
+                657.031,
+                318.293
+              ],
+              "text": "tiger"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ01",
+      "B09-occ02",
+      "B09-occ03",
+      "B09-occ04",
+      "B09-occ06",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B09-occ02"
+    ],
+    "family_id": "B09",
+    "id": "B09_clean-Q3",
+    "image_id": "B09_clean",
+    "instruction": "只擦掉最左邊的 mango。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                308.594,
+                645.122,
+                450.781,
+                707.317
+              ],
+              "text": "mango"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ01",
+      "B09-occ03",
+      "B09-occ04",
+      "B09-occ05",
+      "B09-occ06",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "mango"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B09",
+    "id": "B09_clean-Q4",
+    "image_id": "B09_clean",
+    "instruction": "擦掉完全位於 tiger 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_clean-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ01",
+      "B09-occ02",
+      "B09-occ03",
+      "B09-occ04",
+      "B09-occ05",
+      "B09-occ06",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "rule": {
+      "anchor_text": "tiger",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B09-occ06"
+    ],
+    "family_id": "B09",
+    "id": "B09_clean-Q5",
+    "image_id": "B09_clean",
+    "instruction": "擦掉所有工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_clean-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                83.594,
+                252.439,
+                189.844,
+                309.756
+              ],
+              "text": "brush"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ01",
+      "B09-occ02",
+      "B09-occ03",
+      "B09-occ04",
+      "B09-occ05",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "rule": {
+      "category": "tool",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B09-occ01",
+      "B09-occ02",
+      "B09-occ03",
+      "B09-occ04",
+      "B09-occ06",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "family_id": "B09",
+    "id": "B09_clean-Q6",
+    "image_id": "B09_clean",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                785.156,
+                641.463,
+                939.844,
+                704.878
+              ],
+              "text": "GREEN"
+            },
+            {
+              "bbox": [
+                308.594,
+                645.122,
+                450.781,
+                707.317
+              ],
+              "text": "mango"
+            },
+            {
+              "bbox": [
+                792.188,
+                253.659,
+                912.5,
+                303.659
+              ],
+              "text": "mango"
+            },
+            {
+              "bbox": [
+                332.812,
+                242.683,
+                428.906,
+                308.537
+              ],
+              "text": "plum"
+            },
+            {
+              "bbox": [
+                83.594,
+                252.439,
+                189.844,
+                309.756
+              ],
+              "text": "brush"
+            },
+            {
+              "bbox": [
+                101.562,
+                643.902,
+                183.594,
+                712.195
+              ],
+              "text": "bike"
+            },
+            {
+              "bbox": [
+                567.188,
+                631.707,
+                675.0,
+                704.878
+              ],
+              "text": "page"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ05"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B09-occ01"
+    ],
+    "family_id": "B09",
+    "id": "B09_color_swap-Q1",
+    "image_id": "B09_color_swap",
+    "instruction": "只擦掉文字 GREEN。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                785.156,
+                641.463,
+                939.844,
+                704.878
+              ],
+              "text": "GREEN"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ02",
+      "B09-occ03",
+      "B09-occ04",
+      "B09-occ05",
+      "B09-occ06",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "GREEN"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B09-occ04"
+    ],
+    "family_id": "B09",
+    "id": "B09_color_swap-Q2",
+    "image_id": "B09_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                332.812,
+                242.683,
+                428.906,
+                308.537
+              ],
+              "text": "plum"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ01",
+      "B09-occ02",
+      "B09-occ03",
+      "B09-occ05",
+      "B09-occ06",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B09-occ02"
+    ],
+    "family_id": "B09",
+    "id": "B09_color_swap-Q3",
+    "image_id": "B09_color_swap",
+    "instruction": "只擦掉最左邊的 mango。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                308.594,
+                645.122,
+                450.781,
+                707.317
+              ],
+              "text": "mango"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ01",
+      "B09-occ03",
+      "B09-occ04",
+      "B09-occ05",
+      "B09-occ06",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "mango"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B09",
+    "id": "B09_color_swap-Q4",
+    "image_id": "B09_color_swap",
+    "instruction": "擦掉完全位於 tiger 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_color_swap-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ01",
+      "B09-occ02",
+      "B09-occ03",
+      "B09-occ04",
+      "B09-occ05",
+      "B09-occ06",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "rule": {
+      "anchor_text": "tiger",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B09-occ06"
+    ],
+    "family_id": "B09",
+    "id": "B09_color_swap-Q5",
+    "image_id": "B09_color_swap",
+    "instruction": "擦掉所有工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_color_swap-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                83.594,
+                252.439,
+                189.844,
+                309.756
+              ],
+              "text": "brush"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ01",
+      "B09-occ02",
+      "B09-occ03",
+      "B09-occ04",
+      "B09-occ05",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "rule": {
+      "category": "tool",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B09-occ01",
+      "B09-occ02",
+      "B09-occ03",
+      "B09-occ04",
+      "B09-occ06",
+      "B09-occ07",
+      "B09-occ08"
+    ],
+    "family_id": "B09",
+    "id": "B09_color_swap-Q6",
+    "image_id": "B09_color_swap",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B09_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                785.156,
+                641.463,
+                939.844,
+                704.878
+              ],
+              "text": "GREEN"
+            },
+            {
+              "bbox": [
+                308.594,
+                645.122,
+                450.781,
+                707.317
+              ],
+              "text": "mango"
+            },
+            {
+              "bbox": [
+                792.188,
+                253.659,
+                912.5,
+                303.659
+              ],
+              "text": "mango"
+            },
+            {
+              "bbox": [
+                332.812,
+                242.683,
+                428.906,
+                308.537
+              ],
+              "text": "plum"
+            },
+            {
+              "bbox": [
+                83.594,
+                252.439,
+                189.844,
+                309.756
+              ],
+              "text": "brush"
+            },
+            {
+              "bbox": [
+                101.562,
+                643.902,
+                183.594,
+                712.195
+              ],
+              "text": "bike"
+            },
+            {
+              "bbox": [
+                567.188,
+                631.707,
+                675.0,
+                704.878
+              ],
+              "text": "page"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B09-occ05"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B10-occ01"
+    ],
+    "family_id": "B10",
+    "id": "B10_clean-Q1",
+    "image_id": "B10_clean",
+    "instruction": "只擦掉文字 BLACK。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                545.312,
+                652.439,
+                685.938,
+                719.512
+              ],
+              "text": "BLACK"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ02",
+      "B10-occ03",
+      "B10-occ04",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "BLACK"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B10-occ04"
+    ],
+    "family_id": "B10",
+    "id": "B10_clean-Q2",
+    "image_id": "B10_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                792.188,
+                635.366,
+                934.375,
+                719.512
+              ],
+              "text": "cherry"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ01",
+      "B10-occ02",
+      "B10-occ03",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B10-occ02"
+    ],
+    "family_id": "B10",
+    "id": "B10_clean-Q3",
+    "image_id": "B10_clean",
+    "instruction": "只擦掉最左邊的 banana。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                79.688,
+                640.244,
+                192.969,
+                700.0
+              ],
+              "text": "banana"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ01",
+      "B10-occ03",
+      "B10-occ04",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "banana"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B10",
+    "id": "B10_clean-Q4",
+    "image_id": "B10_clean",
+    "instruction": "擦掉完全位於 zebra 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_clean-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ01",
+      "B10-occ02",
+      "B10-occ03",
+      "B10-occ04",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "rule": {
+      "anchor_text": "zebra",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B10-occ02",
+      "B10-occ03",
+      "B10-occ04"
+    ],
+    "family_id": "B10",
+    "id": "B10_clean-Q5",
+    "image_id": "B10_clean",
+    "instruction": "擦掉所有水果名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_clean-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                79.688,
+                640.244,
+                192.969,
+                700.0
+              ],
+              "text": "banana"
+            },
+            {
+              "bbox": [
+                802.344,
+                257.317,
+                916.406,
+                310.976
+              ],
+              "text": "banana"
+            },
+            {
+              "bbox": [
+                792.188,
+                635.366,
+                934.375,
+                719.512
+              ],
+              "text": "cherry"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ01",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B10-occ01",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "family_id": "B10",
+    "id": "B10_clean-Q6",
+    "image_id": "B10_clean",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                545.312,
+                652.439,
+                685.938,
+                719.512
+              ],
+              "text": "BLACK"
+            },
+            {
+              "bbox": [
+                92.188,
+                237.805,
+                197.656,
+                292.683
+              ],
+              "text": "zebra"
+            },
+            {
+              "bbox": [
+                346.094,
+                257.317,
+                421.875,
+                309.756
+              ],
+              "text": "rake"
+            },
+            {
+              "bbox": [
+                548.438,
+                242.683,
+                692.969,
+                310.976
+              ],
+              "text": "airplane"
+            },
+            {
+              "bbox": [
+                350.781,
+                651.22,
+                409.375,
+                707.317
+              ],
+              "text": "list"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ02",
+      "B10-occ03",
+      "B10-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B10-occ01"
+    ],
+    "family_id": "B10",
+    "id": "B10_color_swap-Q1",
+    "image_id": "B10_color_swap",
+    "instruction": "只擦掉文字 BLACK。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                545.312,
+                652.439,
+                685.938,
+                719.512
+              ],
+              "text": "BLACK"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ02",
+      "B10-occ03",
+      "B10-occ04",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "BLACK"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B10-occ03"
+    ],
+    "family_id": "B10",
+    "id": "B10_color_swap-Q2",
+    "image_id": "B10_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                802.344,
+                257.317,
+                916.406,
+                310.976
+              ],
+              "text": "banana"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ01",
+      "B10-occ02",
+      "B10-occ04",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B10-occ02"
+    ],
+    "family_id": "B10",
+    "id": "B10_color_swap-Q3",
+    "image_id": "B10_color_swap",
+    "instruction": "只擦掉最左邊的 banana。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                79.688,
+                640.244,
+                192.969,
+                700.0
+              ],
+              "text": "banana"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ01",
+      "B10-occ03",
+      "B10-occ04",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "banana"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B10",
+    "id": "B10_color_swap-Q4",
+    "image_id": "B10_color_swap",
+    "instruction": "擦掉完全位於 zebra 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_color_swap-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ01",
+      "B10-occ02",
+      "B10-occ03",
+      "B10-occ04",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "rule": {
+      "anchor_text": "zebra",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B10-occ02",
+      "B10-occ03",
+      "B10-occ04"
+    ],
+    "family_id": "B10",
+    "id": "B10_color_swap-Q5",
+    "image_id": "B10_color_swap",
+    "instruction": "擦掉所有水果名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_color_swap-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                79.688,
+                640.244,
+                192.969,
+                700.0
+              ],
+              "text": "banana"
+            },
+            {
+              "bbox": [
+                802.344,
+                257.317,
+                916.406,
+                310.976
+              ],
+              "text": "banana"
+            },
+            {
+              "bbox": [
+                792.188,
+                635.366,
+                934.375,
+                719.512
+              ],
+              "text": "cherry"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ01",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B10-occ01",
+      "B10-occ05",
+      "B10-occ06",
+      "B10-occ07",
+      "B10-occ08"
+    ],
+    "family_id": "B10",
+    "id": "B10_color_swap-Q6",
+    "image_id": "B10_color_swap",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B10_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                545.312,
+                652.439,
+                685.938,
+                719.512
+              ],
+              "text": "BLACK"
+            },
+            {
+              "bbox": [
+                92.188,
+                237.805,
+                197.656,
+                292.683
+              ],
+              "text": "zebra"
+            },
+            {
+              "bbox": [
+                346.094,
+                257.317,
+                421.875,
+                309.756
+              ],
+              "text": "rake"
+            },
+            {
+              "bbox": [
+                548.438,
+                242.683,
+                692.969,
+                310.976
+              ],
+              "text": "airplane"
+            },
+            {
+              "bbox": [
+                350.781,
+                651.22,
+                409.375,
+                707.317
+              ],
+              "text": "list"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B10-occ02",
+      "B10-occ03",
+      "B10-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B11-occ01"
+    ],
+    "family_id": "B11",
+    "id": "B11_clean-Q1",
+    "image_id": "B11_clean",
+    "instruction": "只擦掉文字 PURPLE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                298.438,
+                647.561,
+                451.562,
+                707.317
+              ],
+              "text": "PURPLE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ02",
+      "B11-occ03",
+      "B11-occ04",
+      "B11-occ05",
+      "B11-occ06",
+      "B11-occ07",
+      "B11-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "PURPLE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B11-occ03"
+    ],
+    "family_id": "B11",
+    "id": "B11_clean-Q2",
+    "image_id": "B11_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                87.5,
+                654.878,
+                196.875,
+                713.415
+              ],
+              "text": "melon"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ01",
+      "B11-occ02",
+      "B11-occ04",
+      "B11-occ05",
+      "B11-occ06",
+      "B11-occ07",
+      "B11-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B11-occ03"
+    ],
+    "family_id": "B11",
+    "id": "B11_clean-Q3",
+    "image_id": "B11_clean",
+    "instruction": "只擦掉最左邊的 melon。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                87.5,
+                654.878,
+                196.875,
+                713.415
+              ],
+              "text": "melon"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ01",
+      "B11-occ02",
+      "B11-occ04",
+      "B11-occ05",
+      "B11-occ06",
+      "B11-occ07",
+      "B11-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "melon"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B11",
+    "id": "B11_clean-Q4",
+    "image_id": "B11_clean",
+    "instruction": "擦掉完全位於 wolf 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_clean-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ01",
+      "B11-occ02",
+      "B11-occ03",
+      "B11-occ04",
+      "B11-occ05",
+      "B11-occ06",
+      "B11-occ07",
+      "B11-occ08"
+    ],
+    "rule": {
+      "anchor_text": "wolf",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B11-occ07"
+    ],
+    "family_id": "B11",
+    "id": "B11_clean-Q5",
+    "image_id": "B11_clean",
+    "instruction": "擦掉所有交通工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_clean-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                821.094,
+                640.244,
+                897.656,
+                712.195
+              ],
+              "text": "ship"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ01",
+      "B11-occ02",
+      "B11-occ03",
+      "B11-occ04",
+      "B11-occ05",
+      "B11-occ06",
+      "B11-occ08"
+    ],
+    "rule": {
+      "category": "vehicle",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B11-occ01",
+      "B11-occ02",
+      "B11-occ03",
+      "B11-occ04",
+      "B11-occ06",
+      "B11-occ07",
+      "B11-occ08"
+    ],
+    "family_id": "B11",
+    "id": "B11_clean-Q6",
+    "image_id": "B11_clean",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                298.438,
+                647.561,
+                451.562,
+                707.317
+              ],
+              "text": "PURPLE"
+            },
+            {
+              "bbox": [
+                797.656,
+                243.902,
+                915.625,
+                306.098
+              ],
+              "text": "melon"
+            },
+            {
+              "bbox": [
+                87.5,
+                654.878,
+                196.875,
+                713.415
+              ],
+              "text": "melon"
+            },
+            {
+              "bbox": [
+                539.844,
+                634.146,
+                703.906,
+                725.61
+              ],
+              "text": "apricot"
+            },
+            {
+              "bbox": [
+                87.5,
+                237.805,
+                210.156,
+                312.195
+              ],
+              "text": "spade"
+            },
+            {
+              "bbox": [
+                821.094,
+                640.244,
+                897.656,
+                712.195
+              ],
+              "text": "ship"
+            },
+            {
+              "bbox": [
+                559.375,
+                242.683,
+                665.625,
+                297.561
+              ],
+              "text": "check"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ05"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B11-occ01"
+    ],
+    "family_id": "B11",
+    "id": "B11_color_swap-Q1",
+    "image_id": "B11_color_swap",
+    "instruction": "只擦掉文字 PURPLE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                298.438,
+                647.561,
+                451.562,
+                707.317
+              ],
+              "text": "PURPLE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ02",
+      "B11-occ03",
+      "B11-occ04",
+      "B11-occ05",
+      "B11-occ06",
+      "B11-occ07",
+      "B11-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "PURPLE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B11-occ01",
+      "B11-occ02",
+      "B11-occ08"
+    ],
+    "family_id": "B11",
+    "id": "B11_color_swap-Q2",
+    "image_id": "B11_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                298.438,
+                647.561,
+                451.562,
+                707.317
+              ],
+              "text": "PURPLE"
+            },
+            {
+              "bbox": [
+                797.656,
+                243.902,
+                915.625,
+                306.098
+              ],
+              "text": "melon"
+            },
+            {
+              "bbox": [
+                559.375,
+                242.683,
+                665.625,
+                297.561
+              ],
+              "text": "check"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ03",
+      "B11-occ04",
+      "B11-occ05",
+      "B11-occ06",
+      "B11-occ07"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B11-occ03"
+    ],
+    "family_id": "B11",
+    "id": "B11_color_swap-Q3",
+    "image_id": "B11_color_swap",
+    "instruction": "只擦掉最左邊的 melon。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                87.5,
+                654.878,
+                196.875,
+                713.415
+              ],
+              "text": "melon"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ01",
+      "B11-occ02",
+      "B11-occ04",
+      "B11-occ05",
+      "B11-occ06",
+      "B11-occ07",
+      "B11-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "melon"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B11",
+    "id": "B11_color_swap-Q4",
+    "image_id": "B11_color_swap",
+    "instruction": "擦掉完全位於 wolf 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_color_swap-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ01",
+      "B11-occ02",
+      "B11-occ03",
+      "B11-occ04",
+      "B11-occ05",
+      "B11-occ06",
+      "B11-occ07",
+      "B11-occ08"
+    ],
+    "rule": {
+      "anchor_text": "wolf",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B11-occ07"
+    ],
+    "family_id": "B11",
+    "id": "B11_color_swap-Q5",
+    "image_id": "B11_color_swap",
+    "instruction": "擦掉所有交通工具名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_color_swap-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                821.094,
+                640.244,
+                897.656,
+                712.195
+              ],
+              "text": "ship"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ01",
+      "B11-occ02",
+      "B11-occ03",
+      "B11-occ04",
+      "B11-occ05",
+      "B11-occ06",
+      "B11-occ08"
+    ],
+    "rule": {
+      "category": "vehicle",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "selected"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B11-occ01",
+      "B11-occ02",
+      "B11-occ03",
+      "B11-occ04",
+      "B11-occ06",
+      "B11-occ07",
+      "B11-occ08"
+    ],
+    "family_id": "B11",
+    "id": "B11_color_swap-Q6",
+    "image_id": "B11_color_swap",
+    "instruction": "保留所有動物名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B11_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                298.438,
+                647.561,
+                451.562,
+                707.317
+              ],
+              "text": "PURPLE"
+            },
+            {
+              "bbox": [
+                797.656,
+                243.902,
+                915.625,
+                306.098
+              ],
+              "text": "melon"
+            },
+            {
+              "bbox": [
+                87.5,
+                654.878,
+                196.875,
+                713.415
+              ],
+              "text": "melon"
+            },
+            {
+              "bbox": [
+                539.844,
+                634.146,
+                703.906,
+                725.61
+              ],
+              "text": "apricot"
+            },
+            {
+              "bbox": [
+                87.5,
+                237.805,
+                210.156,
+                312.195
+              ],
+              "text": "spade"
+            },
+            {
+              "bbox": [
+                821.094,
+                640.244,
+                897.656,
+                712.195
+              ],
+              "text": "ship"
+            },
+            {
+              "bbox": [
+                559.375,
+                242.683,
+                665.625,
+                297.561
+              ],
+              "text": "check"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B11-occ05"
+    ],
+    "rule": {
+      "category": "animal",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B12-occ01"
+    ],
+    "family_id": "B12",
+    "id": "B12_clean-Q1",
+    "image_id": "B12_clean",
+    "instruction": "只擦掉文字 WHITE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_clean-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                797.656,
+                241.463,
+                928.125,
+                302.439
+              ],
+              "text": "WHITE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ02",
+      "B12-occ03",
+      "B12-occ04",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ07",
+      "B12-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "WHITE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B12-occ02",
+      "B12-occ08"
+    ],
+    "family_id": "B12",
+    "id": "B12_clean-Q2",
+    "image_id": "B12_clean",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_clean-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                81.25,
+                630.488,
+                192.188,
+                713.415
+              ],
+              "text": "apple"
+            },
+            {
+              "bbox": [
+                332.031,
+                245.122,
+                431.25,
+                306.098
+              ],
+              "text": "draft"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ01",
+      "B12-occ03",
+      "B12-occ04",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ07"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B12-occ02"
+    ],
+    "family_id": "B12",
+    "id": "B12_clean-Q3",
+    "image_id": "B12_clean",
+    "instruction": "只擦掉最左邊的 apple。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_clean-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                81.25,
+                630.488,
+                192.188,
+                713.415
+              ],
+              "text": "apple"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ01",
+      "B12-occ03",
+      "B12-occ04",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ07",
+      "B12-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "apple"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B12",
+    "id": "B12_clean-Q4",
+    "image_id": "B12_clean",
+    "instruction": "擦掉完全位於 duck 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_clean-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ01",
+      "B12-occ02",
+      "B12-occ03",
+      "B12-occ04",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ07",
+      "B12-occ08"
+    ],
+    "rule": {
+      "anchor_text": "duck",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [],
+    "family_id": "B12",
+    "id": "B12_clean-Q5",
+    "image_id": "B12_clean",
+    "instruction": "擦掉所有昆蟲名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_clean-Q5",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ01",
+      "B12-occ02",
+      "B12-occ03",
+      "B12-occ04",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ07",
+      "B12-occ08"
+    ],
+    "rule": {
+      "category": "insect",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B12-occ01",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ07",
+      "B12-occ08"
+    ],
+    "family_id": "B12",
+    "id": "B12_clean-Q6",
+    "image_id": "B12_clean",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_clean-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                797.656,
+                241.463,
+                928.125,
+                302.439
+              ],
+              "text": "WHITE"
+            },
+            {
+              "bbox": [
+                103.906,
+                253.659,
+                182.812,
+                308.537
+              ],
+              "text": "duck"
+            },
+            {
+              "bbox": [
+                351.562,
+                652.439,
+                422.656,
+                695.122
+              ],
+              "text": "axe"
+            },
+            {
+              "bbox": [
+                540.625,
+                239.024,
+                689.062,
+                300.0
+              ],
+              "text": "scooter"
+            },
+            {
+              "bbox": [
+                332.031,
+                245.122,
+                431.25,
+                306.098
+              ],
+              "text": "draft"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ02",
+      "B12-occ03",
+      "B12-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B12-occ01"
+    ],
+    "family_id": "B12",
+    "id": "B12_color_swap-Q1",
+    "image_id": "B12_color_swap",
+    "instruction": "只擦掉文字 WHITE。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_color_swap-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                797.656,
+                241.463,
+                928.125,
+                302.439
+              ],
+              "text": "WHITE"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ02",
+      "B12-occ03",
+      "B12-occ04",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ07",
+      "B12-occ08"
+    ],
+    "rule": {
+      "kind": "text",
+      "text": "WHITE"
+    },
+    "slot": "Q1",
+    "status": "selected"
+  },
+  {
+    "category": "exact_color",
+    "erased_target_ids": [
+      "B12-occ01",
+      "B12-occ07"
+    ],
+    "family_id": "B12",
+    "id": "B12_color_swap-Q2",
+    "image_id": "B12_color_swap",
+    "instruction": "擦掉所有紅色墨水的文字，依墨色判斷，不依單字意思。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_color_swap-Q2",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                797.656,
+                241.463,
+                928.125,
+                302.439
+              ],
+              "text": "WHITE"
+            },
+            {
+              "bbox": [
+                540.625,
+                239.024,
+                689.062,
+                300.0
+              ],
+              "text": "scooter"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ02",
+      "B12-occ03",
+      "B12-occ04",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ08"
+    ],
+    "rule": {
+      "color": "red",
+      "kind": "ink_color"
+    },
+    "slot": "Q2",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [
+      "B12-occ02"
+    ],
+    "family_id": "B12",
+    "id": "B12_color_swap-Q3",
+    "image_id": "B12_color_swap",
+    "instruction": "只擦掉最左邊的 apple。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_color_swap-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                81.25,
+                630.488,
+                192.188,
+                713.415
+              ],
+              "text": "apple"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ01",
+      "B12-occ03",
+      "B12-occ04",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ07",
+      "B12-occ08"
+    ],
+    "rule": {
+      "kind": "leftmost_text",
+      "text": "apple"
+    },
+    "slot": "Q3",
+    "status": "selected"
+  },
+  {
+    "category": "spatial",
+    "erased_target_ids": [],
+    "family_id": "B12",
+    "id": "B12_color_swap-Q4",
+    "image_id": "B12_color_swap",
+    "instruction": "擦掉完全位於 duck 上方的所有單字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_color_swap-Q4",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ01",
+      "B12-occ02",
+      "B12-occ03",
+      "B12-occ04",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ07",
+      "B12-occ08"
+    ],
+    "rule": {
+      "anchor_text": "duck",
+      "kind": "fully_above_text"
+    },
+    "slot": "Q4",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [],
+    "family_id": "B12",
+    "id": "B12_color_swap-Q5",
+    "image_id": "B12_color_swap",
+    "instruction": "擦掉所有昆蟲名稱。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_color_swap-Q5",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ01",
+      "B12-occ02",
+      "B12-occ03",
+      "B12-occ04",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ07",
+      "B12-occ08"
+    ],
+    "rule": {
+      "category": "insect",
+      "kind": "semantic_erase"
+    },
+    "slot": "Q5",
+    "status": "no_match"
+  },
+  {
+    "category": "semantic",
+    "erased_target_ids": [
+      "B12-occ01",
+      "B12-occ05",
+      "B12-occ06",
+      "B12-occ07",
+      "B12-occ08"
+    ],
+    "family_id": "B12",
+    "id": "B12_color_swap-Q6",
+    "image_id": "B12_color_swap",
+    "instruction": "保留所有水果名稱，擦掉其他文字。",
+    "provenance": "programmatic_rule_ground_truth_not_human_annotation",
+    "reference_answer": {
+      "answers": [
+        {
+          "id": "B12_color_swap-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "bbox": [
+                797.656,
+                241.463,
+                928.125,
+                302.439
+              ],
+              "text": "WHITE"
+            },
+            {
+              "bbox": [
+                103.906,
+                253.659,
+                182.812,
+                308.537
+              ],
+              "text": "duck"
+            },
+            {
+              "bbox": [
+                351.562,
+                652.439,
+                422.656,
+                695.122
+              ],
+              "text": "axe"
+            },
+            {
+              "bbox": [
+                540.625,
+                239.024,
+                689.062,
+                300.0
+              ],
+              "text": "scooter"
+            },
+            {
+              "bbox": [
+                332.031,
+                245.122,
+                431.25,
+                306.098
+              ],
+              "text": "draft"
+            }
+          ]
+        }
+      ]
+    },
+    "retained_target_ids": [
+      "B12-occ02",
+      "B12-occ03",
+      "B12-occ04"
+    ],
+    "rule": {
+      "category": "fruit",
+      "kind": "semantic_preserve"
+    },
+    "slot": "Q6",
+    "status": "selected"
+  }
+]

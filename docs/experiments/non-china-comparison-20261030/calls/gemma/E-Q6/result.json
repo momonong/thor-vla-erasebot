@@ -1,0 +1,110 @@
+{
+  "route": "gemma",
+  "question_id": "E-Q6",
+  "image_id": "english",
+  "question": {
+    "id": "E-Q6",
+    "category": "semantic",
+    "instruction": "擦掉全圖表示「我的」或「你的」的所有格限定詞，每次出現都選取。"
+  },
+  "started_utc": "2026-10-30T08:08:06.211743+00:00",
+  "status": "completed",
+  "prompt_sha256": "d1f8a0387541eb0befbbf17f884f901b2b4cbbecf41bea47c98e917d346075e1",
+  "model_input_prompt_lf_sha256": "1489729f910ad7b051b756b305635e0132eda2b45ba92d5685fe7f78de253227",
+  "image_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 598,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        598
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        598
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        598
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        1,
+        2520,
+        768
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_position_ids": {
+      "shape": [
+        1,
+        2520,
+        2
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.024185100104659796,
+  "generation_s": 5.014449500013143,
+  "generated_tokens": 64,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "92fe55dbdc15a31ab284468344f40364e9763f895dbfb4d8e6f9528c4969b8d4",
+  "parsed": {
+    "valid": true,
+    "data": {
+      "answers": [
+        {
+          "id": "E-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "my",
+              "bbox": [
+                353,
+                543,
+                420,
+                581
+              ]
+            },
+            {
+              "text": "your",
+              "bbox": [
+                463,
+                733,
+                530,
+                771
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "peak_gpu_allocated_bytes": 10797878272,
+  "peak_gpu_reserved_bytes": 10909384704,
+  "question_wall_s": 5.047788300085813
+}

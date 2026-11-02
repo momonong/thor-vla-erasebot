@@ -1,0 +1,244 @@
+{
+  "bbox_format": "xyxy_exclusive",
+  "coordinate_frame": "image",
+  "evidence_kind": "font_rendered_synthetic",
+  "family_id": "B12",
+  "image_id": "B12_color_swap",
+  "image_size": [
+    1280,
+    820
+  ],
+  "schema_version": 1,
+  "split": "development_pilot",
+  "targets": [
+    {
+      "bbox_1000": [
+        797.656,
+        241.463,
+        928.125,
+        302.439
+      ],
+      "bbox_px": [
+        1021,
+        198,
+        1188,
+        248
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 46,
+      "id": "B12-occ01",
+      "ink_color": "red",
+      "ink_rgb": [
+        184,
+        31,
+        41
+      ],
+      "mask_path": "supervision/masks/B12/B12-occ01.png",
+      "rotation_degrees": 4,
+      "semantic_categories": [],
+      "text": "WHITE"
+    },
+    {
+      "bbox_1000": [
+        81.25,
+        630.488,
+        192.188,
+        713.415
+      ],
+      "bbox_px": [
+        104,
+        517,
+        246,
+        585
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 58,
+      "id": "B12-occ02",
+      "ink_color": "blue",
+      "ink_rgb": [
+        28,
+        73,
+        171
+      ],
+      "mask_path": "supervision/masks/B12/B12-occ02.png",
+      "rotation_degrees": 2,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "apple"
+    },
+    {
+      "bbox_1000": [
+        814.844,
+        648.78,
+        910.938,
+        717.073
+      ],
+      "bbox_px": [
+        1043,
+        532,
+        1166,
+        588
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 50,
+      "id": "B12-occ03",
+      "ink_color": "green",
+      "ink_rgb": [
+        24,
+        116,
+        61
+      ],
+      "mask_path": "supervision/masks/B12/B12-occ03.png",
+      "rotation_degrees": -2,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "apple"
+    },
+    {
+      "bbox_1000": [
+        563.281,
+        639.024,
+        660.938,
+        696.341
+      ],
+      "bbox_px": [
+        721,
+        524,
+        846,
+        571
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 46,
+      "id": "B12-occ04",
+      "ink_color": "black",
+      "ink_rgb": [
+        35,
+        38,
+        42
+      ],
+      "mask_path": "supervision/masks/B12/B12-occ04.png",
+      "rotation_degrees": -4,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "peach"
+    },
+    {
+      "bbox_1000": [
+        103.906,
+        253.659,
+        182.812,
+        308.537
+      ],
+      "bbox_px": [
+        133,
+        208,
+        234,
+        253
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 46,
+      "id": "B12-occ05",
+      "ink_color": "purple",
+      "ink_rgb": [
+        119,
+        51,
+        158
+      ],
+      "mask_path": "supervision/masks/B12/B12-occ05.png",
+      "rotation_degrees": -2,
+      "semantic_categories": [
+        "animal"
+      ],
+      "text": "duck"
+    },
+    {
+      "bbox_1000": [
+        351.562,
+        652.439,
+        422.656,
+        695.122
+      ],
+      "bbox_px": [
+        450,
+        535,
+        541,
+        570
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 54,
+      "id": "B12-occ06",
+      "ink_color": "orange",
+      "ink_rgb": [
+        204,
+        95,
+        15
+      ],
+      "mask_path": "supervision/masks/B12/B12-occ06.png",
+      "rotation_degrees": -2,
+      "semantic_categories": [
+        "tool"
+      ],
+      "text": "axe"
+    },
+    {
+      "bbox_1000": [
+        540.625,
+        239.024,
+        689.062,
+        300.0
+      ],
+      "bbox_px": [
+        692,
+        196,
+        882,
+        246
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 54,
+      "id": "B12-occ07",
+      "ink_color": "red",
+      "ink_rgb": [
+        184,
+        31,
+        41
+      ],
+      "mask_path": "supervision/masks/B12/B12-occ07.png",
+      "rotation_degrees": 4,
+      "semantic_categories": [
+        "vehicle"
+      ],
+      "text": "scooter"
+    },
+    {
+      "bbox_1000": [
+        332.031,
+        245.122,
+        431.25,
+        306.098
+      ],
+      "bbox_px": [
+        425,
+        201,
+        552,
+        251
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 50,
+      "id": "B12-occ08",
+      "ink_color": "blue",
+      "ink_rgb": [
+        28,
+        73,
+        171
+      ],
+      "mask_path": "supervision/masks/B12/B12-occ08.png",
+      "rotation_degrees": 4,
+      "semantic_categories": [],
+      "text": "draft"
+    }
+  ],
+  "variant": "color_swap"
+}

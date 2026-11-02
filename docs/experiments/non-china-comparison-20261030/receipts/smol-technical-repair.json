@@ -1,0 +1,34 @@
+{
+  "revision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "processor_type": "SmolVLMProcessor",
+  "model_class": "SmolVLMForConditionalGeneration",
+  "input_shapes": {
+    "pixel_values": [
+      1,
+      13,
+      3,
+      384,
+      384
+    ],
+    "pixel_attention_mask": [
+      1,
+      13,
+      384,
+      384
+    ],
+    "input_ids": [
+      1,
+      1737
+    ],
+    "attention_mask": [
+      1,
+      1737
+    ]
+  },
+  "generated_answer": false,
+  "repair": [
+    "num2words==0.5.14",
+    "use checkpoint SmolVLM architecture"
+  ],
+  "runner_sha256": "8a1385f6be259146a7474041cfe782082225387ffe79016ca6346e629b4c1554"
+}

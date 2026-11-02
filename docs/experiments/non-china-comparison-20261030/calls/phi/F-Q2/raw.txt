@@ -1,0 +1,1 @@
+題目=[{"id":"F-Q2","category":"exact_color","instruction":"擦掉所有藬色墨水寫成的英文文字。"}]

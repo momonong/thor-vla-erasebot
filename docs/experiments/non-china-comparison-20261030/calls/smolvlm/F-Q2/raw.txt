@@ -1,0 +1,1 @@
+ {"answers":[{"id":"F-Q2","category":"exact_color","instruction":"擦掉所有藍色墨水寫成的英文文字。"}]}

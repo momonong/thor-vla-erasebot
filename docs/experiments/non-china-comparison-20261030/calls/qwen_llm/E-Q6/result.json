@@ -1,0 +1,59 @@
+{
+  "route": "qwen_llm",
+  "question_id": "E-Q6",
+  "image_id": "english",
+  "question": {
+    "id": "E-Q6",
+    "category": "semantic",
+    "instruction": "擦掉全圖表示「我的」或「你的」的所有格限定詞，每次出現都選取。"
+  },
+  "started_utc": "2026-10-30T07:55:30.384941+00:00",
+  "status": "completed",
+  "prompt_sha256": "f060ecd81de7635e86f355949bcc5390b349a3f38428b834af75f259b8434f92",
+  "model_input_prompt_lf_sha256": "2665e0d3cbcd60e5847b67c4378070243868c93dbbb581ff7d24197e895097a8",
+  "image_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 752,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        752
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        752
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.0028484000358730555,
+  "generation_s": 1.7777873000595719,
+  "generated_tokens": 67,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "75e3972580dfa01a68f455091ab9bec6a4dc84a3f9c43edbb8cfe878b7cafe73",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Extra data: line 1 column 183 (char 182)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 3212069376,
+  "peak_gpu_reserved_bytes": 3433037824,
+  "question_wall_s": 1.7873450999613851
+}

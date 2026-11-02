@@ -1,0 +1,1 @@
+{"answers":[{"id":"question id","status":"selected","target_ids":["fruits-d001","fruits-d003","fruits-d005","fruits-d006","fruits-d007","fruits-d008","fruits-d009","fruits-d010","fruits-d011","fruits-d012","fruits-d013"]}}

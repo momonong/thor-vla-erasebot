@@ -1,0 +1,291 @@
+{
+  "routes": {
+    "qwen_llm": {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "planned": 18,
+      "generated": 18,
+      "content_correct": 4,
+      "schema_valid": 0,
+      "content_and_schema": 0,
+      "correct_questions": [
+        "C-Q2",
+        "C-Q6",
+        "F-Q2",
+        "E-Q2"
+      ],
+      "by_category": {
+        "exact_color": {
+          "correct": 3,
+          "total": 6
+        },
+        "spatial": {
+          "correct": 0,
+          "total": 6
+        },
+        "semantic": {
+          "correct": 1,
+          "total": 6
+        }
+      },
+      "load_s": 3.056387099903077,
+      "generation_sum_s": 17.775352399796247,
+      "generation_median_s": 0.6084861499257386,
+      "generation_range_s": [
+        0.5512009998783469,
+        2.976937999948859
+      ],
+      "preprocess_sum_s": 0.08001350052654743,
+      "model_process_wall_s": 33.07799999997951,
+      "eos_answers": 18,
+      "token_cap_questions": [],
+      "time_cap_questions": [],
+      "peak_allocated_bytes": 3287899136,
+      "peak_reserved_bytes": 3433037824
+    },
+    "qwen_vlm": {
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "planned": 18,
+      "generated": 18,
+      "content_correct": 10,
+      "schema_valid": 17,
+      "content_and_schema": 10,
+      "correct_questions": [
+        "C-Q1",
+        "C-Q2",
+        "C-Q3",
+        "C-Q4",
+        "C-Q5",
+        "F-Q1",
+        "F-Q2",
+        "F-Q4",
+        "E-Q1",
+        "E-Q5"
+      ],
+      "by_category": {
+        "exact_color": {
+          "correct": 5,
+          "total": 6
+        },
+        "spatial": {
+          "correct": 3,
+          "total": 6
+        },
+        "semantic": {
+          "correct": 2,
+          "total": 6
+        }
+      },
+      "load_s": 5.733147399965674,
+      "generation_sum_s": 586.3323061997071,
+      "generation_median_s": 37.73007929988671,
+      "generation_range_s": [
+        12.706563199870288,
+        42.91647720010951
+      ],
+      "preprocess_sum_s": 0.6377277001738548,
+      "model_process_wall_s": 604.1090000001714,
+      "eos_answers": 18,
+      "token_cap_questions": [],
+      "time_cap_questions": [],
+      "peak_allocated_bytes": 4670897664,
+      "peak_reserved_bytes": 4848615424
+    },
+    "smolvlm": {
+      "model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "planned": 18,
+      "generated": 18,
+      "content_correct": 0,
+      "schema_valid": 1,
+      "content_and_schema": 0,
+      "correct_questions": [],
+      "by_category": {
+        "exact_color": {
+          "correct": 0,
+          "total": 6
+        },
+        "spatial": {
+          "correct": 0,
+          "total": 6
+        },
+        "semantic": {
+          "correct": 0,
+          "total": 6
+        }
+      },
+      "load_s": 5.534602099796757,
+      "generation_sum_s": 25.637965200003237,
+      "generation_median_s": 1.4437965500401333,
+      "generation_range_s": [
+        0.5412437999621034,
+        3.4586656000465155
+      ],
+      "preprocess_sum_s": 3.5990907007362694,
+      "model_process_wall_s": 51.23399999993853,
+      "eos_answers": 18,
+      "token_cap_questions": [],
+      "time_cap_questions": [],
+      "peak_allocated_bytes": 5004719104,
+      "peak_reserved_bytes": 5075107840
+    },
+    "doctr_smollm": {
+      "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "revision": "31b70e2e869a7173562077fd711b654946d38674",
+      "planned": 18,
+      "generated": 18,
+      "content_correct": 0,
+      "schema_valid": 0,
+      "content_and_schema": 0,
+      "correct_questions": [],
+      "by_category": {
+        "exact_color": {
+          "correct": 0,
+          "total": 6
+        },
+        "spatial": {
+          "correct": 0,
+          "total": 6
+        },
+        "semantic": {
+          "correct": 0,
+          "total": 6
+        }
+      },
+      "load_s": 3.6616346000228077,
+      "generation_sum_s": 37.09099860000424,
+      "generation_median_s": 2.159745499957353,
+      "generation_range_s": [
+        1.2724462999030948,
+        2.933628400089219
+      ],
+      "preprocess_sum_s": 0.09028609981760383,
+      "model_process_wall_s": 55.14099999982864,
+      "eos_answers": 18,
+      "token_cap_questions": [],
+      "time_cap_questions": [],
+      "peak_allocated_bytes": 3828235264,
+      "peak_reserved_bytes": 3923771392
+    },
+    "gemma": {
+      "model": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "planned": 18,
+      "generated": 18,
+      "content_correct": 8,
+      "schema_valid": 18,
+      "content_and_schema": 8,
+      "correct_questions": [
+        "C-Q1",
+        "C-Q2",
+        "C-Q3",
+        "C-Q4",
+        "C-Q5",
+        "F-Q1",
+        "F-Q2",
+        "E-Q2"
+      ],
+      "by_category": {
+        "exact_color": {
+          "correct": 5,
+          "total": 6
+        },
+        "spatial": {
+          "correct": 2,
+          "total": 6
+        },
+        "semantic": {
+          "correct": 1,
+          "total": 6
+        }
+      },
+      "load_s": 14.640176800079644,
+      "generation_sum_s": 58.35573750012554,
+      "generation_median_s": 2.739032299956307,
+      "generation_range_s": [
+        1.269109700107947,
+        7.190464699873701
+      ],
+      "preprocess_sum_s": 0.556337499525398,
+      "model_process_wall_s": 86.20299999997951,
+      "eos_answers": 18,
+      "token_cap_questions": [],
+      "time_cap_questions": [],
+      "peak_allocated_bytes": 10797998592,
+      "peak_reserved_bytes": 10909384704
+    },
+    "phi": {
+      "model": "microsoft/Phi-4-multimodal-instruct",
+      "revision": "93f923e1a7727d1c4f446756212d9d3e8fcc5d81",
+      "planned": 18,
+      "generated": 18,
+      "content_correct": 1,
+      "schema_valid": 0,
+      "content_and_schema": 0,
+      "correct_questions": [
+        "C-Q6"
+      ],
+      "by_category": {
+        "exact_color": {
+          "correct": 0,
+          "total": 6
+        },
+        "spatial": {
+          "correct": 0,
+          "total": 6
+        },
+        "semantic": {
+          "correct": 1,
+          "total": 6
+        }
+      },
+      "load_s": 28.972312399884686,
+      "generation_sum_s": 915.0424574995413,
+      "generation_median_s": 4.349968799971975,
+      "generation_range_s": [
+        1.5175787000916898,
+        289.27043669996783
+      ],
+      "preprocess_sum_s": 0.8966092998161912,
+      "model_process_wall_s": 966.7340000001714,
+      "eos_answers": 15,
+      "token_cap_questions": [
+        "F-Q5",
+        "E-Q2",
+        "E-Q6"
+      ],
+      "time_cap_questions": [],
+      "peak_allocated_bytes": 18332059648,
+      "peak_reserved_bytes": 19537068032
+    }
+  },
+  "verification": {
+    "raw_responses_reparsed": 108,
+    "question_prompt_hash_contracts": 108,
+    "qwen_rendered_chats_same_as_cpu": 36,
+    "original_tree_sha256": "c6993c45cb34785a878ee42768740fa9eafebc072af428d22ab4dee1a8269ac6",
+    "original_file_count": 395,
+    "original_bytes": 3041240,
+    "reference_only_used_for_scoring": true,
+    "content_accuracy_automatically_rescored": false,
+    "model_inference_executed_by_analyzer": false,
+    "git_head_at_verification": "6848723ac9751b06720567f01e82270cd40d2b12",
+    "git_head_matches_run_start": true,
+    "git_tracked_diff_empty": true,
+    "git_tracked_diff_paths": []
+  },
+  "technical_attempts": {
+    "formal_generated_answers": 108,
+    "pre_generation_failed_attempts": 1,
+    "technical_retries": 1,
+    "answer_based_retries": 0,
+    "main_wall_s": 1759.4370000001509,
+    "retry_wall_s": 51.23399999993853
+  },
+  "model_assets_receipt_sha256": "413bc643a614b321e6693f06a1194e19eb7cb07d28a615b7dde5e6ca4b74384f",
+  "adjudication_sha256": "bd810dc5e043accd0e672ac16cd27871c4b34ca097798a76689cf6714cc69a61",
+  "source_adjudication_sha256": "d5d1e996ea41c99f27425d3a6b9eca260fdc81a9a6e2f0cb6bb9535488379bac",
+  "source_model_assets_receipt_sha256": "d8a90fe1799486220aff1d3a7991a69539d3c6666be55eee1a7cd8321af13ff8",
+  "verification_scope": "verification is a historical source receipt; run verify.py for current portable checks."
+}

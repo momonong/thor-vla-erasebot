@@ -1,0 +1,115 @@
+{
+  "route": "phi",
+  "question_id": "F-Q6",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q6",
+    "category": "semantic",
+    "instruction": "只保留最上方帶底線的課程標題，擦掉其餘所有英文文字。"
+  },
+  "started_utc": "2026-10-30T08:14:00.493505+00:00",
+  "status": "completed",
+  "prompt_sha256": "b3a349ae5ddfd8596f2e69d469d40079a29667472f2a334759cd08eb926cb295",
+  "model_input_prompt_lf_sha256": "0afb9c75e0946c6ab954e8c4c5e90738ec8afce63c64d2debc2d77c37d9399ae",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 2049,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        2049
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "input_image_embeds": {
+      "shape": [
+        1,
+        7,
+        3,
+        448,
+        448
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "image_sizes": {
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "image_attention_mask": {
+      "shape": [
+        1,
+        7,
+        32,
+        32
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "input_audio_embeds": {
+      "shape": [
+        0
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "audio_embed_sizes": {
+      "shape": [
+        0
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        2049
+      ],
+      "dtype": "torch.bool",
+      "value": null
+    },
+    "input_mode": {
+      "shape": [
+        1
+      ],
+      "dtype": "torch.int64",
+      "value": [
+        1
+      ]
+    }
+  },
+  "preprocess_s": 0.059998400043696165,
+  "generation_s": 5.114081300096586,
+  "generated_tokens": 39,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "b078a4f3343d2041059f216cbb202f2fc027f4135850b502dca168e4bf6a6a66",
+  "parsed": {
+    "valid": false,
+    "data": {
+      "id": "F-Q6",
+      "category": "semantic",
+      "instruction": "只保留最上方帶底線的課程標題，擦掉其餘所有英文文字。"
+    },
+    "errors": [
+      "answers_not_list"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 13867597824,
+  "peak_gpu_reserved_bytes": 19534970880,
+  "question_wall_s": 5.183731999946758
+}

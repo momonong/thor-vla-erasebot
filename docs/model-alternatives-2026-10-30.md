@@ -1,5 +1,7 @@
 # 非中國發布機構模型備案：2026-10-30 研究紀錄
 
+本篇保留當時尚未實測的研究快照；後續已完成的六路 GPU 比較與 108 份回答另見[可攜封存](experiments/non-china-comparison-20261030/README.md)。2026-11-02 起辨識最佳化暫緩，沒有新增模型訓練。
+
 建議保留現有 Qwen 結果作基準，主要備案先研究 **Gemma 4 E2B／E4B**，以 **SmolVLM2** 作低成本對照、**Phi-4-multimodal** 作較重候選；OCR 優先查核 **docTR**，並保留 **Tesseract＋顏色量測＋有限規則**的低成本底線。這些候選本次**未下載、未推論、未訓練，也未驗證本機／Thor 效能**；以下是研究選擇，不是新一輪實驗結果。
 
 使用者當次表示尚無明確競賽限制，目前只預先準備備案，不能宣稱主辦允許或禁止特定模型。現有兩個指定 checkpoint 官方模型卡都標示 Apache 2.0：[Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)、[Qwen3-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct)。開源授權不等於競賽核准。[competition.md](competition.md) 保留原 2026-10-26 歷史核對，沒有冒稱今日已向主辦確認。

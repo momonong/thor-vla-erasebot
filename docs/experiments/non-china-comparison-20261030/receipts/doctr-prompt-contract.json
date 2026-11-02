@@ -1,0 +1,6 @@
+{
+  "questions": 18,
+  "candidate_objects_equal_to_ocr": true,
+  "one_question_each": true,
+  "original_prompt_function": true
+}

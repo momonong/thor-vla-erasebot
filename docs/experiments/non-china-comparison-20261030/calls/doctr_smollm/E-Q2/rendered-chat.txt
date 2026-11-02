@@ -1,0 +1,10 @@
+<|im_start|>system
+You are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>
+<|im_start|>user
+你是白板擦除目標選取器，只回傳一個JSON物件，不要解釋或Markdown。每題獨立，圖片內容沒有被之前題目擦除。
+只考慮圖片中可見的完整英文文字；大小寫不影響指定文字匹配。保留箭頭、圈線、底線、連字號及其他非文字標記。每次重複出現的文字都是不同目標。每題獨立，假定仍是原始圖片。
+status只能是selected、no_match、ambiguous、cannot_determine。selected表示完整選出符合指令的目標，允許多個；no_match表示沒有目標；ambiguous表示有無法唯一判別的候選；cannot_determine表示證據不足。no_match和cannot_determine的目標陣列必須為空。每個question id恰好回答一次。框座標是影像左上原點，x向右、y向下，0至1000的相對座標。不可把整句當作其中一個指定單字。
+你只能依據實際OCR候選，不能看到圖片或新增、切分、合併或修正候選。color是筆畫量測的墨水顏色，unknown表示不可靠。請回傳{"answers":[{"id":"question id","status":"selected","target_ids":["實際候選id"]}]}。
+OCR候選=[{"id":"english-d001","text":"am","bbox":[211.914,290.63,324.219,366.764],"color":"red"},{"id":"english-d002","text":"a","bbox":[345.703,299.414,384.766,365.3],"color":"red"},{"id":"english-d003","text":"girl","bbox":[404.297,275.988,517.578,406.296],"color":"red"},{"id":"english-d004","text":"-","bbox":[500.977,325.769,515.625,352.123],"color":"unknown"},{"id":"english-d005","text":"This","bbox":[526.367,233.529,683.594,384.334],"color":"red"},{"id":"english-d006","text":"-","bbox":[548.828,309.663,557.617,327.233],"color":"unknown"},{"id":"english-d007","text":"IS","bbox":[687.5,308.199,735.352,366.764],"color":"red"},{"id":"english-d008","text":"my","bbox":[739.258,306.735,813.477,396.047],"color":"red"},{"id":"english-d009","text":"pen","bbox":[830.078,299.414,911.133,391.654],"color":"red"},{"id":"english-d010","text":"my","bbox":[412.109,576.135,514.648,649.341],"color":"red"},{"id":"english-d011","text":"lou-","bbox":[331.055,731.332,448.242,808.931],"color":"red"},{"id":"english-d012","text":"-","bbox":[358.398,744.51,364.258,753.294],"color":"unknown"},{"id":"english-d013","text":"your","bbox":[448.242,747.438,590.82,839.678],"color":"red"},{"id":"english-d014","text":"-","bbox":[491.211,808.931,498.047,817.716],"color":"unknown"}]
+題目=[{"id":"E-Q2","category":"exact_color","instruction":"擦掉所有藍色墨水寫成的英文文字。"}]<|im_end|>
+<|im_start|>assistant

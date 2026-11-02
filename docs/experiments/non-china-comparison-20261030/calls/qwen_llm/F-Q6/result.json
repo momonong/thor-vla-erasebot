@@ -1,0 +1,59 @@
+{
+  "route": "qwen_llm",
+  "question_id": "F-Q6",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q6",
+    "category": "semantic",
+    "instruction": "只保留最上方帶底線的課程標題，擦掉其餘所有英文文字。"
+  },
+  "started_utc": "2026-10-30T07:55:23.996644+00:00",
+  "status": "completed",
+  "prompt_sha256": "417901fdb79da1f752dfabffaca60609ff5c08bf0f35038c29e7fb09cde7e89a",
+  "model_input_prompt_lf_sha256": "a43feff32a0275e83bf4b50bb9900c9cd2aeab52cc3813ae67f4a037e7c98cd5",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1024,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        1024
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1024
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.0026853999588638544,
+  "generation_s": 2.9321779999881983,
+  "generated_tokens": 110,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "841cb57c8116296eec6f8f47094d3b014d63547cbf35e997d873a3ada7ac92a4",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Extra data: line 1 column 245 (char 244)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 3284216320,
+  "peak_gpu_reserved_bytes": 3433037824,
+  "question_wall_s": 2.94319500005804
+}

@@ -1,0 +1,98 @@
+{
+  "route": "smolvlm",
+  "question_id": "F-Q4",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q4",
+    "category": "spatial",
+    "instruction": "擦掉 FRUITS 右側、介於 Apples 與 BANANAS 之間的水果名稱。"
+  },
+  "started_utc": "2026-10-30T08:24:58.703923+00:00",
+  "status": "completed",
+  "prompt_sha256": "c4c5553a0633d8bcb5f8ecea49f89f721ce9d9eabe926022d888f38fec6095dd",
+  "model_input_prompt_lf_sha256": "270025d9f1a5d58cd74bace013ef8bf9772f94b26b339aef6409989e519e0f36",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1765,
+  "input_tensors": {
+    "pixel_values": {
+      "shape": [
+        1,
+        13,
+        3,
+        384,
+        384
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "pixel_attention_mask": {
+      "shape": [
+        1,
+        13,
+        384,
+        384
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "input_ids": {
+      "shape": [
+        1,
+        1765
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1765
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.18765170010738075,
+  "generation_s": 1.513677400071174,
+  "generated_tokens": 46,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "2e7d27fff5a2c56814dc93408991788eef2ae6c78dbd3970a97cb227f44c7b85",
+  "parsed": {
+    "valid": false,
+    "data": {
+      "answers": [
+        {
+          "id": "question id",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "Kiwis",
+              "bbox": [
+                100,
+                100,
+                200,
+                200
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": [
+      "question_ids"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 5002552320,
+  "peak_gpu_reserved_bytes": 5075107840,
+  "question_wall_s": 1.709502900019288
+}

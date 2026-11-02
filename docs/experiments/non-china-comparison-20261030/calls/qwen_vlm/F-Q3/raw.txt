@@ -1,0 +1,3 @@
+```json
+{"answers":[{"id":"F-Q3","status":"selected","targets":[{"text":"melons","bbox":[195,604,314,655}]},{"text":"kiwis","bbox":[183,485,268,545]}]}}
+```

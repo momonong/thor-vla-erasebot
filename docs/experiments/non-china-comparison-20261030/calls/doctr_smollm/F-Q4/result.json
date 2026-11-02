@@ -1,0 +1,59 @@
+{
+  "route": "doctr_smollm",
+  "question_id": "F-Q4",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q4",
+    "category": "spatial",
+    "instruction": "擦掉 FRUITS 右側、介於 Apples 與 BANANAS 之間的水果名稱。"
+  },
+  "started_utc": "2026-10-30T08:06:23.139748+00:00",
+  "status": "completed",
+  "prompt_sha256": "15f67a63830cb45b790d8c0d49839adad6ecee00308f833010601f2d9bee7904",
+  "model_input_prompt_lf_sha256": "7473e8f69bf5ca0ccfd261034417cd43c09a96d75f97d89beaaaa7b016ad774e",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1423,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        1423
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1423
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.0037763998843729496,
+  "generation_s": 1.2724462999030948,
+  "generated_tokens": 68,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "4fb93b8f5ffefd4a04bab7694e62567c5a72385fa83a60088514794f449c4368",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Expecting ',' delimiter: line 1 column 151 (char 150)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 3804729344,
+  "peak_gpu_reserved_bytes": 3921674240,
+  "question_wall_s": 1.283731299918145
+}

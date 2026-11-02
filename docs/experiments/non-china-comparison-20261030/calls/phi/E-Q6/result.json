@@ -1,0 +1,111 @@
+{
+  "route": "phi",
+  "question_id": "E-Q6",
+  "image_id": "english",
+  "question": {
+    "id": "E-Q6",
+    "category": "semantic",
+    "instruction": "擦掉全圖表示「我的」或「你的」的所有格限定詞，每次出現都選取。"
+  },
+  "started_utc": "2026-10-30T08:19:27.854589+00:00",
+  "status": "completed",
+  "prompt_sha256": "d1f8a0387541eb0befbbf17f884f901b2b4cbbecf41bea47c98e917d346075e1",
+  "model_input_prompt_lf_sha256": "1489729f910ad7b051b756b305635e0132eda2b45ba92d5685fe7f78de253227",
+  "image_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 2210,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        2210
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "input_image_embeds": {
+      "shape": [
+        1,
+        7,
+        3,
+        448,
+        448
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "image_sizes": {
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "image_attention_mask": {
+      "shape": [
+        1,
+        7,
+        32,
+        32
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "input_audio_embeds": {
+      "shape": [
+        0
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "audio_embed_sizes": {
+      "shape": [
+        0
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        2210
+      ],
+      "dtype": "torch.bool",
+      "value": null
+    },
+    "input_mode": {
+      "shape": [
+        1
+      ],
+      "dtype": "torch.int64",
+      "value": [
+        1
+      ]
+    }
+  },
+  "preprocess_s": 0.046925000147894025,
+  "generation_s": 289.27043669996783,
+  "generated_tokens": 3072,
+  "last_token_eos": false,
+  "max_time_reached": false,
+  "token_cap_reached": true,
+  "raw_sha256": "bbe8ca8a836bcd6da888c420fb1a17c976e01cb1c69a7295cc06de8374e83766",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Unterminated string starting at: line 1 column 5610 (char 5609)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 18332059648,
+  "peak_gpu_reserved_bytes": 19537068032,
+  "question_wall_s": 289.32732470007613
+}

@@ -1,0 +1,120 @@
+{
+  "main": {
+    "started_utc": "2026-10-30T07:54:59.907053+00:00",
+    "routes": [
+      "qwen_llm",
+      "qwen_vlm",
+      "smolvlm",
+      "doctr_smollm",
+      "gemma",
+      "phi"
+    ],
+    "attempts": [
+      {
+        "route": "qwen_llm",
+        "attempt": 1,
+        "status": "completed",
+        "planned_questions": 18,
+        "returncode": 0,
+        "process_wall_s": 33.07799999997951,
+        "stop_reason": null,
+        "not_executed": []
+      },
+      {
+        "route": "qwen_vlm",
+        "attempt": 1,
+        "status": "completed",
+        "planned_questions": 18,
+        "returncode": 0,
+        "process_wall_s": 604.1090000001714,
+        "stop_reason": null,
+        "not_executed": []
+      },
+      {
+        "route": "smolvlm",
+        "attempt": 1,
+        "status": "technical_or_resource_error",
+        "planned_questions": 18,
+        "returncode": 1,
+        "process_wall_s": 14.156000000191852,
+        "stop_reason": null,
+        "not_executed": [
+          "C-Q1",
+          "C-Q2",
+          "C-Q3",
+          "C-Q4",
+          "C-Q5",
+          "C-Q6",
+          "F-Q1",
+          "F-Q2",
+          "F-Q3",
+          "F-Q4",
+          "F-Q5",
+          "F-Q6",
+          "E-Q1",
+          "E-Q2",
+          "E-Q3",
+          "E-Q4",
+          "E-Q5",
+          "E-Q6"
+        ]
+      },
+      {
+        "route": "doctr_smollm",
+        "attempt": 1,
+        "status": "completed",
+        "planned_questions": 18,
+        "returncode": 0,
+        "process_wall_s": 55.14099999982864,
+        "stop_reason": null,
+        "not_executed": []
+      },
+      {
+        "route": "gemma",
+        "attempt": 1,
+        "status": "completed",
+        "planned_questions": 18,
+        "returncode": 0,
+        "process_wall_s": 86.20299999997951,
+        "stop_reason": null,
+        "not_executed": []
+      },
+      {
+        "route": "phi",
+        "attempt": 1,
+        "status": "completed",
+        "planned_questions": 18,
+        "returncode": 0,
+        "process_wall_s": 966.7340000001714,
+        "stop_reason": null,
+        "not_executed": []
+      }
+    ],
+    "inference_cap_s": 5400,
+    "total_wall_s": 1759.4370000001509,
+    "finished_utc": "2026-10-30T08:24:19.344553+00:00"
+  },
+  "retry": {
+    "route": "smolvlm",
+    "attempt": 2,
+    "reason": "pre-generation technical repair",
+    "repair_receipt": "receipts/smol-technical-repair.json",
+    "started_utc": "2026-10-30T08:24:20.450032+00:00",
+    "main_run_finished": "2026-10-30T08:24:19.344553+00:00",
+    "global_deadline_utc": "2026-10-30T09:24:59.907053+00:00",
+    "status": "completed",
+    "planned_questions": 18,
+    "returncode": 0,
+    "process_wall_s": 51.23399999993853,
+    "stop_reason": null,
+    "finished_utc": "2026-10-30T08:25:11.691681+00:00",
+    "not_executed": []
+  },
+  "first_smol_attempt": {
+    "status": "pre_generation_failure",
+    "answers_generated": 0,
+    "reason": "Missing num2words; checkpoint-specific SmolVLM model class corrected before one technical retry.",
+    "full_stderr_published": false,
+    "source_summary_sha256": "0771483b5503fb19494cfbd19df9b2e06ed2213308992d952da4928a811a9b05"
+  }
+}

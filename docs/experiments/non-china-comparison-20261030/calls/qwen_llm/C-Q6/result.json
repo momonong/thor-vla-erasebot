@@ -1,0 +1,59 @@
+{
+  "route": "qwen_llm",
+  "question_id": "C-Q6",
+  "image_id": "colour",
+  "question": {
+    "id": "C-Q6",
+    "category": "semantic",
+    "instruction": "擦掉表示水果名稱的英文單字。"
+  },
+  "started_utc": "2026-10-30T07:55:17.815633+00:00",
+  "status": "completed",
+  "prompt_sha256": "166a12ad344226df5b964cc4e7466d55cc94b7141f5c37b14120c9c03ff884ea",
+  "model_input_prompt_lf_sha256": "4286f60ce7e3bfbd1f39fd99776f6c719b4b09183b1a6a442a75cd983233d748",
+  "image_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 489,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        489
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        489
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.002344599924981594,
+  "generation_s": 0.5896117999218404,
+  "generated_tokens": 21,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "159371c9706c5948838e0ade72d1d8af4e62adb538c6b32ae7197a1dc70308d3",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Extra data: line 1 column 64 (char 63)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 3158828032,
+  "peak_gpu_reserved_bytes": 3175088128,
+  "question_wall_s": 0.599231599830091
+}

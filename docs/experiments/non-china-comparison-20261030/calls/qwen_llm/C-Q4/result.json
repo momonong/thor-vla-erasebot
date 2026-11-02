@@ -1,0 +1,59 @@
+{
+  "route": "qwen_llm",
+  "question_id": "C-Q4",
+  "image_id": "colour",
+  "question": {
+    "id": "C-Q4",
+    "category": "spatial",
+    "instruction": "擦掉位於 RED 與 GREEN 之間的單字。"
+  },
+  "started_utc": "2026-10-30T07:55:16.639926+00:00",
+  "status": "completed",
+  "prompt_sha256": "61cfc43d712496970eb0dfdbdecc1fafb721204c50a625bef22b49c065d687ff",
+  "model_input_prompt_lf_sha256": "3a09e9753250da8b2d2ef770ed59901f82f7cfe6b7ba71777bd47be2861c117d",
+  "image_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 493,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        493
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        493
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.0024701000656932592,
+  "generation_s": 0.5841343000065535,
+  "generated_tokens": 21,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "ca7ff0fc4005a6453339b7a4e1bd09d8cb46ee013a0b562babaea7920f1d3f5e",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Extra data: line 1 column 64 (char 63)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 3158943744,
+  "peak_gpu_reserved_bytes": 3175088128,
+  "question_wall_s": 0.5946514999959618
+}

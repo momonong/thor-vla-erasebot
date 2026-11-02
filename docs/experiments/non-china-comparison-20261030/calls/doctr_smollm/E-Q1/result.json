@@ -1,0 +1,59 @@
+{
+  "route": "doctr_smollm",
+  "question_id": "E-Q1",
+  "image_id": "english",
+  "question": {
+    "id": "E-Q1",
+    "category": "exact_color",
+    "instruction": "只擦掉文字 pen。"
+  },
+  "started_utc": "2026-10-30T08:06:29.005082+00:00",
+  "status": "completed",
+  "prompt_sha256": "ab3ff38e1f160b04fb0f7c68d9b0782a9c21841af8eab06d155033c4273cd5e8",
+  "model_input_prompt_lf_sha256": "8340a07ab4c2084a763240694018f910cf921d4ba531f26bb3e57431762efe0b",
+  "image_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1424,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        1424
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1424
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.003253400092944503,
+  "generation_s": 2.5933293998241425,
+  "generated_tokens": 119,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "441742019adb8c87561e6efb315f89a32f68f976f1e4aecfdf01f37d2d0dee61",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Expecting ',' delimiter: line 1 column 278 (char 277)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 3804991488,
+  "peak_gpu_reserved_bytes": 3923771392,
+  "question_wall_s": 2.6069376999512315
+}

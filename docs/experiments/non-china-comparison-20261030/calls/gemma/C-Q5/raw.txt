@@ -1,0 +1,1 @@
+{"answers":[{"id":"C-Q5","status":"selected","targets":[{"text":"RED","bbox":[214,171,541,331]},{"text":"BLUE","bbox":[227,445,538,604]},{"text":"GREEN","bbox":[227,675,538,835]}]}]}

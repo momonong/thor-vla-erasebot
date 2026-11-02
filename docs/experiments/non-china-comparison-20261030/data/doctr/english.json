@@ -1,0 +1,1099 @@
+{
+  "image_id": "english",
+  "image_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+  "image_size": [
+    1024,
+    683
+  ],
+  "elapsed_s": 1.0494802000466734,
+  "candidates": [
+    {
+      "id": "english-d001",
+      "text": "am",
+      "score": 0.9407026767730713,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          217.0,
+          198.50000000000003
+        ],
+        [
+          332.0,
+          198.50000000000003
+        ],
+        [
+          332.0,
+          250.50000000000003
+        ],
+        [
+          217.0,
+          250.50000000000003
+        ]
+      ],
+      "bbox": [
+        211.914,
+        290.63,
+        324.219,
+        366.764
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 167,
+        "class_pixel_counts": {
+          "red": 167,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d002",
+      "text": "a",
+      "score": 0.686471164226532,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          354.0,
+          204.49999999999997
+        ],
+        [
+          394.0,
+          204.49999999999997
+        ],
+        [
+          394.0,
+          249.5
+        ],
+        [
+          354.0,
+          249.5
+        ]
+      ],
+      "bbox": [
+        345.703,
+        299.414,
+        384.766,
+        365.3
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 89,
+        "class_pixel_counts": {
+          "red": 89,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d003",
+      "text": "girl",
+      "score": 0.9095591902732849,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          414.0,
+          188.49999999999997
+        ],
+        [
+          530.0,
+          188.49999999999997
+        ],
+        [
+          530.0,
+          277.5
+        ],
+        [
+          414.0,
+          277.5
+        ]
+      ],
+      "bbox": [
+        404.297,
+        275.988,
+        517.578,
+        406.296
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 303,
+        "class_pixel_counts": {
+          "red": 303,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d004",
+      "text": "-",
+      "score": 0.54218989610672,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          513.0,
+          222.50000000000003
+        ],
+        [
+          528.0,
+          222.50000000000003
+        ],
+        [
+          528.0,
+          240.49999999999997
+        ],
+        [
+          513.0,
+          240.49999999999997
+        ]
+      ],
+      "bbox": [
+        500.977,
+        325.769,
+        515.625,
+        352.123
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "unknown",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 2,
+        "class_pixel_counts": {
+          "red": 2,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d005",
+      "text": "This",
+      "score": 0.9667238593101501,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          539.0,
+          159.5
+        ],
+        [
+          700.0,
+          159.5
+        ],
+        [
+          700.0,
+          262.5
+        ],
+        [
+          539.0,
+          262.5
+        ]
+      ],
+      "bbox": [
+        526.367,
+        233.529,
+        683.594,
+        384.334
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 407,
+        "class_pixel_counts": {
+          "red": 407,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d006",
+      "text": "-",
+      "score": 0.6851596832275391,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          562.0,
+          211.5
+        ],
+        [
+          571.0,
+          211.5
+        ],
+        [
+          571.0,
+          223.5
+        ],
+        [
+          562.0,
+          223.5
+        ]
+      ],
+      "bbox": [
+        548.828,
+        309.663,
+        557.617,
+        327.233
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "unknown",
+        "confidence_fraction": 0,
+        "stroke_pixel_count": 0,
+        "class_pixel_counts": {
+          "red": 0,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d007",
+      "text": "IS",
+      "score": 0.9930598735809326,
+      "line_index": 1,
+      "polygon_px": [
+        [
+          704.0,
+          210.50000000000003
+        ],
+        [
+          753.0,
+          210.50000000000003
+        ],
+        [
+          753.0,
+          250.50000000000003
+        ],
+        [
+          704.0,
+          250.50000000000003
+        ]
+      ],
+      "bbox": [
+        687.5,
+        308.199,
+        735.352,
+        366.764
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 118,
+        "class_pixel_counts": {
+          "red": 118,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d008",
+      "text": "my",
+      "score": 0.8000468611717224,
+      "line_index": 1,
+      "polygon_px": [
+        [
+          757.0,
+          209.5
+        ],
+        [
+          833.0,
+          209.5
+        ],
+        [
+          833.0,
+          270.5
+        ],
+        [
+          757.0,
+          270.5
+        ]
+      ],
+      "bbox": [
+        739.258,
+        306.735,
+        813.477,
+        396.047
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 317,
+        "class_pixel_counts": {
+          "red": 317,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d009",
+      "text": "pen",
+      "score": 0.9960787892341614,
+      "line_index": 1,
+      "polygon_px": [
+        [
+          850.0,
+          204.49999999999997
+        ],
+        [
+          933.0,
+          204.49999999999997
+        ],
+        [
+          933.0,
+          267.5
+        ],
+        [
+          850.0,
+          267.5
+        ]
+      ],
+      "bbox": [
+        830.078,
+        299.414,
+        911.133,
+        391.654
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 462,
+        "class_pixel_counts": {
+          "red": 462,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d010",
+      "text": "my",
+      "score": 0.9810290932655334,
+      "line_index": 2,
+      "polygon_px": [
+        [
+          422.0,
+          393.5
+        ],
+        [
+          527.0,
+          393.5
+        ],
+        [
+          527.0,
+          443.49999999999994
+        ],
+        [
+          422.0,
+          443.49999999999994
+        ]
+      ],
+      "bbox": [
+        412.109,
+        576.135,
+        514.648,
+        649.341
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 280,
+        "class_pixel_counts": {
+          "red": 280,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d011",
+      "text": "lou-",
+      "score": 0.8826627731323242,
+      "line_index": 3,
+      "polygon_px": [
+        [
+          339.0,
+          499.49999999999994
+        ],
+        [
+          459.0,
+          499.49999999999994
+        ],
+        [
+          459.0,
+          552.5
+        ],
+        [
+          339.0,
+          552.5
+        ]
+      ],
+      "bbox": [
+        331.055,
+        731.332,
+        448.242,
+        808.931
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 198,
+        "class_pixel_counts": {
+          "red": 198,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d012",
+      "text": "-",
+      "score": 0.6213119626045227,
+      "line_index": 3,
+      "polygon_px": [
+        [
+          367.0,
+          508.5
+        ],
+        [
+          373.0,
+          508.5
+        ],
+        [
+          373.0,
+          514.5
+        ],
+        [
+          367.0,
+          514.5
+        ]
+      ],
+      "bbox": [
+        358.398,
+        744.51,
+        364.258,
+        753.294
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "unknown",
+        "confidence_fraction": 0,
+        "stroke_pixel_count": 0,
+        "class_pixel_counts": {
+          "red": 0,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d013",
+      "text": "your",
+      "score": 0.9960352778434753,
+      "line_index": 4,
+      "polygon_px": [
+        [
+          459.0,
+          510.5
+        ],
+        [
+          605.0,
+          510.5
+        ],
+        [
+          605.0,
+          573.5
+        ],
+        [
+          459.0,
+          573.5
+        ]
+      ],
+      "bbox": [
+        448.242,
+        747.438,
+        590.82,
+        839.678
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "red",
+        "confidence_fraction": 1.0,
+        "stroke_pixel_count": 328,
+        "class_pixel_counts": {
+          "red": 328,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "english-d014",
+      "text": "-",
+      "score": 0.604489266872406,
+      "line_index": 4,
+      "polygon_px": [
+        [
+          503.0,
+          552.5
+        ],
+        [
+          510.0,
+          552.5
+        ],
+        [
+          510.0,
+          558.5
+        ],
+        [
+          503.0,
+          558.5
+        ]
+      ],
+      "bbox": [
+        491.211,
+        808.931,
+        498.047,
+        817.716
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "unknown",
+        "confidence_fraction": 0,
+        "stroke_pixel_count": 0,
+        "class_pixel_counts": {
+          "red": 0,
+          "orange": 0,
+          "yellow": 0,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 0
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    }
+  ],
+  "raw": {
+    "pages": [
+      {
+        "page_idx": 0,
+        "dimensions": [
+          683,
+          1024
+        ],
+        "orientation": {
+          "value": null,
+          "confidence": null
+        },
+        "language": {
+          "value": null,
+          "confidence": null
+        },
+        "blocks": [
+          {
+            "geometry": [
+              [
+                0.2119140625,
+                0.2335285505124451
+              ],
+              [
+                0.68359375,
+                0.4062957540263543
+              ]
+            ],
+            "objectness_score": 0.35902900497118634,
+            "lines": [
+              {
+                "geometry": [
+                  [
+                    0.2119140625,
+                    0.2335285505124451
+                  ],
+                  [
+                    0.68359375,
+                    0.4062957540263543
+                  ]
+                ],
+                "objectness_score": 0.35902900497118634,
+                "words": [
+                  {
+                    "value": "am",
+                    "confidence": 0.9407026767730713,
+                    "geometry": [
+                      [
+                        0.2119140625,
+                        0.29062957540263545
+                      ],
+                      [
+                        0.32421875,
+                        0.36676427525622257
+                      ]
+                    ],
+                    "objectness_score": 0.38958945870399475,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "a",
+                    "confidence": 0.686471164226532,
+                    "geometry": [
+                      [
+                        0.345703125,
+                        0.2994143484626647
+                      ],
+                      [
+                        0.384765625,
+                        0.36530014641288433
+                      ]
+                    ],
+                    "objectness_score": 0.42523184418678284,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "girl",
+                    "confidence": 0.9095591902732849,
+                    "geometry": [
+                      [
+                        0.404296875,
+                        0.27598828696925326
+                      ],
+                      [
+                        0.517578125,
+                        0.4062957540263543
+                      ]
+                    ],
+                    "objectness_score": 0.37774789333343506,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "-",
+                    "confidence": 0.54218989610672,
+                    "geometry": [
+                      [
+                        0.5009765625,
+                        0.3257686676427526
+                      ],
+                      [
+                        0.515625,
+                        0.3521229868228404
+                      ]
+                    ],
+                    "objectness_score": 0.3115790784358978,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "This",
+                    "confidence": 0.9667238593101501,
+                    "geometry": [
+                      [
+                        0.5263671875,
+                        0.2335285505124451
+                      ],
+                      [
+                        0.68359375,
+                        0.38433382137628114
+                      ]
+                    ],
+                    "objectness_score": 0.33124199509620667,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "-",
+                    "confidence": 0.6851596832275391,
+                    "geometry": [
+                      [
+                        0.548828125,
+                        0.3096632503660322
+                      ],
+                      [
+                        0.5576171875,
+                        0.32723279648609077
+                      ]
+                    ],
+                    "objectness_score": 0.3187837600708008,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              }
+            ],
+            "artefacts": []
+          },
+          {
+            "geometry": [
+              [
+                0.6875,
+                0.2994143484626647
+              ],
+              [
+                0.9111328125,
+                0.39604685212298685
+              ]
+            ],
+            "objectness_score": 0.4040093819300334,
+            "lines": [
+              {
+                "geometry": [
+                  [
+                    0.6875,
+                    0.2994143484626647
+                  ],
+                  [
+                    0.9111328125,
+                    0.39604685212298685
+                  ]
+                ],
+                "objectness_score": 0.4040093819300334,
+                "words": [
+                  {
+                    "value": "IS",
+                    "confidence": 0.9930598735809326,
+                    "geometry": [
+                      [
+                        0.6875,
+                        0.308199121522694
+                      ],
+                      [
+                        0.7353515625,
+                        0.36676427525622257
+                      ]
+                    ],
+                    "objectness_score": 0.42791175842285156,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "my",
+                    "confidence": 0.8000468611717224,
+                    "geometry": [
+                      [
+                        0.7392578125,
+                        0.3067349926793558
+                      ],
+                      [
+                        0.8134765625,
+                        0.39604685212298685
+                      ]
+                    ],
+                    "objectness_score": 0.33973270654678345,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "pen",
+                    "confidence": 0.9960787892341614,
+                    "geometry": [
+                      [
+                        0.830078125,
+                        0.2994143484626647
+                      ],
+                      [
+                        0.9111328125,
+                        0.3916544655929722
+                      ]
+                    ],
+                    "objectness_score": 0.4443836808204651,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              }
+            ],
+            "artefacts": []
+          },
+          {
+            "geometry": [
+              [
+                0.412109375,
+                0.5761346998535871
+              ],
+              [
+                0.5146484375,
+                0.6493411420204978
+              ]
+            ],
+            "objectness_score": 0.37741753458976746,
+            "lines": [
+              {
+                "geometry": [
+                  [
+                    0.412109375,
+                    0.5761346998535871
+                  ],
+                  [
+                    0.5146484375,
+                    0.6493411420204978
+                  ]
+                ],
+                "objectness_score": 0.37741753458976746,
+                "words": [
+                  {
+                    "value": "my",
+                    "confidence": 0.9810290932655334,
+                    "geometry": [
+                      [
+                        0.412109375,
+                        0.5761346998535871
+                      ],
+                      [
+                        0.5146484375,
+                        0.6493411420204978
+                      ]
+                    ],
+                    "objectness_score": 0.37741753458976746,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              }
+            ],
+            "artefacts": []
+          },
+          {
+            "geometry": [
+              [
+                0.3310546875,
+                0.7313323572474377
+              ],
+              [
+                0.4482421875,
+                0.8089311859443631
+              ]
+            ],
+            "objectness_score": 0.31428876519203186,
+            "lines": [
+              {
+                "geometry": [
+                  [
+                    0.3310546875,
+                    0.7313323572474377
+                  ],
+                  [
+                    0.4482421875,
+                    0.8089311859443631
+                  ]
+                ],
+                "objectness_score": 0.31428876519203186,
+                "words": [
+                  {
+                    "value": "lou-",
+                    "confidence": 0.8826627731323242,
+                    "geometry": [
+                      [
+                        0.3310546875,
+                        0.7313323572474377
+                      ],
+                      [
+                        0.4482421875,
+                        0.8089311859443631
+                      ]
+                    ],
+                    "objectness_score": 0.31831443309783936,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "-",
+                    "confidence": 0.6213119626045227,
+                    "geometry": [
+                      [
+                        0.3583984375,
+                        0.7445095168374817
+                      ],
+                      [
+                        0.3642578125,
+                        0.753294289897511
+                      ]
+                    ],
+                    "objectness_score": 0.31026309728622437,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              }
+            ],
+            "artefacts": []
+          },
+          {
+            "geometry": [
+              [
+                0.4482421875,
+                0.7474377745241582
+              ],
+              [
+                0.5908203125,
+                0.8396778916544656
+              ]
+            ],
+            "objectness_score": 0.33091045916080475,
+            "lines": [
+              {
+                "geometry": [
+                  [
+                    0.4482421875,
+                    0.7474377745241582
+                  ],
+                  [
+                    0.5908203125,
+                    0.8396778916544656
+                  ]
+                ],
+                "objectness_score": 0.33091045916080475,
+                "words": [
+                  {
+                    "value": "your",
+                    "confidence": 0.9960352778434753,
+                    "geometry": [
+                      [
+                        0.4482421875,
+                        0.7474377745241582
+                      ],
+                      [
+                        0.5908203125,
+                        0.8396778916544656
+                      ]
+                    ],
+                    "objectness_score": 0.3438006341457367,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "-",
+                    "confidence": 0.604489266872406,
+                    "geometry": [
+                      [
+                        0.4912109375,
+                        0.8089311859443631
+                      ],
+                      [
+                        0.498046875,
+                        0.8177159590043923
+                      ]
+                    ],
+                    "objectness_score": 0.3180202841758728,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              }
+            ],
+            "artefacts": []
+          }
+        ],
+        "layout": [],
+        "tables": []
+      }
+    ]
+  }
+}

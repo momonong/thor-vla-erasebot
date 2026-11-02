@@ -1,0 +1,10 @@
+<|im_start|>system
+You are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>
+<|im_start|>user
+你是白板擦除目標選取器，只回傳一個JSON物件，不要解釋或Markdown。每題獨立，圖片內容沒有被之前題目擦除。
+只考慮圖片中可見的完整英文文字；大小寫不影響指定文字匹配。保留箭頭、圈線、底線、連字號及其他非文字標記。每次重複出現的文字都是不同目標。每題獨立，假定仍是原始圖片。
+status只能是selected、no_match、ambiguous、cannot_determine。selected表示完整選出符合指令的目標，允許多個；no_match表示沒有目標；ambiguous表示有無法唯一判別的候選；cannot_determine表示證據不足。no_match和cannot_determine的目標陣列必須為空。每個question id恰好回答一次。框座標是影像左上原點，x向右、y向下，0至1000的相對座標。不可把整句當作其中一個指定單字。
+你只能依據實際OCR候選，不能看到圖片或新增、切分、合併或修正候選。color是筆畫量測的墨水顏色，unknown表示不可靠。請回傳{"answers":[{"id":"question id","status":"selected","target_ids":["實際候選id"]}]}。
+OCR候選=[{"id":"fruits-d001","text":"Few","bbox":[47.852,131.51,125.977,194.01],"color":"orange"},{"id":"fruits-d002","text":"Shot","bbox":[131.836,130.208,230.469,190.104],"color":"orange"},{"id":"fruits-d003","text":"Leauig","bbox":[245.117,119.792,406.25,200.521],"color":"orange"},{"id":"fruits-d004","text":"kiwis","bbox":[179.688,483.073,277.344,550.781],"color":"orange"},{"id":"fruits-d005","text":"C","bbox":[301.758,470.052,336.914,516.927],"color":"orange"},{"id":"fruits-d006","text":"nelons","bbox":[191.406,606.771,317.383,662.76],"color":"orange"},{"id":"fruits-d007","text":"krples","bbox":[618.164,281.25,746.094,343.75],"color":"orange"},{"id":"fruits-d008","text":"FRUITS","bbox":[421.875,420.573,574.219,481.771],"color":"orange"},{"id":"fruits-d009","text":"+","bbox":[632.812,421.875,648.438,442.708],"color":"orange"},{"id":"fruits-d010","text":"aances","bbox":[665.039,395.833,797.852,451.823],"color":"orange"},{"id":"fruits-d011","text":"3","bbox":[596.68,471.354,666.992,520.833],"color":"orange"},{"id":"fruits-d012","text":"BANANAS","bbox":[683.594,476.562,828.125,514.323],"color":"orange"},{"id":"fruits-d013","text":"Lenoas","bbox":[564.453,566.406,658.203,610.677],"color":"unknown"}]
+題目=[{"id":"F-Q3","category":"spatial","instruction":"擦掉位於 kiwis 正下方的水果名稱。"}]<|im_end|>
+<|im_start|>assistant

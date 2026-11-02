@@ -1,0 +1,59 @@
+{
+  "route": "doctr_smollm",
+  "question_id": "F-Q2",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q2",
+    "category": "exact_color",
+    "instruction": "擦掉所有藍色墨水寫成的英文文字。"
+  },
+  "started_utc": "2026-10-30T08:06:18.768383+00:00",
+  "status": "completed",
+  "prompt_sha256": "fadf9df546c3fce27d6947545aff1ed8b8153a86a469ef2b90033f4a9c31ebe7",
+  "model_input_prompt_lf_sha256": "ff487b715df36cded3fea0e7465cbcb7604c30adbcc8422ed7d92a56d12e0473",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1413,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        1413
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1413
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.0030755000188946724,
+  "generation_s": 2.2614462999626994,
+  "generated_tokens": 125,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "29e9d889c0128a0a959823ecee9bad6f7f2f732c05941199ebf1bd39d1b3e3de",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Expecting ',' delimiter: line 1 column 250 (char 249)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 3802105856,
+  "peak_gpu_reserved_bytes": 3921674240,
+  "question_wall_s": 2.2676958998199552
+}

@@ -1,0 +1,42 @@
+{
+  "checks": [
+    "24 images / 12 families / 144 questions",
+    "actual final-mask boxes and image bounds",
+    "opaque image pixels agree with declared ink",
+    "independent text/color/spatial/finite-lexicon rules",
+    "insect subset animal multi-label consistency and B03 beetle retention",
+    "B03 tool no-match and B08 insect positive coverage",
+    "expected targets and retention complements",
+    "same geometry and only ink pixels changed in paired images",
+    "color query changes and other query invariance",
+    "original VLM prompt prefix and GT-free single-question inputs",
+    "manifest SHA256 and same-seed byte replay"
+  ],
+  "counterfactual_pairs_checked": 12,
+  "counts": {
+    "base_families": 12,
+    "images": 24,
+    "questions": 144,
+    "questions_by_category": {
+      "exact_color": 48,
+      "semantic": 48,
+      "spatial": 48
+    },
+    "questions_by_status": {
+      "no_match": 24,
+      "selected": 120
+    },
+    "unique_occurrence_masks": 96
+  },
+  "image_occurrences_checked": 192,
+  "independent_rule_answers_checked": 144,
+  "input_prompts_checked_for_supervision_leakage": 144,
+  "invariant_query_pairs_checked": 60,
+  "model_execution": false,
+  "same_seed_replay_files_identical": 294,
+  "scope": "dataset_integrity_and_deterministic_replay_only",
+  "status": "passed",
+  "unique_mask_bboxes_checked": 96,
+  "verified_artifact_hashes": 293,
+  "verifier_sha256": "5cfe59a367dd75725c8e922f5ad23c92fb78ab5c9eee8976d83e58514bdd9825"
+}

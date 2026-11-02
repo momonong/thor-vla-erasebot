@@ -1,0 +1,101 @@
+{
+  "route": "gemma",
+  "question_id": "C-Q3",
+  "image_id": "colour",
+  "question": {
+    "id": "C-Q3",
+    "category": "spatial",
+    "instruction": "擦掉最下方的完整英文單字。"
+  },
+  "started_utc": "2026-10-30T08:07:19.467119+00:00",
+  "status": "completed",
+  "prompt_sha256": "b735b744002400622caef8f5893376651dd53f3a53e4146bfbd62fb913dc8f06",
+  "model_input_prompt_lf_sha256": "1752560eb0f667912361fd5df437a0769d148d7f1c3cccb4a1053ed0235dd949",
+  "image_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 591,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        591
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        591
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        591
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        1,
+        2520,
+        768
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_position_ids": {
+      "shape": [
+        1,
+        2520,
+        2
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.02665559994056821,
+  "generation_s": 3.2045516001526266,
+  "generated_tokens": 41,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "15938c890e80464ac1f149061df83d4a80b222328d09e4c6b0559fbdd5d840a0",
+  "parsed": {
+    "valid": true,
+    "data": {
+      "answers": [
+        {
+          "id": "C-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "GREEN",
+              "bbox": [
+                215,
+                630,
+                680,
+                810
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "peak_gpu_allocated_bytes": 10797709824,
+  "peak_gpu_reserved_bytes": 10907287552,
+  "question_wall_s": 3.239512699889019
+}

@@ -1,0 +1,1 @@
+ {"answers":[{"id":"C-Q6","category":"semantic","instruction":"擦掉表示水果名稱的英文單字。"}]}

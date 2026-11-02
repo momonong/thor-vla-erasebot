@@ -1,0 +1,59 @@
+{
+  "route": "qwen_llm",
+  "question_id": "C-Q2",
+  "image_id": "colour",
+  "question": {
+    "id": "C-Q2",
+    "category": "exact_color",
+    "instruction": "只擦掉紅色墨水寫成的完整英文單字。"
+  },
+  "started_utc": "2026-10-30T07:55:15.397831+00:00",
+  "status": "completed",
+  "prompt_sha256": "19d6889b179a82bbe48ba35fd2faa03c4c7d36fa62abee4515206b443d45b77c",
+  "model_input_prompt_lf_sha256": "526affb20057d42a173855353979a0a124e62f054241fb7064040e22498d09c6",
+  "image_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 494,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        494
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        494
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.0023564998991787434,
+  "generation_s": 0.6214691998902708,
+  "generated_tokens": 25,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "99c4d1f73bde97d4aaedcc19bc9b0a8aca33461245407236c1a081b221bc8e4f",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Extra data: line 1 column 77 (char 76)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 3158972416,
+  "peak_gpu_reserved_bytes": 3175088128,
+  "question_wall_s": 0.6318596999626607
+}

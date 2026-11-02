@@ -1,0 +1,1 @@
+ {"answers":[{"id":"C-Q4","category":"spatial","instruction":"擦掉位於 RED 與 GREEN 之間的單字。","targets":[{"text":"RED","bbox":[100,100,200,200]},{"text":"BLUE","bbox":[200,100,300,200]},{"text":"GREEN","bbox":[300,100,400,200]}]}]}

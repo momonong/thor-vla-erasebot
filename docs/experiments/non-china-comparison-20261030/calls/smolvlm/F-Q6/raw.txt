@@ -1,0 +1,1 @@
+ {"answers":[{"id":"F-Q6","category":"semantic","instruction":"selected","targets":[{"text":"Few Shot Learning - 1","bbox":[100,100,200,200]}]}]}

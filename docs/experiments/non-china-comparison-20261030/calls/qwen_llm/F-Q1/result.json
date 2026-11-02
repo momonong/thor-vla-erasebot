@@ -1,0 +1,59 @@
+{
+  "route": "qwen_llm",
+  "question_id": "F-Q1",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q1",
+    "category": "exact_color",
+    "instruction": "只擦掉文字 Lemons。"
+  },
+  "started_utc": "2026-10-30T07:55:18.423554+00:00",
+  "status": "completed",
+  "prompt_sha256": "186b9bc821ee4bde6718d123cfbccc28d402e3769ddbc069e672b297008e99e4",
+  "model_input_prompt_lf_sha256": "ccb005c7ed36eca70c53421b3113b99699c24ee58ea797c6037d5ed99c83aafa",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1012,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        1012
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1012
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.003984600072726607,
+  "generation_s": 0.6122048001270741,
+  "generated_tokens": 21,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "ba5681f8c793638fca1bbe45c8b3b9d8813f367dd50a552c75ae5e85d73a9852",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Extra data: line 1 column 64 (char 63)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 3280811520,
+  "peak_gpu_reserved_bytes": 3328180224,
+  "question_wall_s": 0.6236453000456095
+}

@@ -1,0 +1,91 @@
+{
+  "route": "gemma",
+  "question_id": "F-Q2",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q2",
+    "category": "exact_color",
+    "instruction": "擦掉所有藍色墨水寫成的英文文字。"
+  },
+  "started_utc": "2026-10-30T08:07:36.846835+00:00",
+  "status": "completed",
+  "prompt_sha256": "2e4b8d266d5910188fc1e91fd0b09f9d31357268a2854c013d4509c17e9f6d04",
+  "model_input_prompt_lf_sha256": "a377e3cf46ec59ebac2ed9c9ca739bc6103b5804c52f133bdb71e53b41ed9cab",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 595,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        595
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        595
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        595
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        1,
+        2520,
+        768
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_position_ids": {
+      "shape": [
+        1,
+        2520,
+        2
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.023127499967813492,
+  "generation_s": 1.269109700107947,
+  "generated_tokens": 21,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "82dd8440f7c46c28729bdfe72048ca125a9b27f9b433ff412b89014a6322f730",
+  "parsed": {
+    "valid": true,
+    "data": {
+      "answers": [
+        {
+          "id": "F-Q2",
+          "status": "no_match",
+          "targets": []
+        }
+      ]
+    },
+    "errors": []
+  },
+  "peak_gpu_allocated_bytes": 10797806080,
+  "peak_gpu_reserved_bytes": 10907287552,
+  "question_wall_s": 1.302606999874115
+}

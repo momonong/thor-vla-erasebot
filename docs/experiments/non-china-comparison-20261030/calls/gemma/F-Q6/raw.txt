@@ -1,0 +1,1 @@
+{"answers":[{"id":"F-Q6","status":"selected","targets":[{"text":"Few Shot Learning-1","bbox":[50,50,410,100]}]}]}

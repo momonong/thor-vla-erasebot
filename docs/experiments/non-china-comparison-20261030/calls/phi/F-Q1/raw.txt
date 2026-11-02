@@ -1,0 +1,1 @@
+{"answers":[{"id":"F-Q1","status":"selected","targets":[{"text":"Lemons","bbox":[0.56,0.45,0.66,0.51]}]}}

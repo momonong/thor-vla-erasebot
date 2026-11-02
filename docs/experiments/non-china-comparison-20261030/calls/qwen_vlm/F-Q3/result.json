@@ -1,0 +1,89 @@
+{
+  "route": "qwen_vlm",
+  "question_id": "F-Q3",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q3",
+    "category": "spatial",
+    "instruction": "擦掉位於 kiwis 正下方的水果名稱。"
+  },
+  "started_utc": "2026-10-30T07:58:59.681648+00:00",
+  "status": "completed",
+  "prompt_sha256": "64150b6085cbbdc53f9c786aa40bf58d1edaae667f23dc4c7f82436891514f4e",
+  "model_input_prompt_lf_sha256": "fe5440cc4a75401fa833dfa6acfda7db5b85ebfbc2a7ecf3db1ae9518142e66b",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1087,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        1087
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1087
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        1087
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        3072,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_grid_thw": {
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "torch.int64",
+      "value": [
+        [
+          1,
+          48,
+          64
+        ]
+      ]
+    }
+  },
+  "preprocess_s": 0.02767039998434484,
+  "generation_s": 40.5209310001228,
+  "generated_tokens": 70,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "9add1ee19dd86b3444745f9682077f8d39f338bd6067bff55df4d2556c59c1e7",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Expecting ',' delimiter: line 1 column 97 (char 96)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 4665897472,
+  "peak_gpu_reserved_bytes": 4848615424,
+  "question_wall_s": 40.55733700003475
+}

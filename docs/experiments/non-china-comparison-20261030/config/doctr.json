@@ -1,0 +1,29 @@
+{
+  "args": {
+    "det_arch": "db_resnet50",
+    "reco_arch": "crnn_vgg16_bn",
+    "pretrained": true,
+    "pretrained_backbone": false,
+    "assume_straight_pages": true,
+    "preserve_aspect_ratio": true,
+    "symmetric_pad": true,
+    "detect_orientation": false,
+    "straighten_pages": false,
+    "detect_language": false,
+    "detect_layout": false,
+    "detect_tables": false,
+    "det_bs": 1,
+    "reco_bs": 128
+  },
+  "initialization_and_download_s": 9.17467000009492,
+  "dtype": "float32",
+  "device": "cpu",
+  "detector_input": [
+    1024,
+    1024
+  ],
+  "recognizer_input": [
+    32,
+    128
+  ]
+}

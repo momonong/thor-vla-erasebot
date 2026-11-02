@@ -1,0 +1,117 @@
+{
+  "route": "smolvlm",
+  "question_id": "C-Q4",
+  "image_id": "colour",
+  "question": {
+    "id": "C-Q4",
+    "category": "spatial",
+    "instruction": "擦掉位於 RED 與 GREEN 之間的單字。"
+  },
+  "started_utc": "2026-10-30T08:24:46.291829+00:00",
+  "status": "completed",
+  "prompt_sha256": "d9bdf3b40f1407a238b79c2159e9bedd387ca4e891ff997d1c823a9fc90d6d3a",
+  "model_input_prompt_lf_sha256": "45f6847d89f32ba2d7a2672abc4d0517f8381594db77d4c43924411ec0ff25f4",
+  "image_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1750,
+  "input_tensors": {
+    "pixel_values": {
+      "shape": [
+        1,
+        13,
+        3,
+        384,
+        384
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "pixel_attention_mask": {
+      "shape": [
+        1,
+        13,
+        384,
+        384
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "input_ids": {
+      "shape": [
+        1,
+        1750
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1750
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.21197409997694194,
+  "generation_s": 3.4586656000465155,
+  "generated_tokens": 128,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "4a9c8094bf73adf2b0df0b3368acf0276a1f0a9c3f770e206fef2ba9c95a090c",
+  "parsed": {
+    "valid": false,
+    "data": {
+      "answers": [
+        {
+          "id": "C-Q4",
+          "category": "spatial",
+          "instruction": "擦掉位於 RED 與 GREEN 之間的單字。",
+          "targets": [
+            {
+              "text": "RED",
+              "bbox": [
+                100,
+                100,
+                200,
+                200
+              ]
+            },
+            {
+              "text": "BLUE",
+              "bbox": [
+                200,
+                100,
+                300,
+                200
+              ]
+            },
+            {
+              "text": "GREEN",
+              "bbox": [
+                300,
+                100,
+                400,
+                200
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": [
+      "C-Q4:status"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 4999190016,
+  "peak_gpu_reserved_bytes": 5075107840,
+  "question_wall_s": 3.6799127999693155
+}

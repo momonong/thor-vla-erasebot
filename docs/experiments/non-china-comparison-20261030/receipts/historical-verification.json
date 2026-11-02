@@ -1,0 +1,46 @@
+{
+  "verified_utc": "2026-10-30T08:32:37.202215+00:00",
+  "checks": {
+    "raw_responses_reparsed": 108,
+    "question_prompt_hash_contracts": 108,
+    "qwen_rendered_chats_same_as_cpu": 36,
+    "original_tree_sha256": "c6993c45cb34785a878ee42768740fa9eafebc072af428d22ab4dee1a8269ac6",
+    "original_file_count": 395,
+    "original_bytes": 3041240,
+    "reference_only_used_for_scoring": true,
+    "content_accuracy_automatically_rescored": false,
+    "model_inference_executed_by_analyzer": false,
+    "git_head_at_verification": "6848723ac9751b06720567f01e82270cd40d2b12",
+    "git_head_matches_run_start": true,
+    "git_tracked_diff_empty": true,
+    "git_tracked_diff_paths": []
+  },
+  "report_links_resolved": 115,
+  "all_experiment_json_readable": true,
+  "old_archive_verification": {
+    "files_verified": 120,
+    "attempts": 45,
+    "raw_responses_reparsed": 42,
+    "question_method_pairs": 72,
+    "ai_adjudicated_content_correct": {
+      "batch": {
+        "ocr_llm": 4,
+        "vlm": 10
+      },
+      "single": {
+        "ocr_llm": 4,
+        "vlm": 11
+      }
+    },
+    "inference_executed": false,
+    "accuracy_independently_rescored": false
+  },
+  "old_cpu_packages": {
+    "torch": "2.9.1+cpu",
+    "transformers": "4.57.3",
+    "rapidocr": "3.4.2"
+  },
+  "post_run_gpu": "NVIDIA GeForce RTX 5090 Laptop GPU, 3885 MiB, 24463 MiB, 0 %",
+  "analyzer_sha256": "6563ea2cb36b9883de18c8880fbc671a0489320a7181d37c14fb31cd6f18093b",
+  "report_sha256": "0bffe4a9b53aaabb1d3cca0dc2fb0dd0a99f7530b609a743aae590e7b1e35a89"
+}

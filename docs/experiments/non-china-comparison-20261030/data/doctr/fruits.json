@@ -1,0 +1,1095 @@
+{
+  "image_id": "fruits",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "image_size": [
+    1024,
+    768
+  ],
+  "elapsed_s": 1.0689687000121921,
+  "candidates": [
+    {
+      "id": "fruits-d001",
+      "text": "Few",
+      "score": 0.8217189311981201,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          49.0,
+          101.00000000000001
+        ],
+        [
+          129.0,
+          101.00000000000001
+        ],
+        [
+          129.0,
+          149.0
+        ],
+        [
+          49.0,
+          149.0
+        ]
+      ],
+      "bbox": [
+        47.852,
+        131.51,
+        125.977,
+        194.01
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7324,
+        "stroke_pixel_count": 598,
+        "class_pixel_counts": {
+          "red": 54,
+          "orange": 438,
+          "yellow": 27,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 79
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d002",
+      "text": "Shot",
+      "score": 0.9857960939407349,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          135.0,
+          99.99999999999999
+        ],
+        [
+          236.0,
+          99.99999999999999
+        ],
+        [
+          236.0,
+          146.0
+        ],
+        [
+          135.0,
+          146.0
+        ]
+      ],
+      "bbox": [
+        131.836,
+        130.208,
+        230.469,
+        190.104
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.8514,
+        "stroke_pixel_count": 774,
+        "class_pixel_counts": {
+          "red": 12,
+          "orange": 659,
+          "yellow": 32,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 71
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d003",
+      "text": "Leauig",
+      "score": 0.7688824534416199,
+      "line_index": 0,
+      "polygon_px": [
+        [
+          251.0,
+          92.00000000000001
+        ],
+        [
+          416.0,
+          92.00000000000001
+        ],
+        [
+          416.0,
+          154.0
+        ],
+        [
+          251.0,
+          154.0
+        ]
+      ],
+      "bbox": [
+        245.117,
+        119.792,
+        406.25,
+        200.521
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.8727,
+        "stroke_pixel_count": 1712,
+        "class_pixel_counts": {
+          "red": 38,
+          "orange": 1494,
+          "yellow": 82,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 98
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d004",
+      "text": "kiwis",
+      "score": 0.8434935808181763,
+      "line_index": 1,
+      "polygon_px": [
+        [
+          184.0,
+          371.0
+        ],
+        [
+          284.0,
+          371.0
+        ],
+        [
+          284.0,
+          423.0
+        ],
+        [
+          184.0,
+          423.0
+        ]
+      ],
+      "bbox": [
+        179.688,
+        483.073,
+        277.344,
+        550.781
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.8278,
+        "stroke_pixel_count": 511,
+        "class_pixel_counts": {
+          "red": 28,
+          "orange": 423,
+          "yellow": 15,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 45
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d005",
+      "text": "C",
+      "score": 0.9589931964874268,
+      "line_index": 1,
+      "polygon_px": [
+        [
+          309.0,
+          361.0
+        ],
+        [
+          345.0,
+          361.0
+        ],
+        [
+          345.0,
+          397.0
+        ],
+        [
+          309.0,
+          397.0
+        ]
+      ],
+      "bbox": [
+        301.758,
+        470.052,
+        336.914,
+        516.927
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.8189,
+        "stroke_pixel_count": 370,
+        "class_pixel_counts": {
+          "red": 33,
+          "orange": 303,
+          "yellow": 5,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 29
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d006",
+      "text": "nelons",
+      "score": 0.5775286555290222,
+      "line_index": 2,
+      "polygon_px": [
+        [
+          196.0,
+          466.0
+        ],
+        [
+          325.0,
+          466.0
+        ],
+        [
+          325.0,
+          509.0
+        ],
+        [
+          196.0,
+          509.0
+        ]
+      ],
+      "bbox": [
+        191.406,
+        606.771,
+        317.383,
+        662.76
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7599,
+        "stroke_pixel_count": 729,
+        "class_pixel_counts": {
+          "red": 60,
+          "orange": 554,
+          "yellow": 21,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 94
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d007",
+      "text": "krples",
+      "score": 0.7873216271400452,
+      "line_index": 3,
+      "polygon_px": [
+        [
+          633.0,
+          216.0
+        ],
+        [
+          764.0,
+          216.0
+        ],
+        [
+          764.0,
+          264.0
+        ],
+        [
+          633.0,
+          264.0
+        ]
+      ],
+      "bbox": [
+        618.164,
+        281.25,
+        746.094,
+        343.75
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7453,
+        "stroke_pixel_count": 1017,
+        "class_pixel_counts": {
+          "red": 57,
+          "orange": 758,
+          "yellow": 49,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 153
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d008",
+      "text": "FRUITS",
+      "score": 0.990177571773529,
+      "line_index": 4,
+      "polygon_px": [
+        [
+          432.0,
+          323.0
+        ],
+        [
+          588.0,
+          323.0
+        ],
+        [
+          588.0,
+          370.0
+        ],
+        [
+          432.0,
+          370.0
+        ]
+      ],
+      "bbox": [
+        421.875,
+        420.573,
+        574.219,
+        481.771
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.627,
+        "stroke_pixel_count": 1067,
+        "class_pixel_counts": {
+          "red": 185,
+          "orange": 669,
+          "yellow": 32,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 181
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d009",
+      "text": "+",
+      "score": 0.5980100035667419,
+      "line_index": 5,
+      "polygon_px": [
+        [
+          648.0,
+          324.0
+        ],
+        [
+          664.0,
+          324.0
+        ],
+        [
+          664.0,
+          340.0
+        ],
+        [
+          648.0,
+          340.0
+        ]
+      ],
+      "bbox": [
+        632.812,
+        421.875,
+        648.438,
+        442.708
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7582,
+        "stroke_pixel_count": 91,
+        "class_pixel_counts": {
+          "red": 7,
+          "orange": 69,
+          "yellow": 3,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 12
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d010",
+      "text": "aances",
+      "score": 0.9048776030540466,
+      "line_index": 5,
+      "polygon_px": [
+        [
+          681.0,
+          304.0
+        ],
+        [
+          817.0,
+          304.0
+        ],
+        [
+          817.0,
+          347.0
+        ],
+        [
+          681.0,
+          347.0
+        ]
+      ],
+      "bbox": [
+        665.039,
+        395.833,
+        797.852,
+        451.823
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7422,
+        "stroke_pixel_count": 799,
+        "class_pixel_counts": {
+          "red": 38,
+          "orange": 593,
+          "yellow": 63,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 105
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d011",
+      "text": "3",
+      "score": 0.3520151376724243,
+      "line_index": 6,
+      "polygon_px": [
+        [
+          611.0,
+          362.0
+        ],
+        [
+          683.0,
+          362.0
+        ],
+        [
+          683.0,
+          400.0
+        ],
+        [
+          611.0,
+          400.0
+        ]
+      ],
+      "bbox": [
+        596.68,
+        471.354,
+        666.992,
+        520.833
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.8433,
+        "stroke_pixel_count": 300,
+        "class_pixel_counts": {
+          "red": 13,
+          "orange": 253,
+          "yellow": 7,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 27
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d012",
+      "text": "BANANAS",
+      "score": 0.7726566195487976,
+      "line_index": 6,
+      "polygon_px": [
+        [
+          700.0,
+          366.0
+        ],
+        [
+          848.0,
+          366.0
+        ],
+        [
+          848.0,
+          395.0
+        ],
+        [
+          700.0,
+          395.0
+        ]
+      ],
+      "bbox": [
+        683.594,
+        476.562,
+        828.125,
+        514.323
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "orange",
+        "confidence_fraction": 0.7685,
+        "stroke_pixel_count": 985,
+        "class_pixel_counts": {
+          "red": 45,
+          "orange": 757,
+          "yellow": 59,
+          "green": 1,
+          "blue": 0,
+          "purple": 0,
+          "black": 123
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    },
+    {
+      "id": "fruits-d013",
+      "text": "Lenoas",
+      "score": 0.5159001350402832,
+      "line_index": 7,
+      "polygon_px": [
+        [
+          578.0,
+          435.0
+        ],
+        [
+          674.0,
+          435.0
+        ],
+        [
+          674.0,
+          469.0
+        ],
+        [
+          578.0,
+          469.0
+        ]
+      ],
+      "bbox": [
+        564.453,
+        566.406,
+        658.203,
+        610.677
+      ],
+      "box_source": "doctr_word_geometry",
+      "color": {
+        "label": "unknown",
+        "confidence_fraction": 0.5656,
+        "stroke_pixel_count": 564,
+        "class_pixel_counts": {
+          "red": 119,
+          "orange": 319,
+          "yellow": 18,
+          "green": 0,
+          "blue": 0,
+          "purple": 0,
+          "black": 108
+        },
+        "method": "polygon HSV stroke heuristic v1"
+      }
+    }
+  ],
+  "raw": {
+    "pages": [
+      {
+        "page_idx": 0,
+        "dimensions": [
+          768,
+          1024
+        ],
+        "orientation": {
+          "value": null,
+          "confidence": null
+        },
+        "language": {
+          "value": null,
+          "confidence": null
+        },
+        "blocks": [
+          {
+            "geometry": [
+              [
+                0.0478515625,
+                0.11979166666666669
+              ],
+              [
+                0.40625,
+                0.20052083333333331
+              ]
+            ],
+            "objectness_score": 0.47428445021311444,
+            "lines": [
+              {
+                "geometry": [
+                  [
+                    0.0478515625,
+                    0.11979166666666669
+                  ],
+                  [
+                    0.40625,
+                    0.20052083333333331
+                  ]
+                ],
+                "objectness_score": 0.47428445021311444,
+                "words": [
+                  {
+                    "value": "Few",
+                    "confidence": 0.8217189311981201,
+                    "geometry": [
+                      [
+                        0.0478515625,
+                        0.13151041666666669
+                      ],
+                      [
+                        0.1259765625,
+                        0.19401041666666669
+                      ]
+                    ],
+                    "objectness_score": 0.458523154258728,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "Shot",
+                    "confidence": 0.9857960939407349,
+                    "geometry": [
+                      [
+                        0.1318359375,
+                        0.13020833333333331
+                      ],
+                      [
+                        0.23046875,
+                        0.19010416666666669
+                      ]
+                    ],
+                    "objectness_score": 0.49485936760902405,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "Leauig",
+                    "confidence": 0.7688824534416199,
+                    "geometry": [
+                      [
+                        0.2451171875,
+                        0.11979166666666669
+                      ],
+                      [
+                        0.40625,
+                        0.20052083333333331
+                      ]
+                    ],
+                    "objectness_score": 0.4694708287715912,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              }
+            ],
+            "artefacts": []
+          },
+          {
+            "geometry": [
+              [
+                0.1796875,
+                0.4700520833333333
+              ],
+              [
+                0.3369140625,
+                0.55078125
+              ]
+            ],
+            "objectness_score": 0.36113370954990387,
+            "lines": [
+              {
+                "geometry": [
+                  [
+                    0.1796875,
+                    0.4700520833333333
+                  ],
+                  [
+                    0.3369140625,
+                    0.55078125
+                  ]
+                ],
+                "objectness_score": 0.36113370954990387,
+                "words": [
+                  {
+                    "value": "kiwis",
+                    "confidence": 0.8434935808181763,
+                    "geometry": [
+                      [
+                        0.1796875,
+                        0.4830729166666667
+                      ],
+                      [
+                        0.27734375,
+                        0.55078125
+                      ]
+                    ],
+                    "objectness_score": 0.3726828992366791,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "C",
+                    "confidence": 0.9589931964874268,
+                    "geometry": [
+                      [
+                        0.3017578125,
+                        0.4700520833333333
+                      ],
+                      [
+                        0.3369140625,
+                        0.5169270833333334
+                      ]
+                    ],
+                    "objectness_score": 0.34958451986312866,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              }
+            ],
+            "artefacts": []
+          },
+          {
+            "geometry": [
+              [
+                0.19140625,
+                0.6067708333333334
+              ],
+              [
+                0.3173828125,
+                0.6627604166666666
+              ]
+            ],
+            "objectness_score": 0.4192928969860077,
+            "lines": [
+              {
+                "geometry": [
+                  [
+                    0.19140625,
+                    0.6067708333333334
+                  ],
+                  [
+                    0.3173828125,
+                    0.6627604166666666
+                  ]
+                ],
+                "objectness_score": 0.4192928969860077,
+                "words": [
+                  {
+                    "value": "nelons",
+                    "confidence": 0.5775286555290222,
+                    "geometry": [
+                      [
+                        0.19140625,
+                        0.6067708333333334
+                      ],
+                      [
+                        0.3173828125,
+                        0.6627604166666666
+                      ]
+                    ],
+                    "objectness_score": 0.4192928969860077,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              }
+            ],
+            "artefacts": []
+          },
+          {
+            "geometry": [
+              [
+                0.6181640625,
+                0.28125
+              ],
+              [
+                0.74609375,
+                0.34375
+              ]
+            ],
+            "objectness_score": 0.44866347312927246,
+            "lines": [
+              {
+                "geometry": [
+                  [
+                    0.6181640625,
+                    0.28125
+                  ],
+                  [
+                    0.74609375,
+                    0.34375
+                  ]
+                ],
+                "objectness_score": 0.44866347312927246,
+                "words": [
+                  {
+                    "value": "krples",
+                    "confidence": 0.7873216271400452,
+                    "geometry": [
+                      [
+                        0.6181640625,
+                        0.28125
+                      ],
+                      [
+                        0.74609375,
+                        0.34375
+                      ]
+                    ],
+                    "objectness_score": 0.44866347312927246,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              }
+            ],
+            "artefacts": []
+          },
+          {
+            "geometry": [
+              [
+                0.421875,
+                0.4205729166666667
+              ],
+              [
+                0.57421875,
+                0.4817708333333333
+              ]
+            ],
+            "objectness_score": 0.42371612787246704,
+            "lines": [
+              {
+                "geometry": [
+                  [
+                    0.421875,
+                    0.4205729166666667
+                  ],
+                  [
+                    0.57421875,
+                    0.4817708333333333
+                  ]
+                ],
+                "objectness_score": 0.42371612787246704,
+                "words": [
+                  {
+                    "value": "FRUITS",
+                    "confidence": 0.990177571773529,
+                    "geometry": [
+                      [
+                        0.421875,
+                        0.4205729166666667
+                      ],
+                      [
+                        0.57421875,
+                        0.4817708333333333
+                      ]
+                    ],
+                    "objectness_score": 0.42371612787246704,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              }
+            ],
+            "artefacts": []
+          },
+          {
+            "geometry": [
+              [
+                0.564453125,
+                0.3958333333333333
+              ],
+              [
+                0.828125,
+                0.6106770833333334
+              ]
+            ],
+            "objectness_score": 0.3764013409614563,
+            "lines": [
+              {
+                "geometry": [
+                  [
+                    0.6328125,
+                    0.3958333333333333
+                  ],
+                  [
+                    0.7978515625,
+                    0.4518229166666667
+                  ]
+                ],
+                "objectness_score": 0.3381909281015396,
+                "words": [
+                  {
+                    "value": "+",
+                    "confidence": 0.5980100035667419,
+                    "geometry": [
+                      [
+                        0.6328125,
+                        0.421875
+                      ],
+                      [
+                        0.6484375,
+                        0.4427083333333333
+                      ]
+                    ],
+                    "objectness_score": 0.3080025613307953,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "aances",
+                    "confidence": 0.9048776030540466,
+                    "geometry": [
+                      [
+                        0.6650390625,
+                        0.3958333333333333
+                      ],
+                      [
+                        0.7978515625,
+                        0.4518229166666667
+                      ]
+                    ],
+                    "objectness_score": 0.36837929487228394,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              },
+              {
+                "geometry": [
+                  [
+                    0.5966796875,
+                    0.4713541666666667
+                  ],
+                  [
+                    0.828125,
+                    0.5208333333333334
+                  ]
+                ],
+                "objectness_score": 0.38045932352542877,
+                "words": [
+                  {
+                    "value": "3",
+                    "confidence": 0.3520151376724243,
+                    "geometry": [
+                      [
+                        0.5966796875,
+                        0.4713541666666667
+                      ],
+                      [
+                        0.6669921875,
+                        0.5208333333333334
+                      ]
+                    ],
+                    "objectness_score": 0.310703843832016,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  },
+                  {
+                    "value": "BANANAS",
+                    "confidence": 0.7726566195487976,
+                    "geometry": [
+                      [
+                        0.68359375,
+                        0.4765625
+                      ],
+                      [
+                        0.828125,
+                        0.5143229166666666
+                      ]
+                    ],
+                    "objectness_score": 0.45021480321884155,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              },
+              {
+                "geometry": [
+                  [
+                    0.564453125,
+                    0.56640625
+                  ],
+                  [
+                    0.658203125,
+                    0.6106770833333334
+                  ]
+                ],
+                "objectness_score": 0.4447062015533447,
+                "words": [
+                  {
+                    "value": "Lenoas",
+                    "confidence": 0.5159001350402832,
+                    "geometry": [
+                      [
+                        0.564453125,
+                        0.56640625
+                      ],
+                      [
+                        0.658203125,
+                        0.6106770833333334
+                      ]
+                    ],
+                    "objectness_score": 0.4447062015533447,
+                    "crop_orientation": {
+                      "value": 0,
+                      "confidence": null
+                    }
+                  }
+                ]
+              }
+            ],
+            "artefacts": []
+          }
+        ],
+        "layout": [],
+        "tables": []
+      }
+    ]
+  }
+}

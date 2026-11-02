@@ -1,0 +1,14 @@
+ {
+    "answers": [
+        {
+            "id": "E-Q3",
+            "status": "selected",
+            "targets": [
+                {
+                    "text": "I am a girl This is my pen",
+                    "bbox": [100, 100, 200, 200]
+                }
+            ]
+        }
+    ]
+}
