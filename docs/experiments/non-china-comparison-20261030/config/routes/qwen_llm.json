@@ -1,0 +1,132 @@
+{
+  "route": "qwen_llm",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "packages": {
+    "torch": "2.9.1+cu128",
+    "torchvision": "0.24.1+cu128",
+    "transformers": "5.5.0",
+    "accelerate": "1.3.0",
+    "huggingface-hub": "1.33.0"
+  },
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "device": "NVIDIA GeForce RTX 5090 Laptop GPU",
+  "dtype": "bfloat16",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "seed": 0,
+  "threads": 4,
+  "interop_threads": 1,
+  "initial_vram_free_bytes": 24151851008,
+  "vram_total_bytes": 25650855936,
+  "runner_sha256": "336580c6c5433bf7e9cb673cedc97746b473de0c80eab157106200960461249d",
+  "parser_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+  "questions_sha256": "f12bb09b060d68fc34c6b0df606c1346d7f4d91b37495a39e7dcbffc4edc1143",
+  "fresh_context_each_question": true,
+  "model_loaded_once": true,
+  "planned_questions": 18,
+  "results": [
+    {
+      "question_id": "C-Q1",
+      "status": "completed",
+      "wall_s": 1.3599012999329716
+    },
+    {
+      "question_id": "C-Q2",
+      "status": "completed",
+      "wall_s": 0.6318596999626607
+    },
+    {
+      "question_id": "C-Q3",
+      "status": "completed",
+      "wall_s": 0.5933700001332909
+    },
+    {
+      "question_id": "C-Q4",
+      "status": "completed",
+      "wall_s": 0.5946514999959618
+    },
+    {
+      "question_id": "C-Q5",
+      "status": "completed",
+      "wall_s": 0.5627483001444489
+    },
+    {
+      "question_id": "C-Q6",
+      "status": "completed",
+      "wall_s": 0.599231599830091
+    },
+    {
+      "question_id": "F-Q1",
+      "status": "completed",
+      "wall_s": 0.6236453000456095
+    },
+    {
+      "question_id": "F-Q2",
+      "status": "completed",
+      "wall_s": 0.622318800073117
+    },
+    {
+      "question_id": "F-Q3",
+      "status": "completed",
+      "wall_s": 0.6146703001577407
+    },
+    {
+      "question_id": "F-Q4",
+      "status": "completed",
+      "wall_s": 0.6812543999403715
+    },
+    {
+      "question_id": "F-Q5",
+      "status": "completed",
+      "wall_s": 2.986017500050366
+    },
+    {
+      "question_id": "F-Q6",
+      "status": "completed",
+      "wall_s": 2.94319500005804
+    },
+    {
+      "question_id": "E-Q1",
+      "status": "completed",
+      "wall_s": 0.5965555000584573
+    },
+    {
+      "question_id": "E-Q2",
+      "status": "completed",
+      "wall_s": 0.5620383000932634
+    },
+    {
+      "question_id": "E-Q3",
+      "status": "completed",
+      "wall_s": 0.6011299998499453
+    },
+    {
+      "question_id": "E-Q4",
+      "status": "completed",
+      "wall_s": 0.5746618001721799
+    },
+    {
+      "question_id": "E-Q5",
+      "status": "completed",
+      "wall_s": 1.0601787001360208
+    },
+    {
+      "question_id": "E-Q6",
+      "status": "completed",
+      "wall_s": 1.7873450999613851
+    }
+  ],
+  "status": "finished",
+  "load_s": 3.056387099903077,
+  "attention": "sdpa",
+  "actual_model_device": "cuda:0",
+  "actual_model_dtype": "torch.bfloat16",
+  "total_process_work_s": 21.211484800092876,
+  "not_executed": []
+}

@@ -1,0 +1,2 @@
+# Preserve dataset, source and receipt bytes used by the recorded SHA256 hashes.
+* -text

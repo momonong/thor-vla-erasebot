@@ -1,0 +1,1 @@
+{"id":"C-Q5","category":"semantic","instruction":"擦掉所有表示顏色名稱的英文單字。", "status":"no_match","targets":[]}

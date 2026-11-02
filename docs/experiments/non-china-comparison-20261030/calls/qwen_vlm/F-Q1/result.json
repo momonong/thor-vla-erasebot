@@ -1,0 +1,105 @@
+{
+  "route": "qwen_vlm",
+  "question_id": "F-Q1",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q1",
+    "category": "exact_color",
+    "instruction": "只擦掉文字 Lemons。"
+  },
+  "started_utc": "2026-10-30T07:57:39.385079+00:00",
+  "status": "completed",
+  "prompt_sha256": "01c48308840166c5090ec9fa2f9531d3105dfbe6c81c29d80e96206c201dc4fd",
+  "model_input_prompt_lf_sha256": "b86c22deb0e00405c2a04c19be598da8fd82aa58b51d77e3e799941f70627a39",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1081,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        1081
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1081
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        1081
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        3072,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_grid_thw": {
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "torch.int64",
+      "value": [
+        [
+          1,
+          48,
+          64
+        ]
+      ]
+    }
+  },
+  "preprocess_s": 0.03356910008005798,
+  "generation_s": 42.91647720010951,
+  "generated_tokens": 46,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "37ab2fc4ab2cd66fb5f81c229c272d9e6eea8e9628f0f46bceefcaece42c50d7",
+  "parsed": {
+    "valid": true,
+    "data": {
+      "answers": [
+        {
+          "id": "F-Q1",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "Lemons",
+              "bbox": [
+                558,
+                564,
+                658,
+                609
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "peak_gpu_allocated_bytes": 4665202688,
+  "peak_gpu_reserved_bytes": 4693426176,
+  "question_wall_s": 42.95678979996592
+}

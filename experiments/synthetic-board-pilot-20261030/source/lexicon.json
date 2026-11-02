@@ -1,0 +1,8 @@
+{
+  "description": "Closed vocabulary labels for rule-verifiable development queries; no open-world semantic inference.",
+  "fruit": ["apple", "pear", "lemon", "peach", "grape", "mango", "plum", "banana", "cherry", "melon", "apricot"],
+  "animal": ["dog", "cat", "horse", "sheep", "rabbit", "bear", "fox", "lion", "tiger", "zebra", "wolf", "duck", "ant", "bee", "beetle", "butterfly"],
+  "tool": ["hammer", "wrench", "pliers", "scissors", "drill", "chisel", "clamp", "crowbar", "brush", "rake", "spade", "axe"],
+  "vehicle": ["bus", "locomotive", "truck", "taxi", "tram", "boat", "car", "van", "bike", "airplane", "ship", "scooter"],
+  "insect": ["ant", "bee", "beetle", "butterfly"]
+}

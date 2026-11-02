@@ -1,0 +1,101 @@
+{
+  "route": "gemma",
+  "question_id": "F-Q6",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q6",
+    "category": "semantic",
+    "instruction": "只保留最上方帶底線的課程標題，擦掉其餘所有英文文字。"
+  },
+  "started_utc": "2026-10-30T08:07:45.909414+00:00",
+  "status": "completed",
+  "prompt_sha256": "b3a349ae5ddfd8596f2e69d469d40079a29667472f2a334759cd08eb926cb295",
+  "model_input_prompt_lf_sha256": "0afb9c75e0946c6ab954e8c4c5e90738ec8afce63c64d2debc2d77c37d9399ae",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 601,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        601
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        601
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        601
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        1,
+        2520,
+        768
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_position_ids": {
+      "shape": [
+        1,
+        2520,
+        2
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.023167699808254838,
+  "generation_s": 2.6592478998936713,
+  "generated_tokens": 43,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "a90df22ddb078aceff0b2d0dd046b5d41ea30f60d700c83e6af32002756b4728",
+  "parsed": {
+    "valid": true,
+    "data": {
+      "answers": [
+        {
+          "id": "F-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "Few Shot Learning-1",
+              "bbox": [
+                50,
+                50,
+                410,
+                100
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "peak_gpu_allocated_bytes": 10797950464,
+  "peak_gpu_reserved_bytes": 10907287552,
+  "question_wall_s": 2.6905496998224407
+}

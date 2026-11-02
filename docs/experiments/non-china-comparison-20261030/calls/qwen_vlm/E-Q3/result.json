@@ -1,0 +1,132 @@
+{
+  "route": "qwen_vlm",
+  "question_id": "E-Q3",
+  "image_id": "english",
+  "question": {
+    "id": "E-Q3",
+    "category": "spatial",
+    "instruction": "擦掉最下方對照列中，連字號左邊的單字。"
+  },
+  "started_utc": "2026-10-30T08:02:58.470384+00:00",
+  "status": "completed",
+  "prompt_sha256": "7a3d5227ea6272ac563033bf9a286258982cb7141885aac223ebb690f1eb00ac",
+  "model_input_prompt_lf_sha256": "3f9286ac42276fb3cdae94b5cc34fdeb421e4f6ab3b0e5288d47b20fbab9764c",
+  "image_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 996,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        996
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        996
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        996
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        2688,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_grid_thw": {
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "torch.int64",
+      "value": [
+        [
+          1,
+          42,
+          64
+        ]
+      ]
+    }
+  },
+  "preprocess_s": 0.039094600128009915,
+  "generation_s": 42.81342739984393,
+  "generated_tokens": 181,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "7248fe9838076a6d18cc90d427a67a0302e7df18a06477a45c45caf6bc34c70f",
+  "parsed": {
+    "valid": true,
+    "data": {
+      "answers": [
+        {
+          "id": "E-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "I",
+              "bbox": [
+                295,
+                514,
+                355,
+                645
+              ]
+            },
+            {
+              "text": "my",
+              "bbox": [
+                300,
+                514,
+                514,
+                700
+              ]
+            },
+            {
+              "text": "You",
+              "bbox": [
+                300,
+                695,
+                400,
+                815
+              ]
+            },
+            {
+              "text": "your",
+              "bbox": [
+                400,
+                695,
+                588,
+                845
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "peak_gpu_allocated_bytes": 4615995904,
+  "peak_gpu_reserved_bytes": 4848615424,
+  "question_wall_s": 42.8592092001345
+}

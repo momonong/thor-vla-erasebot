@@ -1,0 +1,244 @@
+{
+  "bbox_format": "xyxy_exclusive",
+  "coordinate_frame": "image",
+  "evidence_kind": "font_rendered_synthetic",
+  "family_id": "B11",
+  "image_id": "B11_clean",
+  "image_size": [
+    1280,
+    820
+  ],
+  "schema_version": 1,
+  "split": "development_pilot",
+  "targets": [
+    {
+      "bbox_1000": [
+        298.438,
+        647.561,
+        451.562,
+        707.317
+      ],
+      "bbox_px": [
+        382,
+        531,
+        578,
+        580
+      ],
+      "font_id": "segoe_print",
+      "font_size": 46,
+      "id": "B11-occ01",
+      "ink_color": "orange",
+      "ink_rgb": [
+        204,
+        95,
+        15
+      ],
+      "mask_path": "supervision/masks/B11/B11-occ01.png",
+      "rotation_degrees": -4,
+      "semantic_categories": [],
+      "text": "PURPLE"
+    },
+    {
+      "bbox_1000": [
+        797.656,
+        243.902,
+        915.625,
+        306.098
+      ],
+      "bbox_px": [
+        1021,
+        200,
+        1172,
+        251
+      ],
+      "font_id": "segoe_print",
+      "font_size": 50,
+      "id": "B11-occ02",
+      "ink_color": "orange",
+      "ink_rgb": [
+        204,
+        95,
+        15
+      ],
+      "mask_path": "supervision/masks/B11/B11-occ02.png",
+      "rotation_degrees": 4,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "melon"
+    },
+    {
+      "bbox_1000": [
+        87.5,
+        654.878,
+        196.875,
+        713.415
+      ],
+      "bbox_px": [
+        112,
+        537,
+        252,
+        585
+      ],
+      "font_id": "segoe_print",
+      "font_size": 46,
+      "id": "B11-occ03",
+      "ink_color": "red",
+      "ink_rgb": [
+        184,
+        31,
+        41
+      ],
+      "mask_path": "supervision/masks/B11/B11-occ03.png",
+      "rotation_degrees": 4,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "melon"
+    },
+    {
+      "bbox_1000": [
+        539.844,
+        634.146,
+        703.906,
+        725.61
+      ],
+      "bbox_px": [
+        691,
+        520,
+        901,
+        595
+      ],
+      "font_id": "segoe_print",
+      "font_size": 58,
+      "id": "B11-occ04",
+      "ink_color": "blue",
+      "ink_rgb": [
+        28,
+        73,
+        171
+      ],
+      "mask_path": "supervision/masks/B11/B11-occ04.png",
+      "rotation_degrees": 2,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "apricot"
+    },
+    {
+      "bbox_1000": [
+        336.719,
+        239.024,
+        430.469,
+        302.439
+      ],
+      "bbox_px": [
+        431,
+        196,
+        551,
+        248
+      ],
+      "font_id": "segoe_print",
+      "font_size": 54,
+      "id": "B11-occ05",
+      "ink_color": "green",
+      "ink_rgb": [
+        24,
+        116,
+        61
+      ],
+      "mask_path": "supervision/masks/B11/B11-occ05.png",
+      "rotation_degrees": -4,
+      "semantic_categories": [
+        "animal"
+      ],
+      "text": "wolf"
+    },
+    {
+      "bbox_1000": [
+        87.5,
+        237.805,
+        210.156,
+        312.195
+      ],
+      "bbox_px": [
+        112,
+        195,
+        269,
+        256
+      ],
+      "font_id": "segoe_print",
+      "font_size": 54,
+      "id": "B11-occ06",
+      "ink_color": "black",
+      "ink_rgb": [
+        35,
+        38,
+        42
+      ],
+      "mask_path": "supervision/masks/B11/B11-occ06.png",
+      "rotation_degrees": -4,
+      "semantic_categories": [
+        "tool"
+      ],
+      "text": "spade"
+    },
+    {
+      "bbox_1000": [
+        821.094,
+        640.244,
+        897.656,
+        712.195
+      ],
+      "bbox_px": [
+        1051,
+        525,
+        1149,
+        584
+      ],
+      "font_id": "segoe_print",
+      "font_size": 50,
+      "id": "B11-occ07",
+      "ink_color": "purple",
+      "ink_rgb": [
+        119,
+        51,
+        158
+      ],
+      "mask_path": "supervision/masks/B11/B11-occ07.png",
+      "rotation_degrees": 0,
+      "semantic_categories": [
+        "vehicle"
+      ],
+      "text": "ship"
+    },
+    {
+      "bbox_1000": [
+        559.375,
+        242.683,
+        665.625,
+        297.561
+      ],
+      "bbox_px": [
+        716,
+        199,
+        852,
+        244
+      ],
+      "font_id": "segoe_print",
+      "font_size": 50,
+      "id": "B11-occ08",
+      "ink_color": "orange",
+      "ink_rgb": [
+        204,
+        95,
+        15
+      ],
+      "mask_path": "supervision/masks/B11/B11-occ08.png",
+      "rotation_degrees": 0,
+      "semantic_categories": [],
+      "text": "check"
+    }
+  ],
+  "variant": "clean"
+}

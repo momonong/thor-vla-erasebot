@@ -1,0 +1,14 @@
+{
+  "fixed_prompt_routes": [
+    "qwen_llm",
+    "qwen_vlm",
+    "smolvlm",
+    "gemma",
+    "phi"
+  ],
+  "prompt_pairs_verified": 90,
+  "one_question_each": true,
+  "original_parser_boundary_checks": 4,
+  "reference_loaded_by_runner": false,
+  "runner_sha256": "336580c6c5433bf7e9cb673cedc97746b473de0c80eab157106200960461249d"
+}

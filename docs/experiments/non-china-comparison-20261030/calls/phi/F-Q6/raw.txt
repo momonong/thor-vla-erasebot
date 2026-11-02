@@ -1,0 +1,1 @@
+{"id":"F-Q6","category":"semantic","instruction":"只保留最上方帶底線的課程標題，擦掉其餘所有英文文字。"}

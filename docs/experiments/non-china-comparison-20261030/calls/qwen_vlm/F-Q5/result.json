@@ -1,0 +1,114 @@
+{
+  "route": "qwen_vlm",
+  "question_id": "F-Q5",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q5",
+    "category": "semantic",
+    "instruction": "擦掉所有具體水果種類的名稱，保留類別名稱 FRUITS 與課程標題。"
+  },
+  "started_utc": "2026-10-30T08:00:18.794300+00:00",
+  "status": "completed",
+  "prompt_sha256": "d6f31544f5d8318259b221993c781cef0d7468d8f55fd1e86527556246c6f034",
+  "model_input_prompt_lf_sha256": "167d08fd920e32671760fd4598a7dba7a343bb04f120eae232a48a4e62f41649",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1100,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        1100
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1100
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        1100
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        3072,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_grid_thw": {
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "torch.int64",
+      "value": [
+        [
+          1,
+          48,
+          64
+        ]
+      ]
+    }
+  },
+  "preprocess_s": 0.035366900032386184,
+  "generation_s": 41.588821900077164,
+  "generated_tokens": 115,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "fb5b37339e5cb2ee10f5218e51b431b55ac04db7485a709c633ff5656da01b32",
+  "parsed": {
+    "valid": true,
+    "data": {
+      "answers": [
+        {
+          "id": "F-Q5",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "FRUITS",
+              "bbox": [
+                400,
+                415,
+                580,
+                475
+              ]
+            },
+            {
+              "text": "Few Shot Learning--",
+              "bbox": [
+                47,
+                125,
+                458,
+                195
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "peak_gpu_allocated_bytes": 4670821888,
+  "peak_gpu_reserved_bytes": 4848615424,
+  "question_wall_s": 41.63193179992959
+}

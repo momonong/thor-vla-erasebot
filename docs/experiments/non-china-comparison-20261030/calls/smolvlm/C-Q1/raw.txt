@@ -1,0 +1,1 @@
+ {"answers":[{"id":"C-Q1","category":"exact_color","instruction":"只擦掉文字 BLUE。"}]}

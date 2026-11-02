@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "dataset_id": "synthetic-board-pilot-20261030",
+  "split": "development_pilot",
+  "seed": 20261030,
+  "image_size": [1280, 820],
+  "background_rgb": [248, 249, 245],
+  "palette": {
+    "red": [184, 31, 41],
+    "blue": [28, 73, 171],
+    "green": [24, 116, 61],
+    "black": [35, 38, 42],
+    "purple": [119, 51, 158],
+    "orange": [204, 95, 15]
+  },
+  "counterfactual_color_map": {
+    "red": "blue", "blue": "green", "green": "black",
+    "black": "purple", "purple": "orange", "orange": "red"
+  },
+  "fonts": [
+    {
+      "id": "segoe_print",
+      "path": "C:/Windows/Fonts/segoepr.ttf",
+      "source_location": "installed Windows font; local file read only",
+      "license_information_location": "https://learn.microsoft.com/en-us/typography/font-list/segoe-print"
+    },
+    {
+      "id": "comic_sans_ms",
+      "path": "C:/Windows/Fonts/comic.ttf",
+      "source_location": "installed Windows font; local file read only",
+      "license_information_location": "https://learn.microsoft.com/en-us/typography/font-list/comic-sans-ms"
+    }
+  ],
+  "families": [
+    {"id": "B01", "words": ["BLUE", "apple", "apple", "pear", "dog", "hammer", "bus", "note"]},
+    {"id": "B02", "words": ["RED", "lemon", "lemon", "peach", "cat", "wrench", "locomotive", "task"]},
+    {"id": "B03", "words": ["GREEN", "grape", "grape", "mango", "horse", "beetle", "truck", "plan"]},
+    {"id": "B04", "words": ["BLACK", "plum", "plum", "banana", "sheep", "scissors", "taxi", "idea"]},
+    {"id": "B05", "words": ["PURPLE", "cherry", "cherry", "melon", "rabbit", "drill", "tram", "work"]},
+    {"id": "B06", "words": ["WHITE", "apricot", "apricot", "apple", "bear", "chisel", "boat", "goal"]},
+    {"id": "B07", "words": ["BLUE", "pear", "pear", "lemon", "fox", "clamp", "car", "time"]},
+    {"id": "B08", "words": ["RED", "peach", "peach", "grape", "lion", "crowbar", "van", "bee"]},
+    {"id": "B09", "words": ["GREEN", "mango", "mango", "plum", "tiger", "brush", "bike", "page"]},
+    {"id": "B10", "words": ["BLACK", "banana", "banana", "cherry", "zebra", "rake", "airplane", "list"]},
+    {"id": "B11", "words": ["PURPLE", "melon", "melon", "apricot", "wolf", "spade", "ship", "check"]},
+    {"id": "B12", "words": ["WHITE", "apple", "apple", "peach", "duck", "axe", "scooter", "draft"]}
+  ]
+}

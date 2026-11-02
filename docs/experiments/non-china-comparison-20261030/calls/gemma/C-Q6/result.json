@@ -1,0 +1,101 @@
+{
+  "route": "gemma",
+  "question_id": "C-Q6",
+  "image_id": "colour",
+  "question": {
+    "id": "C-Q6",
+    "category": "semantic",
+    "instruction": "擦掉表示水果名稱的英文單字。"
+  },
+  "started_utc": "2026-10-30T08:07:31.638364+00:00",
+  "status": "completed",
+  "prompt_sha256": "474e2284b5f097da0694cb6801ad051310da4a42ab930a1046dac41f05ef63b2",
+  "model_input_prompt_lf_sha256": "c741bebe02c1dc5dac53b89fbe0f8a6eb637f3f731ed37ed78d72d4c6cedda17",
+  "image_sha256": "ee923f8dfbadba91896807985b7bd82ff4235280ec3493a7200b8fd28df19c36",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 591,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        591
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        591
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        591
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        1,
+        2520,
+        768
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_position_ids": {
+      "shape": [
+        1,
+        2520,
+        2
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.01563499984331429,
+  "generation_s": 2.5057268000673503,
+  "generated_tokens": 41,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "984d7082c98c39469f5c4663d3807a3db83c13dc5eee542232a5efe2473888d7",
+  "parsed": {
+    "valid": true,
+    "data": {
+      "answers": [
+        {
+          "id": "C-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "RED",
+              "bbox": [
+                214,
+                171,
+                500,
+                330
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "peak_gpu_allocated_bytes": 10797709824,
+  "peak_gpu_reserved_bytes": 10907287552,
+  "question_wall_s": 2.5284268998075277
+}

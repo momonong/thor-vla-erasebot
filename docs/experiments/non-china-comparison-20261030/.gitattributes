@@ -1,0 +1,2 @@
+# Preserve frozen answer/prompt/result bytes on every checkout.
+* -text

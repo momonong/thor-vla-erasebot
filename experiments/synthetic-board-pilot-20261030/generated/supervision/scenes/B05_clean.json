@@ -1,0 +1,244 @@
+{
+  "bbox_format": "xyxy_exclusive",
+  "coordinate_frame": "image",
+  "evidence_kind": "font_rendered_synthetic",
+  "family_id": "B05",
+  "image_id": "B05_clean",
+  "image_size": [
+    1280,
+    820
+  ],
+  "schema_version": 1,
+  "split": "development_pilot",
+  "targets": [
+    {
+      "bbox_1000": [
+        543.75,
+        650.0,
+        705.469,
+        708.537
+      ],
+      "bbox_px": [
+        696,
+        533,
+        903,
+        581
+      ],
+      "font_id": "segoe_print",
+      "font_size": 50,
+      "id": "B05-occ01",
+      "ink_color": "orange",
+      "ink_rgb": [
+        204,
+        95,
+        15
+      ],
+      "mask_path": "supervision/masks/B05/B05-occ01.png",
+      "rotation_degrees": 2,
+      "semantic_categories": [],
+      "text": "PURPLE"
+    },
+    {
+      "bbox_1000": [
+        82.812,
+        245.122,
+        207.031,
+        312.195
+      ],
+      "bbox_px": [
+        106,
+        201,
+        265,
+        256
+      ],
+      "font_id": "segoe_print",
+      "font_size": 50,
+      "id": "B05-occ02",
+      "ink_color": "orange",
+      "ink_rgb": [
+        204,
+        95,
+        15
+      ],
+      "mask_path": "supervision/masks/B05/B05-occ02.png",
+      "rotation_degrees": 2,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "cherry"
+    },
+    {
+      "bbox_1000": [
+        316.406,
+        226.829,
+        432.812,
+        302.439
+      ],
+      "bbox_px": [
+        405,
+        186,
+        554,
+        248
+      ],
+      "font_id": "segoe_print",
+      "font_size": 46,
+      "id": "B05-occ03",
+      "ink_color": "red",
+      "ink_rgb": [
+        184,
+        31,
+        41
+      ],
+      "mask_path": "supervision/masks/B05/B05-occ03.png",
+      "rotation_degrees": -4,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "cherry"
+    },
+    {
+      "bbox_1000": [
+        556.25,
+        236.585,
+        675.0,
+        295.122
+      ],
+      "bbox_px": [
+        712,
+        194,
+        864,
+        242
+      ],
+      "font_id": "segoe_print",
+      "font_size": 50,
+      "id": "B05-occ04",
+      "ink_color": "blue",
+      "ink_rgb": [
+        28,
+        73,
+        171
+      ],
+      "mask_path": "supervision/masks/B05/B05-occ04.png",
+      "rotation_degrees": -4,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "melon"
+    },
+    {
+      "bbox_1000": [
+        323.438,
+        639.024,
+        433.594,
+        700.0
+      ],
+      "bbox_px": [
+        414,
+        524,
+        555,
+        574
+      ],
+      "font_id": "segoe_print",
+      "font_size": 46,
+      "id": "B05-occ05",
+      "ink_color": "green",
+      "ink_rgb": [
+        24,
+        116,
+        61
+      ],
+      "mask_path": "supervision/masks/B05/B05-occ05.png",
+      "rotation_degrees": -4,
+      "semantic_categories": [
+        "animal"
+      ],
+      "text": "rabbit"
+    },
+    {
+      "bbox_1000": [
+        813.281,
+        234.146,
+        899.219,
+        297.561
+      ],
+      "bbox_px": [
+        1041,
+        192,
+        1151,
+        244
+      ],
+      "font_id": "segoe_print",
+      "font_size": 54,
+      "id": "B05-occ06",
+      "ink_color": "black",
+      "ink_rgb": [
+        35,
+        38,
+        42
+      ],
+      "mask_path": "supervision/masks/B05/B05-occ06.png",
+      "rotation_degrees": 2,
+      "semantic_categories": [
+        "tool"
+      ],
+      "text": "drill"
+    },
+    {
+      "bbox_1000": [
+        91.406,
+        662.195,
+        192.188,
+        708.537
+      ],
+      "bbox_px": [
+        117,
+        543,
+        246,
+        581
+      ],
+      "font_id": "segoe_print",
+      "font_size": 50,
+      "id": "B05-occ07",
+      "ink_color": "purple",
+      "ink_rgb": [
+        119,
+        51,
+        158
+      ],
+      "mask_path": "supervision/masks/B05/B05-occ07.png",
+      "rotation_degrees": 0,
+      "semantic_categories": [
+        "vehicle"
+      ],
+      "text": "tram"
+    },
+    {
+      "bbox_1000": [
+        800.0,
+        653.659,
+        914.844,
+        718.293
+      ],
+      "bbox_px": [
+        1024,
+        536,
+        1171,
+        589
+      ],
+      "font_id": "segoe_print",
+      "font_size": 58,
+      "id": "B05-occ08",
+      "ink_color": "orange",
+      "ink_rgb": [
+        204,
+        95,
+        15
+      ],
+      "mask_path": "supervision/masks/B05/B05-occ08.png",
+      "rotation_degrees": -2,
+      "semantic_categories": [],
+      "text": "work"
+    }
+  ],
+  "variant": "clean"
+}

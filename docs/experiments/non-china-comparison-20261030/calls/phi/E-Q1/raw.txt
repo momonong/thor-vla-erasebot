@@ -1,0 +1,1 @@
+{"answers":[{"id":"E-Q1","status":"selected","targets":[{"text":"I am a girl. This is my pen","bbox":[0,0,0.5,0.5]}}]}

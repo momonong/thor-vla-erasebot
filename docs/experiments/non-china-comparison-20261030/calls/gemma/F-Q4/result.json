@@ -1,0 +1,101 @@
+{
+  "route": "gemma",
+  "question_id": "F-Q4",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q4",
+    "category": "spatial",
+    "instruction": "擦掉 FRUITS 右側、介於 Apples 與 BANANAS 之間的水果名稱。"
+  },
+  "started_utc": "2026-10-30T08:07:40.615261+00:00",
+  "status": "completed",
+  "prompt_sha256": "c4c5553a0633d8bcb5f8ecea49f89f721ce9d9eabe926022d888f38fec6095dd",
+  "model_input_prompt_lf_sha256": "270025d9f1a5d58cd74bace013ef8bf9772f94b26b339aef6409989e519e0f36",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 602,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        602
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        602
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        602
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        1,
+        2520,
+        768
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_position_ids": {
+      "shape": [
+        1,
+        2520,
+        2
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.024672300089150667,
+  "generation_s": 2.7124556999187917,
+  "generated_tokens": 42,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "b0633cf0195bd7b58791a7d97cc56212cb33a36f7514c2425fa2a17dc860a047",
+  "parsed": {
+    "valid": true,
+    "data": {
+      "answers": [
+        {
+          "id": "F-Q4",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "oranges",
+              "bbox": [
+                653,
+                313,
+                750,
+                343
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "peak_gpu_allocated_bytes": 10797974528,
+  "peak_gpu_reserved_bytes": 10907287552,
+  "question_wall_s": 2.7462586001493037
+}

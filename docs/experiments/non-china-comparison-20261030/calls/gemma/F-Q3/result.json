@@ -1,0 +1,101 @@
+{
+  "route": "gemma",
+  "question_id": "F-Q3",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q3",
+    "category": "spatial",
+    "instruction": "擦掉位於 kiwis 正下方的水果名稱。"
+  },
+  "started_utc": "2026-10-30T08:07:38.154011+00:00",
+  "status": "completed",
+  "prompt_sha256": "64150b6085cbbdc53f9c786aa40bf58d1edaae667f23dc4c7f82436891514f4e",
+  "model_input_prompt_lf_sha256": "fe5440cc4a75401fa833dfa6acfda7db5b85ebfbc2a7ecf3db1ae9518142e66b",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 592,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        592
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        592
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        592
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        1,
+        2520,
+        768
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_position_ids": {
+      "shape": [
+        1,
+        2520,
+        2
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.025361399864777923,
+  "generation_s": 2.42394550004974,
+  "generated_tokens": 42,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "d146695e8aa9e51b8cebbb4633f3558c53e283e41602915c6a97b8cc79ca7db8",
+  "parsed": {
+    "valid": true,
+    "data": {
+      "answers": [
+        {
+          "id": "F-Q3",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "oranges",
+              "bbox": [
+                675,
+                315,
+                780,
+                340
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "peak_gpu_allocated_bytes": 10797733888,
+  "peak_gpu_reserved_bytes": 10907287552,
+  "question_wall_s": 2.4567664000205696
+}

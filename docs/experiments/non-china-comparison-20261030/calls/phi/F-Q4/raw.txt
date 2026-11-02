@@ -1,0 +1,1 @@
+{"id":"F-Q4","category":"spatial","instruction":"擦掉 FRUITS 右側、介於 Apples 與 BANANAS 之間的水果名稱。", "status":"no_match", "targets":[]}

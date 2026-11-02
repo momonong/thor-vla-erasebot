@@ -1,0 +1,59 @@
+{
+  "route": "qwen_llm",
+  "question_id": "E-Q3",
+  "image_id": "english",
+  "question": {
+    "id": "E-Q3",
+    "category": "spatial",
+    "instruction": "擦掉最下方對照列中，連字號左邊的單字。"
+  },
+  "started_utc": "2026-10-30T07:55:28.122091+00:00",
+  "status": "completed",
+  "prompt_sha256": "33d77ef40601ad8f57d518d189ef0a10b13f33846fc2442fb1e33c54fd6418d4",
+  "model_input_prompt_lf_sha256": "7f15e0778892363b562075ab76249ef61086f88206b126e2828dcd9f130ecf25",
+  "image_sha256": "1bacd28be0687104a48240b711f74b8e30542af0a53a2df886b0a5bee6cc25aa",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 748,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        748
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        748
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.0025362998712807894,
+  "generation_s": 0.5913472000975162,
+  "generated_tokens": 21,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "aa9af9203ec7aa5bfdd9f99662e541b1add1eafe23f2b706ac5a2384b2f7d12f",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Extra data: line 1 column 64 (char 63)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 3210985984,
+  "peak_gpu_reserved_bytes": 3433037824,
+  "question_wall_s": 0.6011299998499453
+}

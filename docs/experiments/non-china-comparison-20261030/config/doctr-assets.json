@@ -1,0 +1,12 @@
+[
+  {
+    "bytes": 63303144,
+    "sha256": "0417f3511f5c75369bdcbe06539853b9c2d170aa3baceb2acc454c775ddac087",
+    "file": "crnn_vgg16_bn-0417f351.pt"
+  },
+  {
+    "bytes": 102021912,
+    "sha256": "79bd7d702506703b89cf11afa42d12aebf5cf25c3618e6ffd5f85772240ca483",
+    "file": "db_resnet50-79bd7d70.pt"
+  }
+]

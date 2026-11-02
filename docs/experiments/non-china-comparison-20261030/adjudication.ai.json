@@ -1,0 +1,2352 @@
+{
+  "schema_version": 1,
+  "evaluation_date": "2026-10-30",
+  "reference": "data/reference.ai.json",
+  "reference_sha256": "a821da72f576a1bda141bf9ba3edeab0457b44eeaedbad5c908e02eacb2c1319",
+  "questions_sha256": "f12bb09b060d68fc34c6b0df606c1346d7f4d91b37495a39e7dcbffc4edc1143",
+  "method": "Root AI visual adjudication with independent AI review. Same fixed occurrence-set/status and coarse-position rubric as the baseline; not human ground truth or mask coverage evaluation.",
+  "human_accepted": false,
+  "reference_used_during_inference": false,
+  "all_planned_cases_in_denominator": true,
+  "malformed_raw_read_only_for_content_diagnosis": true,
+  "json_repair_performed": false,
+  "coarse_grounding_not_pixel_coverage": true,
+  "review_notes_sha256": "f63aa995188676a0e52d69a91de804dcbb35c6723beff5a2d891753565ad1e9b",
+  "cases": [
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match；BLUE 候選存在。",
+      "raw": "calls/qwen_llm/C-Q1/raw.txt",
+      "raw_sha256": "0ca65e3768807d149ae94be95487c0c00e441d0adb752cded8109cec244bddd8",
+      "result_sha256": "42a72205112d055e971acfdd66e9e185175c6d5f75785cb0c75c36c629f3f5ea",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q2",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C1"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": false,
+      "reason": "選中 RED 的 colour-t001；內容正確，尾端多餘引號使 schema 失敗。",
+      "raw": "calls/qwen_llm/C-Q2/raw.txt",
+      "raw_sha256": "99c4d1f73bde97d4aaedcc19bc9b0a8aca33461245407236c1a081b221bc8e4f",
+      "result_sha256": "eed68c1c57c1a8509f93fa3c0d6a8bdc618c251f72ebb9fd5b3dc1eb7e216c1d",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C3"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match；應選 GREEN。",
+      "raw": "calls/qwen_llm/C-Q3/raw.txt",
+      "raw_sha256": "22ff6ca653d5ed0f5e376eb46388dc7cb938ea5153c661df03e267b931121a5f",
+      "result_sha256": "448d6a5709910ac41477c0408a9294ce3756b9c3e706da37ae6191194aab8ec5",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match；應選 BLUE。",
+      "raw": "calls/qwen_llm/C-Q4/raw.txt",
+      "raw_sha256": "ca7ff0fc4005a6453339b7a4e1bd09d8cb46ee013a0b562babaea7920f1d3f5e",
+      "result_sha256": "9de409855a5b68135c4685ae98843ff1abf4e852990246f20f9ecf3254f2f0c8",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match；應選三個顏色名稱。",
+      "raw": "calls/qwen_llm/C-Q5/raw.txt",
+      "raw_sha256": "50940068eb1503299eb783bc3a30b523728d92c30f71ef420ba4ff299df9c870",
+      "result_sha256": "61f26cb15a7e195f146e2369309bb36f1110d340f3d1f563d9104420d3711b4c",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "C-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q6",
+        "category": "semantic",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": true,
+      "schema_valid": false,
+      "reason": "正確 no_match；本圖無水果名稱。",
+      "raw": "calls/qwen_llm/C-Q6/raw.txt",
+      "raw_sha256": "159371c9706c5948838e0ade72d1d8af4e62adb538c6b32ae7197a1dc70308d3",
+      "result_sha256": "44bc04009c21d3be669d9a3aa3d531b78acf69f7d0320ddbd74225aada554286",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "F6"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match；Lemons 在 OCR 有辨識缺口。",
+      "raw": "calls/qwen_llm/F-Q1/raw.txt",
+      "raw_sha256": "ba5681f8c793638fca1bbe45c8b3b9d8813f367dd50a552c75ae5e85d73a9852",
+      "result_sha256": "e3d2f0a55eda8e316093c53e2e0f428a4ba4874bfd3e6168cca27e38d653d86c",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": true,
+      "schema_valid": false,
+      "reason": "正確 no_match；本圖無藍色英文。",
+      "raw": "calls/qwen_llm/F-Q2/raw.txt",
+      "raw_sha256": "501667748deaf09d8b059e1fa303f97a114f1c86159ba46cd8a621403e9d196f",
+      "result_sha256": "2cb33f3d53f1e3bb2c33d988d366759a9b1e9516a68456dbc2ffbcbd7d3066e0",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match；應選 melons。",
+      "raw": "calls/qwen_llm/F-Q3/raw.txt",
+      "raw_sha256": "2099b5d9ef1a21b0fb83b3647f374cb7174df772296f6b2acf262bb40b52e875",
+      "result_sha256": "1113d74ceeff643ca7d3927f41db80088bfc4f478a4f0f897841521578743cda",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F4"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match；應選 oranges。",
+      "raw": "calls/qwen_llm/F-Q4/raw.txt",
+      "raw_sha256": "6074a4cd47288b34b24d829204fb52726d115ba997984ab4e1aa4e20e9a1c587",
+      "result_sha256": "6140cd8fa84644c96f116d4974f528ae51d31c55bc7c67e8a9ec1fe70f741805",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選 13 個 OCR 候選，含應保留的標題、FRUITS 及非文字標記。",
+      "raw": "calls/qwen_llm/F-Q5/raw.txt",
+      "raw_sha256": "4269985846c955d6554604179b99d900ce4fbbf1f9adcb51a9a7108741f4c512",
+      "result_sha256": "ee111d35935dce91a422b1107fb5f7c87b10aedc5e76adb6cafd00ab8be29d94",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "F-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選 13 個候選，錯擦應保留標題。",
+      "raw": "calls/qwen_llm/F-Q6/raw.txt",
+      "raw_sha256": "841cb57c8116296eec6f8f47094d3b014d63547cbf35e997d873a3ada7ac92a4",
+      "result_sha256": "b540ec8583fcade53ae828ed72f506242c6cd6794d347037ae2761ed1386b091",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "E8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match；pen 候選存在。",
+      "raw": "calls/qwen_llm/E-Q1/raw.txt",
+      "raw_sha256": "7bdaefba11cba8fd5ed4ccbd0a74202f0af02a637cefa467e733c4560fbf8225",
+      "result_sha256": "047bfb600d980215d3ebf8ec181d9ab79db6468037195c7c18e95ea9c21a7e79",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": true,
+      "schema_valid": false,
+      "reason": "正確 no_match；本圖無藍色英文。",
+      "raw": "calls/qwen_llm/E-Q2/raw.txt",
+      "raw_sha256": "6d602b7ae44266543acf16ef86fde8bce0dceee31437cee26ad4e074f5ab62fa",
+      "result_sha256": "438cd0f630d8664108b57971d89ac6d40f179b35e6b42c31f47deaef5bb536d9",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E11"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match；應選 You。",
+      "raw": "calls/qwen_llm/E-Q3/raw.txt",
+      "raw_sha256": "aa9af9203ec7aa5bfdd9f99662e541b1add1eafe23f2b706ac5a2384b2f7d12f",
+      "result_sha256": "6e5e2a7e776d931813256424ea9218860f5a42f93751fc33aa3db84528c82de9",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E10"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match；中間 my 候選存在。",
+      "raw": "calls/qwen_llm/E-Q4/raw.txt",
+      "raw_sha256": "9ce6778c42c68d064d1d38929df3b9d483dfb50471341c2033ab84f2f739879b",
+      "result_sha256": "256e7bb5bfc52c3d9794a63298429eb3c661917d3151b60ea0bc134f8229e0e1",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E1",
+          "E9",
+          "E11"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "選 This 與兩個 my，並非兩個 I 加 You。",
+      "raw": "calls/qwen_llm/E-Q5/raw.txt",
+      "raw_sha256": "74aaa538545eccdc16315a913186ca10b9dfcddfb3f82bd43abfdd59587e2347",
+      "result_sha256": "6d2805f7fbf3f30ab0d2c2c8755be41cbf28e47cbc04a0c3b9b714bf54eccc82",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_llm",
+      "question_id": "E-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E7",
+          "E10",
+          "E12"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選候選，含多個非目標及整行 You-your，集合錯誤。",
+      "raw": "calls/qwen_llm/E-Q6/raw.txt",
+      "raw_sha256": "75e3972580dfa01a68f455091ab9bec6a4dc84a3f9c43edbb8cfe878b7cafe73",
+      "result_sha256": "c318a09d44f7eab33e24c7658694f8954c674586da677be439e2f896035e7ded",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "BLUE occurrence 與粗位置符合。",
+      "raw": "calls/qwen_vlm/C-Q1/raw.txt",
+      "raw_sha256": "19beffeb0a5dbd87fb2d28574db78922ee7e688d242f29e7b04b65c8534dc589",
+      "result_sha256": "e754196f6faede52d90549f3bbcb56ec0af7d5f8ae662f7ff6e0149107d967de",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q2",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C1"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "RED occurrence 與粗位置符合。",
+      "raw": "calls/qwen_vlm/C-Q2/raw.txt",
+      "raw_sha256": "4893299ab923b41ed5c4a35919047f1a67c388a109e5464c116cc6de011e73c9",
+      "result_sha256": "33e33cbabc2986c7031592a1913e83138ab5446d76c5715012b92cab69b4cf76",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C3"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "GREEN occurrence 與粗位置符合。",
+      "raw": "calls/qwen_vlm/C-Q3/raw.txt",
+      "raw_sha256": "e3639b6a1fefa76ad3810edda3a336509865af11b3ae548253d69634a29698a8",
+      "result_sha256": "ec485ac4d08feb364bbd9717d0b06ada1d56bfb4b94fd15ab49e98974cf11b29",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "BLUE occurrence 與粗位置符合。",
+      "raw": "calls/qwen_vlm/C-Q4/raw.txt",
+      "raw_sha256": "34aaab8c617c1d52f74da9d000bf6a61196f80257e3144fab691bbb8d756397a",
+      "result_sha256": "b4d28fd42aff12179ae2ef7b4e6bdfc5f6535c8384ca5e44e2c175e54fa56cee",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "完整選取 RED、BLUE、GREEN，粗位置符合。",
+      "raw": "calls/qwen_vlm/C-Q5/raw.txt",
+      "raw_sha256": "b204acfd37258c03741fcc933976cb7ab4fc860de545ad3ee1b8ec07b649dfba",
+      "result_sha256": "aefae10847011606c2e32c82e49950b9d012081874716de9803b89cde36b0841",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "C-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q6",
+        "category": "semantic",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "把所有顏色詞當成果類，應 no_match。",
+      "raw": "calls/qwen_vlm/C-Q6/raw.txt",
+      "raw_sha256": "e110b33d57cf898bec7fa59e8f50391a19c03939a79a3bd7d65cb6cdbcac5df0",
+      "result_sha256": "303a8247f5a3bab8a21626a9dc31f2dfacb0976b0eee5dbf03ef11634b148381",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "F6"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "Lemons occurrence 與粗位置符合。",
+      "raw": "calls/qwen_vlm/F-Q1/raw.txt",
+      "raw_sha256": "37ab2fc4ab2cd66fb5f81c229c272d9e6eea8e9628f0f46bceefcaece42c50d7",
+      "result_sha256": "17379bc8d5e3a2d06ece5b6f59c9817b5f1aa660c315d81f045ad176c7b17f70",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "正確 no_match。",
+      "raw": "calls/qwen_vlm/F-Q2/raw.txt",
+      "raw_sha256": "0e53e0b034887c45482d865f451c293620686c72ab7f0fa140ed7a286b466e65",
+      "result_sha256": "3a237eb1e811db8482f207f4f910832f388273f2b3b4931b7ee8ea3d09789708",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "同選 melons 與 kiwis，集合錯誤且 JSON 壞掉。",
+      "raw": "calls/qwen_vlm/F-Q3/raw.txt",
+      "raw_sha256": "9add1ee19dd86b3444745f9682077f8d39f338bd6067bff55df4d2556c59c1e7",
+      "result_sha256": "f6c47a7bd098bb272b55437eb4fbc5baef06327b2e5b27c793a638cecfd5048c",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F4"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "oranges occurrence 與粗位置符合。",
+      "raw": "calls/qwen_vlm/F-Q4/raw.txt",
+      "raw_sha256": "607d65e82eaade9028379c63ce8f1b7499752f263d3296e0725620c0fae9222b",
+      "result_sha256": "e0fefd490bd950bfe757a0cec4a1bc3cac213d403e65047d61aba56be449f49f",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "反選應保留的 FRUITS 與課程標題。",
+      "raw": "calls/qwen_vlm/F-Q5/raw.txt",
+      "raw_sha256": "fb5b37339e5cb2ee10f5218e51b431b55ac04db7485a709c633ff5656da01b32",
+      "result_sha256": "d8a7ea3917d0883dfc4d24e5256f1fb37b2fa407461be9700ed2e9995b76c429",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "F-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "反選應保留的課程標題。",
+      "raw": "calls/qwen_vlm/F-Q6/raw.txt",
+      "raw_sha256": "4fe71178228ef909accd81a663ca788fc5e931dd9c92138d805fba09905e3b78",
+      "result_sha256": "2b0397e0d5f6170dbc50b6b36d5cf6b436bc1b7b42506f1a7eccee56bf02040a",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "E8"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "pen occurrence 與粗位置符合。",
+      "raw": "calls/qwen_vlm/E-Q1/raw.txt",
+      "raw_sha256": "ed9f7094610614c63ce4180f8aae0611703b7218141737617780fc8608105e9a",
+      "result_sha256": "e461e7791e32d2d56bfe1ecc0d61e25b66f1298877b8101d88b0f191ae50c4db",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "把紅色文字整行選入，應 no_match。",
+      "raw": "calls/qwen_vlm/E-Q2/raw.txt",
+      "raw_sha256": "971a2368bfcbe5f71d97f9249a91faf9e43fc96475f133d696c8dc12841e8a24",
+      "result_sha256": "b86ec338063e6feb472bee12bf73b03a34d35cecf9ff2bf1fa73638a11bfcafd",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E11"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "選兩整組代名詞而非單獨 You，含應保留詞。",
+      "raw": "calls/qwen_vlm/E-Q3/raw.txt",
+      "raw_sha256": "7248fe9838076a6d18cc90d427a67a0302e7df18a06477a45c45caf6bc34c70f",
+      "result_sha256": "a877e142aabde253c1a12ee600f64f9dd8377d4e3e4fc13544bb28b7e5d96025",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E10"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "選 pen，應中間 my。",
+      "raw": "calls/qwen_vlm/E-Q4/raw.txt",
+      "raw_sha256": "d3433375424309cd5685654be4723300807a20bad484fa9a2c46f17a7c0a2acd",
+      "result_sha256": "eb14e6832a76e1c87bd64a397fde445fd8555d78f5e36bab933d8de9c2ac965c",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E1",
+          "E9",
+          "E11"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "兩個 I 及 You 的 occurrence 均符合。",
+      "raw": "calls/qwen_vlm/E-Q5/raw.txt",
+      "raw_sha256": "63694efabeee22e3807b8b67f0135128e474909412d491426f86ff687f4a4934",
+      "result_sha256": "4293630a4a566625fd85e027139e0764c30df1814dc199fe515dec8a283f1201",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "qwen_vlm",
+      "question_id": "E-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E7",
+          "E10",
+          "E12"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "漏掉例句中的上方 my。",
+      "raw": "calls/qwen_vlm/E-Q6/raw.txt",
+      "raw_sha256": "5a1a9e2ea36d35cef06d62a82ecc78eb88aa784b8bc3e89f61aafc5f5d2b62a3",
+      "result_sha256": "7abc928896b957879687107f8a393abec2e71778d01c2e8bfaa433c40d89820f",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "只重述題目，沒有選取答案或 status。",
+      "raw": "calls/smolvlm/C-Q1/raw.txt",
+      "raw_sha256": "4b5e8ada22ab0ce95d776c8d6618b7fbdd9fc5761e9a1e31181e139ed0bda2ba",
+      "result_sha256": "16073b5a0a0ee4f43faad32a5ff50e2eca8ce0cfe7145d402b655d525ad68727",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q2",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C1"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "回 RED BLUE GREEN 字串，沒有完成紅墨水目標選取。",
+      "raw": "calls/smolvlm/C-Q2/raw.txt",
+      "raw_sha256": "f0219a3f34b67b17507fa4665250169ed8389823bff3916fb5716b2172c4b4a4",
+      "result_sha256": "65a23e95f7e63b14a0f88e5a3ad5642b68354ddc23aacaacbb6d47f3e07dfd14",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C3"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "只重述題目，沒有選 GREEN。",
+      "raw": "calls/smolvlm/C-Q3/raw.txt",
+      "raw_sha256": "b619494c8e2808210536370ed9e7c8df92f399f90426703e2da9b3edbd2441e8",
+      "result_sha256": "bce8f87edff1c85a1db1859dc5857575419c1d0f0e7a685ac4b3a625fd08ca11",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "選三個顏色詞，應只選 BLUE；框也為不符位置的範例格點。",
+      "raw": "calls/smolvlm/C-Q4/raw.txt",
+      "raw_sha256": "4a9c8094bf73adf2b0df0b3368acf0276a1f0a9c3f770e206fef2ba9c95a090c",
+      "result_sha256": "7d2870e30132cae94f68e4e9e63ee884ec357a10591e0ac114515c50903c21db",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "只重述題目，沒有選取集合。",
+      "raw": "calls/smolvlm/C-Q5/raw.txt",
+      "raw_sha256": "91346da61b1f1e7c55ca2610e5f57800a4d9e24af1be88ad0ec79c95256c053f",
+      "result_sha256": "f1f1c3f75accbc159c4711e6cbe728859d31912966ab11beecf22359091573ae",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "C-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q6",
+        "category": "semantic",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "只重述題目，沒有 no_match 答案。",
+      "raw": "calls/smolvlm/C-Q6/raw.txt",
+      "raw_sha256": "d450b01407037015e5ecc90dd386694ed63311e7897f6d97c22f1355d4475b6d",
+      "result_sha256": "6054ce70f0c353cbe1122641f95ebda6e5aa6492c6dbf2a42c720e210ff5afc4",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "F6"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "寫 Lemons 但框 [100,100,200,200] 錯位，題號 question id 且格式錯。",
+      "raw": "calls/smolvlm/F-Q1/raw.txt",
+      "raw_sha256": "4d5e3a56001602a9fce438510b61f07c2dfbf0c4b2701a409b6463aa4ffce406",
+      "result_sha256": "b50dfc3350db672dc490aacfbc343f49b08022376fb553d30ab22ab128099fbc",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "只重述題目，沒有 no_match 答案。",
+      "raw": "calls/smolvlm/F-Q2/raw.txt",
+      "raw_sha256": "ad14bfb788cf2cf194b6e6b3d683fd604bcec72a5f7d390eebf824425f3f0daa",
+      "result_sha256": "fa2d5c17c9a8efaf7298e6fd8de145b10419544cc09429c756e4d8bad5d656a1",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "只重述題目，沒有選 melons。",
+      "raw": "calls/smolvlm/F-Q3/raw.txt",
+      "raw_sha256": "04d2144e35bee2d1c049af900e8d362037d3c57e5617122efc0c9414b668d991",
+      "result_sha256": "01971b74096312418c5ac4d451d22e0a761afa84c1d8de045ca0497836779062",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F4"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "選 Kiwis，應 oranges；框也錯位。",
+      "raw": "calls/smolvlm/F-Q4/raw.txt",
+      "raw_sha256": "2e7d27fff5a2c56814dc93408991788eef2ae6c78dbd3970a97cb227f44c7b85",
+      "result_sha256": "d616c0a7d465822c9bb871e3576d231370b3953af1b5b59cd798c8e44732ca62",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "選應保留的 FRUITS，應六個水果種類。",
+      "raw": "calls/smolvlm/F-Q5/raw.txt",
+      "raw_sha256": "895dd2dc5ccea7f7bf06393b857934cfcbfbbd8d5791f99ac64da55d2e169891",
+      "result_sha256": "e27164851eb9ae2591b69ccdbca57a9ce80d49f031ba9900593f97f14c4962b4",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "F-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "選應保留的課程標題，框也錯位。",
+      "raw": "calls/smolvlm/F-Q6/raw.txt",
+      "raw_sha256": "016765098102e2e9972eef3833a847fb8d81660c60a0e114c3c3c06c34f0cb32",
+      "result_sha256": "6d88f186f02e5ef65ed39479e2a9e20e8985371a121a0c2f4b39eb7b87df0964",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "E8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "回整句描述而非 pen 選取。",
+      "raw": "calls/smolvlm/E-Q1/raw.txt",
+      "raw_sha256": "1af567f8401d7cb777bffae04f66fce7900dd6eb1d6d9b7739e4225996966f60",
+      "result_sha256": "634edc9b9d8568ef3ea2e108fa9e24a57aead17eb4aeca49a5993e95efab64cf",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "回整句並幻覺 boyfriend，沒有 no_match。",
+      "raw": "calls/smolvlm/E-Q2/raw.txt",
+      "raw_sha256": "bfde872da3f71a6920f000e66ce91cfb80a2320a427c4889d22b400e5cae2eb3",
+      "result_sha256": "8dc13ef3ac14adc08da88efeb9e46beb2bf98c1b37a44344e15427784067682f",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E11"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "格式合法但選上方整句，應 You，框也錯位。",
+      "raw": "calls/smolvlm/E-Q3/raw.txt",
+      "raw_sha256": "47e32406d217d6f37d8942ed37c82d38704e4fe828b5ff25b00c5aaf34cc1f24",
+      "result_sha256": "8b122aa348872549c3fcaa80e1dbca306990df5e597b7f6368a81e76013e5f93",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E10"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "回整句含 You-you，沒有中間 my 的選取答案。",
+      "raw": "calls/smolvlm/E-Q4/raw.txt",
+      "raw_sha256": "47b010e57ea6886eadc32fed2b4af4295cb02906cc081c75b94c21b78ea60ee3",
+      "result_sha256": "f89a63ae1786d5b158110fe28dcb93293512f5016fa16f1012cea84a5697285c",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E1",
+          "E9",
+          "E11"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "回整句含 You-you，沒有兩個 I 加 You 的選取集合。",
+      "raw": "calls/smolvlm/E-Q5/raw.txt",
+      "raw_sha256": "47b010e57ea6886eadc32fed2b4af4295cb02906cc081c75b94c21b78ea60ee3",
+      "result_sha256": "014ae3b4d8664eef3e178909e42c65573170c3bb25e8def3a84da439f0dd6299",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "smolvlm",
+      "question_id": "E-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E7",
+          "E10",
+          "E12"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "回整句含 You-you，沒有兩個 my 加 your 的選取集合。",
+      "raw": "calls/smolvlm/E-Q6/raw.txt",
+      "raw_sha256": "47b010e57ea6886eadc32fed2b4af4295cb02906cc081c75b94c21b78ea60ee3",
+      "result_sha256": "35618a10a19be1c58f5ae200edca2b7973a5abc84b53e24e6b6c1a00fdd80436",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "選入 BLUE 之外多個片段，集合錯。",
+      "raw": "calls/doctr_smollm/C-Q1/raw.txt",
+      "raw_sha256": "6dda28de29dae756921cb672dd5d51dd9b553846292bfc5164a3569b5ae83f2f",
+      "result_sha256": "7902ac96c99506d2e514eac074a080c721ebd91ead0808e03bb66e3a7ceb6e73",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q2",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C1"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選候選；RED 缺完整 OCR 詞框。",
+      "raw": "calls/doctr_smollm/C-Q2/raw.txt",
+      "raw_sha256": "c851f321c3f702bb9dbd9695a2329323d8347b8f7f1732eeb35206d5665aac5c",
+      "result_sha256": "a3bfa9238d797dd700b7b19f94f1b0d76e598a3f3126eb434f81d8e1dfc9ec5a",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C3"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選候選；GREEN 缺完整 OCR 詞框。",
+      "raw": "calls/doctr_smollm/C-Q3/raw.txt",
+      "raw_sha256": "c851f321c3f702bb9dbd9695a2329323d8347b8f7f1732eeb35206d5665aac5c",
+      "result_sha256": "87cc3f3001edcfeb9c959365d284b807a9dd3c6c7917f53884270fb297ddd22a",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "選入 BLUE 之外多個片段，集合錯。",
+      "raw": "calls/doctr_smollm/C-Q4/raw.txt",
+      "raw_sha256": "7ae92a9289e90b5c8b342017c8a342cc1a9d200563e52e3b2ad38bbb59e4f402",
+      "result_sha256": "13b6e2bf11e91b523bdee7e9e1fe2be6ec619453ba86994145a499d77201501c",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選碎片不等於三完整詞 occurrence；RED/GREEN 的 OCR 缺口仍在。",
+      "raw": "calls/doctr_smollm/C-Q5/raw.txt",
+      "raw_sha256": "c851f321c3f702bb9dbd9695a2329323d8347b8f7f1732eeb35206d5665aac5c",
+      "result_sha256": "1a3577316ab2a44f2f2102b5a86ee7f5e3ad131c2f5be2995446eb1cd7001a66",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "C-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q6",
+        "category": "semantic",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選候選，應 no_match。",
+      "raw": "calls/doctr_smollm/C-Q6/raw.txt",
+      "raw_sha256": "c851f321c3f702bb9dbd9695a2329323d8347b8f7f1732eeb35206d5665aac5c",
+      "result_sha256": "917fe7a32bbdde08d903c52e197307d3e8d04fc0868b66e045d2740d68f07a1a",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "F6"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選候選而非 Lemons。",
+      "raw": "calls/doctr_smollm/F-Q1/raw.txt",
+      "raw_sha256": "29e9d889c0128a0a959823ecee9bad6f7f2f732c05941199ebf1bd39d1b3e3de",
+      "result_sha256": "901b3a4b5042a204aff36c178522be84b19e3eb63ed936ac757c3c0d96659b74",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選候選，應 no_match。",
+      "raw": "calls/doctr_smollm/F-Q2/raw.txt",
+      "raw_sha256": "29e9d889c0128a0a959823ecee9bad6f7f2f732c05941199ebf1bd39d1b3e3de",
+      "result_sha256": "0ff423c1232be6c61fba455b681d72b63485e58943de77d7a9ed784c36b40255",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "選多個非目標，包括課程標題。",
+      "raw": "calls/doctr_smollm/F-Q3/raw.txt",
+      "raw_sha256": "fcab0cb2b04617b063f02de5adc4772af2a83d32d28cfa6cb8011ef7cf2b8d4f",
+      "result_sha256": "dd15fd36d6385318f59374c3335a4a971e729d14bb4b2c8f8d76a5c3cd933d0b",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F4"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "選多個非目標，含不存在 ID fruits-d10。",
+      "raw": "calls/doctr_smollm/F-Q4/raw.txt",
+      "raw_sha256": "4fb93b8f5ffefd4a04bab7694e62567c5a72385fa83a60088514794f449c4368",
+      "result_sha256": "f95c0a47bbc9b93efcf5be5c6ff320c92ec3ff930107d5683da38a7b0ea75cf0",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選候選，含應保留 FRUITS/標題。",
+      "raw": "calls/doctr_smollm/F-Q5/raw.txt",
+      "raw_sha256": "29e9d889c0128a0a959823ecee9bad6f7f2f732c05941199ebf1bd39d1b3e3de",
+      "result_sha256": "1fa2e742004c03afcee625579a2aa4409087cfcdff4346417bcdbcf2824b8ae6",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "F-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選候選，含應保留標題。",
+      "raw": "calls/doctr_smollm/F-Q6/raw.txt",
+      "raw_sha256": "29e9d889c0128a0a959823ecee9bad6f7f2f732c05941199ebf1bd39d1b3e3de",
+      "result_sha256": "c5bab1b034fc7d56658d986c4ba7e33b649ad17213d241f48722afd79d7a1396",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "E8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選 14 候選而非 pen。",
+      "raw": "calls/doctr_smollm/E-Q1/raw.txt",
+      "raw_sha256": "441742019adb8c87561e6efb315f89a32f68f976f1e4aecfdf01f37d2d0dee61",
+      "result_sha256": "a1dd02b0b278be0318a8a3305428dc755ac655e6164bc8785e637f69dfc68f9a",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選候選，應 no_match。",
+      "raw": "calls/doctr_smollm/E-Q2/raw.txt",
+      "raw_sha256": "441742019adb8c87561e6efb315f89a32f68f976f1e4aecfdf01f37d2d0dee61",
+      "result_sha256": "f4cf271ab8d6d723bc7dfdd42dc8a0559f3bb5690a3e1b4e935f0fa7e7bde484",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E11"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選 14 候選而非 You。",
+      "raw": "calls/doctr_smollm/E-Q3/raw.txt",
+      "raw_sha256": "441742019adb8c87561e6efb315f89a32f68f976f1e4aecfdf01f37d2d0dee61",
+      "result_sha256": "9d8f81a7336395e5bba55f406a3e8cffd452f1d7bea8bccb537b41aff0797587",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E10"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選 14 候選而非中間 my。",
+      "raw": "calls/doctr_smollm/E-Q4/raw.txt",
+      "raw_sha256": "441742019adb8c87561e6efb315f89a32f68f976f1e4aecfdf01f37d2d0dee61",
+      "result_sha256": "edf9659789b489166ae8ee7dc62f86c9ce79a8bc30ac4b8913366ed957e5932f",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E1",
+          "E9",
+          "E11"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選 14 候選且 OCR 漏掉兩個 I，集合錯。",
+      "raw": "calls/doctr_smollm/E-Q5/raw.txt",
+      "raw_sha256": "441742019adb8c87561e6efb315f89a32f68f976f1e4aecfdf01f37d2d0dee61",
+      "result_sha256": "41b44a997c5f5b9aa2ec10354325becb0cb4f22c5f9a421fcf6c2545cac1f271",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "doctr_smollm",
+      "question_id": "E-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E7",
+          "E10",
+          "E12"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選 14 候選，包含應保留詞。",
+      "raw": "calls/doctr_smollm/E-Q6/raw.txt",
+      "raw_sha256": "441742019adb8c87561e6efb315f89a32f68f976f1e4aecfdf01f37d2d0dee61",
+      "result_sha256": "6f9c14014172ac991c2e082b25ce44e2412c50f81604eb76e03c65181ccf269f",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "粗位置唯一對應 BLUE；框明顯裁去右側 E 及其他筆畫，不能當擦除 mask。",
+      "raw": "calls/gemma/C-Q1/raw.txt",
+      "raw_sha256": "2b72cdb11f7711706f430941dd5e12a93bba4426fa8c101050d7a718e36f4c47",
+      "result_sha256": "588c8b79c75406b2fb0726949bbb9e10cc9b8fc0a2dccbf8d197448a5430ed54",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q2",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C1"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "粗位置對應 RED；框裁去下緣，未驗證筆畫覆蓋。",
+      "raw": "calls/gemma/C-Q2/raw.txt",
+      "raw_sha256": "e83cca103b09dda4028141c5f5cb28c5309e819bb4630f9b0c5976f2edfa2641",
+      "result_sha256": "6beb09af2377de7bf1863a9764a048f3bc2f2abe22bac9d9517fb871f94135fa",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C3"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "粗位置對應 GREEN；框裁去末字／下緣。",
+      "raw": "calls/gemma/C-Q3/raw.txt",
+      "raw_sha256": "15938c890e80464ac1f149061df83d4a80b222328d09e4c6b0559fbdd5d840a0",
+      "result_sha256": "fa457da21b515821d7f4a9d56c0b305a9534bc4526c980f9b98eb42d1e1ddd4d",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "粗位置唯一對應 BLUE；框明顯裁去右側 E，未按新增覆蓋閾值扣分。",
+      "raw": "calls/gemma/C-Q4/raw.txt",
+      "raw_sha256": "6fee6d86a96bb1e3d2a61b63fe564aa6fc5e5191ab1004c161f8c186ae55fc64",
+      "result_sha256": "21d4b237aeaa9b8ba3f41a034af51fbcf7fe61aee3246c7591b4e25aca5f3faa",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "三個顏色詞 occurrence 與粗位置符合；GREEN 框只涵蓋左部，各框不完整。",
+      "raw": "calls/gemma/C-Q5/raw.txt",
+      "raw_sha256": "26c235053f17614929a4a94b0b1c5480b72ec933c367f09897c9ca63667e5a56",
+      "result_sha256": "a263e84c2f80479b09d1ff37f1b7779e09822be7ffe66f8128cf62abf0c7cde8",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "C-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q6",
+        "category": "semantic",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "把 RED 當水果，應 no_match。",
+      "raw": "calls/gemma/C-Q6/raw.txt",
+      "raw_sha256": "984d7082c98c39469f5c4663d3807a3db83c13dc5eee542232a5efe2473888d7",
+      "result_sha256": "116f46d515c194080694eee151404479a7d1bf0478dd63fbb0baf01d7a1a32b7",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "F6"
+        ]
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "粗位置對應 Lemons；框左端裁切，不能宣稱完整覆蓋。",
+      "raw": "calls/gemma/F-Q1/raw.txt",
+      "raw_sha256": "20561b33682399c34f083025a50a7b28a5243aaccad490f6d59dd12be28d9c23",
+      "result_sha256": "b0d1ccb8b0a2f3dbc6a4fe4ee2f5b5c6b8696b247bc0a1b4c521e92aa7d2eb81",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "正確 no_match。",
+      "raw": "calls/gemma/F-Q2/raw.txt",
+      "raw_sha256": "82dd8440f7c46c28729bdfe72048ca125a9b27f9b433ff412b89014a6322f730",
+      "result_sha256": "af99484764f8916abf11c51ec085d3607de910c7474b8ff922228ca870d0a44b",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "選 oranges，應 kiwis 下方的 melons。",
+      "raw": "calls/gemma/F-Q3/raw.txt",
+      "raw_sha256": "d146695e8aa9e51b8cebbb4633f3558c53e283e41602915c6a97b8cc79ca7db8",
+      "result_sha256": "166b227f54784f515e0d7cba86fea74abefb793212918a8864dfc1a3737f5be8",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F4"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "文字 oranges 正確，但 bbox 在 Apples 區域，故主指標失敗。",
+      "raw": "calls/gemma/F-Q4/raw.txt",
+      "raw_sha256": "b0633cf0195bd7b58791a7d97cc56212cb33a36f7514c2425fa2a17dc860a047",
+      "result_sha256": "7f6d70728b23f226e102bf9df82529f6995390692d74d7cdac9c2bd0f5f6ec96",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "選類別 Fruits，應六個水果種類。",
+      "raw": "calls/gemma/F-Q5/raw.txt",
+      "raw_sha256": "570ff9a2334db2a7e157967256daafe5a6d3ed397bdae6dcc82d5df7a2d5cbac",
+      "result_sha256": "3262e2da1e67274d8bb0206b79ee382209b41bf531476f4ebc1867371f4f8b59",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "F-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "選應保留標題，且框位置也不對。",
+      "raw": "calls/gemma/F-Q6/raw.txt",
+      "raw_sha256": "a90df22ddb078aceff0b2d0dd046b5d41ea30f60d700c83e6af32002756b4728",
+      "result_sha256": "5205be609232e00345041b7d90fa670cf673cff293dd0e793667f3d09cf270e9",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "E8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "文字 pen 正確，但 bbox 在 This 附近，故主指標失敗。",
+      "raw": "calls/gemma/E-Q1/raw.txt",
+      "raw_sha256": "3c56c3b1ae11eee3a94c1df232e9edef8a601b0eebf0970ad3523efc86d0fdc6",
+      "result_sha256": "1da5c88fd36c2217d6d64117d3d12bb36fbacc90a2bb7bb7ee184ec98c1c9f86",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": true,
+      "schema_valid": true,
+      "reason": "正確 no_match。",
+      "raw": "calls/gemma/E-Q2/raw.txt",
+      "raw_sha256": "e1ce5c35f12a88d3d9cb6dfc87513bbab03abfc7d2d66c256f40f8eb5055bdf3",
+      "result_sha256": "8d4ad9202e1c7f4521b7fc236884bfd91711855d6b34f3005ea12da650ecda27",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E11"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "選 I-my 組，應最下組左側 You。",
+      "raw": "calls/gemma/E-Q3/raw.txt",
+      "raw_sha256": "70af251cf99591d150443640391c5e65caf29dbbb0c4689243b59f0e73afaa8d",
+      "result_sha256": "318724280328f2c8dd00ecc59559f5cd398d30074334424b90ca7973a8c2a7c4",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E10"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "選 girl，應中間 my。",
+      "raw": "calls/gemma/E-Q4/raw.txt",
+      "raw_sha256": "33c6584d6520ba89800ae1fa1621f451b10b5c4215951ce86b4c7be1cefdf85f",
+      "result_sha256": "e76068eb09f7f1984f3c4b62fdd987577827686eacb64f8a896dc05536f554e5",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E1",
+          "E9",
+          "E11"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "以 my 取代第二個 I，且框有偏差。",
+      "raw": "calls/gemma/E-Q5/raw.txt",
+      "raw_sha256": "8ac8f30fca6acd29271df7d1e05a48d672bb83d2a36e2b03d0638c36eb4e9bdb",
+      "result_sha256": "859e9851974a02f5dc50c98cd75b81e487a35636e0c4aad6c20ae631890c2e4b",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "gemma",
+      "question_id": "E-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E7",
+          "E10",
+          "E12"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": true,
+      "reason": "只選兩詞，漏上方 my，框也有偏差。",
+      "raw": "calls/gemma/E-Q6/raw.txt",
+      "raw_sha256": "92fe55dbdc15a31ab284468344f40364e9763f895dbfb4d8e6f9528c4969b8d4",
+      "result_sha256": "0e44c9c0c7ee1162898d7dc286fbb3354b2f656936a6da15fcafabe48e91c5a6",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "status no_match 卻有 BLUE 目標，框使用錯誤尺度與位置。",
+      "raw": "calls/phi/C-Q1/raw.txt",
+      "raw_sha256": "6367a4d65fc3814b19e412a87bd80422a990289833207a08026aa9c64de585f2",
+      "result_sha256": "68d997983bbccaf4b076de01aea22e54c3985cdfc0d281afd20523354fc81d24",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "C-Q2",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "C1"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match，應 RED。",
+      "raw": "calls/phi/C-Q2/raw.txt",
+      "raw_sha256": "c84b2a927ca05172bae687b1b4cb7528af3e6ae4fcec180351de33cddf5fdb82",
+      "result_sha256": "f9bb7b1a01160b5f568d863057a4bdc9bb1aac4de85ec0a714f473b32cf8f304",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C3"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match，應 GREEN。",
+      "raw": "calls/phi/C-Q3/raw.txt",
+      "raw_sha256": "0a5a774292ff346ba63769390296d856dd999b5e443b7b11dd602aed0e02b7bf",
+      "result_sha256": "8b56229911f072cd8b6cfd50530fbacb01ce3af5f072416dadce5b9743f5bcf7",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "C-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "C2"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match，應 BLUE。",
+      "raw": "calls/phi/C-Q4/raw.txt",
+      "raw_sha256": "db416062a26e91f3c328bb85dadb68537760c7aca49942505f3cfc684840f519",
+      "result_sha256": "ea79d624124d6833c8a0195f5f0c4a1936fb90b44c1ced098e9a2d8425ba3f73",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match，應三個顏色詞。",
+      "raw": "calls/phi/C-Q5/raw.txt",
+      "raw_sha256": "2d36d8b86a4d191b27fda9cf4dca67ce0a664bed5234434c318bc3957e08b6d9",
+      "result_sha256": "7d58ef01679f2bda0b780a9d02d0c84ca5e98ec28752942436324187ef02a8f5",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "C-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "C-Q6",
+        "category": "semantic",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": true,
+      "schema_valid": false,
+      "reason": "內容為 no_match 與空目標，符合；缺 answers 包裝，schema 失敗。",
+      "raw": "calls/phi/C-Q6/raw.txt",
+      "raw_sha256": "f725e6c5937e8db51c380566767a99b9debfa11aedfcc0ba48e6b3fcb1a93fa4",
+      "result_sha256": "ca8f52998a287119c4a0e24c6ce6a72e1b8a6ebcf98402220c6eb54d57ed0481",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "F6"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "Lemons 文字正確，但框 [0.56,0.45,0.66,0.51] 未按約定 0–1000 對應目標，不修復座標。",
+      "raw": "calls/phi/F-Q1/raw.txt",
+      "raw_sha256": "eb845ceed55697a3b23bf84ded3f656c0b8502bb268158517464629493a4695f",
+      "result_sha256": "396ca68e752fbbe1fc226791e468bb8b3b93ee91f93b17e7b18d0a008a541a83",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "F-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "只重述題目，沒有 status 與選取答案。",
+      "raw": "calls/phi/F-Q2/raw.txt",
+      "raw_sha256": "157b07e7bbee507f00acae5af90e31696a1e19723a1adc86eabb0eeaac37b2e9",
+      "result_sha256": "f7af27103b2b1730c22c5011a03109f17e4f6e06a859c754d8f0035f33b4b268",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "只重述題目，沒有選 melons。",
+      "raw": "calls/phi/F-Q3/raw.txt",
+      "raw_sha256": "b4a517283e9d6aff7f997b8430ea675d4f18bdc24ec554a8306dcfe642a8ad52",
+      "result_sha256": "ed78710d2e8c9fe44eb1e32f5a0704e094621f81358ec9ecc330ecc8582fa540",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "F-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "F4"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match，應 oranges。",
+      "raw": "calls/phi/F-Q4/raw.txt",
+      "raw_sha256": "f3520bdb3d0e17896c3e619f44022b10fa695d470aa38a6f2acfc85384d5c626",
+      "result_sha256": "7ef650a17bef78e5a5ff24c1efb2251ead9611ca18ff98f3f78bce887b5268ec",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "誤選 FRUITS 與標題，之後重複 -1 至 3072 token 上限。",
+      "raw": "calls/phi/F-Q5/raw.txt",
+      "raw_sha256": "5a417afd2df1020de32fee9081c2a0cd8c2b97979a8ba1a70234243140daa8c4",
+      "result_sha256": "f7bde1d5d9dedc81ab75f454afbbee556a071764c473ebbf031b1020d620fadd",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "F-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "F-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "只重述題目，沒有選取集合。",
+      "raw": "calls/phi/F-Q6/raw.txt",
+      "raw_sha256": "b078a4f3343d2041059f216cbb202f2fc027f4135850b502dca168e4bf6a6a66",
+      "result_sha256": "6835a836326c5cccf0a65c79a268b89238e921953af2861df3a8be8682192949",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q1",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q1",
+        "category": "exact_color",
+        "status": "selected",
+        "target_ids": [
+          "E8"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "選整句而非 pen，框尺度與位置也錯。",
+      "raw": "calls/phi/E-Q1/raw.txt",
+      "raw_sha256": "14ec787a5087e95f12f0f3a9de589de12b3700c06035bf97564b8715060ee2fb",
+      "result_sha256": "43fb41acca4c4ea5a19169cd35c1469c57d5993dd937b7bbd05c83f50c10500c",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q2",
+      "category": "exact_color",
+      "expected": {
+        "id": "E-Q2",
+        "category": "exact_color",
+        "status": "no_match",
+        "target_ids": []
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "no_match 卻非空目標，反覆列三整行與全零框，達 3072 token 上限。",
+      "raw": "calls/phi/E-Q2/raw.txt",
+      "raw_sha256": "517cb1f6e452b6c5b73e2b136dbd30909eaa1fe10ad9a28229a0b72dc2cfc70d",
+      "result_sha256": "bccf1157bee47ab98b8c14837729292cafc07975d48c51551b1455333ce627e2",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q3",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q3",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E11"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match，應 You。",
+      "raw": "calls/phi/E-Q3/raw.txt",
+      "raw_sha256": "fbf6ec1364c437e9a2027314337b5de3f57efec593529e18a9b33c0a9ace9ed3",
+      "result_sha256": "7c22ec32d9110b01cc882604c468003a7b83fb32879d146df0026da4d92bcf00",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q4",
+      "category": "spatial",
+      "expected": {
+        "id": "E-Q4",
+        "category": "spatial",
+        "status": "selected",
+        "target_ids": [
+          "E10"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "錯回 no_match，應中間 my。",
+      "raw": "calls/phi/E-Q4/raw.txt",
+      "raw_sha256": "0de95d1e2ef8e14edf7dfaaeaf2a672758d04f480075398a5fafc273a24dff72",
+      "result_sha256": "6810b0ab473343b8a57b2ea5bcaf83b3e0d6d4751d5170262cd3be95c10f7a48",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q5",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q5",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E1",
+          "E9",
+          "E11"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "全選 12 詞，含應保留詞；框為 0–1 尺度且錯位。",
+      "raw": "calls/phi/E-Q5/raw.txt",
+      "raw_sha256": "b392e3124f05f001e53b3017beda00fdd76bbe597c522ae8db1970f8524aed4d",
+      "result_sha256": "b6b06a7c781166140c546452a51ecb8a81ad73c8fbe3ec6bb0d7894aa34e538b",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    },
+    {
+      "route": "phi",
+      "question_id": "E-Q6",
+      "category": "semantic",
+      "expected": {
+        "id": "E-Q6",
+        "category": "semantic",
+        "status": "selected",
+        "target_ids": [
+          "E7",
+          "E10",
+          "E12"
+        ]
+      },
+      "content_correct": false,
+      "schema_valid": false,
+      "reason": "反覆選 I/my/You/your，含非目標且 occurrence 對應錯，達 3072 token 上限。",
+      "raw": "calls/phi/E-Q6/raw.txt",
+      "raw_sha256": "bbe8ca8a836bcd6da888c420fb1a17c976e01cb1c69a7295cc06de8374e83766",
+      "result_sha256": "33a9f4b90c67c35ea8c95e5ae33eeb9bc4e9919130713ee7a686e4eaff777d6f",
+      "independent_reviewer": "independent_ai_reviewer",
+      "root_reviewed": true
+    }
+  ],
+  "source_review_notes_sha256": "3fed2070c2550c6299e2d4211ef098736c37b2ef518de107ec338b5ea04127f0"
+}

@@ -1,0 +1,247 @@
+{
+  "bbox_format": "xyxy_exclusive",
+  "coordinate_frame": "image",
+  "evidence_kind": "font_rendered_synthetic",
+  "family_id": "B08",
+  "image_id": "B08_clean",
+  "image_size": [
+    1280,
+    820
+  ],
+  "schema_version": 1,
+  "split": "development_pilot",
+  "targets": [
+    {
+      "bbox_1000": [
+        819.531,
+        241.463,
+        900.781,
+        297.561
+      ],
+      "bbox_px": [
+        1049,
+        198,
+        1153,
+        244
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 54,
+      "id": "B08-occ01",
+      "ink_color": "blue",
+      "ink_rgb": [
+        28,
+        73,
+        171
+      ],
+      "mask_path": "supervision/masks/B08/B08-occ01.png",
+      "rotation_degrees": 0,
+      "semantic_categories": [],
+      "text": "RED"
+    },
+    {
+      "bbox_1000": [
+        550.0,
+        243.902,
+        669.531,
+        321.951
+      ],
+      "bbox_px": [
+        704,
+        200,
+        857,
+        264
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 58,
+      "id": "B08-occ02",
+      "ink_color": "green",
+      "ink_rgb": [
+        24,
+        116,
+        61
+      ],
+      "mask_path": "supervision/masks/B08/B08-occ02.png",
+      "rotation_degrees": 0,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "peach"
+    },
+    {
+      "bbox_1000": [
+        89.844,
+        252.439,
+        185.938,
+        315.854
+      ],
+      "bbox_px": [
+        115,
+        207,
+        238,
+        259
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 46,
+      "id": "B08-occ03",
+      "ink_color": "black",
+      "ink_rgb": [
+        35,
+        38,
+        42
+      ],
+      "mask_path": "supervision/masks/B08/B08-occ03.png",
+      "rotation_degrees": 0,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "peach"
+    },
+    {
+      "bbox_1000": [
+        319.531,
+        637.805,
+        425.0,
+        696.341
+      ],
+      "bbox_px": [
+        409,
+        523,
+        544,
+        571
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 50,
+      "id": "B08-occ04",
+      "ink_color": "purple",
+      "ink_rgb": [
+        119,
+        51,
+        158
+      ],
+      "mask_path": "supervision/masks/B08/B08-occ04.png",
+      "rotation_degrees": -4,
+      "semantic_categories": [
+        "fruit"
+      ],
+      "text": "grape"
+    },
+    {
+      "bbox_1000": [
+        108.594,
+        657.317,
+        164.844,
+        706.098
+      ],
+      "bbox_px": [
+        139,
+        539,
+        211,
+        579
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 46,
+      "id": "B08-occ05",
+      "ink_color": "orange",
+      "ink_rgb": [
+        204,
+        95,
+        15
+      ],
+      "mask_path": "supervision/masks/B08/B08-occ05.png",
+      "rotation_degrees": 0,
+      "semantic_categories": [
+        "animal"
+      ],
+      "text": "lion"
+    },
+    {
+      "bbox_1000": [
+        549.219,
+        642.683,
+        696.875,
+        703.659
+      ],
+      "bbox_px": [
+        703,
+        527,
+        892,
+        577
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 50,
+      "id": "B08-occ06",
+      "ink_color": "red",
+      "ink_rgb": [
+        184,
+        31,
+        41
+      ],
+      "mask_path": "supervision/masks/B08/B08-occ06.png",
+      "rotation_degrees": 4,
+      "semantic_categories": [
+        "tool"
+      ],
+      "text": "crowbar"
+    },
+    {
+      "bbox_1000": [
+        343.75,
+        248.78,
+        400.0,
+        286.585
+      ],
+      "bbox_px": [
+        440,
+        204,
+        512,
+        235
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 46,
+      "id": "B08-occ07",
+      "ink_color": "blue",
+      "ink_rgb": [
+        28,
+        73,
+        171
+      ],
+      "mask_path": "supervision/masks/B08/B08-occ07.png",
+      "rotation_degrees": 2,
+      "semantic_categories": [
+        "vehicle"
+      ],
+      "text": "van"
+    },
+    {
+      "bbox_1000": [
+        825.781,
+        642.683,
+        896.094,
+        706.098
+      ],
+      "bbox_px": [
+        1057,
+        527,
+        1147,
+        579
+      ],
+      "font_id": "comic_sans_ms",
+      "font_size": 54,
+      "id": "B08-occ08",
+      "ink_color": "green",
+      "ink_rgb": [
+        24,
+        116,
+        61
+      ],
+      "mask_path": "supervision/masks/B08/B08-occ08.png",
+      "rotation_degrees": -4,
+      "semantic_categories": [
+        "animal",
+        "insect"
+      ],
+      "text": "bee"
+    }
+  ],
+  "variant": "clean"
+}

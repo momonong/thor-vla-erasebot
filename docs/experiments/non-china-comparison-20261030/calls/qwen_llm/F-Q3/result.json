@@ -1,0 +1,59 @@
+{
+  "route": "qwen_llm",
+  "question_id": "F-Q3",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q3",
+    "category": "spatial",
+    "instruction": "擦掉位於 kiwis 正下方的水果名稱。"
+  },
+  "started_utc": "2026-10-30T07:55:19.687672+00:00",
+  "status": "completed",
+  "prompt_sha256": "793a20deb8502a8ee9cc8a69670f8ee95192e81b487913b7a07fae73ea4d8089",
+  "model_input_prompt_lf_sha256": "7bd1dce15f5984cb6b46625fabed8d13b7368b3df26a994223a49f4fd7cb9b6a",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1018,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        1018
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1018
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    }
+  },
+  "preprocess_s": 0.002744200173765421,
+  "generation_s": 0.6049126000143588,
+  "generated_tokens": 21,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "2099b5d9ef1a21b0fb83b3647f374cb7174df772296f6b2acf262bb40b52e875",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Extra data: line 1 column 64 (char 63)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 3283685888,
+  "peak_gpu_reserved_bytes": 3328180224,
+  "question_wall_s": 0.6146703001577407
+}

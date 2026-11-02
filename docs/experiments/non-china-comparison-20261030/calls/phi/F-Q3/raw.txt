@@ -1,0 +1,1 @@
+{"id":"F-Q3","category":"spatial","instruction":"擦掉位於 kiwis 正下方的水果名稱。"}

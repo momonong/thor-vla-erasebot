@@ -1,0 +1,33 @@
+{
+  "historical_parser_runner_sha256": "facf323130e602914c974c9ad1e94d827f583e898828004cd4f387af08170bca",
+  "parser_function_lf_sha256": "6d307eb0c77edd1a0647480cb6093fe52e20c3fcbe06294b66693a7526683f5a",
+  "prompt_function_lf_sha256": "f85404f7f6287a0624b6193dbd77e9f21be29ed2d062d5282e569fb85f059305",
+  "generation_settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "parser_routes": {
+    "qwen_llm": "ocr_llm",
+    "qwen_vlm": "vlm",
+    "smolvlm": "vlm",
+    "doctr_smollm": "ocr_llm",
+    "gemma": "vlm",
+    "phi": "vlm"
+  },
+  "runner_source_receipts": [
+    {
+      "source": "source-versions/runner-initial.py",
+      "sha256": "336580c6c5433bf7e9cb673cedc97746b473de0c80eab157106200960461249d"
+    },
+    {
+      "source": "runner.py",
+      "sha256": "8a1385f6be259146a7474041cfe782082225387ffe79016ca6346e629b4c1554"
+    }
+  ],
+  "runner_source_included": false,
+  "parser_function_text_unchanged": true,
+  "prompt_adaptation": "Explicit q/o arguments replace only questions()/OCR-file reads; no inference or environment setup retained."
+}

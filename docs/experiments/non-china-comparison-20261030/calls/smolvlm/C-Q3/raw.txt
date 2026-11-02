@@ -1,0 +1,1 @@
+ {"answers":[{"id":"C-Q3","category":"spatial","instruction":"擦掉最下方的完整英文單字。"}]}

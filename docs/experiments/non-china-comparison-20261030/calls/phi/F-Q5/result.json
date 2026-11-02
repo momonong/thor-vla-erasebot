@@ -1,0 +1,111 @@
+{
+  "route": "phi",
+  "question_id": "F-Q5",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q5",
+    "category": "semantic",
+    "instruction": "擦掉所有具體水果種類的名稱，保留類別名稱 FRUITS 與課程標題。"
+  },
+  "started_utc": "2026-10-30T08:09:35.175403+00:00",
+  "status": "completed",
+  "prompt_sha256": "d6f31544f5d8318259b221993c781cef0d7468d8f55fd1e86527556246c6f034",
+  "model_input_prompt_lf_sha256": "167d08fd920e32671760fd4598a7dba7a343bb04f120eae232a48a4e62f41649",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 2050,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        2050
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "input_image_embeds": {
+      "shape": [
+        1,
+        7,
+        3,
+        448,
+        448
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "image_sizes": {
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "image_attention_mask": {
+      "shape": [
+        1,
+        7,
+        32,
+        32
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "input_audio_embeds": {
+      "shape": [
+        0
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "audio_embed_sizes": {
+      "shape": [
+        0
+      ],
+      "dtype": "torch.float32",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        2050
+      ],
+      "dtype": "torch.bool",
+      "value": null
+    },
+    "input_mode": {
+      "shape": [
+        1
+      ],
+      "dtype": "torch.int64",
+      "value": [
+        1
+      ]
+    }
+  },
+  "preprocess_s": 0.04062390001490712,
+  "generation_s": 265.2640264001675,
+  "generated_tokens": 3072,
+  "last_token_eos": false,
+  "max_time_reached": false,
+  "token_cap_reached": true,
+  "raw_sha256": "5a417afd2df1020de32fee9081c2a0cd8c2b97979a8ba1a70234243140daa8c4",
+  "parsed": {
+    "valid": false,
+    "data": null,
+    "errors": [
+      "json:Unterminated string starting at: line 1 column 5578 (char 5577)"
+    ]
+  },
+  "peak_gpu_allocated_bytes": 18331976192,
+  "peak_gpu_reserved_bytes": 19534970880,
+  "question_wall_s": 265.3136180001311
+}

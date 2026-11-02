@@ -1,0 +1,105 @@
+{
+  "route": "qwen_vlm",
+  "question_id": "F-Q6",
+  "image_id": "fruits",
+  "question": {
+    "id": "F-Q6",
+    "category": "semantic",
+    "instruction": "只保留最上方帶底線的課程標題，擦掉其餘所有英文文字。"
+  },
+  "started_utc": "2026-10-30T08:01:00.437681+00:00",
+  "status": "completed",
+  "prompt_sha256": "b3a349ae5ddfd8596f2e69d469d40079a29667472f2a334759cd08eb926cb295",
+  "model_input_prompt_lf_sha256": "0afb9c75e0946c6ab954e8c4c5e90738ec8afce63c64d2debc2d77c37d9399ae",
+  "image_sha256": "9731016e7ce258a69fa0779797ccd11b522cee6013e1bc3efe31fd818072021b",
+  "settings": {
+    "do_sample": false,
+    "max_new_tokens": 3072,
+    "max_time": 840,
+    "use_cache": true,
+    "repetition_penalty": 1.0
+  },
+  "reference_read_by_inference": false,
+  "input_tokens": 1093,
+  "input_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        1093
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        1093
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        1093
+      ],
+      "dtype": "torch.int64",
+      "value": null
+    },
+    "pixel_values": {
+      "shape": [
+        3072,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "value": null
+    },
+    "image_grid_thw": {
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "torch.int64",
+      "value": [
+        [
+          1,
+          48,
+          64
+        ]
+      ]
+    }
+  },
+  "preprocess_s": 0.03709889994934201,
+  "generation_s": 39.70375979994424,
+  "generated_tokens": 47,
+  "last_token_eos": true,
+  "max_time_reached": false,
+  "token_cap_reached": false,
+  "raw_sha256": "4fe71178228ef909accd81a663ca788fc5e931dd9c92138d805fba09905e3b78",
+  "parsed": {
+    "valid": true,
+    "data": {
+      "answers": [
+        {
+          "id": "F-Q6",
+          "status": "selected",
+          "targets": [
+            {
+              "text": "Few Shot Learning--",
+              "bbox": [
+                47,
+                125,
+                458,
+                197
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "peak_gpu_allocated_bytes": 4668023296,
+  "peak_gpu_reserved_bytes": 4848615424,
+  "question_wall_s": 39.74803589982912
+}

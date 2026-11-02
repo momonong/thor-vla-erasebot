@@ -1,0 +1,1 @@
+{"answers":[{"id":"E-Q5","status":"selected","targets":[{"text":"I","bbox":[128,243,210,311]},{"text":"my","bbox":[333,543,411,611]},{"text":"You","bbox":[333,733,431,801]}]}]}

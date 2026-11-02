@@ -1,0 +1,1 @@
+{"answers":[{"id":"F-Q5","status":"selected","target_ids":["fruits-t001","fruits-t002","fruits-t003","fruits-t004","fruits-t005","fruits-t006","fruits-t007","fruits-t008","fruits-t009","fruits-t010","fruits-t011","fruits-t012","fruits-t013"]}]}"

@@ -1,0 +1,194 @@
+{
+  "status": "complete",
+  "method": "Root AI visual adjudication with independent AI review. Same fixed occurrence-set/status and coarse-position rubric as the baseline; not human ground truth or mask coverage evaluation.",
+  "routes": {
+    "qwen_llm": {
+      "independent_reviewer": "independent_ai_reviewer",
+      "correct": [
+        "C-Q2",
+        "C-Q6",
+        "F-Q2",
+        "E-Q2"
+      ],
+      "notes": {
+        "C-Q1": "錯回 no_match；BLUE 候選存在。",
+        "C-Q2": "選中 RED 的 colour-t001；內容正確，尾端多餘引號使 schema 失敗。",
+        "C-Q3": "錯回 no_match；應選 GREEN。",
+        "C-Q4": "錯回 no_match；應選 BLUE。",
+        "C-Q5": "錯回 no_match；應選三個顏色名稱。",
+        "C-Q6": "正確 no_match；本圖無水果名稱。",
+        "F-Q1": "錯回 no_match；Lemons 在 OCR 有辨識缺口。",
+        "F-Q2": "正確 no_match；本圖無藍色英文。",
+        "F-Q3": "錯回 no_match；應選 melons。",
+        "F-Q4": "錯回 no_match；應選 oranges。",
+        "F-Q5": "全選 13 個 OCR 候選，含應保留的標題、FRUITS 及非文字標記。",
+        "F-Q6": "全選 13 個候選，錯擦應保留標題。",
+        "E-Q1": "錯回 no_match；pen 候選存在。",
+        "E-Q2": "正確 no_match；本圖無藍色英文。",
+        "E-Q3": "錯回 no_match；應選 You。",
+        "E-Q4": "錯回 no_match；中間 my 候選存在。",
+        "E-Q5": "選 This 與兩個 my，並非兩個 I 加 You。",
+        "E-Q6": "全選候選，含多個非目標及整行 You-your，集合錯誤。"
+      },
+      "format_note": "18 題均有尾端多餘引號；不修補。"
+    },
+    "qwen_vlm": {
+      "independent_reviewer": "independent_ai_reviewer",
+      "correct": [
+        "C-Q1",
+        "C-Q2",
+        "C-Q3",
+        "C-Q4",
+        "C-Q5",
+        "F-Q1",
+        "F-Q2",
+        "F-Q4",
+        "E-Q1",
+        "E-Q5"
+      ],
+      "notes": {
+        "C-Q1": "BLUE occurrence 與粗位置符合。",
+        "C-Q2": "RED occurrence 與粗位置符合。",
+        "C-Q3": "GREEN occurrence 與粗位置符合。",
+        "C-Q4": "BLUE occurrence 與粗位置符合。",
+        "C-Q5": "完整選取 RED、BLUE、GREEN，粗位置符合。",
+        "C-Q6": "把所有顏色詞當成果類，應 no_match。",
+        "F-Q1": "Lemons occurrence 與粗位置符合。",
+        "F-Q2": "正確 no_match。",
+        "F-Q3": "同選 melons 與 kiwis，集合錯誤且 JSON 壞掉。",
+        "F-Q4": "oranges occurrence 與粗位置符合。",
+        "F-Q5": "反選應保留的 FRUITS 與課程標題。",
+        "F-Q6": "反選應保留的課程標題。",
+        "E-Q1": "pen occurrence 與粗位置符合。",
+        "E-Q2": "把紅色文字整行選入，應 no_match。",
+        "E-Q3": "選兩整組代名詞而非單獨 You，含應保留詞。",
+        "E-Q4": "選 pen，應中間 my。",
+        "E-Q5": "兩個 I 及 You 的 occurrence 均符合。",
+        "E-Q6": "漏掉例句中的上方 my。"
+      }
+    },
+    "doctr_smollm": {
+      "independent_reviewer": "independent_ai_reviewer",
+      "correct": [],
+      "notes": {
+        "C-Q1": "選入 BLUE 之外多個片段，集合錯。",
+        "C-Q2": "全選候選；RED 缺完整 OCR 詞框。",
+        "C-Q3": "全選候選；GREEN 缺完整 OCR 詞框。",
+        "C-Q4": "選入 BLUE 之外多個片段，集合錯。",
+        "C-Q5": "全選碎片不等於三完整詞 occurrence；RED/GREEN 的 OCR 缺口仍在。",
+        "C-Q6": "全選候選，應 no_match。",
+        "F-Q1": "全選候選而非 Lemons。",
+        "F-Q2": "全選候選，應 no_match。",
+        "F-Q3": "選多個非目標，包括課程標題。",
+        "F-Q4": "選多個非目標，含不存在 ID fruits-d10。",
+        "F-Q5": "全選候選，含應保留 FRUITS/標題。",
+        "F-Q6": "全選候選，含應保留標題。",
+        "E-Q1": "全選 14 候選而非 pen。",
+        "E-Q2": "全選候選，應 no_match。",
+        "E-Q3": "全選 14 候選而非 You。",
+        "E-Q4": "全選 14 候選而非中間 my。",
+        "E-Q5": "全選 14 候選且 OCR 漏掉兩個 I，集合錯。",
+        "E-Q6": "全選 14 候選，包含應保留詞。"
+      },
+      "format_note": "所有題號均為字面 question id；另有多餘／缺失括號。不修補。"
+    },
+    "phi": {
+      "independent_reviewer": "independent_ai_reviewer",
+      "correct": [
+        "C-Q6"
+      ],
+      "notes": {
+        "C-Q1": "status no_match 卻有 BLUE 目標，框使用錯誤尺度與位置。",
+        "C-Q2": "錯回 no_match，應 RED。",
+        "C-Q3": "錯回 no_match，應 GREEN。",
+        "C-Q4": "錯回 no_match，應 BLUE。",
+        "C-Q5": "錯回 no_match，應三個顏色詞。",
+        "C-Q6": "內容為 no_match 與空目標，符合；缺 answers 包裝，schema 失敗。",
+        "F-Q1": "Lemons 文字正確，但框 [0.56,0.45,0.66,0.51] 未按約定 0–1000 對應目標，不修復座標。",
+        "F-Q2": "只重述題目，沒有 status 與選取答案。",
+        "F-Q3": "只重述題目，沒有選 melons。",
+        "F-Q4": "錯回 no_match，應 oranges。",
+        "F-Q5": "誤選 FRUITS 與標題，之後重複 -1 至 3072 token 上限。",
+        "F-Q6": "只重述題目，沒有選取集合。",
+        "E-Q1": "選整句而非 pen，框尺度與位置也錯。",
+        "E-Q2": "no_match 卻非空目標，反覆列三整行與全零框，達 3072 token 上限。",
+        "E-Q3": "錯回 no_match，應 You。",
+        "E-Q4": "錯回 no_match，應中間 my。",
+        "E-Q5": "全選 12 詞，含應保留詞；框為 0–1 尺度且錯位。",
+        "E-Q6": "反覆選 I/my/You/your，含非目標且 occurrence 對應錯，達 3072 token 上限。"
+      },
+      "format_note": "18 題 schema 失敗；缺 answers 包裝、JSON 結構、題號及其他契約錯誤均保留。"
+    },
+    "smolvlm": {
+      "independent_reviewer": "independent_ai_reviewer",
+      "correct": [],
+      "notes": {
+        "C-Q1": "只重述題目，沒有選取答案或 status。",
+        "C-Q2": "回 RED BLUE GREEN 字串，沒有完成紅墨水目標選取。",
+        "C-Q3": "只重述題目，沒有選 GREEN。",
+        "C-Q4": "選三個顏色詞，應只選 BLUE；框也為不符位置的範例格點。",
+        "C-Q5": "只重述題目，沒有選取集合。",
+        "C-Q6": "只重述題目，沒有 no_match 答案。",
+        "F-Q1": "寫 Lemons 但框 [100,100,200,200] 錯位，題號 question id 且格式錯。",
+        "F-Q2": "只重述題目，沒有 no_match 答案。",
+        "F-Q3": "只重述題目，沒有選 melons。",
+        "F-Q4": "選 Kiwis，應 oranges；框也錯位。",
+        "F-Q5": "選應保留的 FRUITS，應六個水果種類。",
+        "F-Q6": "選應保留的課程標題，框也錯位。",
+        "E-Q1": "回整句描述而非 pen 選取。",
+        "E-Q2": "回整句並幻覺 boyfriend，沒有 no_match。",
+        "E-Q3": "格式合法但選上方整句，應 You，框也錯位。",
+        "E-Q4": "回整句含 You-you，沒有中間 my 的選取答案。",
+        "E-Q5": "回整句含 You-you，沒有兩個 I 加 You 的選取集合。",
+        "E-Q6": "回整句含 You-you，沒有兩個 my 加 your 的選取集合。"
+      },
+      "format_note": "只有 E-Q3 schema 通過；其內容仍錯。"
+    },
+    "gemma": {
+      "independent_reviewer": "independent_ai_reviewer",
+      "correct": [
+        "C-Q1",
+        "C-Q2",
+        "C-Q3",
+        "C-Q4",
+        "C-Q5",
+        "F-Q1",
+        "F-Q2",
+        "E-Q2"
+      ],
+      "text_set_status_correct_ignoring_boxes": [
+        "C-Q1",
+        "C-Q2",
+        "C-Q3",
+        "C-Q4",
+        "C-Q5",
+        "F-Q1",
+        "F-Q2",
+        "F-Q4",
+        "E-Q1",
+        "E-Q2"
+      ],
+      "notes": {
+        "C-Q1": "粗位置唯一對應 BLUE；框明顯裁去右側 E 及其他筆畫，不能當擦除 mask。",
+        "C-Q2": "粗位置對應 RED；框裁去下緣，未驗證筆畫覆蓋。",
+        "C-Q3": "粗位置對應 GREEN；框裁去末字／下緣。",
+        "C-Q4": "粗位置唯一對應 BLUE；框明顯裁去右側 E，未按新增覆蓋閾值扣分。",
+        "C-Q5": "三個顏色詞 occurrence 與粗位置符合；GREEN 框只涵蓋左部，各框不完整。",
+        "C-Q6": "把 RED 當水果，應 no_match。",
+        "F-Q1": "粗位置對應 Lemons；框左端裁切，不能宣稱完整覆蓋。",
+        "F-Q2": "正確 no_match。",
+        "F-Q3": "選 oranges，應 kiwis 下方的 melons。",
+        "F-Q4": "文字 oranges 正確，但 bbox 在 Apples 區域，故主指標失敗。",
+        "F-Q5": "選類別 Fruits，應六個水果種類。",
+        "F-Q6": "選應保留標題，且框位置也不對。",
+        "E-Q1": "文字 pen 正確，但 bbox 在 This 附近，故主指標失敗。",
+        "E-Q2": "正確 no_match。",
+        "E-Q3": "選 I-my 組，應最下組左側 You。",
+        "E-Q4": "選 girl，應中間 my。",
+        "E-Q5": "以 my 取代第二個 I，且框有偏差。",
+        "E-Q6": "只選兩詞，漏上方 my，框也有偏差。"
+      },
+      "grounding_policy": "沿用已凍結粗位置規格；未事後新增 IoU 或完整筆畫覆蓋門檻。裁切單列限制，錯指其他詞則 primary fail。"
+    }
+  }
+}
