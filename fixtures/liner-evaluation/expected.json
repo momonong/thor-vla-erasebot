@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "synthetic_fixture",
+  "cases": [
+    {
+      "file": "clear.json",
+      "status": "criteria_met",
+      "exit_code": 0,
+      "coverage": 1.0,
+      "iou": 1.0
+    },
+    {
+      "file": "partial.json",
+      "status": "criteria_not_met",
+      "exit_code": 1,
+      "coverage": 0.75,
+      "iou": 0.6
+    },
+    {
+      "file": "folded.json",
+      "status": "criteria_not_met",
+      "exit_code": 1,
+      "coverage": 1.0,
+      "iou": 1.0
+    },
+    {
+      "file": "unknown-fold.json",
+      "status": "insufficient_evidence",
+      "exit_code": 2,
+      "coverage": 1.0,
+      "iou": 1.0
+    },
+    {
+      "file": "not-run.json",
+      "status": "not_run",
+      "exit_code": 4,
+      "coverage": null,
+      "iou": null
+    },
+    {
+      "file": "wrong-target.json",
+      "status": "invalid_input",
+      "exit_code": 3,
+      "coverage": null,
+      "iou": null
+    }
+  ]
+}

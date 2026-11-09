@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "case_id": "not-run",
+  "evidence_kind": "synthetic_fixture",
+  "source_ref": "hand-authored fixture, not a photograph or simulation",
+  "target_id": "A",
+  "target_sha256": "d6f22c9fde222f70129b4316cf1b7aa140f02445cb85a137bdc63cb9f508e31c",
+  "frame_id": "table-1",
+  "mask_rows": null,
+  "fold_check": {
+    "status": "unknown",
+    "reference": null
+  },
+  "duration_s": null,
+  "cycles": null,
+  "human_interventions": null,
+  "execution_status": "not_run"
+}
