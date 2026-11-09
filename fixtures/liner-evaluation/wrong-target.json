@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "case_id": "wrong-target",
+  "evidence_kind": "synthetic_fixture",
+  "source_ref": "hand-authored fixture, not a photograph or simulation",
+  "target_id": "A",
+  "target_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "frame_id": "table-1",
+  "mask_rows": [
+    "1100",
+    "1100"
+  ],
+  "fold_check": {
+    "status": "clear",
+    "reference": "synthetic clear-layer assumption"
+  },
+  "duration_s": 30.0,
+  "cycles": 2,
+  "human_interventions": 0,
+  "execution_status": "completed"
+}
